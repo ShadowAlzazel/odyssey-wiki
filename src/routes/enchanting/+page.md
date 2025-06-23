@@ -1,7 +1,7 @@
 # Intro to Enchanting
 
-### Enchantments
+### [Enchantments](/enchanting/enchantments)
 
-### Tomes
+### [Tomes](/enchanting/tomes)
 
 ### Anvil

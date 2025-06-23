@@ -5,19 +5,18 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 # Table of Contents
 - [Quick Reference Table](#Quick-Reference-Table)
 - [Vanilla Enchantments](#Vanilla-Enchantments)
-- [Odyssey Armor Enchantments](#odyssey-armor-enchantments)
-- [Odyssey Melee Enchantments](#odyssey-melee-enchantments)
-- [Odyssey Ranged Enchantments](#odyssey-ranged-enchantments)
-- [Odyssey Miscellaneous Enchantments](#odyssey-miscellaneous-enchantments)
-- [Enchantment Properties Reference](#enchantment-properties-reference)
-
+- [Odyssey Armor Enchantments](#Odyssey-Armor-Enchantments)
+- [Odyssey Melee Enchantments](#Odyssey-Melee-Enchantments)
+- [Odyssey Ranged Enchantments](#Odyssey-Ranged-Enchantments)
+- [Odyssey Miscellaneous Enchantments](#Odyssey-miscellaneous-Enchantments)
+- [Enchantment Properties Reference](#Enchantment-Properties-Reference)
 ---
 
 # Quick Reference Table
 
 | Name | Type | Max Level | Primary Effect | Enchantability Cost |
 |------|------|-----------|----------------|----------------------|
-| **VANILLA ENCHANTMENTS** |
+| [**VANILLA ENCHANTMENTS**](#Vanilla-Enchantments) |
 | Curse of Vanishing | Curse | 1 | Item disappears on death | - |
 | Curse of Binding | Curse | 1 | Cannot remove from armor slots | - |
 | Lure | Fishing | 3 | Decreases fishing wait time | - |
@@ -46,7 +45,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 | Silk Touch | Tools | 1 | Blocks drop themselves | - |
 | Fortune | Tools | 3 | Increases block drops | - |
 | Efficiency | Tools | 5 | Increases mining speed | - |
-| **ODYSSEY - ARMOR** |
+| [**ODYSSEY - ARMOR**](#Odyssey-Armor-Enchantments) |
 | Analysis | Armor | 5 | Increase experience gained | 1 |
 | Antibonk | Armor | 5 | Reduce critical hit damage | 1 |
 | Beastly | Armor | 3 | Damage reduction when surrounded | 1 |
@@ -80,8 +79,8 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 | Untouchable | Armor | 1 | Increases invulnerable time | 1 |
 | Veiled in Shadow | Armor | 5 | Light-based invulnerability | 1 |
 | Vigor | Armor | 5 | Damage increase while healthy | 1 |
-| **ODYSSEY - MELEE** |
-| Agile | Melee | 5 | Increases attack speed | 1 |
+| [**ODYSSEY - MELEE**](#Odyssey-Melee-Enchantments) |
+| Agile | Melee | 5 | Increases attack speed | 2 |
 | Arcane Cell | Melee | 5 | Creates teleport zone | 1 |
 | Asphyxiate | Melee | 5 | Reduces target breath | 1 |
 | Backstabber | Melee | 5 | Bonus damage from behind | 1 |
@@ -120,7 +119,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 | Vital | Melee | 5 | Bonus critical damage | 1 |
 | Void Strike | Melee | 5 | Stacking void damage | 1 |
 | Whirlwind | Melee | 5 | Cone knockback with damage | 1 |
-| **ODYSSEY - RANGED** |
+| [**ODYSSEY - RANGED**](#Odyssey-Ranged-Enchantments) |
 | Alchemy Artillery | Ranged | 5 | Enhanced potion projectiles | 1 |
 | Ambush | Ranged | 5 | First hit bonus damage | 1 |
 | Ballistics | Crossbow | 5 | Increased crossbow damage | 1 |
@@ -147,7 +146,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 | Steady Aim | Ranged | 1 | Reduced sway when stationary | 1 |
 | Temporal | Ranged | 5 | Delayed projectile acceleration | 1 |
 | Vulnerocity | Ranged | 5 | Reduces target immunity time | 1 |
-| **ODYSSEY - MISCELLANEOUS** |
+| [**ODYSSEY - MISCELLANEOUS**](#Odyssey-miscellaneous-Enchantments) |
 | Moonpatch | Universal | 5 | Durability regeneration at night | 1 |
 | Chitin | Universal | 1 | Durability regen when holder regens | 1 |
 | O Shiny | Universal | 1 | Item glistens when held/worn | 1 |
@@ -157,7 +156,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 
 ---
 
-## Vanilla Enchantments
+# Vanilla Enchantments
 
 ### Curses
 - **Curse of Vanishing**: Item disappears on death
@@ -223,7 +222,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 
 ---
 
-## Odyssey Armor Enchantments
+# Odyssey Armor Enchantments
 
 ### Experience & Learning
 - **Analysis** (Max Level 5): Increase experience gained by 10% per level
@@ -246,13 +245,14 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 
 ### Movement & Mobility
 - **Claw Climbing** (Boots, Max Level 3): Increase automatic step height by level blocks
-- **Leap Frog** (Boots, Max Level 5): Increase jump height by 35% per level; the jump strength is doubled when sneaking
+- **Leap Frog** (Leggings, Max Level 5): Increase jump height by 35% per level; the jump strength is doubled when sneaking
 - **Speedy Spurs** (Boots, Max Level 3): Gives speed level to ridden entities
+- **Cloud Strider** (Boots, Max Level 4): Gives (level) amount of extra jumps
+- **Moon Walker** (Boots, Max Level 4): Lowers gravity be `(level x 10)%`
 
 ### Utility & Special Effects
 - **Cowardice** (Max Level 3): Get knock backed further and get speed level for 6 seconds when hit
 - **Devastating Drop** (Boots, Max Level 3): Converts fall damage to AOE damage at 40% per level
-- **Fruitful Fare** (Max Level 5): Eating a fruit recovers level Health. Adds a 3 second cooldown to the fruit
 - **Ignore Pain** (Max Level 4): Decrease Invulnerable time when hit by level×0.1 seconds but gain absorption for 5-level seconds
 - **Illumineye** (Max Level 5): Taking or dealing damage to an entity within line of sight applies Glowing I for 3+(level×2) seconds
 - **Impetus** (Max Level 5): While moving, deal 5+(level×5)% increased damage
@@ -270,7 +270,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 
 ---
 
-## Odyssey Melee Enchantments
+# Odyssey Melee Enchantments
 
 ### Attack Speed & Efficiency
 - **Agile** (Max Level 5): Increase attack speed by 5% per level
@@ -322,7 +322,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 
 ---
 
-## Odyssey Ranged Enchantments
+# Odyssey Ranged Enchantments
 
 ### Projectile Enhancement
 - **Alchemy Artillery** (Max Level 5): Potion effect projectiles have their effect timers increased by 0.2×level%. These projectiles also have their speed increased by 0.1×level%
@@ -376,7 +376,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 
 ---
 
-## Enchantment Properties Reference
+# Enchantment Properties Reference
 
 Understanding enchantment properties helps when configuring or balancing enchantments. Here's what each property means:
 
