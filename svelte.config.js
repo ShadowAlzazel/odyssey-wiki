@@ -12,7 +12,8 @@ const config = {
       assets: 'dist',
     }),
     paths: { 
-      base: dev ? '' : '/odyssey-wiki',
+	  relative: false, 
+      base: dev ? '' : '',
     },
     prerender: {
       handleHttpError: 'warn',
