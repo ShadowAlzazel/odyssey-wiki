@@ -1,11 +1,13 @@
 import { defaultTheme } from "@sveltepress/theme-default";
 import { sveltepress } from "@sveltepress/vite";
 import { defineConfig } from "vite";
+import path from 'path';
 
 const config = defineConfig({
   plugins: [
     sveltepress({
       theme: defaultTheme({
+        // TOP NAVBAR
         navbar: [
           {
             title: "Foo page",
@@ -19,8 +21,8 @@ const config = defineConfig({
             title: "With dropdown",
             items: [
               {
-                title: "Bar page",
-                to: "/bar/",
+                title: "Items",
+                to: "/items/",
               },
               {
                 title: "External Github page",
@@ -45,15 +47,7 @@ const config = defineConfig({
                 {
                   text: "Advanced Topics",
                   link: "/enchanting/enchantments",
-                },
-                {
-                  text: "Advanced Topics",
-                
-                },
-                {
-                  text: "Advanced Topics",
-              
-                },
+                }
               ],
             },
           ],
@@ -71,9 +65,8 @@ const config = defineConfig({
           ],
         },
         github: "https://github.com/Blackman99/sveltepress",
-        logo: "/blank_tome@4x.png",
+        logo: "/images/blank_tome@4x.png",
       }),
-
       // Header
       siteConfig: {
         title: "Odyssey Wiki",
@@ -81,6 +74,11 @@ const config = defineConfig({
       },
     }),
   ],
+  resolve: {
+    alias: {
+      $assets: path.resolve('./static')
+    }
+  }
 });
 
 export default config;

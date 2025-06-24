@@ -1,0 +1,19 @@
+/* src/app.css or your global CSS file */
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  display: inline-block;
+}
+
+.pixel-art.tiny { width: 16px; height: 16px; }
+.pixel-art.small { width: 24px; height: 24px; }
+.pixel-art.medium { width: 32px; height: 32px; }
+.pixel-art.large { width: 48px; height: 48px; }
+.pixel-art.xlarge { width: 64px; height: 64px; }
+
+/* Optional: inline images with text */
+.pixel-art.inline {
+  vertical-align: middle;
+  margin: 0 4px;
+}

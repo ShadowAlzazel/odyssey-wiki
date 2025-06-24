@@ -1,4 +1,6 @@
 <script>
+  import '../app.css'
+
   /**
    * @typedef {object} Props
    * @property {import('svelte').Snippet} [children] - The children of the layout

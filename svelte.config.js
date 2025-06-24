@@ -1,20 +1,23 @@
-import adapter from '@sveltejs/adapter-static'
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-/**
- * @type {import('@sveltejs/kit').Config}
- */
+const dev = process.env.NODE_ENV === 'development';
+
 const config = {
-	extensions: ['.svelte', '.md'],
-	preprocess: [vitePreprocess()],
-	kit: {
-		paths: {
-			relative: false,
-		},
-		adapter: adapter({
-			pages: 'dist',
-		}),
-	},
-}
+  extensions: ['.svelte', '.md'],
+  preprocess: [vitePreprocess()],
+  kit: {
+    adapter: adapter({
+      pages: 'dist',
+      assets: 'dist',
+    }),
+    paths: {
+      base: dev ? '' : '/odyssey-wiki',
+    },
+    prerender: {
+      handleHttpError: 'warn',
+    }
+  }
+};
 
-export default config
+export default config;

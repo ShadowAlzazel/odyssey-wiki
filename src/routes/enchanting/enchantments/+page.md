@@ -8,7 +8,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 - [Odyssey Armor Enchantments](#Odyssey-Armor-Enchantments)
 - [Odyssey Melee Enchantments](#Odyssey-Melee-Enchantments)
 - [Odyssey Ranged Enchantments](#Odyssey-Ranged-Enchantments)
-- [Odyssey Miscellaneous Enchantments](#Odyssey-miscellaneous-Enchantments)
+- [Odyssey Miscellaneous Enchantments](#Odyssey-Miscellaneous-Enchantments)
 - [Enchantment Properties Reference](#Enchantment-Properties-Reference)
 ---
 
@@ -146,7 +146,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 | Steady Aim | Ranged | 1 | Reduced sway when stationary | 1 |
 | Temporal | Ranged | 5 | Delayed projectile acceleration | 1 |
 | Vulnerocity | Ranged | 5 | Reduces target immunity time | 1 |
-| [**ODYSSEY - MISCELLANEOUS**](#Odyssey-miscellaneous-Enchantments) |
+| [**ODYSSEY - MISCELLANEOUS**](#Odyssey-Miscellaneous-Enchantments) |
 | Moonpatch | Universal | 5 | Durability regeneration at night | 1 |
 | Chitin | Universal | 1 | Durability regen when holder regens | 1 |
 | O Shiny | Universal | 1 | Item glistens when held/worn | 1 |
