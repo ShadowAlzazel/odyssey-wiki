@@ -45,6 +45,9 @@ This change eliminates one of the most aggravating mechanics in vanilla gameplay
 
 > *Insert relevant anvil cost image here for illustration*
 
+### Chisled Bookshelves
+
+Chiseled bookshelves have had their utility expanding with enchanting.
 
 ### Strategies
 
