@@ -1,0 +1,1 @@
+import"../chunks/CBMVRJmX.js";import"../chunks/BO_Xecwz.js";import{P as m}from"../chunks/ijfbigP-.js";import"../chunks/CYr4J6KK.js";import"../chunks/lL5HdKOh.js";function n(t){const o={pageType:"md",lastUpdate:"2025/06/23 14:23:37",anchors:[],title:"Hi Foo"};m(t,{get fm(){return o}})}export{n as component};
