@@ -56,7 +56,6 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 | Claw Climbing | Boots | 3 | Increases step height | 1 |
 | Cowardice | Armor | 3 | Knockback and speed when hit | 1 |
 | Devastating Drop | Boots | 3 | Converts fall damage to AOE | 1 |
-| Fruitful Fare | Armor | 5 | Fruit eating restores health | 1 |
 | Ignore Pain | Armor | 4 | Reduced immunity time, absorption | 1 |
 | Illumineye | Armor | 5 | Applies glowing on damage | 1 |
 | Impetus | Armor | 5 | Increased damage while moving | 1 |
