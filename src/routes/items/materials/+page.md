@@ -42,6 +42,8 @@ An early game material to provide some early power.
 ## ![]() <img src="../images/silver_ingot.png" class="pixel-art large inline" alt="Silver Ingot"> Silver
 
 An Iron equivalent material that has a variety of uses.
+- Found in **Supershafts**
+- Mobs in **Supershafts** and **Mineshafts** drop silver nuggets
 
 ## ![]() <img src="../images/titanium_ingot.png" class="pixel-art large inline" alt="Titanium Ingot"> Titanium
 
@@ -64,6 +66,8 @@ A magical metal similar to diamond, with magical properties.
 
 - Upgraded from Iron Tools/Armor.
 - Requires a Crystal Alloy Upgrade Template<img src="../images/crystal_alloy_upgrade_template.png" class="pixel-art medium inline" alt="Crystal Alloy Upgrade Template">to use in the Smithing Table
+- Crafted from Diamonds, Amethyst, and Gold
+- Can be found in Edge dungeons like **Hypercubic Chambers**, **Terminal Grid** and **Line Mines**
 
 ## ![]() <img src="../images/iridium_ingot.png" class="pixel-art large inline" alt="Iridium Ingot"> Iridium
 
@@ -89,7 +93,7 @@ Essential mining tools for breaking stone, ore, and other hard materials.
 
 Different materials provide varying mining speeds and capabilities:
 
-- **Wooden**: Basic mining, cannot mine stone
+- **Wooden**: Basic mining and starter materials
 - **Stone**: Can mine iron ore and below
 - **Iron/Copper/Silver**: Can mine diamond ore and below
 - **Diamond/Soul Steel/Titanium**: Can mine all vanilla ores
@@ -97,7 +101,7 @@ Different materials provide varying mining speeds and capabilities:
 
 ### Special Materials
 
-- **Crystal Alloy**: May have enchantment bonuses
+- **Crystal Alloy**: Has diamond speed.
 - **Titanium**: Lightweight for faster mining
 - **Iridium**: Extremely durable for long mining sessions
 
