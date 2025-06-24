@@ -6,7 +6,6 @@ export const sidebar =
         title:
           "Enchanting",
         collapsible: true,
-        to: "/enchanting",
         items: [
           {
             title:
@@ -29,7 +28,6 @@ export const sidebar =
         title:
           "Items",
         collapsible: true,
-        to: "/items",
         items: [
           {
             title:
@@ -48,6 +46,30 @@ export const sidebar =
           },
         ],
       },
+      {
+        title:
+          "Alchemy",
+        collapsible: true,
+        items: [
+          {
+            title:
+              "Potions",
+            to: "/alchemy/potions",
+          }
+        ],
+      },
+       {
+        title:
+          "Magic",
+        collapsible: true,
+        items: [
+          {
+            title:
+              "Runes",
+            to: "/magic/runes",
+          }
+        ],
+      }
     ],
     // You can add more sidebar sections for other paths
     "/items/": [],
