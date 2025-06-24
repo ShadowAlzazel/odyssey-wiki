@@ -11,6 +11,7 @@
 .pixel-art.medium { width: 32px; height: 32px; }
 .pixel-art.large { width: 48px; height: 48px; }
 .pixel-art.xlarge { width: 64px; height: 64px; }
+.pixel-art.xxlarge { width: 128px; height: 128px; }
 
 /* Optional: inline images with text */
 .pixel-art.inline {

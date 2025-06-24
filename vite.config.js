@@ -1,7 +1,6 @@
 import { defaultTheme } from "@sveltepress/theme-default";
 import { sveltepress } from "@sveltepress/vite";
 import { defineConfig } from "vite";
-import path from 'path';
 
 const config = defineConfig({
   plugins: [
@@ -73,12 +72,7 @@ const config = defineConfig({
         description: "The central guide and library for all Odyssey features, items and mechanics",
       },
     }),
-  ],
-  resolve: {
-    alias: {
-      $assets: path.resolve('./static')
-    }
-  }
+  ]
 });
 
 export default config;

@@ -11,7 +11,7 @@ const config = {
       pages: 'dist',
       assets: 'dist',
     }),
-    paths: {
+    paths: { 
       base: dev ? '' : '/odyssey-wiki',
     },
     prerender: {
