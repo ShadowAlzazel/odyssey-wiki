@@ -47,24 +47,39 @@ An Iron equivalent material that has a variety of uses.
 
 An alternative of diamond focused on speed and utility.
 
+- Upgraded from Iron Tools/Armor.
+- Requires a Titanium Upgrade Template<img src="../images/titanium_upgrade_template.png" class="pixel-art medium inline" alt="Titanium Upgrade Template">to use in the Smithing Table
+- Found in **Regular Trial Chambers** and **Supershafts**
+
 ## ![]() <img src="../images/soul_steel_ingot.png" class="pixel-art large inline" alt="Mithril Ingot"> Soul Steel
 
 A late game alternative to diamond, with the unique property of enhancing experience gain.
+
+- Upgraded from Iron Tools/Armor.
+- Requires a Soul Steel Upgrade Template<img src="../images/soul_steel_upgrade_template.png" class="pixel-art medium inline" alt="Soul Steel Upgrade Template">to use in the Smithing Table
 
 ## ![]() <img src="../images/crystal_alloy_ingot.png" class="pixel-art large inline" alt="Crystal Alloy Ingot"> Crystal Alloy
 
 A magical metal similar to diamond, with magical properties. 
 
+- Upgraded from Iron Tools/Armor.
+- Requires a Crystal Alloy Upgrade Template<img src="../images/crystal_alloy_upgrade_template.png" class="pixel-art medium inline" alt="Crystal Alloy Upgrade Template">to use in the Smithing Table
+
 ## ![]() <img src="../images/iridium_ingot.png" class="pixel-art large inline" alt="Iridium Ingot"> Iridium
 
 The Overworld endgame material with ultimate durability.
+
+- Upgraded from Diamond Tools/Armor.
+- Requires an Iridium Upgrade Template<img src="../images/iridium_upgrade_template.png" class="pixel-art medium inline" alt="Iridium Upgrade Template">to use in the Smithing Table
+- Found in **Ominous Trial Chambers** and **Supershafts**
 
 ## ![]() <img src="../images/mithril_ingot.png" class="pixel-art large inline" alt="Mithril Ingot"> Mithril
 
 The engame legendary material used to craft powerful weapons and armor.
 
-- Requires a Mithril Upgrade Template to use in the Smithing Table
-
+- Upgraded from Diamond Tools/Armor.
+- Requires a Mithril Upgrade Template<img src="../images/mithril_upgrade_template.png" class="pixel-art medium inline" alt="Mithril Upgrade Template">to use in the Smithing Table
+- Found only in **Shadow Chambers**
 
 ## Tools
 
@@ -83,7 +98,7 @@ Different materials provide varying mining speeds and capabilities:
 ### Special Materials
 
 - **Crystal Alloy**: May have enchantment bonuses
-- **Mithril**: Lightweight for faster mining
+- **Titanium**: Lightweight for faster mining
 - **Iridium**: Extremely durable for long mining sessions
 
 ---
