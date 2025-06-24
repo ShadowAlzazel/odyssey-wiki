@@ -1,48 +1,55 @@
-# Tomes
+# Tome Introduction
 
-## Blank Tome <img src="../images/blank_tome.png" class="pixel-art large inline" alt="Blank Tome"> 
+Odyssey introduces a powerful set of magical items known as *Tomes*, which expand and enhance the enchanting experience far beyond vanilla capabilities.
 
-This is the craftable starter item to obtain all other tomes from the table
+**Tomes** are specialized tools designed to give players finer control over enchantments, allowing for customization, optimization, and even curse removal. With strategic use, tomes can significantly enhance gear progression and offer new solutions to previously irreversible enchantment issues.
 
-## How to get tomes
+--- 
 
-You need to use the enchantment table with a blank tome. Each tome can be found at a specific table level. 
+## Blank Tome <img src="../images/blank_tome.png" class="pixel-art large inline" alt="Blank Tome">
 
-# Tomes
+The **Blank Tome** is the foundational item used to acquire all other tomes. It is craftable and acts as the base material required for generating specific tomes through the enchantment table.
 
-### Tome of Discharge <img src="../images/tome_of_discharge.png" class="pixel-art large inline" alt="Tome of Discharge"> 
+## How to Obtain Tomes
 
-- This tome removes one enchantment from the item. This can remove curses as well.
-- Obtainable from Level 1 Table 
+To create a tome, place a **Blank Tome** into an **Enchantment Table**. Depending on the enchantment table cost (determined by the lapis cost and the level cost), different tomes may become available. Each tome is tied to a specific cost level, so progression is necessary to unlock more advanced tomes.
 
-### Tome of Promotion <img src="../images/tome_of_promotion.png" class="pixel-art large inline" alt="Tome of Discharge"> 
+# List of Tomes
 
-- This tome upgrade/levels up an enchantment by 1 on the item, up to the max level. 
-- Obtainable from Level 1 Table
+### Tome of Discharge <img src="../images/tome_of_discharge.png" class="pixel-art large inline" alt="Tome of Discharge">
 
-### Tome of Expenditure <img src="../images/tome_of_expenditure.png" class="pixel-art large inline" alt="Tome of Discharge">
+* **Function:** Removes a single enchantment from an item. This includes the ability to remove curses such as Curse of Binding or Curse of Vanishing.
+* **Availability:** Can be acquired using a Level 1 Enchantment Table.
 
-- This tome retrieves one enchantment from an item; this destroys the item however. 
-- Obtainable from Level 2 Table
+### Tome of Promotion <img src="../images/tome_of_promotion.png" class="pixel-art large inline" alt="Tome of Promotion">
 
-### Tome of Imitation <img src="../images/tome_of_imitation.png" class="pixel-art large inline" alt="Tome of Discharge">
+* **Function:** Increases the level of a selected enchantment on an item by 1, up to its maximum allowed level.
+* **Availability:** Can be acquired using a Level 1 Enchantment Table.
 
-- This tome copies 1 enchantment from another enchanted book.
-- Obtainable from Level 2 Table
+### Tome of Expenditure <img src="../images/tome_of_expenditure.png" class="pixel-art large inline" alt="Tome of Expenditure">
 
-### Tome of Harmony <img src="../images/tome_of_harmony.png" class="pixel-art large inline" alt="Tome of Discharge">
+* **Function:** Transfers a single enchantment from an item onto a book. The item used in this process is destroyed.
+* **Availability:** Can be acquired using a Level 2 Enchantment Table.
 
-- This tome resets the repair cost of an item to 1.
-- Obtainable from Level 3 Table
+### Tome of Imitation <img src="../images/tome_of_imitation.png" class="pixel-art large inline" alt="Tome of Imitation">
 
-### Tome of Recplication <img src="../images/tome_of_replication.png" class="pixel-art large inline" alt="Tome of Discharge">
+* **Function:** Copies one enchantment from an existing enchanted book to another book.
+* **Availability:** Can be acquired using a Level 2 Enchantment Table.
 
-- This tome replictes an entire book.
-- Not Obtainable from Table
-- Obtainable from `Sunken Library` Only
+### Tome of Harmony <img src="../images/tome_of_harmony.png" class="pixel-art large inline" alt="Tome of Harmony">
 
-### Tome of Extraction <img src="../images/tome_of_extraction.png" class="pixel-art large inline" alt="Tome of Discharge">
+* **Function:** Resets the repair cost of an item in an anvil, reducing it to just 1. This makes continued repairs and modifications much more viable.
+* **Availability:** Can be acquired using a Level 3 Enchantment Table.
 
-- This tome safely extracts one enchantment from an item. (keeps item)
-- Not Obtainable from Table
-- Obtainable from `Sunken Library` Only
+### Tome of Replication <img src="../images/tome_of_replication.png" class="pixel-art large inline" alt="Tome of Replication">
+
+* **Function:** Fully duplicates the contents of an enchanted book, copying all enchantments at their current levels.
+* **Availability:** Cannot be obtained through the Enchantment Table. This tome can only be found as loot within the **Sunken Library** structure.
+
+### Tome of Extraction <img src="../images/tome_of_extraction.png" class="pixel-art large inline" alt="Tome of Extraction">
+
+* **Function:** Extracts one enchantment from an item without destroying it. The enchantment is transferred to a book, and the original item is preserved.
+* **Availability:** Cannot be obtained through the Enchantment Table. This tome can only be found as loot within the **Sunken Library** structure.
+
+---
+
