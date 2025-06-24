@@ -1,3 +1,5 @@
 # The official Odyssey Wiki repository page
 
-# This Site was created with the help of AI-tools.
+The page for all odyssey stuff
+
+### This site was created with the help of AI-tools. 
