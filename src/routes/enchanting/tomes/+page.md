@@ -14,6 +14,10 @@ The **Blank Tome** is the foundational item used to acquire all other tomes. It 
 
 To create a tome, place a **Blank Tome** into an **Enchantment Table**. Depending on the enchantment table cost (determined by the lapis cost and the level cost), different tomes may become available. Each tome is tied to a specific cost level, so progression is necessary to unlock more advanced tomes.
 
+### Using Tomes
+
+Use the tome in the first slot of the smithing table, along with the tool and a lapis.
+
 # List of Tomes
 
 ### Tome of Discharge <img src="../images/tome_of_discharge.png" class="pixel-art large inline" alt="Tome of Discharge">

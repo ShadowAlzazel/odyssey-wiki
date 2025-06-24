@@ -1,0 +1,6 @@
+For items/materials
+
+CREATE an item component card
+
+so we can just specify a default class
+with item, and then it can just go to that link.
