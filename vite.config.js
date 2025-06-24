@@ -1,71 +1,13 @@
 import { defaultTheme } from "@sveltepress/theme-default";
 import { sveltepress } from "@sveltepress/vite";
 import { defineConfig } from "vite";
+import { themeConfig } from "./config/theme";
 
 const config = defineConfig({
   plugins: [
     sveltepress({
-      theme: defaultTheme({
-        // TOP NAVBAR
-        navbar: [
-          {
-            title: "Foo page",
-            to: "/foo/",
-          },
-          {
-            title: "Enchanting", // Add a direct link to wiki
-            to: "/enchanting/",
-          },
-          {
-            title: "With dropdown",
-            items: [
-              {
-                title: "Items",
-                to: "/items/",
-              },
-              {
-                title: "External Github page",
-                to: "https://github.com/",
-                external: true,
-              },
-            ],
-          },
-        ],
-
-        // LEFT SIDEBAR - Main navigation
-        sidebar: {
-          // Sidebar for wiki section
-          "/enchanting/": [
-            {
-              text: "Enchanting",
-              items: [
-                {
-                  text: "Introduction",
-                  link: "/enchanting/intro",
-                },
-                {
-                  text: "Advanced Topics",
-                  link: "/enchanting/enchantments",
-                }
-              ],
-            },
-          ],
-          // You can add more sidebar sections for other paths
-          "/foo/": [
-            {
-              text: "Foo Documentation",
-              items: [
-                {
-                  text: "Foo Basics",
-                  link: "/foo/basics",
-                },
-              ],
-            },
-          ],
-        },
-        github: "https://github.com/Blackman99/sveltepress",
-        logo: "/images/blank_tome@4x.png",
-      }),
+      // Theme config
+      theme: defaultTheme(themeConfig),
       // Header
       siteConfig: {
         title: "Odyssey Wiki",

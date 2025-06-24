@@ -24,3 +24,29 @@ A weapon's damage is composed from the weapon type and provided material.
 | Crystal Alloy | 4.0 | 1123 | Overworld | Diamond-tier with magical properties |
 | Iridium | 5.0 | 3108 | Overworld | Endgame Ultimate durability |
 | Mithril | 6.0 | 1789 | Edge | Endgame Legendary lightweight metal |
+
+---
+
+<img src="../images/mithril_ingot.png" class="pixel-art medium inline" alt="Mithril Ingot">
+
+## Tools
+
+Essential mining tools for breaking stone, ore, and other hard materials.
+
+### Mining Efficiency
+
+Different materials provide varying mining speeds and capabilities:
+
+- **Wooden**: Basic mining, cannot mine stone
+- **Stone**: Can mine iron ore and below
+- **Iron/Copper/Silver**: Can mine diamond ore and below
+- **Diamond/Soul Steel/Titanium**: Can mine all vanilla ores
+- **Netherite/Mithril/Iridium**: Ultimate mining capability
+
+### Special Materials
+
+- **Crystal Alloy**: May have enchantment bonuses
+- **Mithril**: Lightweight for faster mining
+- **Iridium**: Extremely durable for long mining sessions
+
+---
