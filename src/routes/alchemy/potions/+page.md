@@ -24,7 +24,7 @@ The **Crystalline Potion** is a core alchemical component used in many advanced 
 
 ---
 
-## Singular Potions
+# Singular Potions
 
 ### Potion of Levitation
 
@@ -37,7 +37,7 @@ The **Crystalline Potion** is a core alchemical component used in many advanced 
 
 ---
 
-## Powerful Potions
+# Powerful Potions
 
 ### Potion of Stone Skin
 
@@ -117,7 +117,7 @@ The **Crystalline Potion** is a core alchemical component used in many advanced 
 
 ---
 
-## 🍹 Concoctions
+# Concoctions
 
 Concoctions are made by combining potions with specific effects and unique ingredients.
 
@@ -162,7 +162,7 @@ Concoctions are made by combining potions with specific effects and unique ingre
 
 ---
 
-## 🧫 Custom Concoctions
+# Custom Concoctions
 
 These recipes allow for flexible combinations.
 
