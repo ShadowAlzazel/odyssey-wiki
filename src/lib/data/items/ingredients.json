@@ -104,7 +104,7 @@
       ],
       "rarity": "common"
     },
-    "description": "Hello World!",
+    "description": null,
     "category": "ingredients",
     "source_file": "silver_ingot.json",
     "hasCustomPage": false
