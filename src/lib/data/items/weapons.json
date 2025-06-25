@@ -1,0 +1,189 @@
+{
+  "tinkered_musket": {
+    "data": {
+      "item_name": "tinkered_musket",
+      "item_override": "crossbow",
+      "display_name": "Tinkered Musket",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tinkered_musket"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tinkered_musket"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "attack_damage",
+              "amount": 5,
+              "slot": "mainhand",
+              "keyId": "item.base_attack_damage",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "attack_speed",
+              "amount": -4,
+              "slot": "mainhand",
+              "keyId": "item.reset_attack_speed",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "attack_speed",
+              "amount": 1,
+              "slot": "mainhand",
+              "keyId": "item.base_attack_speed",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "entity_interaction_range",
+              "amount": 0.3,
+              "slot": "mainhand",
+              "keyId": "item.base_entity_range",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "weapons",
+    "source_file": "tinkered_musket.json",
+    "hasCustomPage": false
+  },
+  "compact_crossbow": {
+    "data": {
+      "item_name": "compact_crossbow",
+      "item_override": "crossbow",
+      "display_name": "Compact Crossbow",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "compact_crossbow"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "compact_crossbow"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "weapons",
+    "source_file": "compact_crossbow.json",
+    "hasCustomPage": false
+  },
+  "chain_hook": {
+    "data": {
+      "item_name": "chain_hook",
+      "item_override": "crossbow",
+      "display_name": "Chain Hook",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "chain_hook"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "chain_hook"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "weapons",
+    "source_file": "chain_hook.json",
+    "hasCustomPage": false
+  },
+  "auto_crossbow": {
+    "data": {
+      "item_name": "auto_crossbow",
+      "item_override": "crossbow",
+      "display_name": "Auto Crossbow",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "auto_crossbow"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "auto_crossbow"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "weapons",
+    "source_file": "auto_crossbow.json",
+    "hasCustomPage": false
+  },
+  "alchemical_driver": {
+    "data": {
+      "item_name": "alchemical_driver",
+      "item_override": "crossbow",
+      "display_name": "Alchemical Driver",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "alchemical_driver"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "alchemical_driver"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "weapons",
+    "source_file": "alchemical_driver.json",
+    "hasCustomPage": false
+  },
+  "alchemical_diffuser": {
+    "data": {
+      "item_name": "alchemical_diffuser",
+      "item_override": "crossbow",
+      "display_name": "Alchemical Diffuser",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "alchemical_diffuser"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "alchemical_diffuser"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "weapons",
+    "source_file": "alchemical_diffuser.json",
+    "hasCustomPage": false
+  },
+  "alchemical_bolter": {
+    "data": {
+      "item_name": "alchemical_bolter",
+      "item_override": "crossbow",
+      "display_name": "Alchemical Bolter",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "alchemical_bolter"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "alchemical_bolter"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "weapons",
+    "source_file": "alchemical_bolter.json",
+    "hasCustomPage": false
+  }
+}

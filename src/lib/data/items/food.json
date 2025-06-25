@@ -1,0 +1,696 @@
+{
+  "tonkotsu_ramen": {
+    "data": {
+      "item_name": "tonkotsu_ramen",
+      "item_override": "cooked_porkchop",
+      "display_name": "Tonkotsu Ramen",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tonkotsu_ramen"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tonkotsu_ramen"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 10,
+          "saturation": 14,
+          "can_always_eat": false,
+          "consume_seconds": 2
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "tonkotsu_ramen.json",
+    "hasCustomPage": false
+  },
+  "thai_tulip_boba_tea": {
+    "data": {
+      "item_name": "thai_tulip_boba_tea",
+      "item_override": "cookie",
+      "display_name": "Thai Tulip Boba Tea",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "thai_tulip_boba_tea"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "thai_tulip_boba_tea"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 2,
+          "saturation": 5,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "thai_tulip_boba_tea.json",
+    "hasCustomPage": false
+  },
+  "spider_eye_boba": {
+    "data": {
+      "item_name": "spider_eye_boba",
+      "item_override": "spider_eye",
+      "display_name": "Spider Eye Boba",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "spider_eye_boba"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "spider_eye_boba"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 1,
+          "saturation": 3,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "spider_eye_boba.json",
+    "hasCustomPage": false
+  },
+  "spell_scroll": {
+    "data": {
+      "item_name": "spell_scroll",
+      "item_override": "paper",
+      "display_name": "Spell Scroll",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "spell_scroll"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "spell_scroll"
+        },
+        {
+          "type": "ConsumableComponent",
+          "consume_seconds": 1.8
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 64
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "spell_scroll.json",
+    "hasCustomPage": false
+  },
+  "shoyu_ramen": {
+    "data": {
+      "item_name": "shoyu_ramen",
+      "item_override": "cooked_chicken",
+      "display_name": "Shoyu Ramen",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "shoyu_ramen"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "shoyu_ramen"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 9,
+          "saturation": 12,
+          "can_always_eat": false,
+          "consume_seconds": 2
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "shoyu_ramen.json",
+    "hasCustomPage": false
+  },
+  "scroll": {
+    "data": {
+      "item_name": "scroll",
+      "item_override": "paper",
+      "display_name": "Scroll",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "scroll"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "scroll"
+        },
+        {
+          "type": "ConsumableComponent",
+          "consume_seconds": 1.5
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "scroll.json",
+    "hasCustomPage": false
+  },
+  "salmon_roll": {
+    "data": {
+      "item_name": "salmon_roll",
+      "item_override": "cooked_salmon",
+      "display_name": "Salmon Roll",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "salmon_roll"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "salmon_roll"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 4,
+          "saturation": 6,
+          "can_always_eat": false,
+          "consume_seconds": 1.2
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "salmon_roll.json",
+    "hasCustomPage": false
+  },
+  "salmon_nigiri": {
+    "data": {
+      "item_name": "salmon_nigiri",
+      "item_override": "salmon",
+      "display_name": "Salmon Nigiri",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "salmon_nigiri"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "salmon_nigiri"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 4,
+          "saturation": 6,
+          "can_always_eat": false,
+          "consume_seconds": 1.2
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "salmon_nigiri.json",
+    "hasCustomPage": false
+  },
+  "oolong_orchid_boba_tea": {
+    "data": {
+      "item_name": "oolong_orchid_boba_tea",
+      "item_override": "cookie",
+      "display_name": "Oolong Orchid Boba Tea",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "oolong_orchid_boba_tea"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "oolong_orchid_boba_tea"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 2,
+          "saturation": 5,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "oolong_orchid_boba_tea.json",
+    "hasCustomPage": false
+  },
+  "matcha_melon_boba_tea": {
+    "data": {
+      "item_name": "matcha_melon_boba_tea",
+      "item_override": "cookie",
+      "display_name": "Matcha Melon Boba Tea",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "matcha_melon_boba_tea"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "matcha_melon_boba_tea"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 2,
+          "saturation": 5,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "matcha_melon_boba_tea.json",
+    "hasCustomPage": false
+  },
+  "green_apple": {
+    "data": {
+      "item_name": "green_apple",
+      "item_override": "apple",
+      "display_name": "Green Apple",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "green_apple"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "green_apple"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 3,
+          "saturation": 5.5,
+          "can_always_eat": false,
+          "consume_seconds": 1.6
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "green_apple.json",
+    "hasCustomPage": false
+  },
+  "fruit_bowl": {
+    "data": {
+      "item_name": "fruit_bowl",
+      "item_override": "apple",
+      "display_name": "Fruit Bowl",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "fruit_bowl"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "fruit_bowl"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 9,
+          "saturation": 12,
+          "can_always_eat": false,
+          "consume_seconds": 2
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "fruit_bowl.json",
+    "hasCustomPage": false
+  },
+  "french_toast": {
+    "data": {
+      "item_name": "french_toast",
+      "item_override": "apple",
+      "display_name": "French Toast",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "french_toast"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "french_toast"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 6,
+          "saturation": 6,
+          "can_always_eat": false,
+          "consume_seconds": 1.6
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "french_toast.json",
+    "hasCustomPage": false
+  },
+  "fish_n_chips": {
+    "data": {
+      "item_name": "fish_n_chips",
+      "item_override": "cooked_cod",
+      "display_name": "Fish N Chips",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "fish_n_chips"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "fish_n_chips"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 8,
+          "saturation": 13,
+          "can_always_eat": false,
+          "consume_seconds": 1.6
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "fish_n_chips.json",
+    "hasCustomPage": false
+  },
+  "earl_lily_boba_tea": {
+    "data": {
+      "item_name": "earl_lily_boba_tea",
+      "item_override": "cookie",
+      "display_name": "Earl Lily Boba Tea",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "earl_lily_boba_tea"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "earl_lily_boba_tea"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 2,
+          "saturation": 5,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "earl_lily_boba_tea.json",
+    "hasCustomPage": false
+  },
+  "crystal_candy": {
+    "data": {
+      "item_name": "crystal_candy",
+      "item_override": "cookie",
+      "display_name": "Crystal Candy",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crystal_candy"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crystal_candy"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 2,
+          "saturation": 5,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "crystal_candy.json",
+    "hasCustomPage": false
+  },
+  "cornflower_ceylon_boba_tea": {
+    "data": {
+      "item_name": "cornflower_ceylon_boba_tea",
+      "item_override": "cookie",
+      "display_name": "Cornflower Ceylon Boba Tea",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "cornflower_ceylon_boba_tea"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "cornflower_ceylon_boba_tea"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 2,
+          "saturation": 5,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "cornflower_ceylon_boba_tea.json",
+    "hasCustomPage": false
+  },
+  "cooked_brisket": {
+    "data": {
+      "item_name": "cooked_brisket",
+      "item_override": "cooked_beef",
+      "display_name": "Cooked Brisket",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "cooked_brisket"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "cooked_brisket"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 3,
+          "saturation": 5,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "cooked_brisket.json",
+    "hasCustomPage": false
+  },
+  "coffee": {
+    "data": {
+      "item_name": "coffee",
+      "item_override": "cookie",
+      "display_name": "Coffee",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "coffee"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "coffee"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 2,
+          "saturation": 4,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "coffee.json",
+    "hasCustomPage": false
+  },
+  "chocolate_mochi": {
+    "data": {
+      "item_name": "chocolate_mochi",
+      "item_override": "cookie",
+      "display_name": "Chocolate Mochi",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "chocolate_mochi"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "chocolate_mochi"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 3,
+          "saturation": 5.5,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "chocolate_mochi.json",
+    "hasCustomPage": false
+  },
+  "brisket": {
+    "data": {
+      "item_name": "brisket",
+      "item_override": "beef",
+      "display_name": "Brisket",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "brisket"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "brisket"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 1,
+          "saturation": 2,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "brisket.json",
+    "hasCustomPage": false
+  },
+  "berry_tart": {
+    "data": {
+      "item_name": "berry_tart",
+      "item_override": "cookie",
+      "display_name": "Berry Tart",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "berry_tart"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "berry_tart"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 3,
+          "saturation": 5.5,
+          "can_always_eat": false,
+          "consume_seconds": 1.6
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "berry_tart.json",
+    "hasCustomPage": false
+  },
+  "bacon": {
+    "data": {
+      "item_name": "bacon",
+      "item_override": "cooked_porkchop",
+      "display_name": "Bacon",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "bacon"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "bacon"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 3,
+          "saturation": 8,
+          "can_always_eat": false,
+          "consume_seconds": 1.2
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "bacon.json",
+    "hasCustomPage": false
+  },
+  "allium_jade_boba_tea": {
+    "data": {
+      "item_name": "allium_jade_boba_tea",
+      "item_override": "cookie",
+      "display_name": "Allium Jade Boba Tea",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "allium_jade_boba_tea"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "allium_jade_boba_tea"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 2,
+          "saturation": 5,
+          "can_always_eat": false,
+          "consume_seconds": 0.8
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "allium_jade_boba_tea.json",
+    "hasCustomPage": false
+  }
+}

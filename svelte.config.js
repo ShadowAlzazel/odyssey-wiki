@@ -5,7 +5,9 @@ const dev = process.env.NODE_ENV === 'development';
 
 const config = {
   extensions: ['.svelte', '.md'],
-  preprocess: [vitePreprocess()],
+  preprocess: [
+    vitePreprocess()
+  ],
   kit: {
     adapter: adapter({
       pages: 'dist',

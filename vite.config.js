@@ -8,7 +8,7 @@ const config = defineConfig({
     sveltepress({
       // Theme config
       theme: defaultTheme(themeConfig),
-      // Header
+      // Site index config
       siteConfig: {
         title: "Odyssey Wiki",
         description: "The central guide and library for all Odyssey features, items and mechanics",

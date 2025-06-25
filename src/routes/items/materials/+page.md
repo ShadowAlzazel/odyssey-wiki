@@ -1,3 +1,7 @@
+<script>
+  import ItemIcon from '$lib/components/ItemIcon.svelte';
+</script>
+
 # Overview
 
 Odyssey provides more materials to create weapons and tools. 
@@ -39,51 +43,70 @@ Most Odyssey materials are upgraded at a Smithing Table using either iron or dia
 
 An early game material to provide some early power.
 
-## ![]() <img src="../images/silver_ingot.png" class="pixel-art large inline" alt="Silver Ingot"> Silver
+Here's your updated ingot section with the correct format using the `<ItemIcon />` Svelte component instead of raw `<img>` HTML:
+
+---
+
+## ![]() <ItemIcon name="silver_ingot" size="large"/> Silver
 
 An Iron equivalent material that has a variety of uses.
-- Found in **Supershafts**
-- Mobs in **Supershafts** and **Mineshafts** drop silver nuggets
 
-## ![]() <img src="../images/titanium_ingot.png" class="pixel-art large inline" alt="Titanium Ingot"> Titanium
+* Found in **Supershafts**
+* Mobs in **Supershafts** and **Mineshafts** drop silver nuggets
+
+---
+
+## ![]() <ItemIcon name="titanium_ingot" size="large"/> Titanium
 
 An alternative of diamond focused on speed and utility.
 
-- Upgraded from Iron Tools/Armor.
-- Requires a Titanium Upgrade Template<img src="../images/titanium_upgrade_template.png" class="pixel-art medium inline" alt="Titanium Upgrade Template">to use in the Smithing Table
-- Found in **Regular Trial Chambers** and **Supershafts**
+* Upgraded from Iron Tools/Armor
+* Requires a <ItemIcon name="titanium_upgrade_template" size="medium" inline/> Titanium Upgrade Template to use in the Smithing Table
+* Found in **Regular Trial Chambers** and **Supershafts**
 
-## ![]() <img src="../images/soul_steel_ingot.png" class="pixel-art large inline" alt="Mithril Ingot"> Soul Steel
+---
+
+## ![]() <ItemIcon name="soul_steel_ingot" size="large"/> Soul Steel
 
 A late game alternative to diamond, with the unique property of enhancing experience gain.
 
-- Upgraded from Iron Tools/Armor.
-- Requires a Soul Steel Upgrade Template<img src="../images/soul_steel_upgrade_template.png" class="pixel-art medium inline" alt="Soul Steel Upgrade Template">to use in the Smithing Table
+* Upgraded from Iron Tools/Armor
+* Requires a <ItemIcon name="soul_steel_upgrade_template" size="medium" inline/> Soul Steel Upgrade Template to use in the Smithing Table
 
-## ![]() <img src="../images/crystal_alloy_ingot.png" class="pixel-art large inline" alt="Crystal Alloy Ingot"> Crystal Alloy
+---
 
-A magical metal similar to diamond, with magical properties. 
+## ![]() <ItemIcon name="crystal_alloy_ingot" size="large"/> Crystal Alloy
 
-- Upgraded from Iron Tools/Armor.
-- Requires a Crystal Alloy Upgrade Template<img src="../images/crystal_alloy_upgrade_template.png" class="pixel-art medium inline" alt="Crystal Alloy Upgrade Template">to use in the Smithing Table
-- Crafted from Diamonds, Amethyst, and Gold
-- Can be found in Edge dungeons like **Hypercubic Chambers**, **Terminal Grid** and **Line Mines**
+A magical metal similar to diamond, with magical properties.
 
-## ![]() <img src="../images/iridium_ingot.png" class="pixel-art large inline" alt="Iridium Ingot"> Iridium
+* Upgraded from Iron Tools/Armor
+* Requires a <ItemIcon name="crystal_alloy_upgrade_template" size="medium" inline/> Crystal Alloy Upgrade Template to use in the Smithing Table
+* Crafted from Diamonds, Amethyst, and Gold
+* Can be found in Edge dungeons like **Hypercubic Chambers**, **Terminal Grid**, and **Line Mines**
+
+---
+
+## ![]() <ItemIcon name="iridium_ingot" size="large"/> Iridium
 
 The Overworld endgame material with ultimate durability.
 
-- Upgraded from Diamond Tools/Armor.
-- Requires an Iridium Upgrade Template<img src="../images/iridium_upgrade_template.png" class="pixel-art medium inline" alt="Iridium Upgrade Template">to use in the Smithing Table
-- Found in **Ominous Trial Chambers** and **Supershafts**
+* Upgraded from Diamond Tools/Armor
+* Requires an <ItemIcon name="iridium_upgrade_template" size="medium" inline/> Iridium Upgrade Template to use in the Smithing Table
+* Found in **Ominous Trial Chambers** and **Supershafts**
 
-## ![]() <img src="../images/mithril_ingot.png" class="pixel-art large inline" alt="Mithril Ingot"> Mithril
+---
 
-The engame legendary material used to craft powerful weapons and armor.
+## ![]() <ItemIcon name="mithril_ingot" size="large"/> Mithril
 
-- Upgraded from Diamond Tools/Armor.
-- Requires a Mithril Upgrade Template<img src="../images/mithril_upgrade_template.png" class="pixel-art medium inline" alt="Mithril Upgrade Template">to use in the Smithing Table
-- Found only in **Shadow Chambers**
+The endgame legendary material used to craft powerful weapons and armor.
+
+* Upgraded from Diamond Tools/Armor
+* Requires a <ItemIcon name="mithril_upgrade_template" size="medium" inline/> Mithril Upgrade Template to use in the Smithing Table
+* Found only in **Shadow Chambers**
+
+---
+
+Let me know if you want these sorted, grouped by tier, or converted into a table!
 
 ## Tools
 

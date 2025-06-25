@@ -6,7 +6,8 @@
   "packageManager": "pnpm@9.15.0",
   "license": "MIT",
   "scripts": {
-    "dev": "vite dev",
+    "build:items": "node mc-build-parser.js",
+    "dev": "npm run build:items && vite dev",
     "build": "vite build",
     "deploy": "gh-pages -d dist",
     "deploy:clean": "npm run build && gh-pages -d dist -f"
@@ -19,7 +20,11 @@
     "@sveltepress/vite": "^1.2.2",
     "@types/node": "^20.11.20",
     "gh-pages": "^6.3.0",
+    "mdsvex": "^0.12.6",
     "svelte": "^5.0.0",
     "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "glob": "^11.0.3"
   }
 }
