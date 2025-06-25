@@ -1,405 +1,444 @@
 {
   "vitality_glyphsherd": {
-    "item_name": "vitality_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Vitality Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "vitality_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "vitality_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "max_health",
-            "amount": 2,
-            "slot": "armor",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "vitality_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Vitality Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "vitality_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "vitality_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "max_health",
+              "amount": 2,
+              "slot": "armor",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "vitality_glyphsherd.json"
+    "source_file": "vitality_glyphsherd.json",
+    "hasCustomPage": false
   },
   "swift_glyphsherd": {
-    "item_name": "swift_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Swift Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "swift_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "swift_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "movement_speed",
-            "amount": 0.02,
-            "slot": "armor",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "swift_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Swift Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "swift_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "swift_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "movement_speed",
+              "amount": 0.02,
+              "slot": "armor",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "swift_glyphsherd.json"
+    "source_file": "swift_glyphsherd.json",
+    "hasCustomPage": false
   },
   "steadfast_glyphsherd": {
-    "item_name": "steadfast_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Steadfast Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "steadfast_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "steadfast_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "knockback_resistance",
-            "amount": 0.2,
-            "slot": "armor",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "steadfast_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Steadfast Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "steadfast_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "steadfast_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "knockback_resistance",
+              "amount": 0.2,
+              "slot": "armor",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "steadfast_glyphsherd.json"
+    "source_file": "steadfast_glyphsherd.json",
+    "hasCustomPage": false
   },
   "size_glyphsherd": {
-    "item_name": "size_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Size Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "size_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "size_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "scale",
-            "amount": 0.25,
-            "slot": "armor",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "size_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Size Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "size_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "size_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "scale",
+              "amount": 0.25,
+              "slot": "armor",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "size_glyphsherd.json"
+    "source_file": "size_glyphsherd.json",
+    "hasCustomPage": false
   },
   "range_glyphsherd": {
-    "item_name": "range_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Range Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "range_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "range_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "entity_interaction_range",
-            "amount": 0.5,
-            "slot": "mainhand",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "range_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Range Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "range_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "range_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "entity_interaction_range",
+              "amount": 0.5,
+              "slot": "mainhand",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "range_glyphsherd.json"
+    "source_file": "range_glyphsherd.json",
+    "hasCustomPage": false
   },
   "jump_glyphsherd": {
-    "item_name": "jump_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Jump Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "jump_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "jump_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "jump_strength",
-            "amount": 0.3,
-            "slot": "armor",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "jump_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Jump Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "jump_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "jump_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "jump_strength",
+              "amount": 0.3,
+              "slot": "armor",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "jump_glyphsherd.json"
+    "source_file": "jump_glyphsherd.json",
+    "hasCustomPage": false
   },
   "guard_glyphsherd": {
-    "item_name": "guard_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Guard Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "guard_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "guard_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 1,
-            "slot": "armor",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "guard_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Guard Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "guard_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "guard_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "armor",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "guard_glyphsherd.json"
+    "source_file": "guard_glyphsherd.json",
+    "hasCustomPage": false
   },
   "gravity_glyphsherd": {
-    "item_name": "gravity_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Gravity Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "gravity_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "gravity_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "gravity",
-            "amount": -0.01,
-            "slot": "armor",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "gravity_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Gravity Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "gravity_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "gravity_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "gravity",
+              "amount": -0.01,
+              "slot": "armor",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "gravity_glyphsherd.json"
+    "source_file": "gravity_glyphsherd.json",
+    "hasCustomPage": false
   },
   "grasp_glyphsherd": {
-    "item_name": "grasp_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Grasp Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "grasp_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "grasp_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "block_interaction_range",
-            "amount": 1,
-            "slot": "mainhand",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "grasp_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Grasp Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "grasp_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "grasp_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "block_interaction_range",
+              "amount": 1,
+              "slot": "mainhand",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "grasp_glyphsherd.json"
+    "source_file": "grasp_glyphsherd.json",
+    "hasCustomPage": false
   },
   "force_glyphsherd": {
-    "item_name": "force_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Force Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "force_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "force_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "attack_knockback",
-            "amount": 0.5,
-            "slot": "mainhand",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "force_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Force Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "force_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "force_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "attack_knockback",
+              "amount": 0.5,
+              "slot": "mainhand",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "force_glyphsherd.json"
+    "source_file": "force_glyphsherd.json",
+    "hasCustomPage": false
   },
   "finesse_glyphsherd": {
-    "item_name": "finesse_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Finesse Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "finesse_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "finesse_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "attack_speed",
-            "amount": 0.2,
-            "slot": "armor",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "finesse_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Finesse Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "finesse_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "finesse_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "attack_speed",
+              "amount": 0.2,
+              "slot": "armor",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "finesse_glyphsherd.json"
+    "source_file": "finesse_glyphsherd.json",
+    "hasCustomPage": false
   },
   "break_glyphsherd": {
-    "item_name": "break_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Break Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "break_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "break_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "block_break_speed",
-            "amount": 0.5,
-            "slot": "mainhand",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "break_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Break Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "break_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "break_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "block_break_speed",
+              "amount": 0.5,
+              "slot": "mainhand",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "break_glyphsherd.json"
+    "source_file": "break_glyphsherd.json",
+    "hasCustomPage": false
   },
   "assault_glyphsherd": {
-    "item_name": "assault_glyphsherd",
-    "item_override": "brick",
-    "display_name": "Assault Glyphsherd",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "assault_glyphsherd"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "assault_glyphsherd"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "attack_damage",
-            "amount": 1,
-            "slot": "mainhand",
-            "keyId": "glyph.slot",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "assault_glyphsherd",
+      "item_override": "brick",
+      "display_name": "Assault Glyphsherd",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "assault_glyphsherd"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "assault_glyphsherd"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "attack_damage",
+              "amount": 1,
+              "slot": "mainhand",
+              "keyId": "glyph.slot",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "glyphsherds",
-    "rarity": "uncommon",
-    "source_file": "assault_glyphsherd.json"
+    "source_file": "assault_glyphsherd.json",
+    "hasCustomPage": false
   }
 }

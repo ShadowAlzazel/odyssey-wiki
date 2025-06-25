@@ -1,402 +1,464 @@
 {
   "wings_weapon_trim_smithing_template": {
-    "item_name": "wings_weapon_trim_smithing_template",
-    "item_override": "paper",
-    "display_name": "Wings Weapon Trim Smithing Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "wings_weapon_trim_smithing_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "wings_weapon_trim_smithing_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "wings_weapon_trim_smithing_template",
+      "item_override": "paper",
+      "display_name": "Wings Weapon Trim Smithing Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "wings_weapon_trim_smithing_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "wings_weapon_trim_smithing_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "wings_weapon_trim_smithing_template.json"
+    "source_file": "wings_weapon_trim_smithing_template.json",
+    "hasCustomPage": false
   },
   "voyager_armor_trim_smithing_template": {
-    "item_name": "voyager_armor_trim_smithing_template",
-    "item_override": "paper",
-    "display_name": "Voyager Armor Trim Smithing Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "voyager_armor_trim_smithing_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "voyager_armor_trim_smithing_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "voyager_armor_trim_smithing_template",
+      "item_override": "paper",
+      "display_name": "Voyager Armor Trim Smithing Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "voyager_armor_trim_smithing_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "voyager_armor_trim_smithing_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "voyager_armor_trim_smithing_template.json"
+    "source_file": "voyager_armor_trim_smithing_template.json",
+    "hasCustomPage": false
   },
   "trace_weapon_trim_smithing_template": {
-    "item_name": "trace_weapon_trim_smithing_template",
-    "item_override": "paper",
-    "display_name": "Trace Weapon Trim Smithing Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "trace_weapon_trim_smithing_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "trace_weapon_trim_smithing_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "trace_weapon_trim_smithing_template",
+      "item_override": "paper",
+      "display_name": "Trace Weapon Trim Smithing Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "trace_weapon_trim_smithing_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "trace_weapon_trim_smithing_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "trace_weapon_trim_smithing_template.json"
+    "source_file": "trace_weapon_trim_smithing_template.json",
+    "hasCustomPage": false
   },
   "titanium_upgrade_template": {
-    "item_name": "titanium_upgrade_template",
-    "item_override": "paper",
-    "display_name": "Titanium Upgrade Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "titanium_upgrade_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "titanium_upgrade_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "titanium_upgrade_template",
+      "item_override": "paper",
+      "display_name": "Titanium Upgrade Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "titanium_upgrade_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "titanium_upgrade_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "titanium_upgrade_template.json"
+    "source_file": "titanium_upgrade_template.json",
+    "hasCustomPage": false
   },
   "spine_weapon_trim_smithing_template": {
-    "item_name": "spine_weapon_trim_smithing_template",
-    "item_override": "paper",
-    "display_name": "Spine Weapon Trim Smithing Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "spine_weapon_trim_smithing_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "spine_weapon_trim_smithing_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "spine_weapon_trim_smithing_template",
+      "item_override": "paper",
+      "display_name": "Spine Weapon Trim Smithing Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "spine_weapon_trim_smithing_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "spine_weapon_trim_smithing_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "spine_weapon_trim_smithing_template.json"
+    "source_file": "spine_weapon_trim_smithing_template.json",
+    "hasCustomPage": false
   },
   "soul_steel_upgrade_template": {
-    "item_name": "soul_steel_upgrade_template",
-    "item_override": "paper",
-    "display_name": "Soul Steel Upgrade Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "soul_steel_upgrade_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "soul_steel_upgrade_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "soul_steel_upgrade_template",
+      "item_override": "paper",
+      "display_name": "Soul Steel Upgrade Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "soul_steel_upgrade_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "soul_steel_upgrade_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "soul_steel_upgrade_template.json"
+    "source_file": "soul_steel_upgrade_template.json",
+    "hasCustomPage": false
   },
   "ring_armor_trim_smithing_template": {
-    "item_name": "ring_armor_trim_smithing_template",
-    "item_override": "paper",
-    "display_name": "Ring Armor Trim Smithing Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "ring_armor_trim_smithing_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "ring_armor_trim_smithing_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "ring_armor_trim_smithing_template",
+      "item_override": "paper",
+      "display_name": "Ring Armor Trim Smithing Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "ring_armor_trim_smithing_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "ring_armor_trim_smithing_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "ring_armor_trim_smithing_template.json"
+    "source_file": "ring_armor_trim_smithing_template.json",
+    "hasCustomPage": false
   },
   "pommel_part_upgrade_template": {
-    "item_name": "pommel_part_upgrade_template",
-    "item_override": "gold_ingot",
-    "display_name": "Pommel Part Upgrade Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "pommel_part_upgrade_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "pommel_part_upgrade_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "pommel_part_upgrade_template",
+      "item_override": "gold_ingot",
+      "display_name": "Pommel Part Upgrade Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "pommel_part_upgrade_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "pommel_part_upgrade_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "pommel_part_upgrade_template.json"
+    "source_file": "pommel_part_upgrade_template.json",
+    "hasCustomPage": false
   },
   "mithril_upgrade_template": {
-    "item_name": "mithril_upgrade_template",
-    "item_override": "paper",
-    "display_name": "Mithril Upgrade Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "mithril_upgrade_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "mithril_upgrade_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "mithril_upgrade_template",
+      "item_override": "paper",
+      "display_name": "Mithril Upgrade Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "mithril_upgrade_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "mithril_upgrade_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "mithril_upgrade_template.json"
+    "source_file": "mithril_upgrade_template.json",
+    "hasCustomPage": false
   },
   "mastercrafted_tool_template": {
-    "item_name": "mastercrafted_tool_template",
-    "item_override": "paper",
-    "display_name": "Mastercrafted Tool Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "mastercrafted_tool_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "mastercrafted_tool_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "mastercrafted_tool_template",
+      "item_override": "paper",
+      "display_name": "Mastercrafted Tool Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "mastercrafted_tool_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "mastercrafted_tool_template"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "common",
-    "source_file": "mastercrafted_tool_template.json"
+    "source_file": "mastercrafted_tool_template.json",
+    "hasCustomPage": false
   },
   "leaf_armor_trim_smithing_template": {
-    "item_name": "leaf_armor_trim_smithing_template",
-    "item_override": "paper",
-    "display_name": "Leaf Armor Trim Smithing Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "leaf_armor_trim_smithing_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "leaf_armor_trim_smithing_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "leaf_armor_trim_smithing_template",
+      "item_override": "paper",
+      "display_name": "Leaf Armor Trim Smithing Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "leaf_armor_trim_smithing_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "leaf_armor_trim_smithing_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "leaf_armor_trim_smithing_template.json"
+    "source_file": "leaf_armor_trim_smithing_template.json",
+    "hasCustomPage": false
   },
   "jewel_weapon_trim_smithing_template": {
-    "item_name": "jewel_weapon_trim_smithing_template",
-    "item_override": "paper",
-    "display_name": "Jewel Weapon Trim Smithing Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "jewel_weapon_trim_smithing_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "jewel_weapon_trim_smithing_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "jewel_weapon_trim_smithing_template",
+      "item_override": "paper",
+      "display_name": "Jewel Weapon Trim Smithing Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "jewel_weapon_trim_smithing_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "jewel_weapon_trim_smithing_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "jewel_weapon_trim_smithing_template.json"
+    "source_file": "jewel_weapon_trim_smithing_template.json",
+    "hasCustomPage": false
   },
   "iridium_upgrade_template": {
-    "item_name": "iridium_upgrade_template",
-    "item_override": "paper",
-    "display_name": "Iridium Upgrade Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "iridium_upgrade_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "iridium_upgrade_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "iridium_upgrade_template",
+      "item_override": "paper",
+      "display_name": "Iridium Upgrade Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "iridium_upgrade_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "iridium_upgrade_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
     "source_file": "iridium_upgrade_template.json",
-    "description": "This item is used to turn diamond tools into iridium."
+    "hasCustomPage": false
   },
   "imperial_armor_trim_smithing_template": {
-    "item_name": "imperial_armor_trim_smithing_template",
-    "item_override": "paper",
-    "display_name": "Imperial Armor Trim Smithing Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "imperial_armor_trim_smithing_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "imperial_armor_trim_smithing_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "imperial_armor_trim_smithing_template",
+      "item_override": "paper",
+      "display_name": "Imperial Armor Trim Smithing Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "imperial_armor_trim_smithing_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "imperial_armor_trim_smithing_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "imperial_armor_trim_smithing_template.json"
+    "source_file": "imperial_armor_trim_smithing_template.json",
+    "hasCustomPage": false
   },
   "hilt_part_upgrade_template": {
-    "item_name": "hilt_part_upgrade_template",
-    "item_override": "gold_ingot",
-    "display_name": "Hilt Part Upgrade Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "hilt_part_upgrade_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "hilt_part_upgrade_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "hilt_part_upgrade_template",
+      "item_override": "gold_ingot",
+      "display_name": "Hilt Part Upgrade Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "hilt_part_upgrade_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "hilt_part_upgrade_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "hilt_part_upgrade_template.json"
+    "source_file": "hilt_part_upgrade_template.json",
+    "hasCustomPage": false
   },
   "handle_part_upgrade_template": {
-    "item_name": "handle_part_upgrade_template",
-    "item_override": "gold_ingot",
-    "display_name": "Handle Part Upgrade Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "handle_part_upgrade_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "handle_part_upgrade_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "handle_part_upgrade_template",
+      "item_override": "gold_ingot",
+      "display_name": "Handle Part Upgrade Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "handle_part_upgrade_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "handle_part_upgrade_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "handle_part_upgrade_template.json"
+    "source_file": "handle_part_upgrade_template.json",
+    "hasCustomPage": false
   },
   "empty_part_upgrade_template": {
-    "item_name": "empty_part_upgrade_template",
-    "item_override": "gold_ingot",
-    "display_name": "Empty Part Upgrade Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "empty_part_upgrade_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "empty_part_upgrade_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "empty_part_upgrade_template",
+      "item_override": "gold_ingot",
+      "display_name": "Empty Part Upgrade Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "empty_part_upgrade_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "empty_part_upgrade_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "empty_part_upgrade_template.json"
+    "source_file": "empty_part_upgrade_template.json",
+    "hasCustomPage": false
   },
   "danger_armor_trim_smithing_template": {
-    "item_name": "danger_armor_trim_smithing_template",
-    "item_override": "paper",
-    "display_name": "Danger Armor Trim Smithing Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "danger_armor_trim_smithing_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "danger_armor_trim_smithing_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "danger_armor_trim_smithing_template",
+      "item_override": "paper",
+      "display_name": "Danger Armor Trim Smithing Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "danger_armor_trim_smithing_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "danger_armor_trim_smithing_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "danger_armor_trim_smithing_template.json"
+    "source_file": "danger_armor_trim_smithing_template.json",
+    "hasCustomPage": false
   },
   "crystal_alloy_upgrade_template": {
-    "item_name": "crystal_alloy_upgrade_template",
-    "item_override": "paper",
-    "display_name": "Crystal Alloy Upgrade Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "crystal_alloy_upgrade_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "crystal_alloy_upgrade_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "crystal_alloy_upgrade_template",
+      "item_override": "paper",
+      "display_name": "Crystal Alloy Upgrade Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crystal_alloy_upgrade_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crystal_alloy_upgrade_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "crystal_alloy_upgrade_template.json"
+    "source_file": "crystal_alloy_upgrade_template.json",
+    "hasCustomPage": false
   },
   "cross_weapon_trim_smithing_template": {
-    "item_name": "cross_weapon_trim_smithing_template",
-    "item_override": "paper",
-    "display_name": "Cross Weapon Trim Smithing Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "cross_weapon_trim_smithing_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "cross_weapon_trim_smithing_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "cross_weapon_trim_smithing_template",
+      "item_override": "paper",
+      "display_name": "Cross Weapon Trim Smithing Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "cross_weapon_trim_smithing_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "cross_weapon_trim_smithing_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "cross_weapon_trim_smithing_template.json"
+    "source_file": "cross_weapon_trim_smithing_template.json",
+    "hasCustomPage": false
   },
   "blade_part_upgrade_template": {
-    "item_name": "blade_part_upgrade_template",
-    "item_override": "gold_ingot",
-    "display_name": "Blade Part Upgrade Template",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "blade_part_upgrade_template"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "blade_part_upgrade_template"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "blade_part_upgrade_template",
+      "item_override": "gold_ingot",
+      "display_name": "Blade Part Upgrade Template",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "blade_part_upgrade_template"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "blade_part_upgrade_template"
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
     "category": "smithing",
-    "rarity": "rare",
-    "source_file": "blade_part_upgrade_template.json"
+    "source_file": "blade_part_upgrade_template.json",
+    "hasCustomPage": false
   }
 }

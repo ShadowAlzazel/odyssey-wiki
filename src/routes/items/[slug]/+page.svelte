@@ -9,7 +9,7 @@
   $: item = getItem(itemName);
   
   function getDisplayName(item) {
-    return item.display_name || item.item_name.split('_').map(word => 
+    return item.data.display_name || item.data.item_name.split('_').map(word => 
       word.charAt(0).toUpperCase() + word.slice(1)
     ).join(' ');
   }
@@ -50,7 +50,7 @@
 
 <svelte:head>
   <title>{item ? getDisplayName(item) : 'Item Not Found'} - Wiki</title>
-  <meta name="description" content={item?.description || `Details for ${item?.display_name || 'unknown item'}`} />
+  <meta name="description" content={item?.description || `Details for ${item?.data.display_name || 'unknown item'}`} />
 </svelte:head>
 
 {#if item}
@@ -59,12 +59,12 @@
     <!-- Header -->
     <div class="mb-8 pb-4 border-b border-gray-200">
       <div class="flex items-start gap-6">
-        <ItemIcon name={item.item_name} size="xxlarge" showTooltip={false} linkToPage={false} />
+        <ItemIcon name={item.data.item_name} size="xxlarge" showTooltip={false} linkToPage={false} />
         <div>
           <h1 class="text-2xl font-mono font-bold mb-2">{getDisplayName(item)}</h1>
           <div class="text-sm text-gray-600 space-y-1">
             <div><strong>Category:</strong> {item.category}</div>
-            <div><strong>Rarity:</strong> {item.rarity}</div>
+            <div><strong>Rarity:</strong> {item.data.rarity}</div>
           </div>
         </div>
       </div>
@@ -88,11 +88,11 @@
           <tbody class="space-y-2">
             <tr>
               <td class="font-semibold text-gray-700 pr-4 py-1">Item ID:</td>
-              <td class="font-mono bg-white px-2 py-1 rounded">{item.item_name}</td>
+              <td class="font-mono bg-white px-2 py-1 rounded">{item.data.item_name}</td>
             </tr>
             <tr>
               <td class="font-semibold text-gray-700 pr-4 py-1">Base Item:</td>
-              <td class="font-mono bg-white px-2 py-1 rounded">minecraft:{item.item_override}</td>
+              <td class="font-mono bg-white px-2 py-1 rounded">minecraft:{item.data.item_override}</td>
             </tr>
             <tr>
               <td class="font-semibold text-gray-700 pr-4 py-1">Category:</td>
@@ -100,7 +100,7 @@
             </tr>
             <tr>
               <td class="font-semibold text-gray-700 pr-4 py-1">Rarity:</td>
-              <td>{item.rarity}</td>
+              <td>{item.data.rarity}</td>
             </tr>
             {#if item.source_file}
               <tr>
@@ -117,10 +117,10 @@
       </div>
       
       <!-- Components Section -->
-      {#if item.components && item.components.length > 0}
-        {@const componentGroups = groupComponents(item.components)}
+      {#if item.data.components && item.data.components.length > 0}
+        {@const componentGroups = groupComponents(item.data.components)}
         
-        <h3 class="font-mono font-semibold text-gray-700 mb-3">Components ({item.components.length})</h3>
+        <h3 class="font-mono font-semibold text-gray-700 mb-3">Components ({item.data.components.length})</h3>
         
         {#if componentGroups.identity.length > 0}
           <div class="mb-4">

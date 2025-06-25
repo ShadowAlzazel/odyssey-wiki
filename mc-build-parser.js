@@ -252,14 +252,17 @@ async function parseLootTables() {
                   const extractedComponents = extractComponentsFromLootTable(lootTable);
                   
                   const itemData = {
-                    item_name: customItemName,
-                    item_override: minecraftItem.replace('minecraft:', ''),
-                    display_name: displayName,
-                    components: extractedComponents,
-                    hasCustomPage: false,
+                    data: {
+                      item_name: customItemName,
+                      item_override: minecraftItem.replace('minecraft:', ''),
+                      display_name: displayName,
+                      components: extractedComponents,
+                      rarity: rarity,
+                    },
+                    description: null,
                     category: category,
-                    rarity: rarity,
-                    source_file: path.basename(filePath)
+                    source_file: path.basename(filePath),
+                    hasCustomPage: false,
                   };
                   
                   items[customItemName] = itemData;

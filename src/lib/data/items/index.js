@@ -48,6 +48,12 @@ export function hasCustomPage(itemName) {
   return item?.hasCustomPage || false;
 }
 
+// Helper to check if item has description
+export function hasDesciption(itemName) {
+  const item = allItems[itemName];
+  return item?.description !== null;
+}
+
 // Get all items in a category
 export function getItemsByCategory(categoryName) {
   return itemCategories[categoryName] || {};

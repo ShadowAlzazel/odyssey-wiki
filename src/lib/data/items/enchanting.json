@@ -1,154 +1,178 @@
 {
   "tome_of_replication": {
-    "item_name": "tome_of_replication",
-    "item_override": "enchanted_book",
-    "display_name": "Tome Of Replication",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "tome_of_replication"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "tome_of_replication"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "tome_of_replication",
+      "item_override": "enchanted_book",
+      "display_name": "Tome Of Replication",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tome_of_replication"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tome_of_replication"
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "enchanting",
-    "rarity": "uncommon",
-    "source_file": "tome_of_replication.json"
+    "source_file": "tome_of_replication.json",
+    "hasCustomPage": false
   },
   "tome_of_promotion": {
-    "item_name": "tome_of_promotion",
-    "item_override": "enchanted_book",
-    "display_name": "Tome Of Promotion",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "tome_of_promotion"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "tome_of_promotion"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "tome_of_promotion",
+      "item_override": "enchanted_book",
+      "display_name": "Tome Of Promotion",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tome_of_promotion"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tome_of_promotion"
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "enchanting",
-    "rarity": "uncommon",
-    "source_file": "tome_of_promotion.json"
+    "source_file": "tome_of_promotion.json",
+    "hasCustomPage": false
   },
   "tome_of_imitation": {
-    "item_name": "tome_of_imitation",
-    "item_override": "enchanted_book",
-    "display_name": "Tome Of Imitation",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "tome_of_imitation"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "tome_of_imitation"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "tome_of_imitation",
+      "item_override": "enchanted_book",
+      "display_name": "Tome Of Imitation",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tome_of_imitation"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tome_of_imitation"
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "enchanting",
-    "rarity": "uncommon",
-    "source_file": "tome_of_imitation.json"
+    "source_file": "tome_of_imitation.json",
+    "hasCustomPage": false
   },
   "tome_of_harmony": {
-    "item_name": "tome_of_harmony",
-    "item_override": "enchanted_book",
-    "display_name": "Tome Of Harmony",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "tome_of_harmony"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "tome_of_harmony"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "tome_of_harmony",
+      "item_override": "enchanted_book",
+      "display_name": "Tome Of Harmony",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tome_of_harmony"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tome_of_harmony"
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "enchanting",
-    "rarity": "uncommon",
-    "source_file": "tome_of_harmony.json"
+    "source_file": "tome_of_harmony.json",
+    "hasCustomPage": false
   },
   "tome_of_extraction": {
-    "item_name": "tome_of_extraction",
-    "item_override": "enchanted_book",
-    "display_name": "Tome Of Extraction",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "tome_of_extraction"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "tome_of_extraction"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "tome_of_extraction",
+      "item_override": "enchanted_book",
+      "display_name": "Tome Of Extraction",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tome_of_extraction"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tome_of_extraction"
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "enchanting",
-    "rarity": "uncommon",
-    "source_file": "tome_of_extraction.json"
+    "source_file": "tome_of_extraction.json",
+    "hasCustomPage": false
   },
   "tome_of_expenditure": {
-    "item_name": "tome_of_expenditure",
-    "item_override": "enchanted_book",
-    "display_name": "Tome Of Expenditure",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "tome_of_expenditure"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "tome_of_expenditure"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "tome_of_expenditure",
+      "item_override": "enchanted_book",
+      "display_name": "Tome Of Expenditure",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tome_of_expenditure"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tome_of_expenditure"
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "enchanting",
-    "rarity": "uncommon",
-    "source_file": "tome_of_expenditure.json"
+    "source_file": "tome_of_expenditure.json",
+    "hasCustomPage": false
   },
   "tome_of_discharge": {
-    "item_name": "tome_of_discharge",
-    "item_override": "enchanted_book",
-    "display_name": "Tome Of Discharge",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "tome_of_discharge"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "tome_of_discharge"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "tome_of_discharge",
+      "item_override": "enchanted_book",
+      "display_name": "Tome Of Discharge",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tome_of_discharge"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tome_of_discharge"
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "enchanting",
-    "rarity": "uncommon",
-    "source_file": "tome_of_discharge.json"
+    "source_file": "tome_of_discharge.json",
+    "hasCustomPage": false
   },
   "tome_of_avarice": {
-    "item_name": "tome_of_avarice",
-    "item_override": "enchanted_book",
-    "display_name": "Tome Of Avarice",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "tome_of_avarice"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "tome_of_avarice"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "tome_of_avarice",
+      "item_override": "enchanted_book",
+      "display_name": "Tome Of Avarice",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tome_of_avarice"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tome_of_avarice"
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
     "category": "enchanting",
-    "rarity": "uncommon",
-    "source_file": "tome_of_avarice.json"
+    "source_file": "tome_of_avarice.json",
+    "hasCustomPage": false
   }
 }

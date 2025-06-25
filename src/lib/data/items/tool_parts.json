@@ -1,192 +1,222 @@
 {
   "voyager_part_pattern": {
-    "item_name": "voyager_part_pattern",
-    "item_override": "paper",
-    "display_name": "Voyager Part Pattern",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "voyager_part_pattern"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "voyager_part_pattern"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "voyager_part_pattern",
+      "item_override": "paper",
+      "display_name": "Voyager Part Pattern",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "voyager_part_pattern"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "voyager_part_pattern"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "tool_parts",
-    "rarity": "common",
-    "source_file": "voyager_part_pattern.json"
+    "source_file": "voyager_part_pattern.json",
+    "hasCustomPage": false
   },
   "vandal_part_pattern": {
-    "item_name": "vandal_part_pattern",
-    "item_override": "paper",
-    "display_name": "Vandal Part Pattern",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "vandal_part_pattern"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "vandal_part_pattern"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "vandal_part_pattern",
+      "item_override": "paper",
+      "display_name": "Vandal Part Pattern",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "vandal_part_pattern"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "vandal_part_pattern"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "tool_parts",
-    "rarity": "common",
-    "source_file": "vandal_part_pattern.json"
+    "source_file": "vandal_part_pattern.json",
+    "hasCustomPage": false
   },
   "seraph_part_pattern": {
-    "item_name": "seraph_part_pattern",
-    "item_override": "paper",
-    "display_name": "Seraph Part Pattern",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "seraph_part_pattern"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "seraph_part_pattern"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "seraph_part_pattern",
+      "item_override": "paper",
+      "display_name": "Seraph Part Pattern",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "seraph_part_pattern"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "seraph_part_pattern"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "tool_parts",
-    "rarity": "common",
-    "source_file": "seraph_part_pattern.json"
+    "source_file": "seraph_part_pattern.json",
+    "hasCustomPage": false
   },
   "marauder_part_pattern": {
-    "item_name": "marauder_part_pattern",
-    "item_override": "paper",
-    "display_name": "Marauder Part Pattern",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "marauder_part_pattern"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "marauder_part_pattern"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "marauder_part_pattern",
+      "item_override": "paper",
+      "display_name": "Marauder Part Pattern",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "marauder_part_pattern"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "marauder_part_pattern"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "tool_parts",
-    "rarity": "common",
-    "source_file": "marauder_part_pattern.json"
+    "source_file": "marauder_part_pattern.json",
+    "hasCustomPage": false
   },
   "imperial_part_pattern": {
-    "item_name": "imperial_part_pattern",
-    "item_override": "paper",
-    "display_name": "Imperial Part Pattern",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "imperial_part_pattern"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "imperial_part_pattern"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "imperial_part_pattern",
+      "item_override": "paper",
+      "display_name": "Imperial Part Pattern",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "imperial_part_pattern"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "imperial_part_pattern"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "tool_parts",
-    "rarity": "common",
-    "source_file": "imperial_part_pattern.json"
+    "source_file": "imperial_part_pattern.json",
+    "hasCustomPage": false
   },
   "humble_part_pattern": {
-    "item_name": "humble_part_pattern",
-    "item_override": "paper",
-    "display_name": "Humble Part Pattern",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "humble_part_pattern"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "humble_part_pattern"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "humble_part_pattern",
+      "item_override": "paper",
+      "display_name": "Humble Part Pattern",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "humble_part_pattern"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "humble_part_pattern"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "tool_parts",
-    "rarity": "common",
-    "source_file": "humble_part_pattern.json"
+    "source_file": "humble_part_pattern.json",
+    "hasCustomPage": false
   },
   "fancy_part_pattern": {
-    "item_name": "fancy_part_pattern",
-    "item_override": "paper",
-    "display_name": "Fancy Part Pattern",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "fancy_part_pattern"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "fancy_part_pattern"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "fancy_part_pattern",
+      "item_override": "paper",
+      "display_name": "Fancy Part Pattern",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "fancy_part_pattern"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "fancy_part_pattern"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "tool_parts",
-    "rarity": "common",
-    "source_file": "fancy_part_pattern.json"
+    "source_file": "fancy_part_pattern.json",
+    "hasCustomPage": false
   },
   "empty_part_pattern": {
-    "item_name": "empty_part_pattern",
-    "item_override": "paper",
-    "display_name": "Empty Part Pattern",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "empty_part_pattern"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "empty_part_pattern"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "empty_part_pattern",
+      "item_override": "paper",
+      "display_name": "Empty Part Pattern",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "empty_part_pattern"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "empty_part_pattern"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "tool_parts",
-    "rarity": "common",
-    "source_file": "empty_part_pattern.json"
+    "source_file": "empty_part_pattern.json",
+    "hasCustomPage": false
   },
   "danger_part_pattern": {
-    "item_name": "danger_part_pattern",
-    "item_override": "paper",
-    "display_name": "Danger Part Pattern",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "danger_part_pattern"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "danger_part_pattern"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "danger_part_pattern",
+      "item_override": "paper",
+      "display_name": "Danger Part Pattern",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "danger_part_pattern"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "danger_part_pattern"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "tool_parts",
-    "rarity": "common",
-    "source_file": "danger_part_pattern.json"
+    "source_file": "danger_part_pattern.json",
+    "hasCustomPage": false
   },
   "crusader_part_pattern": {
-    "item_name": "crusader_part_pattern",
-    "item_override": "paper",
-    "display_name": "Crusader Part Pattern",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "crusader_part_pattern"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "crusader_part_pattern"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "crusader_part_pattern",
+      "item_override": "paper",
+      "display_name": "Crusader Part Pattern",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crusader_part_pattern"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crusader_part_pattern"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "tool_parts",
-    "rarity": "common",
-    "source_file": "crusader_part_pattern.json"
+    "source_file": "crusader_part_pattern.json",
+    "hasCustomPage": false
   }
 }

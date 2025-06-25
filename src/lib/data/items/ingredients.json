@@ -1,401 +1,464 @@
 {
   "titanium_ingot": {
-    "item_name": "titanium_ingot",
-    "item_override": "iron_ingot",
-    "display_name": "Titanium Ingot",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "titanium_ingot"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "titanium_ingot"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "titanium_ingot",
+      "item_override": "iron_ingot",
+      "display_name": "Titanium Ingot",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "titanium_ingot"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "titanium_ingot"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "titanium_ingot.json"
+    "source_file": "titanium_ingot.json",
+    "hasCustomPage": false
   },
   "soul_steel_ingot": {
-    "item_name": "soul_steel_ingot",
-    "item_override": "iron_ingot",
-    "display_name": "Soul Steel Ingot",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "soul_steel_ingot"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "soul_steel_ingot"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "soul_steel_ingot",
+      "item_override": "iron_ingot",
+      "display_name": "Soul Steel Ingot",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "soul_steel_ingot"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "soul_steel_ingot"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "soul_steel_ingot.json"
+    "source_file": "soul_steel_ingot.json",
+    "hasCustomPage": false
   },
   "soul_quartz": {
-    "item_name": "soul_quartz",
-    "item_override": "quartz",
-    "display_name": "Soul Quartz",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "soul_quartz"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "soul_quartz"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "soul_quartz",
+      "item_override": "quartz",
+      "display_name": "Soul Quartz",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "soul_quartz"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "soul_quartz"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "soul_quartz.json"
+    "source_file": "soul_quartz.json",
+    "hasCustomPage": false
   },
   "silver_nugget": {
-    "item_name": "silver_nugget",
-    "item_override": "iron_nugget",
-    "display_name": "Silver Nugget",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "silver_nugget"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "silver_nugget"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "silver_nugget",
+      "item_override": "iron_nugget",
+      "display_name": "Silver Nugget",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "silver_nugget"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "silver_nugget"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "silver_nugget.json"
+    "source_file": "silver_nugget.json",
+    "hasCustomPage": false
   },
   "silver_ingot": {
-    "item_name": "silver_ingot",
-    "item_override": "iron_ingot",
-    "display_name": "Silver Ingot",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "silver_ingot"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "silver_ingot"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "silver_ingot",
+      "item_override": "iron_ingot",
+      "display_name": "Silver Ingot",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "silver_ingot"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "silver_ingot"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": "Hello World!",
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "silver_ingot.json"
+    "source_file": "silver_ingot.json",
+    "hasCustomPage": false
   },
   "shadow_trial_key": {
-    "item_name": "shadow_trial_key",
-    "item_override": "trial_key",
-    "display_name": "Shadow Trial Key",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "shadow_trial_key"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "shadow_trial_key"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "shadow_trial_key",
+      "item_override": "trial_key",
+      "display_name": "Shadow Trial Key",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "shadow_trial_key"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "shadow_trial_key"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "shadow_trial_key.json"
+    "source_file": "shadow_trial_key.json",
+    "hasCustomPage": false
   },
   "ruby": {
-    "item_name": "ruby",
-    "item_override": "emerald",
-    "display_name": "Ruby",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "ruby"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "ruby"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "ruby",
+      "item_override": "emerald",
+      "display_name": "Ruby",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "ruby"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "ruby"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "ruby.json"
+    "source_file": "ruby.json",
+    "hasCustomPage": false
   },
   "neptunian": {
-    "item_name": "neptunian",
-    "item_override": "emerald",
-    "display_name": "Neptunian",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "neptunian"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "neptunian"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "neptunian",
+      "item_override": "emerald",
+      "display_name": "Neptunian",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "neptunian"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "neptunian"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "neptunian.json"
+    "source_file": "neptunian.json",
+    "hasCustomPage": false
   },
   "mithril_ingot": {
-    "item_name": "mithril_ingot",
-    "item_override": "iron_ingot",
-    "display_name": "Mithril Ingot",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "mithril_ingot"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "mithril_ingot"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "mithril_ingot",
+      "item_override": "iron_ingot",
+      "display_name": "Mithril Ingot",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "mithril_ingot"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "mithril_ingot"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "mithril_ingot.json"
+    "source_file": "mithril_ingot.json",
+    "hasCustomPage": false
   },
   "kunzite": {
-    "item_name": "kunzite",
-    "item_override": "emerald",
-    "display_name": "Kunzite",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "kunzite"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "kunzite"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "kunzite",
+      "item_override": "emerald",
+      "display_name": "Kunzite",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "kunzite"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "kunzite"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "kunzite.json"
+    "source_file": "kunzite.json",
+    "hasCustomPage": false
   },
   "jovianite": {
-    "item_name": "jovianite",
-    "item_override": "emerald",
-    "display_name": "Jovianite",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "jovianite"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "jovianite"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "jovianite",
+      "item_override": "emerald",
+      "display_name": "Jovianite",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "jovianite"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "jovianite"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "jovianite.json"
+    "source_file": "jovianite.json",
+    "hasCustomPage": false
   },
   "jade": {
-    "item_name": "jade",
-    "item_override": "emerald",
-    "display_name": "Jade",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "jade"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "jade"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "jade",
+      "item_override": "emerald",
+      "display_name": "Jade",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "jade"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "jade"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "jade.json"
+    "source_file": "jade.json",
+    "hasCustomPage": false
   },
   "iridium_ingot": {
-    "item_name": "iridium_ingot",
-    "item_override": "iron_ingot",
-    "display_name": "Iridium Ingot",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "iridium_ingot"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "iridium_ingot"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "iridium_ingot",
+      "item_override": "iron_ingot",
+      "display_name": "Iridium Ingot",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "iridium_ingot"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "iridium_ingot"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "iridium_ingot.json"
+    "source_file": "iridium_ingot.json",
+    "hasCustomPage": false
   },
   "heated_titanium_ingot": {
-    "item_name": "heated_titanium_ingot",
-    "item_override": "iron_ingot",
-    "display_name": "Heated Titanium Ingot",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "heated_titanium_ingot"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "heated_titanium_ingot"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "heated_titanium_ingot",
+      "item_override": "iron_ingot",
+      "display_name": "Heated Titanium Ingot",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "heated_titanium_ingot"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "heated_titanium_ingot"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "heated_titanium_ingot.json"
+    "source_file": "heated_titanium_ingot.json",
+    "hasCustomPage": false
   },
   "ectoplasm": {
-    "item_name": "ectoplasm",
-    "item_override": "rotten_flesh",
-    "display_name": "Ectoplasm",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "ectoplasm"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "ectoplasm"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "ectoplasm",
+      "item_override": "rotten_flesh",
+      "display_name": "Ectoplasm",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "ectoplasm"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "ectoplasm"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "ectoplasm.json"
+    "source_file": "ectoplasm.json",
+    "hasCustomPage": false
   },
   "crystal_alloy_ingot": {
-    "item_name": "crystal_alloy_ingot",
-    "item_override": "iron_ingot",
-    "display_name": "Crystal Alloy Ingot",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "crystal_alloy_ingot"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "crystal_alloy_ingot"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "crystal_alloy_ingot",
+      "item_override": "iron_ingot",
+      "display_name": "Crystal Alloy Ingot",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crystal_alloy_ingot"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crystal_alloy_ingot"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "crystal_alloy_ingot.json"
+    "source_file": "crystal_alloy_ingot.json",
+    "hasCustomPage": false
   },
   "coagulated_blood": {
-    "item_name": "coagulated_blood",
-    "item_override": "rotten_flesh",
-    "display_name": "Coagulated Blood",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "coagulated_blood"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "coagulated_blood"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "coagulated_blood",
+      "item_override": "rotten_flesh",
+      "display_name": "Coagulated Blood",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "coagulated_blood"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "coagulated_blood"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "coagulated_blood.json"
+    "source_file": "coagulated_blood.json",
+    "hasCustomPage": false
   },
   "blank_tome": {
-    "item_name": "blank_tome",
-    "item_override": "book",
-    "display_name": "Blank Tome",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "blank_tome"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "blank_tome"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "blank_tome",
+      "item_override": "book",
+      "display_name": "Blank Tome",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "blank_tome"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "blank_tome"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "blank_tome.json"
+    "source_file": "blank_tome.json",
+    "hasCustomPage": false
   },
   "arcane_book": {
-    "item_name": "arcane_book",
-    "item_override": "book",
-    "display_name": "Arcane Book",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "arcane_book"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "arcane_book"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "arcane_book",
+      "item_override": "book",
+      "display_name": "Arcane Book",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "arcane_book"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "arcane_book"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "arcane_book.json"
+    "source_file": "arcane_book.json",
+    "hasCustomPage": false
   },
   "anodized_titanium_ingot": {
-    "item_name": "anodized_titanium_ingot",
-    "item_override": "iron_ingot",
-    "display_name": "Anodized Titanium Ingot",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "anodized_titanium_ingot"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "anodized_titanium_ingot"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "anodized_titanium_ingot",
+      "item_override": "iron_ingot",
+      "display_name": "Anodized Titanium Ingot",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "anodized_titanium_ingot"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "anodized_titanium_ingot"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "anodized_titanium_ingot.json"
+    "source_file": "anodized_titanium_ingot.json",
+    "hasCustomPage": false
   },
   "alexandrite": {
-    "item_name": "alexandrite",
-    "item_override": "emerald",
-    "display_name": "Alexandrite",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "alexandrite"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "alexandrite"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "alexandrite",
+      "item_override": "emerald",
+      "display_name": "Alexandrite",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "alexandrite"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "alexandrite"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "ingredients",
-    "rarity": "common",
-    "source_file": "alexandrite.json"
+    "source_file": "alexandrite.json",
+    "hasCustomPage": false
   }
 }

@@ -1,1835 +1,1976 @@
 {
   "warping_wand": {
-    "item_name": "warping_wand",
-    "item_override": "stick",
-    "display_name": "Warping Wand",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "warping_wand"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "warping_wand"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "warping_wand",
+      "item_override": "stick",
+      "display_name": "Warping Wand",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "warping_wand"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "warping_wand"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "warping_wand.json"
+    "source_file": "warping_wand.json",
+    "hasCustomPage": false
   },
   "void_linked_kunai": {
-    "item_name": "void_linked_kunai",
-    "item_override": "iron_sword",
-    "display_name": "Void Linked Kunai",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "void_linked_kunai"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "void_linked_kunai"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "void_linked_kunai",
+      "item_override": "iron_sword",
+      "display_name": "Void Linked Kunai",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "void_linked_kunai"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "void_linked_kunai"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "void_linked_kunai.json"
+    "source_file": "void_linked_kunai.json",
+    "hasCustomPage": false
   },
   "totem_of_vexing": {
-    "item_name": "totem_of_vexing",
-    "item_override": "arrow",
-    "display_name": "Totem Of Vexing",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "totem_of_vexing"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "totem_of_vexing"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "totem_of_vexing",
+      "item_override": "arrow",
+      "display_name": "Totem Of Vexing",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "totem_of_vexing"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "totem_of_vexing"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "totem_of_vexing.json"
+    "source_file": "totem_of_vexing.json",
+    "hasCustomPage": false
   },
   "titanium_leggings": {
-    "item_name": "titanium_leggings",
-    "item_override": "iron_leggings",
-    "display_name": "Titanium Leggings",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "titanium_leggings"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "titanium_leggings"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 427
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "titanium",
-        "slot": "legs",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 6,
-            "slot": "legs",
-            "keyId": "item.leggings.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "legs",
-            "keyId": "item.leggings.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "titanium_leggings",
+      "item_override": "iron_leggings",
+      "display_name": "Titanium Leggings",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "titanium_leggings"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "titanium_leggings"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 427
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "titanium",
+          "slot": "legs",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 6,
+              "slot": "legs",
+              "keyId": "item.leggings.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "legs",
+              "keyId": "item.leggings.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "titanium_leggings.json"
+    "source_file": "titanium_leggings.json",
+    "hasCustomPage": false
   },
   "titanium_helmet": {
-    "item_name": "titanium_helmet",
-    "item_override": "iron_helmet",
-    "display_name": "Titanium Helmet",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "titanium_helmet"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "titanium_helmet"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 313
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "titanium",
-        "slot": "head",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "head",
-            "keyId": "item.helmet.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "head",
-            "keyId": "item.helmet.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "titanium_helmet",
+      "item_override": "iron_helmet",
+      "display_name": "Titanium Helmet",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "titanium_helmet"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "titanium_helmet"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 313
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "titanium",
+          "slot": "head",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "head",
+              "keyId": "item.helmet.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "head",
+              "keyId": "item.helmet.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "titanium_helmet.json"
+    "source_file": "titanium_helmet.json",
+    "hasCustomPage": false
   },
   "titanium_chestplate": {
-    "item_name": "titanium_chestplate",
-    "item_override": "iron_chestplate",
-    "display_name": "Titanium Chestplate",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "titanium_chestplate"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "titanium_chestplate"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 456
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "titanium",
-        "slot": "chest",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 7,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "titanium_chestplate",
+      "item_override": "iron_chestplate",
+      "display_name": "Titanium Chestplate",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "titanium_chestplate"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "titanium_chestplate"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 456
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "titanium",
+          "slot": "chest",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 7,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "titanium_chestplate.json"
+    "source_file": "titanium_chestplate.json",
+    "hasCustomPage": false
   },
   "titanium_boots": {
-    "item_name": "titanium_boots",
-    "item_override": "iron_boots",
-    "display_name": "Titanium Boots",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "titanium_boots"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "titanium_boots"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 370
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "titanium",
-        "slot": "feet",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "feet",
-            "keyId": "item.boots.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "feet",
-            "keyId": "item.boots.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "titanium_boots",
+      "item_override": "iron_boots",
+      "display_name": "Titanium Boots",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "titanium_boots"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "titanium_boots"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 370
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "titanium",
+          "slot": "feet",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "feet",
+              "keyId": "item.boots.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "feet",
+              "keyId": "item.boots.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "titanium_boots.json"
+    "source_file": "titanium_boots.json",
+    "hasCustomPage": false
   },
   "tinkered_bow": {
-    "item_name": "tinkered_bow",
-    "item_override": "bow",
-    "display_name": "Tinkered Bow",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "tinkered_bow"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "tinkered_bow"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "tinkered_bow",
+      "item_override": "bow",
+      "display_name": "Tinkered Bow",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tinkered_bow"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tinkered_bow"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "tinkered_bow.json"
+    "source_file": "tinkered_bow.json",
+    "hasCustomPage": false
   },
   "soul_steel_leggings": {
-    "item_name": "soul_steel_leggings",
-    "item_override": "iron_leggings",
-    "display_name": "Soul Steel Leggings",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "soul_steel_leggings"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "soul_steel_leggings"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 360
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "soul_steel",
-        "slot": "legs",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 6,
-            "slot": "legs",
-            "keyId": "item.leggings.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "legs",
-            "keyId": "item.leggings.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "soul_steel_leggings",
+      "item_override": "iron_leggings",
+      "display_name": "Soul Steel Leggings",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "soul_steel_leggings"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "soul_steel_leggings"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 360
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "soul_steel",
+          "slot": "legs",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 6,
+              "slot": "legs",
+              "keyId": "item.leggings.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "legs",
+              "keyId": "item.leggings.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "soul_steel_leggings.json"
+    "source_file": "soul_steel_leggings.json",
+    "hasCustomPage": false
   },
   "soul_steel_helmet": {
-    "item_name": "soul_steel_helmet",
-    "item_override": "iron_helmet",
-    "display_name": "Soul Steel Helmet",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "soul_steel_helmet"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "soul_steel_helmet"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 264
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "soul_steel",
-        "slot": "head",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "head",
-            "keyId": "item.helmet.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "head",
-            "keyId": "item.helmet.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "soul_steel_helmet",
+      "item_override": "iron_helmet",
+      "display_name": "Soul Steel Helmet",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "soul_steel_helmet"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "soul_steel_helmet"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 264
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "soul_steel",
+          "slot": "head",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "head",
+              "keyId": "item.helmet.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "head",
+              "keyId": "item.helmet.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "soul_steel_helmet.json"
+    "source_file": "soul_steel_helmet.json",
+    "hasCustomPage": false
   },
   "soul_steel_chestplate": {
-    "item_name": "soul_steel_chestplate",
-    "item_override": "iron_chestplate",
-    "display_name": "Soul Steel Chestplate",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "soul_steel_chestplate"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "soul_steel_chestplate"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 384
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "soul_steel",
-        "slot": "chest",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 7,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "soul_steel_chestplate",
+      "item_override": "iron_chestplate",
+      "display_name": "Soul Steel Chestplate",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "soul_steel_chestplate"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "soul_steel_chestplate"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 384
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "soul_steel",
+          "slot": "chest",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 7,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "soul_steel_chestplate.json"
+    "source_file": "soul_steel_chestplate.json",
+    "hasCustomPage": false
   },
   "soul_steel_boots": {
-    "item_name": "soul_steel_boots",
-    "item_override": "iron_boots",
-    "display_name": "Soul Steel Boots",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "soul_steel_boots"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "soul_steel_boots"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 312
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "soul_steel",
-        "slot": "feet",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "feet",
-            "keyId": "item.boots.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "feet",
-            "keyId": "item.boots.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "soul_steel_boots",
+      "item_override": "iron_boots",
+      "display_name": "Soul Steel Boots",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "soul_steel_boots"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "soul_steel_boots"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 312
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "soul_steel",
+          "slot": "feet",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "feet",
+              "keyId": "item.boots.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "feet",
+              "keyId": "item.boots.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "soul_steel_boots.json"
+    "source_file": "soul_steel_boots.json",
+    "hasCustomPage": false
   },
   "soul_spice": {
-    "item_name": "soul_spice",
-    "item_override": "arrow",
-    "display_name": "Soul Spice",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "soul_spice"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "soul_spice"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "soul_spice",
+      "item_override": "arrow",
+      "display_name": "Soul Spice",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "soul_spice"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "soul_spice"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "soul_spice.json"
+    "source_file": "soul_spice.json",
+    "hasCustomPage": false
   },
   "soul_omamori": {
-    "item_name": "soul_omamori",
-    "item_override": "arrow",
-    "display_name": "Soul Omamori",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "soul_omamori"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "soul_omamori"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "soul_omamori",
+      "item_override": "arrow",
+      "display_name": "Soul Omamori",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "soul_omamori"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "soul_omamori"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "soul_omamori.json"
+    "source_file": "soul_omamori.json",
+    "hasCustomPage": false
   },
   "silver_leggings": {
-    "item_name": "silver_leggings",
-    "item_override": "iron_leggings",
-    "display_name": "Silver Leggings",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "silver_leggings"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "silver_leggings"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 202
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "silver",
-        "slot": "legs",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "legs",
-            "keyId": "item.leggings.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 1,
-            "slot": "legs",
-            "keyId": "item.leggings.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "silver_leggings",
+      "item_override": "iron_leggings",
+      "display_name": "Silver Leggings",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "silver_leggings"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "silver_leggings"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 202
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "silver",
+          "slot": "legs",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "legs",
+              "keyId": "item.leggings.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "legs",
+              "keyId": "item.leggings.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "silver_leggings.json"
+    "source_file": "silver_leggings.json",
+    "hasCustomPage": false
   },
   "silver_helmet": {
-    "item_name": "silver_helmet",
-    "item_override": "iron_helmet",
-    "display_name": "Silver Helmet",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "silver_helmet"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "silver_helmet"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 148
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "silver",
-        "slot": "head",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "head",
-            "keyId": "item.helmet.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 1,
-            "slot": "head",
-            "keyId": "item.helmet.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "silver_helmet",
+      "item_override": "iron_helmet",
+      "display_name": "Silver Helmet",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "silver_helmet"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "silver_helmet"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 148
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "silver",
+          "slot": "head",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "head",
+              "keyId": "item.helmet.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "head",
+              "keyId": "item.helmet.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "silver_helmet.json"
+    "source_file": "silver_helmet.json",
+    "hasCustomPage": false
   },
   "silver_chestplate": {
-    "item_name": "silver_chestplate",
-    "item_override": "iron_chestplate",
-    "display_name": "Silver Chestplate",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "silver_chestplate"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "silver_chestplate"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 216
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "silver",
-        "slot": "chest",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 5,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 1,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "silver_chestplate",
+      "item_override": "iron_chestplate",
+      "display_name": "Silver Chestplate",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "silver_chestplate"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "silver_chestplate"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 216
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "silver",
+          "slot": "chest",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 5,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "silver_chestplate.json"
+    "source_file": "silver_chestplate.json",
+    "hasCustomPage": false
   },
   "silver_boots": {
-    "item_name": "silver_boots",
-    "item_override": "iron_boots",
-    "display_name": "Silver Boots",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "silver_boots"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "silver_boots"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 175
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "silver",
-        "slot": "feet",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 2,
-            "slot": "feet",
-            "keyId": "item.boots.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 1,
-            "slot": "feet",
-            "keyId": "item.boots.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "silver_boots",
+      "item_override": "iron_boots",
+      "display_name": "Silver Boots",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "silver_boots"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "silver_boots"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 175
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "silver",
+          "slot": "feet",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 2,
+              "slot": "feet",
+              "keyId": "item.boots.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "feet",
+              "keyId": "item.boots.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "silver_boots.json"
+    "source_file": "silver_boots.json",
+    "hasCustomPage": false
   },
   "sculk_pointer": {
-    "item_name": "sculk_pointer",
-    "item_override": "arrow",
-    "display_name": "Sculk Pointer",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "sculk_pointer"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "sculk_pointer"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "sculk_pointer",
+      "item_override": "arrow",
+      "display_name": "Sculk Pointer",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "sculk_pointer"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "sculk_pointer"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "sculk_pointer.json"
+    "source_file": "sculk_pointer.json",
+    "hasCustomPage": false
   },
   "sculk_heart": {
-    "item_name": "sculk_heart",
-    "item_override": "arrow",
-    "display_name": "Sculk Heart",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "sculk_heart"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "sculk_heart"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "sculk_heart",
+      "item_override": "arrow",
+      "display_name": "Sculk Heart",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "sculk_heart"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "sculk_heart"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "sculk_heart.json"
+    "source_file": "sculk_heart.json",
+    "hasCustomPage": false
   },
   "mithril_leggings": {
-    "item_name": "mithril_leggings",
-    "item_override": "iron_leggings",
-    "display_name": "Mithril Leggings",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "mithril_leggings"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "mithril_leggings"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 517
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "mithril",
-        "slot": "legs",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 6,
-            "slot": "legs",
-            "keyId": "item.leggings.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 4,
-            "slot": "legs",
-            "keyId": "item.leggings.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "mithril_leggings",
+      "item_override": "iron_leggings",
+      "display_name": "Mithril Leggings",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "mithril_leggings"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "mithril_leggings"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 517
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "mithril",
+          "slot": "legs",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 6,
+              "slot": "legs",
+              "keyId": "item.leggings.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 4,
+              "slot": "legs",
+              "keyId": "item.leggings.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "mithril_leggings.json"
+    "source_file": "mithril_leggings.json",
+    "hasCustomPage": false
   },
   "mithril_helmet": {
-    "item_name": "mithril_helmet",
-    "item_override": "iron_helmet",
-    "display_name": "Mithril Helmet",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "mithril_helmet"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "mithril_helmet"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 379
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "mithril",
-        "slot": "head",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 4,
-            "slot": "head",
-            "keyId": "item.helmet.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 4,
-            "slot": "head",
-            "keyId": "item.helmet.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "mithril_helmet",
+      "item_override": "iron_helmet",
+      "display_name": "Mithril Helmet",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "mithril_helmet"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "mithril_helmet"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 379
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "mithril",
+          "slot": "head",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 4,
+              "slot": "head",
+              "keyId": "item.helmet.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 4,
+              "slot": "head",
+              "keyId": "item.helmet.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "mithril_helmet.json"
+    "source_file": "mithril_helmet.json",
+    "hasCustomPage": false
   },
   "mithril_chestplate": {
-    "item_name": "mithril_chestplate",
-    "item_override": "iron_chestplate",
-    "display_name": "Mithril Chestplate",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "mithril_chestplate"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "mithril_chestplate"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 552
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "mithril",
-        "slot": "chest",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 8,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 4,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "mithril_chestplate",
+      "item_override": "iron_chestplate",
+      "display_name": "Mithril Chestplate",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "mithril_chestplate"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "mithril_chestplate"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 552
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "mithril",
+          "slot": "chest",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 8,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 4,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "mithril_chestplate.json"
+    "source_file": "mithril_chestplate.json",
+    "hasCustomPage": false
   },
   "mithril_boots": {
-    "item_name": "mithril_boots",
-    "item_override": "iron_boots",
-    "display_name": "Mithril Boots",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "mithril_boots"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "mithril_boots"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 448
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "mithril",
-        "slot": "feet",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "feet",
-            "keyId": "item.boots.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 4,
-            "slot": "feet",
-            "keyId": "item.boots.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "mithril_boots",
+      "item_override": "iron_boots",
+      "display_name": "Mithril Boots",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "mithril_boots"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "mithril_boots"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 448
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "mithril",
+          "slot": "feet",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "feet",
+              "keyId": "item.boots.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 4,
+              "slot": "feet",
+              "keyId": "item.boots.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "mithril_boots.json"
+    "source_file": "mithril_boots.json",
+    "hasCustomPage": false
   },
   "irradiated_fruit": {
-    "item_name": "irradiated_fruit",
-    "item_override": "arrow",
-    "display_name": "Irradiated Fruit",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "irradiated_fruit"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "irradiated_fruit"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "irradiated_fruit",
+      "item_override": "arrow",
+      "display_name": "Irradiated Fruit",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "irradiated_fruit"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "irradiated_fruit"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "irradiated_fruit.json"
+    "source_file": "irradiated_fruit.json",
+    "hasCustomPage": false
   },
   "iridium_leggings": {
-    "item_name": "iridium_leggings",
-    "item_override": "iron_leggings",
-    "display_name": "Iridium Leggings",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "iridium_leggings"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "iridium_leggings"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 832
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "iridium",
-        "slot": "legs",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 7,
-            "slot": "legs",
-            "keyId": "item.leggings.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 3,
-            "slot": "legs",
-            "keyId": "item.leggings.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "iridium_leggings",
+      "item_override": "iron_leggings",
+      "display_name": "Iridium Leggings",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "iridium_leggings"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "iridium_leggings"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 832
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "iridium",
+          "slot": "legs",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 7,
+              "slot": "legs",
+              "keyId": "item.leggings.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 3,
+              "slot": "legs",
+              "keyId": "item.leggings.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "iridium_leggings.json"
+    "source_file": "iridium_leggings.json",
+    "hasCustomPage": false
   },
   "iridium_helmet": {
-    "item_name": "iridium_helmet",
-    "item_override": "iron_helmet",
-    "display_name": "Iridium Helmet",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "iridium_helmet"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "iridium_helmet"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 610
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "iridium",
-        "slot": "head",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 4,
-            "slot": "head",
-            "keyId": "item.helmet.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 3,
-            "slot": "head",
-            "keyId": "item.helmet.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "iridium_helmet",
+      "item_override": "iron_helmet",
+      "display_name": "Iridium Helmet",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "iridium_helmet"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "iridium_helmet"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 610
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "iridium",
+          "slot": "head",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 4,
+              "slot": "head",
+              "keyId": "item.helmet.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 3,
+              "slot": "head",
+              "keyId": "item.helmet.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "iridium_helmet.json"
+    "source_file": "iridium_helmet.json",
+    "hasCustomPage": false
   },
   "iridium_chestplate": {
-    "item_name": "iridium_chestplate",
-    "item_override": "iron_chestplate",
-    "display_name": "Iridium Chestplate",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "iridium_chestplate"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "iridium_chestplate"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 888
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "iridium",
-        "slot": "chest",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 9,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 3,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "iridium_chestplate",
+      "item_override": "iron_chestplate",
+      "display_name": "Iridium Chestplate",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "iridium_chestplate"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "iridium_chestplate"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 888
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "iridium",
+          "slot": "chest",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 9,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 3,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "iridium_chestplate.json"
+    "source_file": "iridium_chestplate.json",
+    "hasCustomPage": false
   },
   "iridium_boots": {
-    "item_name": "iridium_boots",
-    "item_override": "iron_boots",
-    "display_name": "Iridium Boots",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "iridium_boots"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "iridium_boots"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 721
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "iridium",
-        "slot": "feet",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 4,
-            "slot": "feet",
-            "keyId": "item.boots.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 3,
-            "slot": "feet",
-            "keyId": "item.boots.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "iridium_boots",
+      "item_override": "iron_boots",
+      "display_name": "Iridium Boots",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "iridium_boots"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "iridium_boots"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 721
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "iridium",
+          "slot": "feet",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 4,
+              "slot": "feet",
+              "keyId": "item.boots.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 3,
+              "slot": "feet",
+              "keyId": "item.boots.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "iridium_boots.json"
+    "source_file": "iridium_boots.json",
+    "hasCustomPage": false
   },
   "explosive_arrow": {
-    "item_name": "explosive_arrow",
-    "item_override": "arrow",
-    "display_name": "Explosive Arrow",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "explosive_arrow"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "explosive_arrow"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "explosive_arrow",
+      "item_override": "arrow",
+      "display_name": "Explosive Arrow",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "explosive_arrow"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "explosive_arrow"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "explosive_arrow.json"
+    "source_file": "explosive_arrow.json",
+    "hasCustomPage": false
   },
   "crystal_alloy_leggings": {
-    "item_name": "crystal_alloy_leggings",
-    "item_override": "iron_leggings",
-    "display_name": "Crystal Alloy Leggings",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "crystal_alloy_leggings"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "crystal_alloy_leggings"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 405
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "crystal_alloy",
-        "slot": "legs",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 6,
-            "slot": "legs",
-            "keyId": "item.leggings.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "legs",
-            "keyId": "item.leggings.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "crystal_alloy_leggings",
+      "item_override": "iron_leggings",
+      "display_name": "Crystal Alloy Leggings",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crystal_alloy_leggings"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crystal_alloy_leggings"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 405
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "crystal_alloy",
+          "slot": "legs",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 6,
+              "slot": "legs",
+              "keyId": "item.leggings.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "legs",
+              "keyId": "item.leggings.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "crystal_alloy_leggings.json"
+    "source_file": "crystal_alloy_leggings.json",
+    "hasCustomPage": false
   },
   "crystal_alloy_helmet": {
-    "item_name": "crystal_alloy_helmet",
-    "item_override": "iron_helmet",
-    "display_name": "Crystal Alloy Helmet",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "crystal_alloy_helmet"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "crystal_alloy_helmet"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 297
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "crystal_alloy",
-        "slot": "head",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "head",
-            "keyId": "item.helmet.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "head",
-            "keyId": "item.helmet.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "crystal_alloy_helmet",
+      "item_override": "iron_helmet",
+      "display_name": "Crystal Alloy Helmet",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crystal_alloy_helmet"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crystal_alloy_helmet"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 297
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "crystal_alloy",
+          "slot": "head",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "head",
+              "keyId": "item.helmet.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "head",
+              "keyId": "item.helmet.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "crystal_alloy_helmet.json"
+    "source_file": "crystal_alloy_helmet.json",
+    "hasCustomPage": false
   },
   "crystal_alloy_chestplate": {
-    "item_name": "crystal_alloy_chestplate",
-    "item_override": "iron_chestplate",
-    "display_name": "Crystal Alloy Chestplate",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "crystal_alloy_chestplate"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "crystal_alloy_chestplate"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 432
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "crystal_alloy",
-        "slot": "chest",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 7,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "crystal_alloy_chestplate",
+      "item_override": "iron_chestplate",
+      "display_name": "Crystal Alloy Chestplate",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crystal_alloy_chestplate"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crystal_alloy_chestplate"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 432
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "crystal_alloy",
+          "slot": "chest",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 7,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "crystal_alloy_chestplate.json"
+    "source_file": "crystal_alloy_chestplate.json",
+    "hasCustomPage": false
   },
   "crystal_alloy_boots": {
-    "item_name": "crystal_alloy_boots",
-    "item_override": "iron_boots",
-    "display_name": "Crystal Alloy Boots",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "crystal_alloy_boots"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "crystal_alloy_boots"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 351
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "crystal_alloy",
-        "slot": "feet",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "feet",
-            "keyId": "item.boots.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "feet",
-            "keyId": "item.boots.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "crystal_alloy_boots",
+      "item_override": "iron_boots",
+      "display_name": "Crystal Alloy Boots",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crystal_alloy_boots"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crystal_alloy_boots"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 351
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "crystal_alloy",
+          "slot": "feet",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "feet",
+              "keyId": "item.boots.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "feet",
+              "keyId": "item.boots.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "crystal_alloy_boots.json"
+    "source_file": "crystal_alloy_boots.json",
+    "hasCustomPage": false
   },
   "copper_leggings": {
-    "item_name": "copper_leggings",
-    "item_override": "iron_leggings",
-    "display_name": "Copper Leggings",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "copper_leggings"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "copper_leggings"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 157
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "copper",
-        "slot": "legs",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "legs",
-            "keyId": "item.leggings.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 1,
-            "slot": "legs",
-            "keyId": "item.leggings.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "copper_leggings",
+      "item_override": "iron_leggings",
+      "display_name": "Copper Leggings",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "copper_leggings"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "copper_leggings"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 157
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "copper",
+          "slot": "legs",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "legs",
+              "keyId": "item.leggings.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "legs",
+              "keyId": "item.leggings.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "copper_leggings.json"
+    "source_file": "copper_leggings.json",
+    "hasCustomPage": false
   },
   "copper_helmet": {
-    "item_name": "copper_helmet",
-    "item_override": "iron_helmet",
-    "display_name": "Copper Helmet",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "copper_helmet"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "copper_helmet"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 115
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "copper",
-        "slot": "head",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 2,
-            "slot": "head",
-            "keyId": "item.helmet.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 1,
-            "slot": "head",
-            "keyId": "item.helmet.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "copper_helmet",
+      "item_override": "iron_helmet",
+      "display_name": "Copper Helmet",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "copper_helmet"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "copper_helmet"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 115
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "copper",
+          "slot": "head",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 2,
+              "slot": "head",
+              "keyId": "item.helmet.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "head",
+              "keyId": "item.helmet.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "copper_helmet.json"
+    "source_file": "copper_helmet.json",
+    "hasCustomPage": false
   },
   "copper_chestplate": {
-    "item_name": "copper_chestplate",
-    "item_override": "iron_chestplate",
-    "display_name": "Copper Chestplate",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "copper_chestplate"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "copper_chestplate"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 168
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "copper",
-        "slot": "chest",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 4,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 1,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "copper_chestplate",
+      "item_override": "iron_chestplate",
+      "display_name": "Copper Chestplate",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "copper_chestplate"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "copper_chestplate"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 168
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "copper",
+          "slot": "chest",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 4,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "copper_chestplate.json"
+    "source_file": "copper_chestplate.json",
+    "hasCustomPage": false
   },
   "copper_boots": {
-    "item_name": "copper_boots",
-    "item_override": "iron_boots",
-    "display_name": "Copper Boots",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "copper_boots"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "copper_boots"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 136
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "copper",
-        "slot": "feet",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 1,
-            "slot": "feet",
-            "keyId": "item.boots.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 1,
-            "slot": "feet",
-            "keyId": "item.boots.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "copper_boots",
+      "item_override": "iron_boots",
+      "display_name": "Copper Boots",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "copper_boots"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "copper_boots"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 136
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "copper",
+          "slot": "feet",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "feet",
+              "keyId": "item.boots.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "feet",
+              "keyId": "item.boots.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "copper_boots.json"
+    "source_file": "copper_boots.json",
+    "hasCustomPage": false
   },
   "arcane_wand": {
-    "item_name": "arcane_wand",
-    "item_override": "stick",
-    "display_name": "Arcane Wand",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "arcane_wand"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "arcane_wand"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 404
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "arcane_wand",
+      "item_override": "stick",
+      "display_name": "Arcane Wand",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "arcane_wand"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "arcane_wand"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 404
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "arcane_wand.json"
+    "source_file": "arcane_wand.json",
+    "hasCustomPage": false
   },
   "arcane_stylus": {
-    "item_name": "arcane_stylus",
-    "item_override": "bundle",
-    "display_name": "Arcane Stylus",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "arcane_stylus"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "arcane_stylus"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "arcane_stylus",
+      "item_override": "bundle",
+      "display_name": "Arcane Stylus",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "arcane_stylus"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "arcane_stylus"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "arcane_stylus.json"
+    "source_file": "arcane_stylus.json",
+    "hasCustomPage": false
   },
   "arcane_scepter": {
-    "item_name": "arcane_scepter",
-    "item_override": "stick",
-    "display_name": "Arcane Scepter",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "arcane_scepter"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "arcane_scepter"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 404
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "arcane_scepter",
+      "item_override": "stick",
+      "display_name": "Arcane Scepter",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "arcane_scepter"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "arcane_scepter"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 404
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "arcane_scepter.json"
+    "source_file": "arcane_scepter.json",
+    "hasCustomPage": false
   },
   "arcane_pen": {
-    "item_name": "arcane_pen",
-    "item_override": "bundle",
-    "display_name": "Arcane Pen",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "arcane_pen"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "arcane_pen"
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "arcane_pen",
+      "item_override": "bundle",
+      "display_name": "Arcane Pen",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "arcane_pen"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "arcane_pen"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "arcane_pen.json"
+    "source_file": "arcane_pen.json",
+    "hasCustomPage": false
   },
   "arcane_blade": {
-    "item_name": "arcane_blade",
-    "item_override": "stick",
-    "display_name": "Arcane Blade",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "arcane_blade"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "arcane_blade"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 404
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "arcane_blade",
+      "item_override": "stick",
+      "display_name": "Arcane Blade",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "arcane_blade"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "arcane_blade"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 404
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "arcane_blade.json"
+    "source_file": "arcane_blade.json",
+    "hasCustomPage": false
   },
   "anodized_titanium_leggings": {
-    "item_name": "anodized_titanium_leggings",
-    "item_override": "iron_leggings",
-    "display_name": "Anodized Titanium Leggings",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "anodized_titanium_leggings"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "anodized_titanium_leggings"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 427
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "anodized_titanium",
-        "slot": "legs",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 6,
-            "slot": "legs",
-            "keyId": "item.leggings.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "legs",
-            "keyId": "item.leggings.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "anodized_titanium_leggings",
+      "item_override": "iron_leggings",
+      "display_name": "Anodized Titanium Leggings",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "anodized_titanium_leggings"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "anodized_titanium_leggings"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 427
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "anodized_titanium",
+          "slot": "legs",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 6,
+              "slot": "legs",
+              "keyId": "item.leggings.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "legs",
+              "keyId": "item.leggings.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "anodized_titanium_leggings.json"
+    "source_file": "anodized_titanium_leggings.json",
+    "hasCustomPage": false
   },
   "anodized_titanium_helmet": {
-    "item_name": "anodized_titanium_helmet",
-    "item_override": "iron_helmet",
-    "display_name": "Anodized Titanium Helmet",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "anodized_titanium_helmet"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "anodized_titanium_helmet"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 313
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "anodized_titanium",
-        "slot": "head",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "head",
-            "keyId": "item.helmet.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "head",
-            "keyId": "item.helmet.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "anodized_titanium_helmet",
+      "item_override": "iron_helmet",
+      "display_name": "Anodized Titanium Helmet",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "anodized_titanium_helmet"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "anodized_titanium_helmet"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 313
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "anodized_titanium",
+          "slot": "head",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "head",
+              "keyId": "item.helmet.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "head",
+              "keyId": "item.helmet.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "anodized_titanium_helmet.json"
+    "source_file": "anodized_titanium_helmet.json",
+    "hasCustomPage": false
   },
   "anodized_titanium_chestplate": {
-    "item_name": "anodized_titanium_chestplate",
-    "item_override": "iron_chestplate",
-    "display_name": "Anodized Titanium Chestplate",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "anodized_titanium_chestplate"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "anodized_titanium_chestplate"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 456
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "anodized_titanium",
-        "slot": "chest",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 7,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "chest",
-            "keyId": "item.chestplate.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "anodized_titanium_chestplate",
+      "item_override": "iron_chestplate",
+      "display_name": "Anodized Titanium Chestplate",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "anodized_titanium_chestplate"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "anodized_titanium_chestplate"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 456
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "anodized_titanium",
+          "slot": "chest",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 7,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "chest",
+              "keyId": "item.chestplate.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "anodized_titanium_chestplate.json"
+    "source_file": "anodized_titanium_chestplate.json",
+    "hasCustomPage": false
   },
   "anodized_titanium_boots": {
-    "item_name": "anodized_titanium_boots",
-    "item_override": "iron_boots",
-    "display_name": "Anodized Titanium Boots",
-    "components": [
-      {
-        "type": "ItemNameComponent",
-        "item_name": "anodized_titanium_boots"
-      },
-      {
-        "type": "ItemModelComponent",
-        "item_model": "anodized_titanium_boots"
-      },
-      {
-        "type": "MaxDamageComponent",
-        "max_damage": 370
-      },
-      {
-        "type": "EquippableComponent",
-        "asset_id": "anodized_titanium",
-        "slot": "feet",
-        "equip_sound": "item.armor.equip_chain"
-      },
-      {
-        "type": "AttributesComponent",
-        "modifiers": [
-          {
-            "attribute": "armor",
-            "amount": 3,
-            "slot": "feet",
-            "keyId": "item.boots.armor",
-            "operation": "add_value"
-          },
-          {
-            "attribute": "armor_toughness",
-            "amount": 2,
-            "slot": "feet",
-            "keyId": "item.boots.armor_toughness",
-            "operation": "add_value"
-          }
-        ]
-      }
-    ],
-    "hasCustomPage": false,
+    "data": {
+      "item_name": "anodized_titanium_boots",
+      "item_override": "iron_boots",
+      "display_name": "Anodized Titanium Boots",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "anodized_titanium_boots"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "anodized_titanium_boots"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 370
+        },
+        {
+          "type": "EquippableComponent",
+          "asset_id": "anodized_titanium",
+          "slot": "feet",
+          "equip_sound": "item.armor.equip_chain"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 3,
+              "slot": "feet",
+              "keyId": "item.boots.armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "feet",
+              "keyId": "item.boots.armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
     "category": "misc",
-    "rarity": "common",
-    "source_file": "anodized_titanium_boots.json"
+    "source_file": "anodized_titanium_boots.json",
+    "hasCustomPage": false
   }
 }
