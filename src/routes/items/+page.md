@@ -22,11 +22,22 @@ To craft a **Magic Sword**, you need:
 <ItemIcon name="berry_tart" size="xxlarge" />
 <ItemIcon name="tome_of_extraction" size="xxlarge" />
 
-<!-- Inline with text (default) -->
-Tome of Extraction <ItemIcon name="tome_of_extraction" size="large" />
+**Default behavior: shows rarity-colored name on hover**
 
-<!-- Block display (no inline class) -->
-<ItemIcon name="arcane_book" size="xlarge" inline={false} />
+<ItemIcon name="anodized_titanium_ingot" />
 
-<!-- No tooltip or linking -->
-<ItemIcon name="green_apple" showTooltip={false} linkToPage={false} />
+**Disable hover name display**
+
+<ItemIcon name="anodized_titanium_ingot" onHoverShow={false} />
+
+**Show full tooltip instead of simple name**
+
+<ItemIcon name="anodized_titanium_ingot" showTooltip={true} showComponents={true} />
+
+**Large icon with no hover**
+
+<ItemIcon name="anodized_titanium_ingot" size="xxlarge" onHoverShow={false} />
+
+**Icon with no link**
+
+<ItemIcon name="anodized_titanium_ingot" size="large" linkToPage={false} />
