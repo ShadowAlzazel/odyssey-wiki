@@ -15,7 +15,7 @@
     ],
     "hasCustomPage": false,
     "category": "enchanting",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "tome_of_replication.json"
   },
   "tome_of_promotion": {
@@ -34,7 +34,7 @@
     ],
     "hasCustomPage": false,
     "category": "enchanting",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "tome_of_promotion.json"
   },
   "tome_of_imitation": {
@@ -53,7 +53,7 @@
     ],
     "hasCustomPage": false,
     "category": "enchanting",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "tome_of_imitation.json"
   },
   "tome_of_harmony": {
@@ -72,7 +72,7 @@
     ],
     "hasCustomPage": false,
     "category": "enchanting",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "tome_of_harmony.json"
   },
   "tome_of_extraction": {
@@ -91,7 +91,7 @@
     ],
     "hasCustomPage": false,
     "category": "enchanting",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "tome_of_extraction.json"
   },
   "tome_of_expenditure": {
@@ -110,7 +110,7 @@
     ],
     "hasCustomPage": false,
     "category": "enchanting",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "tome_of_expenditure.json"
   },
   "tome_of_discharge": {
@@ -129,7 +129,7 @@
     ],
     "hasCustomPage": false,
     "category": "enchanting",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "tome_of_discharge.json"
   },
   "tome_of_avarice": {
@@ -148,7 +148,7 @@
     ],
     "hasCustomPage": false,
     "category": "enchanting",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "tome_of_avarice.json"
   }
 }

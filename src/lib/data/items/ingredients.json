@@ -15,7 +15,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "titanium_ingot.json"
   },
   "soul_steel_ingot": {
@@ -34,7 +34,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "soul_steel_ingot.json"
   },
   "soul_quartz": {
@@ -72,7 +72,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "silver_nugget.json"
   },
   "silver_ingot": {
@@ -91,7 +91,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "silver_ingot.json"
   },
   "shadow_trial_key": {
@@ -129,7 +129,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "rare",
+    "rarity": "common",
     "source_file": "ruby.json"
   },
   "neptunian": {
@@ -167,7 +167,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "mithril_ingot.json"
   },
   "kunzite": {
@@ -224,7 +224,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "jade.json"
   },
   "iridium_ingot": {
@@ -243,7 +243,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "iridium_ingot.json"
   },
   "heated_titanium_ingot": {
@@ -262,7 +262,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "heated_titanium_ingot.json"
   },
   "ectoplasm": {
@@ -300,7 +300,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "crystal_alloy_ingot.json"
   },
   "coagulated_blood": {
@@ -376,7 +376,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "anodized_titanium_ingot.json"
   },
   "alexandrite": {
@@ -395,7 +395,7 @@
     ],
     "hasCustomPage": false,
     "category": "ingredients",
-    "rarity": "rare",
+    "rarity": "common",
     "source_file": "alexandrite.json"
   }
 }

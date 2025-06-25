@@ -101,7 +101,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "titanium_leggings.json"
   },
   "titanium_helmet": {
@@ -149,7 +149,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "titanium_helmet.json"
   },
   "titanium_chestplate": {
@@ -197,7 +197,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "titanium_chestplate.json"
   },
   "titanium_boots": {
@@ -245,7 +245,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "titanium_boots.json"
   },
   "tinkered_bow": {
@@ -312,7 +312,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "soul_steel_leggings.json"
   },
   "soul_steel_helmet": {
@@ -360,7 +360,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "soul_steel_helmet.json"
   },
   "soul_steel_chestplate": {
@@ -408,7 +408,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "soul_steel_chestplate.json"
   },
   "soul_steel_boots": {
@@ -456,7 +456,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "soul_steel_boots.json"
   },
   "soul_spice": {
@@ -542,7 +542,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "silver_leggings.json"
   },
   "silver_helmet": {
@@ -590,7 +590,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "silver_helmet.json"
   },
   "silver_chestplate": {
@@ -638,7 +638,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "silver_chestplate.json"
   },
   "silver_boots": {
@@ -686,7 +686,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "silver_boots.json"
   },
   "sculk_pointer": {
@@ -772,7 +772,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "mithril_leggings.json"
   },
   "mithril_helmet": {
@@ -820,7 +820,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "mithril_helmet.json"
   },
   "mithril_chestplate": {
@@ -868,7 +868,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "mithril_chestplate.json"
   },
   "mithril_boots": {
@@ -916,7 +916,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "mithril_boots.json"
   },
   "irradiated_fruit": {
@@ -983,7 +983,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "iridium_leggings.json"
   },
   "iridium_helmet": {
@@ -1031,7 +1031,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "iridium_helmet.json"
   },
   "iridium_chestplate": {
@@ -1079,7 +1079,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "iridium_chestplate.json"
   },
   "iridium_boots": {
@@ -1127,7 +1127,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "iridium_boots.json"
   },
   "explosive_arrow": {
@@ -1194,7 +1194,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "crystal_alloy_leggings.json"
   },
   "crystal_alloy_helmet": {
@@ -1242,7 +1242,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "crystal_alloy_helmet.json"
   },
   "crystal_alloy_chestplate": {
@@ -1290,7 +1290,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "crystal_alloy_chestplate.json"
   },
   "crystal_alloy_boots": {
@@ -1338,7 +1338,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "legendary",
+    "rarity": "common",
     "source_file": "crystal_alloy_boots.json"
   },
   "copper_leggings": {
@@ -1685,7 +1685,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "anodized_titanium_leggings.json"
   },
   "anodized_titanium_helmet": {
@@ -1733,7 +1733,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "anodized_titanium_helmet.json"
   },
   "anodized_titanium_chestplate": {
@@ -1781,7 +1781,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "anodized_titanium_chestplate.json"
   },
   "anodized_titanium_boots": {
@@ -1829,7 +1829,7 @@
     ],
     "hasCustomPage": false,
     "category": "misc",
-    "rarity": "epic",
+    "rarity": "common",
     "source_file": "anodized_titanium_boots.json"
   }
 }

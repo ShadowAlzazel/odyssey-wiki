@@ -15,7 +15,7 @@
     ],
     "hasCustomPage": false,
     "category": "tool_parts",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "voyager_part_pattern.json"
   },
   "vandal_part_pattern": {
@@ -34,7 +34,7 @@
     ],
     "hasCustomPage": false,
     "category": "tool_parts",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "vandal_part_pattern.json"
   },
   "seraph_part_pattern": {
@@ -53,7 +53,7 @@
     ],
     "hasCustomPage": false,
     "category": "tool_parts",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "seraph_part_pattern.json"
   },
   "marauder_part_pattern": {
@@ -72,7 +72,7 @@
     ],
     "hasCustomPage": false,
     "category": "tool_parts",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "marauder_part_pattern.json"
   },
   "imperial_part_pattern": {
@@ -91,7 +91,7 @@
     ],
     "hasCustomPage": false,
     "category": "tool_parts",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "imperial_part_pattern.json"
   },
   "humble_part_pattern": {
@@ -110,7 +110,7 @@
     ],
     "hasCustomPage": false,
     "category": "tool_parts",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "humble_part_pattern.json"
   },
   "fancy_part_pattern": {
@@ -129,7 +129,7 @@
     ],
     "hasCustomPage": false,
     "category": "tool_parts",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "fancy_part_pattern.json"
   },
   "empty_part_pattern": {
@@ -148,7 +148,7 @@
     ],
     "hasCustomPage": false,
     "category": "tool_parts",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "empty_part_pattern.json"
   },
   "danger_part_pattern": {
@@ -167,7 +167,7 @@
     ],
     "hasCustomPage": false,
     "category": "tool_parts",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "danger_part_pattern.json"
   },
   "crusader_part_pattern": {
@@ -186,7 +186,7 @@
     ],
     "hasCustomPage": false,
     "category": "tool_parts",
-    "rarity": "uncommon",
+    "rarity": "common",
     "source_file": "crusader_part_pattern.json"
   }
 }

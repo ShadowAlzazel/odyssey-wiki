@@ -72,7 +72,7 @@
     ],
     "hasCustomPage": false,
     "category": "smithing",
-    "rarity": "epic",
+    "rarity": "rare",
     "source_file": "titanium_upgrade_template.json"
   },
   "spine_weapon_trim_smithing_template": {
@@ -110,7 +110,7 @@
     ],
     "hasCustomPage": false,
     "category": "smithing",
-    "rarity": "legendary",
+    "rarity": "rare",
     "source_file": "soul_steel_upgrade_template.json"
   },
   "ring_armor_trim_smithing_template": {
@@ -167,7 +167,7 @@
     ],
     "hasCustomPage": false,
     "category": "smithing",
-    "rarity": "legendary",
+    "rarity": "rare",
     "source_file": "mithril_upgrade_template.json"
   },
   "mastercrafted_tool_template": {
@@ -243,8 +243,9 @@
     ],
     "hasCustomPage": false,
     "category": "smithing",
-    "rarity": "legendary",
-    "source_file": "iridium_upgrade_template.json"
+    "rarity": "rare",
+    "source_file": "iridium_upgrade_template.json",
+    "description": "This item is used to turn diamond tools into iridium."
   },
   "imperial_armor_trim_smithing_template": {
     "item_name": "imperial_armor_trim_smithing_template",
@@ -357,7 +358,7 @@
     ],
     "hasCustomPage": false,
     "category": "smithing",
-    "rarity": "legendary",
+    "rarity": "rare",
     "source_file": "crystal_alloy_upgrade_template.json"
   },
   "cross_weapon_trim_smithing_template": {

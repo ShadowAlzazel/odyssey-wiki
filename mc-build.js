@@ -41,13 +41,13 @@ const MINECRAFT_ITEM_CATEGORIES = {
 function determineRarity(itemName) {
   const name = itemName.toLowerCase();
   
-  if (['mithril', 'soul_steel', 'iridium', 'crystal_alloy'].some(word => name.includes(word))) {
+  if (['legendary'].some(word => name.includes(word))) {
     return 'legendary';
-  } else if (['titanium', 'tome_of', 'glyphsherd'].some(word => name.includes(word))) {
+  } else if (['epic'].some(word => name.includes(word))) {
     return 'epic';
-  } else if (['upgrade_template', 'trim', 'alexandrite', 'ruby'].some(word => name.includes(word))) {
+  } else if (['upgrade_template', 'trim'].some(word => name.includes(word))) {
     return 'rare';
-  } else if (['silver', 'jade', 'pattern'].some(word => name.includes(word))) {
+  } else if (['tome_of', 'glyphsherd'].some(word => name.includes(word))) {
     return 'uncommon';
   }
   return 'common';

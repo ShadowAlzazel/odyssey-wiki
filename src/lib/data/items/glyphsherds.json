@@ -27,7 +27,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "vitality_glyphsherd.json"
   },
   "swift_glyphsherd": {
@@ -58,7 +58,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "swift_glyphsherd.json"
   },
   "steadfast_glyphsherd": {
@@ -89,7 +89,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "steadfast_glyphsherd.json"
   },
   "size_glyphsherd": {
@@ -120,7 +120,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "size_glyphsherd.json"
   },
   "range_glyphsherd": {
@@ -151,7 +151,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "range_glyphsherd.json"
   },
   "jump_glyphsherd": {
@@ -182,7 +182,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "jump_glyphsherd.json"
   },
   "guard_glyphsherd": {
@@ -213,7 +213,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "guard_glyphsherd.json"
   },
   "gravity_glyphsherd": {
@@ -244,7 +244,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "gravity_glyphsherd.json"
   },
   "grasp_glyphsherd": {
@@ -275,7 +275,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "grasp_glyphsherd.json"
   },
   "force_glyphsherd": {
@@ -306,7 +306,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "force_glyphsherd.json"
   },
   "finesse_glyphsherd": {
@@ -337,7 +337,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "finesse_glyphsherd.json"
   },
   "break_glyphsherd": {
@@ -368,7 +368,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "break_glyphsherd.json"
   },
   "assault_glyphsherd": {
@@ -399,7 +399,7 @@
     ],
     "hasCustomPage": false,
     "category": "glyphsherds",
-    "rarity": "epic",
+    "rarity": "uncommon",
     "source_file": "assault_glyphsherd.json"
   }
 }

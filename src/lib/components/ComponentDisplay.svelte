@@ -5,7 +5,7 @@
 
 <div class="component-display p-4 bg-gray-50 rounded-lg">
   {#if component.type === 'FoodComponent'}
-    <h3 class="font-semibold text-green-700 mb-2">🍎 Food Properties</h3>
+    <h3 class="font-semibold text-green-700 mb-2">Food Properties</h3>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div>
         <span class="font-medium">Nutrition:</span> {component.nutrition}
@@ -28,31 +28,31 @@
     </div>
     
   {:else if component.type === 'MaxDamageComponent'}
-    <h3 class="font-semibold text-red-700 mb-2">⚔️ Durability</h3>
+    <h3 class="font-semibold text-red-700 mb-2">Durability</h3>
     <div class="text-sm">
       <span class="font-medium">Max Damage:</span> {component.max_damage}
     </div>
     
   {:else if component.type === 'ConsumableComponent'}
-    <h3 class="font-semibold text-purple-700 mb-2">🧪 Consumable</h3>
+    <h3 class="font-semibold text-purple-700 mb-2">Consumable</h3>
     <div class="text-sm">
       <span class="font-medium">Consume Time:</span> {component.consume_seconds}s
     </div>
     
   {:else if component.type === 'ItemModelComponent'}
-    <h3 class="font-semibold text-blue-700 mb-2">🎨 Custom Model</h3>
+    <h3 class="font-semibold text-blue-700 mb-2">Custom Model</h3>
     <div class="text-sm">
       <span class="font-medium">Model:</span> <code class="bg-blue-50 px-1 rounded">{component.item_model}</code>
     </div>
     
   {:else if component.type === 'ItemNameComponent'}
-    <h3 class="font-semibold text-indigo-700 mb-2">🏷️ Item Name</h3>
+    <h3 class="font-semibold text-indigo-700 mb-2">Item Name</h3>
     <div class="text-sm">
       <span class="font-medium">Internal Name:</span> <code class="bg-indigo-50 px-1 rounded">{component.item_name}</code>
     </div>
     
   {:else if component.type === 'EquippableComponent'}
-    <h3 class="font-semibold text-amber-700 mb-2">👕 Equippable</h3>
+    <h3 class="font-semibold text-amber-700 mb-2">Equippable</h3>
     <div class="grid grid-cols-2 gap-4 text-sm">
       <div>
         <span class="font-medium">Slot:</span> 
@@ -69,7 +69,7 @@
     </div>
     
   {:else if component.type === 'AttributesComponent'}
-    <h3 class="font-semibold text-emerald-700 mb-2">⚡ Attributes</h3>
+    <h3 class="font-semibold text-emerald-700 mb-2">Attributes</h3>
     <div class="space-y-2">
       {#each component.modifiers as modifier}
         <div class="bg-emerald-50 p-2 rounded text-sm">
@@ -101,7 +101,7 @@
     </div>
     
   {:else}
-    <h3 class="font-semibold text-gray-700 mb-2">📋 {component.type}</h3>
+    <h3 class="font-semibold text-gray-700 mb-2">{component.type}</h3>
     <div class="bg-gray-100 p-3 rounded">
       <details class="cursor-pointer">
         <summary class="text-sm font-medium text-gray-600 hover:text-gray-800">
