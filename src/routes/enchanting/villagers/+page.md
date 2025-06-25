@@ -1,6 +1,6 @@
 # Villager Trade Rebalance
 
-Since the librarian villager trading system has been completely rebalanced to encourage exploration and strategic trading in the trade rebalance update, Odyssey uses this feature to add more enchantments to the villager pool.
+Since the librarian villager trading system has been completely rebalanced to encourage exploration and strategic trading in the [Trade Rebalance Update](https://minecraft.wiki/w/Villager_Trade_Rebalance), Odyssey uses this feature to add more enchantments to the villager pool.
 
 ## Overview
 
@@ -42,8 +42,14 @@ Instead of every librarian offering access to all enchantments, each librarian n
 
 * `buzzy_bees`
 * `death_from_above`
-* `chitin`
+* `claw_climbing`
 * `budding`
+* `sslither_ssight`
+
+### Special Books
+
+* `revitalize`
+* `chitin`
 
 *Jungle librarians specialize in nature-based and insect-themed enchantments.*
 
@@ -94,7 +100,8 @@ Instead of every librarian offering access to all enchantments, each librarian n
 * `committed`
 * `expedite`
 * `moonpatch`
-* `vulnerocity`
+* `vigor`
+* `frosty_fuse`
 
 ### Special Books
 
@@ -113,6 +120,8 @@ Instead of every librarian offering access to all enchantments, each librarian n
 * `ignore_pain`
 * `metabolic`
 * `leap_frog`
+* `frog_fright`
+
 
 ### Special Books
 

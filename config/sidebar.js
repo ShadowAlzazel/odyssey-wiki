@@ -22,6 +22,11 @@ export const sidebar =
               "Tomes",
             to: "/enchanting/tomes",
           },
+          {
+            title:
+              "Villager Trading",
+            to: "/enchanting/villagers",
+          },
         ],
       },
       {
