@@ -8,6 +8,12 @@ The page for all odyssey stuff
 
 ## Development 
 
+### Get the Odyssey Datapack data 
+
+Go to loot tables and copy into local 
+
+### Running
+
 Run `npm run dev` for dev
 
 Run `npm run build` to build dist

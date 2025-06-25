@@ -1,0 +1,64 @@
+{
+  "arcane_book": {
+    "item_name": "arcane_book",
+    "item_override": "book",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "rare"
+  },
+  "blank_tome": {
+    "item_name": "arcane_book",
+    "item_override": "book",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "rare"
+  },
+  "arcane_pen": {
+    "item_name": "arcane_pen",
+    "item_override": "bundle",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "rare"
+  },
+  "anodized_titanium_ingot": {
+    "item_name": "anodized_titanium_ingot",
+    "item_override": "iron_ingot",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "rare"
+  },
+  "berry_tart": {
+    "item_name": "berry_tart",
+    "item_override": "cookie",
+    "components": [
+      {
+        "type": "FoodComponent",
+        "saturation": 5.5,
+        "nutrition": 3,
+        "consume_seconds": 1.6
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "rare"
+  },
+  "green_apple": {
+    "item_name": "green_apple",
+    "item_override": "apple",
+    "components": [
+      {
+        "type": "FoodComponent",
+        "saturation": 5.5,
+        "nutrition": 3,
+        "consume_seconds": 1.6
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "rare"
+  }
+}

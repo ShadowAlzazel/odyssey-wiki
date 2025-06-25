@@ -1,0 +1,102 @@
+{
+  "voyager_part_pattern": {
+    "item_name": "voyager_part_pattern",
+    "item_override": "paper",
+    "display_name": "Voyager Part Pattern",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "tool_parts",
+    "rarity": "uncommon",
+    "source_file": "voyager_part_pattern.json"
+  },
+  "vandal_part_pattern": {
+    "item_name": "vandal_part_pattern",
+    "item_override": "paper",
+    "display_name": "Vandal Part Pattern",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "tool_parts",
+    "rarity": "uncommon",
+    "source_file": "vandal_part_pattern.json"
+  },
+  "seraph_part_pattern": {
+    "item_name": "seraph_part_pattern",
+    "item_override": "paper",
+    "display_name": "Seraph Part Pattern",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "tool_parts",
+    "rarity": "uncommon",
+    "source_file": "seraph_part_pattern.json"
+  },
+  "marauder_part_pattern": {
+    "item_name": "marauder_part_pattern",
+    "item_override": "paper",
+    "display_name": "Marauder Part Pattern",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "tool_parts",
+    "rarity": "uncommon",
+    "source_file": "marauder_part_pattern.json"
+  },
+  "imperial_part_pattern": {
+    "item_name": "imperial_part_pattern",
+    "item_override": "paper",
+    "display_name": "Imperial Part Pattern",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "tool_parts",
+    "rarity": "uncommon",
+    "source_file": "imperial_part_pattern.json"
+  },
+  "humble_part_pattern": {
+    "item_name": "humble_part_pattern",
+    "item_override": "paper",
+    "display_name": "Humble Part Pattern",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "tool_parts",
+    "rarity": "uncommon",
+    "source_file": "humble_part_pattern.json"
+  },
+  "fancy_part_pattern": {
+    "item_name": "fancy_part_pattern",
+    "item_override": "paper",
+    "display_name": "Fancy Part Pattern",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "tool_parts",
+    "rarity": "uncommon",
+    "source_file": "fancy_part_pattern.json"
+  },
+  "empty_part_pattern": {
+    "item_name": "empty_part_pattern",
+    "item_override": "paper",
+    "display_name": "Empty Part Pattern",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "tool_parts",
+    "rarity": "uncommon",
+    "source_file": "empty_part_pattern.json"
+  },
+  "danger_part_pattern": {
+    "item_name": "danger_part_pattern",
+    "item_override": "paper",
+    "display_name": "Danger Part Pattern",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "tool_parts",
+    "rarity": "uncommon",
+    "source_file": "danger_part_pattern.json"
+  },
+  "crusader_part_pattern": {
+    "item_name": "crusader_part_pattern",
+    "item_override": "paper",
+    "display_name": "Crusader Part Pattern",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "tool_parts",
+    "rarity": "uncommon",
+    "source_file": "crusader_part_pattern.json"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "glazed_totem": {
+    "item_name": "glazed_totem",
+    "item_override": "brick",
+    "display_name": "Glazed Totem",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "glazed_totem.json"
+  },
+  "glazed_skull": {
+    "item_name": "glazed_skull",
+    "item_override": "brick",
+    "display_name": "Glazed Skull",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "glazed_skull.json"
+  },
+  "glazed_rods": {
+    "item_name": "glazed_rods",
+    "item_override": "brick",
+    "display_name": "Glazed Rods",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "glazed_rods.json"
+  },
+  "glazed_orb": {
+    "item_name": "glazed_orb",
+    "item_override": "brick",
+    "display_name": "Glazed Orb",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "glazed_orb.json"
+  },
+  "glazed_key": {
+    "item_name": "glazed_key",
+    "item_override": "brick",
+    "display_name": "Glazed Key",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "glazed_key.json"
+  },
+  "glazed_dowel": {
+    "item_name": "glazed_dowel",
+    "item_override": "brick",
+    "display_name": "Glazed Dowel",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "glazed_dowel.json"
+  },
+  "clay_totem": {
+    "item_name": "clay_totem",
+    "item_override": "clay_ball",
+    "display_name": "Clay Totem",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "clay_totem.json"
+  },
+  "clay_skull": {
+    "item_name": "clay_skull",
+    "item_override": "clay_ball",
+    "display_name": "Clay Skull",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "clay_skull.json"
+  },
+  "clay_rods": {
+    "item_name": "clay_rods",
+    "item_override": "clay_ball",
+    "display_name": "Clay Rods",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "clay_rods.json"
+  },
+  "clay_orb": {
+    "item_name": "clay_orb",
+    "item_override": "clay_ball",
+    "display_name": "Clay Orb",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "clay_orb.json"
+  },
+  "clay_key": {
+    "item_name": "clay_key",
+    "item_override": "clay_ball",
+    "display_name": "Clay Key",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "clay_key.json"
+  },
+  "clay_dowel": {
+    "item_name": "clay_dowel",
+    "item_override": "clay_ball",
+    "display_name": "Clay Dowel",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "glyphic",
+    "rarity": "common",
+    "source_file": "clay_dowel.json"
+  }
+}

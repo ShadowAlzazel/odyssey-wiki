@@ -1,0 +1,72 @@
+{
+  "tinkered_musket": {
+    "item_name": "tinkered_musket",
+    "item_override": "crossbow",
+    "display_name": "Tinkered Musket",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "weapons",
+    "rarity": "common",
+    "source_file": "tinkered_musket.json"
+  },
+  "compact_crossbow": {
+    "item_name": "compact_crossbow",
+    "item_override": "crossbow",
+    "display_name": "Compact Crossbow",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "weapons",
+    "rarity": "common",
+    "source_file": "compact_crossbow.json"
+  },
+  "chain_hook": {
+    "item_name": "chain_hook",
+    "item_override": "crossbow",
+    "display_name": "Chain Hook",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "weapons",
+    "rarity": "common",
+    "source_file": "chain_hook.json"
+  },
+  "auto_crossbow": {
+    "item_name": "auto_crossbow",
+    "item_override": "crossbow",
+    "display_name": "Auto Crossbow",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "weapons",
+    "rarity": "common",
+    "source_file": "auto_crossbow.json"
+  },
+  "alchemical_driver": {
+    "item_name": "alchemical_driver",
+    "item_override": "crossbow",
+    "display_name": "Alchemical Driver",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "weapons",
+    "rarity": "common",
+    "source_file": "alchemical_driver.json"
+  },
+  "alchemical_diffuser": {
+    "item_name": "alchemical_diffuser",
+    "item_override": "crossbow",
+    "display_name": "Alchemical Diffuser",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "weapons",
+    "rarity": "common",
+    "source_file": "alchemical_diffuser.json"
+  },
+  "alchemical_bolter": {
+    "item_name": "alchemical_bolter",
+    "item_override": "crossbow",
+    "display_name": "Alchemical Bolter",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "weapons",
+    "rarity": "common",
+    "source_file": "alchemical_bolter.json"
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "titanium_ingot": {
+    "item_name": "titanium_ingot",
+    "item_override": "iron_ingot",
+    "display_name": "Titanium Ingot",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "epic",
+    "source_file": "titanium_ingot.json"
+  },
+  "soul_steel_ingot": {
+    "item_name": "soul_steel_ingot",
+    "item_override": "iron_ingot",
+    "display_name": "Soul Steel Ingot",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "legendary",
+    "source_file": "soul_steel_ingot.json"
+  },
+  "soul_quartz": {
+    "item_name": "soul_quartz",
+    "item_override": "quartz",
+    "display_name": "Soul Quartz",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "common",
+    "source_file": "soul_quartz.json"
+  },
+  "silver_nugget": {
+    "item_name": "silver_nugget",
+    "item_override": "iron_nugget",
+    "display_name": "Silver Nugget",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "uncommon",
+    "source_file": "silver_nugget.json"
+  },
+  "silver_ingot": {
+    "item_name": "silver_ingot",
+    "item_override": "iron_ingot",
+    "display_name": "Silver Ingot",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "uncommon",
+    "source_file": "silver_ingot.json"
+  },
+  "shadow_trial_key": {
+    "item_name": "shadow_trial_key",
+    "item_override": "trial_key",
+    "display_name": "Shadow Trial Key",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "common",
+    "source_file": "shadow_trial_key.json"
+  },
+  "ruby": {
+    "item_name": "ruby",
+    "item_override": "emerald",
+    "display_name": "Ruby",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "rare",
+    "source_file": "ruby.json"
+  },
+  "neptunian": {
+    "item_name": "neptunian",
+    "item_override": "emerald",
+    "display_name": "Neptunian",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "common",
+    "source_file": "neptunian.json"
+  },
+  "mithril_ingot": {
+    "item_name": "mithril_ingot",
+    "item_override": "iron_ingot",
+    "display_name": "Mithril Ingot",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "legendary",
+    "source_file": "mithril_ingot.json"
+  },
+  "kunzite": {
+    "item_name": "kunzite",
+    "item_override": "emerald",
+    "display_name": "Kunzite",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "common",
+    "source_file": "kunzite.json"
+  },
+  "jovianite": {
+    "item_name": "jovianite",
+    "item_override": "emerald",
+    "display_name": "Jovianite",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "common",
+    "source_file": "jovianite.json"
+  },
+  "jade": {
+    "item_name": "jade",
+    "item_override": "emerald",
+    "display_name": "Jade",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "uncommon",
+    "source_file": "jade.json"
+  },
+  "iridium_ingot": {
+    "item_name": "iridium_ingot",
+    "item_override": "iron_ingot",
+    "display_name": "Iridium Ingot",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "legendary",
+    "source_file": "iridium_ingot.json"
+  },
+  "heated_titanium_ingot": {
+    "item_name": "heated_titanium_ingot",
+    "item_override": "iron_ingot",
+    "display_name": "Heated Titanium Ingot",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "epic",
+    "source_file": "heated_titanium_ingot.json"
+  },
+  "ectoplasm": {
+    "item_name": "ectoplasm",
+    "item_override": "rotten_flesh",
+    "display_name": "Ectoplasm",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "common",
+    "source_file": "ectoplasm.json"
+  },
+  "crystal_alloy_ingot": {
+    "item_name": "crystal_alloy_ingot",
+    "item_override": "iron_ingot",
+    "display_name": "Crystal Alloy Ingot",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "legendary",
+    "source_file": "crystal_alloy_ingot.json"
+  },
+  "coagulated_blood": {
+    "item_name": "coagulated_blood",
+    "item_override": "rotten_flesh",
+    "display_name": "Coagulated Blood",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "common",
+    "source_file": "coagulated_blood.json"
+  },
+  "blank_tome": {
+    "item_name": "blank_tome",
+    "item_override": "book",
+    "display_name": "Blank Tome",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "common",
+    "source_file": "blank_tome.json"
+  },
+  "arcane_book": {
+    "item_name": "arcane_book",
+    "item_override": "book",
+    "display_name": "Arcane Book",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "common",
+    "source_file": "arcane_book.json"
+  },
+  "anodized_titanium_ingot": {
+    "item_name": "anodized_titanium_ingot",
+    "item_override": "iron_ingot",
+    "display_name": "Anodized Titanium Ingot",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "epic",
+    "source_file": "anodized_titanium_ingot.json"
+  },
+  "alexandrite": {
+    "item_name": "alexandrite",
+    "item_override": "emerald",
+    "display_name": "Alexandrite",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "ingredients",
+    "rarity": "rare",
+    "source_file": "alexandrite.json"
+  }
+}

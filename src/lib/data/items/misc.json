@@ -1,64 +1,647 @@
 {
-  "arcane_book": {
-    "item_name": "arcane_book",
-    "item_override": "book",
+  "warping_wand": {
+    "item_name": "warping_wand",
+    "item_override": "stick",
+    "display_name": "Warping Wand",
     "components": [],
     "hasCustomPage": false,
-    "category": "ingredients",
-    "rarity": "rare"
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "warping_wand.json"
   },
-  "blank_tome": {
-    "item_name": "arcane_book",
-    "item_override": "book",
+  "void_linked_kunai": {
+    "item_name": "void_linked_kunai",
+    "item_override": "iron_sword",
+    "display_name": "Void Linked Kunai",
     "components": [],
     "hasCustomPage": false,
-    "category": "ingredients",
-    "rarity": "rare"
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "void_linked_kunai.json"
+  },
+  "totem_of_vexing": {
+    "item_name": "totem_of_vexing",
+    "item_override": "arrow",
+    "display_name": "Totem Of Vexing",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "totem_of_vexing.json"
+  },
+  "titanium_leggings": {
+    "item_name": "titanium_leggings",
+    "item_override": "iron_leggings",
+    "display_name": "Titanium Leggings",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 427
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "epic",
+    "source_file": "titanium_leggings.json"
+  },
+  "titanium_helmet": {
+    "item_name": "titanium_helmet",
+    "item_override": "iron_helmet",
+    "display_name": "Titanium Helmet",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 313
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "epic",
+    "source_file": "titanium_helmet.json"
+  },
+  "titanium_chestplate": {
+    "item_name": "titanium_chestplate",
+    "item_override": "iron_chestplate",
+    "display_name": "Titanium Chestplate",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 456
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "epic",
+    "source_file": "titanium_chestplate.json"
+  },
+  "titanium_boots": {
+    "item_name": "titanium_boots",
+    "item_override": "iron_boots",
+    "display_name": "Titanium Boots",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 370
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "epic",
+    "source_file": "titanium_boots.json"
+  },
+  "tinkered_bow": {
+    "item_name": "tinkered_bow",
+    "item_override": "bow",
+    "display_name": "Tinkered Bow",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "tinkered_bow.json"
+  },
+  "soul_steel_leggings": {
+    "item_name": "soul_steel_leggings",
+    "item_override": "iron_leggings",
+    "display_name": "Soul Steel Leggings",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 360
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "soul_steel_leggings.json"
+  },
+  "soul_steel_helmet": {
+    "item_name": "soul_steel_helmet",
+    "item_override": "iron_helmet",
+    "display_name": "Soul Steel Helmet",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 264
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "soul_steel_helmet.json"
+  },
+  "soul_steel_chestplate": {
+    "item_name": "soul_steel_chestplate",
+    "item_override": "iron_chestplate",
+    "display_name": "Soul Steel Chestplate",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 384
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "soul_steel_chestplate.json"
+  },
+  "soul_steel_boots": {
+    "item_name": "soul_steel_boots",
+    "item_override": "iron_boots",
+    "display_name": "Soul Steel Boots",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 312
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "soul_steel_boots.json"
+  },
+  "soul_spice": {
+    "item_name": "soul_spice",
+    "item_override": "arrow",
+    "display_name": "Soul Spice",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "soul_spice.json"
+  },
+  "soul_omamori": {
+    "item_name": "soul_omamori",
+    "item_override": "arrow",
+    "display_name": "Soul Omamori",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "soul_omamori.json"
+  },
+  "silver_leggings": {
+    "item_name": "silver_leggings",
+    "item_override": "iron_leggings",
+    "display_name": "Silver Leggings",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 202
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "uncommon",
+    "source_file": "silver_leggings.json"
+  },
+  "silver_helmet": {
+    "item_name": "silver_helmet",
+    "item_override": "iron_helmet",
+    "display_name": "Silver Helmet",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 148
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "uncommon",
+    "source_file": "silver_helmet.json"
+  },
+  "silver_chestplate": {
+    "item_name": "silver_chestplate",
+    "item_override": "iron_chestplate",
+    "display_name": "Silver Chestplate",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 216
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "uncommon",
+    "source_file": "silver_chestplate.json"
+  },
+  "silver_boots": {
+    "item_name": "silver_boots",
+    "item_override": "iron_boots",
+    "display_name": "Silver Boots",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 175
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "uncommon",
+    "source_file": "silver_boots.json"
+  },
+  "sculk_pointer": {
+    "item_name": "sculk_pointer",
+    "item_override": "arrow",
+    "display_name": "Sculk Pointer",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "sculk_pointer.json"
+  },
+  "sculk_heart": {
+    "item_name": "sculk_heart",
+    "item_override": "arrow",
+    "display_name": "Sculk Heart",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "sculk_heart.json"
+  },
+  "mithril_leggings": {
+    "item_name": "mithril_leggings",
+    "item_override": "iron_leggings",
+    "display_name": "Mithril Leggings",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 517
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "mithril_leggings.json"
+  },
+  "mithril_helmet": {
+    "item_name": "mithril_helmet",
+    "item_override": "iron_helmet",
+    "display_name": "Mithril Helmet",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 379
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "mithril_helmet.json"
+  },
+  "mithril_chestplate": {
+    "item_name": "mithril_chestplate",
+    "item_override": "iron_chestplate",
+    "display_name": "Mithril Chestplate",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 552
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "mithril_chestplate.json"
+  },
+  "mithril_boots": {
+    "item_name": "mithril_boots",
+    "item_override": "iron_boots",
+    "display_name": "Mithril Boots",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 448
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "mithril_boots.json"
+  },
+  "irradiated_fruit": {
+    "item_name": "irradiated_fruit",
+    "item_override": "arrow",
+    "display_name": "Irradiated Fruit",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "irradiated_fruit.json"
+  },
+  "iridium_leggings": {
+    "item_name": "iridium_leggings",
+    "item_override": "iron_leggings",
+    "display_name": "Iridium Leggings",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 832
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "iridium_leggings.json"
+  },
+  "iridium_helmet": {
+    "item_name": "iridium_helmet",
+    "item_override": "iron_helmet",
+    "display_name": "Iridium Helmet",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 610
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "iridium_helmet.json"
+  },
+  "iridium_chestplate": {
+    "item_name": "iridium_chestplate",
+    "item_override": "iron_chestplate",
+    "display_name": "Iridium Chestplate",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 888
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "iridium_chestplate.json"
+  },
+  "iridium_boots": {
+    "item_name": "iridium_boots",
+    "item_override": "iron_boots",
+    "display_name": "Iridium Boots",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 721
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "iridium_boots.json"
+  },
+  "explosive_arrow": {
+    "item_name": "explosive_arrow",
+    "item_override": "arrow",
+    "display_name": "Explosive Arrow",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "explosive_arrow.json"
+  },
+  "crystal_alloy_leggings": {
+    "item_name": "crystal_alloy_leggings",
+    "item_override": "iron_leggings",
+    "display_name": "Crystal Alloy Leggings",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 405
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "crystal_alloy_leggings.json"
+  },
+  "crystal_alloy_helmet": {
+    "item_name": "crystal_alloy_helmet",
+    "item_override": "iron_helmet",
+    "display_name": "Crystal Alloy Helmet",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 297
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "crystal_alloy_helmet.json"
+  },
+  "crystal_alloy_chestplate": {
+    "item_name": "crystal_alloy_chestplate",
+    "item_override": "iron_chestplate",
+    "display_name": "Crystal Alloy Chestplate",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 432
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "crystal_alloy_chestplate.json"
+  },
+  "crystal_alloy_boots": {
+    "item_name": "crystal_alloy_boots",
+    "item_override": "iron_boots",
+    "display_name": "Crystal Alloy Boots",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 351
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "legendary",
+    "source_file": "crystal_alloy_boots.json"
+  },
+  "copper_leggings": {
+    "item_name": "copper_leggings",
+    "item_override": "iron_leggings",
+    "display_name": "Copper Leggings",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 157
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "copper_leggings.json"
+  },
+  "copper_helmet": {
+    "item_name": "copper_helmet",
+    "item_override": "iron_helmet",
+    "display_name": "Copper Helmet",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 115
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "copper_helmet.json"
+  },
+  "copper_chestplate": {
+    "item_name": "copper_chestplate",
+    "item_override": "iron_chestplate",
+    "display_name": "Copper Chestplate",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 168
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "copper_chestplate.json"
+  },
+  "copper_boots": {
+    "item_name": "copper_boots",
+    "item_override": "iron_boots",
+    "display_name": "Copper Boots",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 136
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "copper_boots.json"
+  },
+  "arcane_wand": {
+    "item_name": "arcane_wand",
+    "item_override": "stick",
+    "display_name": "Arcane Wand",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 404
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "arcane_wand.json"
+  },
+  "arcane_stylus": {
+    "item_name": "arcane_stylus",
+    "item_override": "bundle",
+    "display_name": "Arcane Stylus",
+    "components": [],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "arcane_stylus.json"
+  },
+  "arcane_scepter": {
+    "item_name": "arcane_scepter",
+    "item_override": "stick",
+    "display_name": "Arcane Scepter",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 404
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "arcane_scepter.json"
   },
   "arcane_pen": {
     "item_name": "arcane_pen",
     "item_override": "bundle",
+    "display_name": "Arcane Pen",
     "components": [],
     "hasCustomPage": false,
-    "category": "ingredients",
-    "rarity": "rare"
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "arcane_pen.json"
   },
-  "anodized_titanium_ingot": {
-    "item_name": "anodized_titanium_ingot",
-    "item_override": "iron_ingot",
-    "components": [],
-    "hasCustomPage": false,
-    "category": "ingredients",
-    "rarity": "rare"
-  },
-  "berry_tart": {
-    "item_name": "berry_tart",
-    "item_override": "cookie",
+  "arcane_blade": {
+    "item_name": "arcane_blade",
+    "item_override": "stick",
+    "display_name": "Arcane Blade",
     "components": [
       {
-        "type": "FoodComponent",
-        "saturation": 5.5,
-        "nutrition": 3,
-        "consume_seconds": 1.6
+        "type": "MaxDamageComponent",
+        "max_damage": 404
       }
     ],
     "hasCustomPage": false,
-    "category": "ingredients",
-    "rarity": "rare"
+    "category": "misc",
+    "rarity": "common",
+    "source_file": "arcane_blade.json"
   },
-  "green_apple": {
-    "item_name": "green_apple",
-    "item_override": "apple",
+  "anodized_titanium_leggings": {
+    "item_name": "anodized_titanium_leggings",
+    "item_override": "iron_leggings",
+    "display_name": "Anodized Titanium Leggings",
     "components": [
       {
-        "type": "FoodComponent",
-        "saturation": 5.5,
-        "nutrition": 3,
-        "consume_seconds": 1.6
+        "type": "MaxDamageComponent",
+        "max_damage": 427
       }
     ],
     "hasCustomPage": false,
-    "category": "ingredients",
-    "rarity": "rare"
+    "category": "misc",
+    "rarity": "epic",
+    "source_file": "anodized_titanium_leggings.json"
+  },
+  "anodized_titanium_helmet": {
+    "item_name": "anodized_titanium_helmet",
+    "item_override": "iron_helmet",
+    "display_name": "Anodized Titanium Helmet",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 313
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "epic",
+    "source_file": "anodized_titanium_helmet.json"
+  },
+  "anodized_titanium_chestplate": {
+    "item_name": "anodized_titanium_chestplate",
+    "item_override": "iron_chestplate",
+    "display_name": "Anodized Titanium Chestplate",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 456
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "epic",
+    "source_file": "anodized_titanium_chestplate.json"
+  },
+  "anodized_titanium_boots": {
+    "item_name": "anodized_titanium_boots",
+    "item_override": "iron_boots",
+    "display_name": "Anodized Titanium Boots",
+    "components": [
+      {
+        "type": "MaxDamageComponent",
+        "max_damage": 370
+      }
+    ],
+    "hasCustomPage": false,
+    "category": "misc",
+    "rarity": "epic",
+    "source_file": "anodized_titanium_boots.json"
   }
 }
