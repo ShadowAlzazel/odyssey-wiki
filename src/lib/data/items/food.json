@@ -5,10 +5,19 @@
     "display_name": "Tonkotsu Ramen",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "tonkotsu_ramen"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "tonkotsu_ramen"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 10,
         "saturation": 14,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 2
       }
     ],
     "hasCustomPage": false,
@@ -22,10 +31,19 @@
     "display_name": "Thai Tulip Boba Tea",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "thai_tulip_boba_tea"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "thai_tulip_boba_tea"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 2,
         "saturation": 5,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -39,10 +57,19 @@
     "display_name": "Spider Eye Boba",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "spider_eye_boba"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "spider_eye_boba"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 1,
         "saturation": 3,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -55,6 +82,18 @@
     "item_override": "paper",
     "display_name": "Spell Scroll",
     "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "spell_scroll"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "spell_scroll"
+      },
+      {
+        "type": "ConsumableComponent",
+        "consume_seconds": 1.8
+      },
       {
         "type": "MaxDamageComponent",
         "max_damage": 64
@@ -71,10 +110,19 @@
     "display_name": "Shoyu Ramen",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "shoyu_ramen"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "shoyu_ramen"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 9,
         "saturation": 12,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 2
       }
     ],
     "hasCustomPage": false,
@@ -86,7 +134,20 @@
     "item_name": "scroll",
     "item_override": "paper",
     "display_name": "Scroll",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "scroll"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "scroll"
+      },
+      {
+        "type": "ConsumableComponent",
+        "consume_seconds": 1.5
+      }
+    ],
     "hasCustomPage": false,
     "category": "food",
     "rarity": "common",
@@ -98,10 +159,19 @@
     "display_name": "Salmon Roll",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "salmon_roll"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "salmon_roll"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 4,
         "saturation": 6,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 1.2
       }
     ],
     "hasCustomPage": false,
@@ -115,10 +185,19 @@
     "display_name": "Salmon Nigiri",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "salmon_nigiri"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "salmon_nigiri"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 4,
         "saturation": 6,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 1.2
       }
     ],
     "hasCustomPage": false,
@@ -132,10 +211,19 @@
     "display_name": "Oolong Orchid Boba Tea",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "oolong_orchid_boba_tea"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "oolong_orchid_boba_tea"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 2,
         "saturation": 5,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -149,10 +237,19 @@
     "display_name": "Matcha Melon Boba Tea",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "matcha_melon_boba_tea"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "matcha_melon_boba_tea"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 2,
         "saturation": 5,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -166,9 +263,18 @@
     "display_name": "Green Apple",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "green_apple"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "green_apple"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 3,
         "saturation": 5.5,
+        "can_always_eat": false,
         "consume_seconds": 1.6
       }
     ],
@@ -183,10 +289,19 @@
     "display_name": "Fruit Bowl",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "fruit_bowl"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "fruit_bowl"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 9,
         "saturation": 12,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 2
       }
     ],
     "hasCustomPage": false,
@@ -200,9 +315,18 @@
     "display_name": "French Toast",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "french_toast"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "french_toast"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 6,
         "saturation": 6,
+        "can_always_eat": false,
         "consume_seconds": 1.6
       }
     ],
@@ -217,9 +341,18 @@
     "display_name": "Fish N Chips",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "fish_n_chips"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "fish_n_chips"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 8,
         "saturation": 13,
+        "can_always_eat": false,
         "consume_seconds": 1.6
       }
     ],
@@ -234,10 +367,19 @@
     "display_name": "Earl Lily Boba Tea",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "earl_lily_boba_tea"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "earl_lily_boba_tea"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 2,
         "saturation": 5,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -251,10 +393,19 @@
     "display_name": "Crystal Candy",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "crystal_candy"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "crystal_candy"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 2,
         "saturation": 5,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -268,10 +419,19 @@
     "display_name": "Cornflower Ceylon Boba Tea",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "cornflower_ceylon_boba_tea"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "cornflower_ceylon_boba_tea"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 2,
         "saturation": 5,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -285,10 +445,19 @@
     "display_name": "Cooked Brisket",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "cooked_brisket"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "cooked_brisket"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 3,
         "saturation": 5,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -302,10 +471,19 @@
     "display_name": "Coffee",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "coffee"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "coffee"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 2,
         "saturation": 4,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -319,10 +497,19 @@
     "display_name": "Chocolate Mochi",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "chocolate_mochi"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "chocolate_mochi"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 3,
         "saturation": 5.5,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -336,10 +523,19 @@
     "display_name": "Brisket",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "brisket"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "brisket"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 1,
         "saturation": 2,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,
@@ -353,9 +549,18 @@
     "display_name": "Berry Tart",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "berry_tart"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "berry_tart"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 3,
         "saturation": 5.5,
+        "can_always_eat": false,
         "consume_seconds": 1.6
       }
     ],
@@ -370,10 +575,19 @@
     "display_name": "Bacon",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "bacon"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "bacon"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 3,
         "saturation": 8,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 1.2
       }
     ],
     "hasCustomPage": false,
@@ -387,10 +601,19 @@
     "display_name": "Allium Jade Boba Tea",
     "components": [
       {
+        "type": "ItemNameComponent",
+        "item_name": "allium_jade_boba_tea"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "allium_jade_boba_tea"
+      },
+      {
         "type": "FoodComponent",
         "nutrition": 2,
         "saturation": 5,
-        "consume_seconds": 1.6
+        "can_always_eat": false,
+        "consume_seconds": 0.8
       }
     ],
     "hasCustomPage": false,

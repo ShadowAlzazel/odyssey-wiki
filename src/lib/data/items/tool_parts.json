@@ -3,7 +3,16 @@
     "item_name": "voyager_part_pattern",
     "item_override": "paper",
     "display_name": "Voyager Part Pattern",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "voyager_part_pattern"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "voyager_part_pattern"
+      }
+    ],
     "hasCustomPage": false,
     "category": "tool_parts",
     "rarity": "uncommon",
@@ -13,7 +22,16 @@
     "item_name": "vandal_part_pattern",
     "item_override": "paper",
     "display_name": "Vandal Part Pattern",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "vandal_part_pattern"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "vandal_part_pattern"
+      }
+    ],
     "hasCustomPage": false,
     "category": "tool_parts",
     "rarity": "uncommon",
@@ -23,7 +41,16 @@
     "item_name": "seraph_part_pattern",
     "item_override": "paper",
     "display_name": "Seraph Part Pattern",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "seraph_part_pattern"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "seraph_part_pattern"
+      }
+    ],
     "hasCustomPage": false,
     "category": "tool_parts",
     "rarity": "uncommon",
@@ -33,7 +60,16 @@
     "item_name": "marauder_part_pattern",
     "item_override": "paper",
     "display_name": "Marauder Part Pattern",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "marauder_part_pattern"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "marauder_part_pattern"
+      }
+    ],
     "hasCustomPage": false,
     "category": "tool_parts",
     "rarity": "uncommon",
@@ -43,7 +79,16 @@
     "item_name": "imperial_part_pattern",
     "item_override": "paper",
     "display_name": "Imperial Part Pattern",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "imperial_part_pattern"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "imperial_part_pattern"
+      }
+    ],
     "hasCustomPage": false,
     "category": "tool_parts",
     "rarity": "uncommon",
@@ -53,7 +98,16 @@
     "item_name": "humble_part_pattern",
     "item_override": "paper",
     "display_name": "Humble Part Pattern",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "humble_part_pattern"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "humble_part_pattern"
+      }
+    ],
     "hasCustomPage": false,
     "category": "tool_parts",
     "rarity": "uncommon",
@@ -63,7 +117,16 @@
     "item_name": "fancy_part_pattern",
     "item_override": "paper",
     "display_name": "Fancy Part Pattern",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "fancy_part_pattern"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "fancy_part_pattern"
+      }
+    ],
     "hasCustomPage": false,
     "category": "tool_parts",
     "rarity": "uncommon",
@@ -73,7 +136,16 @@
     "item_name": "empty_part_pattern",
     "item_override": "paper",
     "display_name": "Empty Part Pattern",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "empty_part_pattern"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "empty_part_pattern"
+      }
+    ],
     "hasCustomPage": false,
     "category": "tool_parts",
     "rarity": "uncommon",
@@ -83,7 +155,16 @@
     "item_name": "danger_part_pattern",
     "item_override": "paper",
     "display_name": "Danger Part Pattern",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "danger_part_pattern"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "danger_part_pattern"
+      }
+    ],
     "hasCustomPage": false,
     "category": "tool_parts",
     "rarity": "uncommon",
@@ -93,7 +174,16 @@
     "item_name": "crusader_part_pattern",
     "item_override": "paper",
     "display_name": "Crusader Part Pattern",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "crusader_part_pattern"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "crusader_part_pattern"
+      }
+    ],
     "hasCustomPage": false,
     "category": "tool_parts",
     "rarity": "uncommon",

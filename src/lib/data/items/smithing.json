@@ -3,7 +3,16 @@
     "item_name": "wings_weapon_trim_smithing_template",
     "item_override": "paper",
     "display_name": "Wings Weapon Trim Smithing Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "wings_weapon_trim_smithing_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "wings_weapon_trim_smithing_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -13,7 +22,16 @@
     "item_name": "voyager_armor_trim_smithing_template",
     "item_override": "paper",
     "display_name": "Voyager Armor Trim Smithing Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "voyager_armor_trim_smithing_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "voyager_armor_trim_smithing_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -23,7 +41,16 @@
     "item_name": "trace_weapon_trim_smithing_template",
     "item_override": "paper",
     "display_name": "Trace Weapon Trim Smithing Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "trace_weapon_trim_smithing_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "trace_weapon_trim_smithing_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -33,7 +60,16 @@
     "item_name": "titanium_upgrade_template",
     "item_override": "paper",
     "display_name": "Titanium Upgrade Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "titanium_upgrade_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "titanium_upgrade_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "epic",
@@ -43,7 +79,16 @@
     "item_name": "spine_weapon_trim_smithing_template",
     "item_override": "paper",
     "display_name": "Spine Weapon Trim Smithing Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "spine_weapon_trim_smithing_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "spine_weapon_trim_smithing_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -53,7 +98,16 @@
     "item_name": "soul_steel_upgrade_template",
     "item_override": "paper",
     "display_name": "Soul Steel Upgrade Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "soul_steel_upgrade_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "soul_steel_upgrade_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "legendary",
@@ -63,7 +117,16 @@
     "item_name": "ring_armor_trim_smithing_template",
     "item_override": "paper",
     "display_name": "Ring Armor Trim Smithing Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "ring_armor_trim_smithing_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "ring_armor_trim_smithing_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -73,7 +136,16 @@
     "item_name": "pommel_part_upgrade_template",
     "item_override": "gold_ingot",
     "display_name": "Pommel Part Upgrade Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "pommel_part_upgrade_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "pommel_part_upgrade_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -83,7 +155,16 @@
     "item_name": "mithril_upgrade_template",
     "item_override": "paper",
     "display_name": "Mithril Upgrade Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "mithril_upgrade_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "mithril_upgrade_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "legendary",
@@ -93,7 +174,16 @@
     "item_name": "mastercrafted_tool_template",
     "item_override": "paper",
     "display_name": "Mastercrafted Tool Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "mastercrafted_tool_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "mastercrafted_tool_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "common",
@@ -103,7 +193,16 @@
     "item_name": "leaf_armor_trim_smithing_template",
     "item_override": "paper",
     "display_name": "Leaf Armor Trim Smithing Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "leaf_armor_trim_smithing_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "leaf_armor_trim_smithing_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -113,7 +212,16 @@
     "item_name": "jewel_weapon_trim_smithing_template",
     "item_override": "paper",
     "display_name": "Jewel Weapon Trim Smithing Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "jewel_weapon_trim_smithing_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "jewel_weapon_trim_smithing_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -123,7 +231,16 @@
     "item_name": "iridium_upgrade_template",
     "item_override": "paper",
     "display_name": "Iridium Upgrade Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "iridium_upgrade_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "iridium_upgrade_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "legendary",
@@ -133,7 +250,16 @@
     "item_name": "imperial_armor_trim_smithing_template",
     "item_override": "paper",
     "display_name": "Imperial Armor Trim Smithing Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "imperial_armor_trim_smithing_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "imperial_armor_trim_smithing_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -143,7 +269,16 @@
     "item_name": "hilt_part_upgrade_template",
     "item_override": "gold_ingot",
     "display_name": "Hilt Part Upgrade Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "hilt_part_upgrade_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "hilt_part_upgrade_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -153,7 +288,16 @@
     "item_name": "handle_part_upgrade_template",
     "item_override": "gold_ingot",
     "display_name": "Handle Part Upgrade Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "handle_part_upgrade_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "handle_part_upgrade_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -163,7 +307,16 @@
     "item_name": "empty_part_upgrade_template",
     "item_override": "gold_ingot",
     "display_name": "Empty Part Upgrade Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "empty_part_upgrade_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "empty_part_upgrade_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -173,7 +326,16 @@
     "item_name": "danger_armor_trim_smithing_template",
     "item_override": "paper",
     "display_name": "Danger Armor Trim Smithing Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "danger_armor_trim_smithing_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "danger_armor_trim_smithing_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -183,7 +345,16 @@
     "item_name": "crystal_alloy_upgrade_template",
     "item_override": "paper",
     "display_name": "Crystal Alloy Upgrade Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "crystal_alloy_upgrade_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "crystal_alloy_upgrade_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "legendary",
@@ -193,7 +364,16 @@
     "item_name": "cross_weapon_trim_smithing_template",
     "item_override": "paper",
     "display_name": "Cross Weapon Trim Smithing Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "cross_weapon_trim_smithing_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "cross_weapon_trim_smithing_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",
@@ -203,7 +383,16 @@
     "item_name": "blade_part_upgrade_template",
     "item_override": "gold_ingot",
     "display_name": "Blade Part Upgrade Template",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "blade_part_upgrade_template"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "blade_part_upgrade_template"
+      }
+    ],
     "hasCustomPage": false,
     "category": "smithing",
     "rarity": "rare",

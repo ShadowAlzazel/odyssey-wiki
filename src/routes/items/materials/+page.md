@@ -1,3 +1,7 @@
+<script>
+  import ItemIcon from '$lib/components/ItemIcon.svelte';
+</script>
+
 # Overview
 
 Odyssey provides more materials to create weapons and tools. 
@@ -39,7 +43,7 @@ Most Odyssey materials are upgraded at a Smithing Table using either iron or dia
 
 An early game material to provide some early power.
 
-## ![]() <img src="../images/silver_ingot.png" class="pixel-art large inline" alt="Silver Ingot"> Silver
+## ![]() <ItemIcon name="silver_ingot" size="large"/>Silver
 
 An Iron equivalent material that has a variety of uses.
 - Found in **Supershafts**

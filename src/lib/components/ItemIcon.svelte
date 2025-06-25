@@ -67,9 +67,9 @@
 </script>
 
 {#if item}
-  <span class="item-wrapper inline-block relative group">
+  <span class="item-wrapper relative group">
     {#if linkToPage}
-      <a href="/items/{itemSlug}" class="item-link inline-flex items-center gap-2">
+      <a href="/items/{itemSlug}" class="item-link items-center gap-2">
         <img 
           src={imageUrl} 
           alt={getDisplayName(item.item_name)}
@@ -83,7 +83,7 @@
         {/if}
       </a>
     {:else}
-      <div class="inline-flex items-center gap-2">
+      <div class="inline-flex gap-2">
         <img 
           src={imageUrl} 
           alt={getDisplayName(item.item_name)}
@@ -115,7 +115,7 @@
     {/if}
   </span>
 {:else}
-  <span class="item-missing inline-block pixel-art {size} bg-red-200 border border-red-400 rounded flex items-center justify-center text-red-600 text-xs">
+  <span class="item-missing pixel-art {size} inline bg-red-200 border border-red-400 rounded flex items-center justify-center text-red-600 text-xs align-middle">
     ?
   </span>
 {/if}
@@ -142,4 +142,5 @@
   .rarity-rare { color: #93c5fd; }
   .rarity-epic { color: #d8b4fe; }
   .rarity-legendary { color: #fdba74; }
+  
 </style>

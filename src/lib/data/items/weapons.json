@@ -3,7 +3,49 @@
     "item_name": "tinkered_musket",
     "item_override": "crossbow",
     "display_name": "Tinkered Musket",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "tinkered_musket"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "tinkered_musket"
+      },
+      {
+        "type": "AttributesComponent",
+        "modifiers": [
+          {
+            "attribute": "attack_damage",
+            "amount": 5,
+            "slot": "mainhand",
+            "keyId": "item.base_attack_damage",
+            "operation": "add_value"
+          },
+          {
+            "attribute": "attack_speed",
+            "amount": -4,
+            "slot": "mainhand",
+            "keyId": "item.reset_attack_speed",
+            "operation": "add_value"
+          },
+          {
+            "attribute": "attack_speed",
+            "amount": 1,
+            "slot": "mainhand",
+            "keyId": "item.base_attack_speed",
+            "operation": "add_value"
+          },
+          {
+            "attribute": "entity_interaction_range",
+            "amount": 0.3,
+            "slot": "mainhand",
+            "keyId": "item.base_entity_range",
+            "operation": "add_value"
+          }
+        ]
+      }
+    ],
     "hasCustomPage": false,
     "category": "weapons",
     "rarity": "common",
@@ -13,7 +55,16 @@
     "item_name": "compact_crossbow",
     "item_override": "crossbow",
     "display_name": "Compact Crossbow",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "compact_crossbow"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "compact_crossbow"
+      }
+    ],
     "hasCustomPage": false,
     "category": "weapons",
     "rarity": "common",
@@ -23,7 +74,16 @@
     "item_name": "chain_hook",
     "item_override": "crossbow",
     "display_name": "Chain Hook",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "chain_hook"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "chain_hook"
+      }
+    ],
     "hasCustomPage": false,
     "category": "weapons",
     "rarity": "common",
@@ -33,7 +93,16 @@
     "item_name": "auto_crossbow",
     "item_override": "crossbow",
     "display_name": "Auto Crossbow",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "auto_crossbow"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "auto_crossbow"
+      }
+    ],
     "hasCustomPage": false,
     "category": "weapons",
     "rarity": "common",
@@ -43,7 +112,16 @@
     "item_name": "alchemical_driver",
     "item_override": "crossbow",
     "display_name": "Alchemical Driver",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "alchemical_driver"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "alchemical_driver"
+      }
+    ],
     "hasCustomPage": false,
     "category": "weapons",
     "rarity": "common",
@@ -53,7 +131,16 @@
     "item_name": "alchemical_diffuser",
     "item_override": "crossbow",
     "display_name": "Alchemical Diffuser",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "alchemical_diffuser"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "alchemical_diffuser"
+      }
+    ],
     "hasCustomPage": false,
     "category": "weapons",
     "rarity": "common",
@@ -63,7 +150,16 @@
     "item_name": "alchemical_bolter",
     "item_override": "crossbow",
     "display_name": "Alchemical Bolter",
-    "components": [],
+    "components": [
+      {
+        "type": "ItemNameComponent",
+        "item_name": "alchemical_bolter"
+      },
+      {
+        "type": "ItemModelComponent",
+        "item_model": "alchemical_bolter"
+      }
+    ],
     "hasCustomPage": false,
     "category": "weapons",
     "rarity": "common",

@@ -32,7 +32,7 @@ To craft a **Magic Sword**, you need:
 
 **Show full tooltip instead of simple name**
 
-<ItemIcon name="anodized_titanium_ingot" showTooltip={true} showComponents={true} />
+<ItemIcon name="berry_tart" showTooltip={true} size="xxlarge" showComponents={true} />
 
 **Large icon with no hover**
 
