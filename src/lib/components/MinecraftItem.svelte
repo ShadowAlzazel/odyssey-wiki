@@ -5,6 +5,15 @@
   export let inline = true;
   export let onHoverShow = true;
   export let count = null;
+  export let linkToPage = true;
+
+  // "diamond_sword" -> "Diamond_Sword"
+  function getWikiTitle(itemName) {
+    return itemName
+      .split('_')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join('_');
+  }
 
   function getDisplayName(itemName) {
     return itemName.split('_').map(word =>
@@ -12,27 +21,42 @@
     ).join(' ');
   }
 
-  // Misode texture URL
   $: imageUrl = `https://raw.githubusercontent.com/misode/mcmeta/refs/heads/assets/assets/minecraft/textures/item/${name}.png`;
-
   $: cssClasses = `minecraft-item pixel-art ${size} ${inline ? 'inline' : ''}`;
+  $: wikiUrl = `https://minecraft.wiki/w/${getWikiTitle(name)}`;
 </script>
 
 {#if inline}
   <span class="item-wrapper relative group inline-flex items-center">
-    <span class="relative inline-flex items-center gap-2">
-      <img 
-        src={imageUrl}
-        alt={getDisplayName(name)}
-        class="minecraft-icon {cssClasses}"
-        loading="lazy"
-      />
-      {#if count && count > 1}
-        <span class="item-count absolute bottom-0 right-0 bg-gray-800 text-white text-xs rounded-full px-1 min-w-[1rem] h-4 flex items-center justify-center font-bold">
-          {count}
-        </span>
-      {/if}
-    </span>
+    {#if linkToPage}
+      <a href={wikiUrl} class="inline-flex items-center gap-2 no-underline" target="_blank" rel="noopener noreferrer">
+        <img
+          src={imageUrl}
+          alt={getDisplayName(name)}
+          class="minecraft-icon {cssClasses}"
+          loading="lazy"
+        />
+        {#if count && count > 1}
+          <span class="item-count absolute bottom-0 right-0 bg-gray-800 text-white text-xs rounded-full px-1 min-w-[1rem] h-4 flex items-center justify-center font-bold">
+            {count}
+          </span>
+        {/if}
+      </a>
+    {:else}
+      <span class="relative inline-flex items-center gap-2">
+        <img
+          src={imageUrl}
+          alt={getDisplayName(name)}
+          class="minecraft-icon {cssClasses}"
+          loading="lazy"
+        />
+        {#if count && count > 1}
+          <span class="item-count absolute bottom-0 right-0 bg-gray-800 text-white text-xs rounded-full px-1 min-w-[1rem] h-4 flex items-center justify-center font-bold">
+            {count}
+          </span>
+        {/if}
+      </span>
+    {/if}
 
     {#if showTooltip || onHoverShow}
       <span class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
@@ -45,19 +69,35 @@
   </span>
 {:else}
   <div class="item-wrapper relative group">
-    <div class="minecraft-item-container relative inline-flex items-center gap-2">
-      <img 
-        src={imageUrl}
-        alt={getDisplayName(name)}
-        class="minecraft-icon {cssClasses}"
-        loading="lazy"
-      />
-      {#if count && count > 1}
-        <span class="item-count absolute bottom-0 right-0 bg-gray-800 text-white text-xs rounded-full px-1 min-w-[1rem] h-4 flex items-center justify-center font-bold">
-          {count}
-        </span>
-      {/if}
-    </div>
+    {#if linkToPage}
+      <a href={wikiUrl} class="minecraft-item-container relative inline-flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+        <img
+          src={imageUrl}
+          alt={getDisplayName(name)}
+          class="minecraft-icon {cssClasses}"
+          loading="lazy"
+        />
+        {#if count && count > 1}
+          <span class="item-count absolute bottom-0 right-0 bg-gray-800 text-white text-xs rounded-full px-1 min-w-[1rem] h-4 flex items-center justify-center font-bold">
+            {count}
+          </span>
+        {/if}
+      </a>
+    {:else}
+      <div class="minecraft-item-container relative inline-flex items-center gap-2">
+        <img
+          src={imageUrl}
+          alt={getDisplayName(name)}
+          class="minecraft-icon {cssClasses}"
+          loading="lazy"
+        />
+        {#if count && count > 1}
+          <span class="item-count absolute bottom-0 right-0 bg-gray-800 text-white text-xs rounded-full px-1 min-w-[1rem] h-4 flex items-center justify-center font-bold">
+            {count}
+          </span>
+        {/if}
+      </div>
+    {/if}
 
     {#if showTooltip || onHoverShow}
       <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-10">
