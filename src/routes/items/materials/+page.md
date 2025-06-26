@@ -39,15 +39,14 @@ Most Odyssey materials are upgraded at a Smithing Table using either iron or dia
 
 # Materials
 
-## ![]() <img src="../images/copper_ingot.png" class="pixel-art large inline" alt="Copper Ingot"> Copper
+### ![]() <img src="../images/copper_ingot.png" class="pixel-art large inline" alt="Copper Ingot"> Copper
 
 An early game material to provide some early power.
-
-Here's your updated ingot section with the correct format using the `<ItemIcon />` Svelte component instead of raw `<img>` HTML:
+* Can be made into starter armor and tools
 
 ---
 
-## ![]() <ItemIcon name="silver_ingot" size="large"/> Silver
+### ![]() <ItemIcon name="silver_ingot" size="large"/> Silver
 
 An Iron equivalent material that has a variety of uses.
 
@@ -56,7 +55,7 @@ An Iron equivalent material that has a variety of uses.
 
 ---
 
-## ![]() <ItemIcon name="titanium_ingot" size="large"/> Titanium
+### ![]() <ItemIcon name="titanium_ingot" size="large"/> Titanium
 
 An alternative of diamond focused on speed and utility.
 
@@ -66,7 +65,7 @@ An alternative of diamond focused on speed and utility.
 
 ---
 
-## ![]() <ItemIcon name="soul_steel_ingot" size="large"/> Soul Steel
+### ![]() <ItemIcon name="soul_steel_ingot" size="large"/> Soul Steel
 
 A late game alternative to diamond, with the unique property of enhancing experience gain.
 
@@ -75,7 +74,7 @@ A late game alternative to diamond, with the unique property of enhancing experi
 
 ---
 
-## ![]() <ItemIcon name="crystal_alloy_ingot" size="large"/> Crystal Alloy
+### ![]() <ItemIcon name="crystal_alloy_ingot" size="large"/> Crystal Alloy
 
 A magical metal similar to diamond, with magical properties.
 
@@ -86,7 +85,7 @@ A magical metal similar to diamond, with magical properties.
 
 ---
 
-## ![]() <ItemIcon name="iridium_ingot" size="large"/> Iridium
+### ![]() <ItemIcon name="iridium_ingot" size="large"/> Iridium
 
 The Overworld endgame material with ultimate durability.
 
@@ -96,7 +95,7 @@ The Overworld endgame material with ultimate durability.
 
 ---
 
-## ![]() <ItemIcon name="mithril_ingot" size="large"/> Mithril
+### ![]() <ItemIcon name="mithril_ingot" size="large"/> Mithril
 
 The endgame legendary material used to craft powerful weapons and armor.
 

@@ -68,3 +68,10 @@ Browse a full list of enchantments and their corresponding costs. This section i
 Whether you're min-maxing a powerful build or experimenting with unconventional loadouts, Tomes are an essential tool in your enchanting toolkit.
 
 ---
+
+## [Villager Trading](/enchanting/villagers)
+
+Odyssey uses the new villager trade rebalance to add more enchantments to each villagers pool. 
+Some more powerful enchantments can be unlocked when getting a villager to max level
+
+---

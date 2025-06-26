@@ -20,7 +20,9 @@ To create a tome, place a **Blank Tome** into an **Enchantment Table**. Dependin
 
 ### Using Tomes
 
-Use the tome in the first slot of the smithing table, along with the tool and a lapis.
+A tome is used in the smithing table.
+
+Use the tome in the first slot of the smithing table, along with the tool or book and a lapis as the material.
 
 # List of Tomes
 
