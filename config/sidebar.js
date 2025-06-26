@@ -70,7 +70,7 @@ export const sidebar =
       },
       {
         title:
-          "magic",
+          "Magic",
         collapsible: true,
         items: [
           {
