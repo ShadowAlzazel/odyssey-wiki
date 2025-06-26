@@ -1,37 +1,62 @@
 <script>
-  import ItemIcon from '$lib/components/ItemIcon.svelte';
+  import CustomItem from '$lib/components/CustomItem.svelte';
+  import ItemRecipe from '$lib/components/ItemRecipe.svelte';
+
+  // Example recipes
+  const customSwordRecipe = {
+    recipe: [
+      null, { type: 'custom', name: 'mithril_ingot' }, null,
+      null, { type: 'custom', name: 'mithril_ingot' }, null,
+      null, { type: 'minecraft', name: 'stick' }, null
+    ],
+    result: { type: 'custom', name: 'blank_tome' },
+    title: 'Mithril-tome Sword',
+    type: '3x3'
+  };
+  
 </script>
 
 # Item Test
 TESTING DYNAMIC COMPONENTS
 
+TESTING RECIPE 
+
+<ItemRecipe 
+  recipe={customSwordRecipe.recipe}
+  result={customSwordRecipe.result}
+  title={customSwordRecipe.title}
+  type={customSwordRecipe.type}
+  showTooltips={true}
+  size="medium"
+/>
+
 To craft a **Magic Sword**, you need:
 
-- 2x <ItemIcon name="anodized_titanium_ingot" />
+- 2x <CustomItem name="anodized_titanium_ingot" />
 
 **Different Sizess**
 
-<ItemIcon name="tome_of_extraction" size="large" />
-<ItemIcon name="soul_quartz" size="tiny" />
-<ItemIcon name="berry_tart" size="xxlarge" />
-<ItemIcon name="tome_of_extraction" size="xxlarge" />
+<CustomItem name="tome_of_extraction" size="large" />
+<CustomItem name="soul_quartz" size="tiny" />
+<CustomItem name="berry_tart" size="xxlarge" />
+<CustomItem name="tome_of_extraction" size="xxlarge" />
 
 **Default behavior: shows rarity-colored name on hover**
 
-<ItemIcon name="anodized_titanium_ingot" />
+<CustomItem name="anodized_titanium_ingot" />
 
 **Disable hover name display**
 
-<ItemIcon name="anodized_titanium_ingot" onHoverShow={false} />
+<CustomItem name="anodized_titanium_ingot" onHoverShow={false} />
 
 **Show full tooltip instead of simple name**
 
-<ItemIcon name="berry_tart" showTooltip={true} size="xxlarge" showComponents={true} />
+<CustomItem name="berry_tart" showTooltip={true} size="xxlarge" showComponents={true} />
 
 **Large icon with no hover**
 
-<ItemIcon name="anodized_titanium_ingot" size="xxlarge" onHoverShow={false} />
+<CustomItem name="anodized_titanium_ingot" size="xxlarge" onHoverShow={false} />
 
 **Icon with no link**
 
-<ItemIcon name="anodized_titanium_ingot" size="large" linkToPage={false} />
+<CustomItem name="anodized_titanium_ingot" size="large" linkToPage={false} />

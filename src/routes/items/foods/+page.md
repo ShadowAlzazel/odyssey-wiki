@@ -1,5 +1,5 @@
 <script>
-  import ItemIcon from '$lib/components/ItemIcon.svelte';
+  import CustomItem from '$lib/components/CustomItem.svelte';
 </script>
 
 ## Foods added by Odyssey
@@ -8,7 +8,7 @@ Odyssey adds some cool foods for players to make and travel with.
 
 ---
 
-### <ItemIcon name="shoyu_ramen" size="large"/> Shoyu Ramen
+### <CustomItem name="shoyu_ramen" size="large"/> Shoyu Ramen
 
 A warm soy-based noodle bowl. Great for adventurers on the go.
 
@@ -19,7 +19,7 @@ A warm soy-based noodle bowl. Great for adventurers on the go.
 
 ---
 
-### <ItemIcon name="salmon_roll" size="large"/> Salmon Roll
+### <CustomItem name="salmon_roll" size="large"/> Salmon Roll
 
 A simple sushi roll, ideal for a quick snack.
 
@@ -29,7 +29,7 @@ A simple sushi roll, ideal for a quick snack.
 
 ---
 
-### <ItemIcon name="salmon_nigiri" size="large"/> Salmon Nigiri
+### <CustomItem name="salmon_nigiri" size="large"/> Salmon Nigiri
 
 Slices of fresh salmon over rice. Light but satisfying.
 
@@ -39,7 +39,7 @@ Slices of fresh salmon over rice. Light but satisfying.
 
 ---
 
-### <ItemIcon name="fish_n_chips" size="large"/> Fish N Chips
+### <CustomItem name="fish_n_chips" size="large"/> Fish N Chips
 
 A fried favorite. Crispy, flaky, and filling.
 
@@ -49,7 +49,7 @@ A fried favorite. Crispy, flaky, and filling.
 
 ---
 
-### <ItemIcon name="french_toast" size="large"/> French Toast
+### <CustomItem name="french_toast" size="large"/> French Toast
 
 Sweet and eggy breakfast comfort food.
 
@@ -59,7 +59,7 @@ Sweet and eggy breakfast comfort food.
 
 ---
 
-### <ItemIcon name="fruit_bowl" size="large"/> Fruit Bowl
+### <CustomItem name="fruit_bowl" size="large"/> Fruit Bowl
 
 A mix of fresh fruit. Sweet and hydrating.
 
@@ -69,7 +69,7 @@ A mix of fresh fruit. Sweet and hydrating.
 
 ---
 
-### <ItemIcon name="green_apple" size="large"/> Green Apple
+### <CustomItem name="green_apple" size="large"/> Green Apple
 
 A tart, crunchy fruit. Good for short bursts of energy.
 
@@ -79,7 +79,7 @@ A tart, crunchy fruit. Good for short bursts of energy.
 
 ---
 
-### <ItemIcon name="bacon" size="large"/> Bacon
+### <CustomItem name="bacon" size="large"/> Bacon
 
 Savory and crisp. A perfect breakfast side.
 
@@ -89,7 +89,7 @@ Savory and crisp. A perfect breakfast side.
 
 ---
 
-### <ItemIcon name="brisket" size="large"/> Brisket
+### <CustomItem name="brisket" size="large"/> Brisket
 
 Raw cut of beef. Best when cooked.
 
@@ -99,7 +99,7 @@ Raw cut of beef. Best when cooked.
 
 ---
 
-### <ItemIcon name="cooked_brisket" size="large"/> Cooked Brisket
+### <CustomItem name="cooked_brisket" size="large"/> Cooked Brisket
 
 Tender and juicy. A reliable protein source.
 
@@ -109,7 +109,7 @@ Tender and juicy. A reliable protein source.
 
 ---
 
-### <ItemIcon name="berry_tart" size="large"/> Berry Tart
+### <CustomItem name="berry_tart" size="large"/> Berry Tart
 
 Sweet and flaky dessert with a berry burst.
 
@@ -119,7 +119,7 @@ Sweet and flaky dessert with a berry burst.
 
 ---
 
-### <ItemIcon name="chocolate_mochi" size="large"/> Chocolate Mochi
+### <CustomItem name="chocolate_mochi" size="large"/> Chocolate Mochi
 
 Chewy rice cake with chocolate filling.
 
@@ -129,7 +129,7 @@ Chewy rice cake with chocolate filling.
 
 ---
 
-### <ItemIcon name="crystal_candy" size="large"/> Crystal Candy
+### <CustomItem name="crystal_candy" size="large"/> Crystal Candy
 
 Crunchy and sweet. A fun little treat.
 
@@ -143,7 +143,7 @@ Crunchy and sweet. A fun little treat.
 
 While these are also consumable foods, they are drinks meant to be used fast.
 
-### <ItemIcon name="coffee" size="large"/> Coffee
+### <CustomItem name="coffee" size="large"/> Coffee
 
 A quick caffeine boost. Slightly energizing.
 
@@ -153,7 +153,7 @@ A quick caffeine boost. Slightly energizing.
 
 ---
 
-### <ItemIcon name="oolong_orchid_boba_tea" size="large"/> Oolong Orchid Boba Tea
+### <CustomItem name="oolong_orchid_boba_tea" size="large"/> Oolong Orchid Boba Tea
 
 Floral and sweet with chewy pearls.
 
@@ -163,7 +163,7 @@ Floral and sweet with chewy pearls.
 
 ---
 
-### <ItemIcon name="matcha_melon_boba_tea" size="large"/> Matcha Melon Boba Tea
+### <CustomItem name="matcha_melon_boba_tea" size="large"/> Matcha Melon Boba Tea
 
 Earthy matcha meets fresh melon.
 
@@ -173,7 +173,7 @@ Earthy matcha meets fresh melon.
 
 ---
 
-### <ItemIcon name="earl_lily_boba_tea" size="large"/> Earl Lily Boba Tea
+### <CustomItem name="earl_lily_boba_tea" size="large"/> Earl Lily Boba Tea
 
 Elegant floral tea with creamy sweetness.
 
@@ -183,7 +183,7 @@ Elegant floral tea with creamy sweetness.
 
 ---
 
-### <ItemIcon name="cornflower_ceylon_boba_tea" size="large"/> Cornflower Ceylon Boba Tea
+### <CustomItem name="cornflower_ceylon_boba_tea" size="large"/> Cornflower Ceylon Boba Tea
 
 A rich black tea infused with floral notes.
 
@@ -193,7 +193,7 @@ A rich black tea infused with floral notes.
 
 ---
 
-### <ItemIcon name="allium_jade_boba_tea" size="large"/> Allium Jade Boba Tea
+### <CustomItem name="allium_jade_boba_tea" size="large"/> Allium Jade Boba Tea
 
 Fresh and green, with a mild herbal kick.
 
@@ -203,7 +203,7 @@ Fresh and green, with a mild herbal kick.
 
 ---
 
-### <ItemIcon name="thai_tulip_boba_tea" size="large"/> Thai Tulip Boba Tea
+### <CustomItem name="thai_tulip_boba_tea" size="large"/> Thai Tulip Boba Tea
 
 Colorful, sweet tea with floral accents.
 
@@ -213,7 +213,7 @@ Colorful, sweet tea with floral accents.
 
 ---
 
-### <ItemIcon name="spider_eye_boba" size="large"/> Spider Eye Boba
+### <CustomItem name="spider_eye_boba" size="large"/> Spider Eye Boba
 
 Creepy and chewy. Not for the faint of heart.
 

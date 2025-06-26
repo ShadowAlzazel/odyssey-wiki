@@ -1,5 +1,5 @@
 <script>
-  import ItemIcon from '$lib/components/ItemIcon.svelte';
+  import CustomItem from '$lib/components/CustomItem.svelte';
 </script>
 
 # Tome Introduction
@@ -51,12 +51,12 @@ Use the tome in the first slot of the smithing table, along with the tool or boo
 * **Function:** Resets the repair cost of an item in an anvil, reducing it to just 1. This makes continued repairs and modifications much more viable.
 * **Availability:** Can be acquired using a Level 3 Enchantment Table.
 
-### Tome of Avarice <ItemIcon name="tome_of_avarice" size="large"/>
+### Tome of Avarice <CustomItem name="tome_of_avarice" size="large"/>
 
 * **Function:** Destroys an item and converts it into experience points. Experience gained is calculated by `100 x Enchantability Point`. 
 * **Availability:** Can be acquired using a Level 3 Enchantment Table.
 
-### Tome of Replication <ItemIcon name="tome_of_replication" size="large"/>
+### Tome of Replication <CustomItem name="tome_of_replication" size="large"/>
 
 * **Function:** Fully duplicates the contents of an enchanted book, copying all enchantments at their current levels.
 * **Availability:** Cannot be obtained through the Enchantment Table. This tome can only be found as loot within the **Sunken Library** structure.

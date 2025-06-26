@@ -1,6 +1,6 @@
 <script>
   // Remove page store and getItem import - we get data from server now
-  import ItemIcon from '$lib/components/ItemIcon.svelte';
+  import CustomItem from '$lib/components/CustomItem.svelte';
   import ComponentDisplay from '$lib/components/ComponentDisplay.svelte';
   
   // Receive data from server load function
@@ -58,7 +58,7 @@
   <!-- Header -->
   <div class="mb-8 pb-4 border-b border-gray-200">
     <div class="flex items-start gap-6">
-      <ItemIcon name={item.data.item_name} size="xxlarge" showTooltip={false} linkToPage={false} />
+      <CustomItem name={item.data.item_name} size="xxlarge" showTooltip={false} linkToPage={false} />
       <div>
         <h1 class="text-2xl font-mono font-bold mb-2">{getDisplayName(item)}</h1>
         <div class="text-sm text-gray-600 space-y-1">

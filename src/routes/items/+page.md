@@ -1,5 +1,5 @@
 <script>
-  import ItemIcon from '$lib/components/ItemIcon.svelte';
+  import CustomItem from '$lib/components/CustomItem.svelte';
 </script>
 
 # Items
