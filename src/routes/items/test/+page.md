@@ -5,21 +5,41 @@
   // Example recipes
   const customSwordRecipe = {
     recipe: [
-      null, { type: 'custom', name: 'mithril_ingot' }, null,
-      null, { type: 'custom', name: 'mithril_ingot' }, null,
+      null, { type: 'custom', name: 'iridium_ingot' }, null,
+      null, { type: 'custom', name: 'iridium_ingot' }, null,
       null, { type: 'minecraft', name: 'stick' }, null
     ],
-    result: { type: 'custom', name: 'blank_tome' },
-    title: 'Mithril-tome Sword',
+    result: { type: 'minecraft', name: 'netherite_sword' },
     type: '3x3'
   };
   
+  const blankTomeRecipe = {
+    recipe: [
+      null, { type: 'minecraft', name: 'prismarine_crystals' }, null,
+      { type: 'minecraft', name: 'amethyst_shard' }, { type: 'minecraft', name: 'book' }, { type: 'minecraft', name: 'amethyst_shard' },
+      null, { type: 'minecraft', name: 'prismarine_crystals' }, null
+    ],
+    result: { type: 'custom', name: 'blank_tome' },
+    type: '3x3'
+  };
+
 </script>
 
 # Item Test
 TESTING DYNAMIC COMPONENTS
 
-TESTING RECIPE 
+BLANK TOME  RECIPE 
+
+<ItemRecipe 
+  recipe={blankTomeRecipe.recipe}
+  result={blankTomeRecipe.result}
+  title={blankTomeRecipe.title}
+  type={blankTomeRecipe.type}
+  showTooltips={true}
+  size="medium"
+/>
+
+TESTING RECIPE
 
 <ItemRecipe 
   recipe={customSwordRecipe.recipe}
