@@ -1,6 +1,7 @@
 <script>
   import CustomItem from '$lib/components/CustomItem.svelte';
   import ItemRecipe from '$lib/components/ItemRecipe.svelte';
+  import CustomRecipe from '$lib/components/CustomRecipe.svelte';
 
   // Example recipes
   const customSwordRecipe = {
@@ -30,14 +31,7 @@ TESTING DYNAMIC COMPONENTS
 
 BLANK TOME  RECIPE 
 
-<ItemRecipe 
-  recipe={blankTomeRecipe.recipe}
-  result={blankTomeRecipe.result}
-  title={blankTomeRecipe.title}
-  type={blankTomeRecipe.type}
-  showTooltips={true}
-  size="medium"
-/>
+<CustomRecipe name="blank_tome" />
 
 TESTING RECIPE
 
