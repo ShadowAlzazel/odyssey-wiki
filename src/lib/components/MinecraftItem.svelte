@@ -7,11 +7,21 @@
   export let count = null;
   export let linkToPage = true;
 
+  import { onMount } from "svelte";
+
   // "diamond_sword" -> "Diamond_Sword"
+  // "lily_of_the_valley" -> "Lily_of_the_Valley"
   function getWikiTitle(itemName) {
+    const exceptions = ['of', 'the'];
+
     return itemName
       .split('_')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .map((word, index) => {
+        if (index === 0 || !exceptions.includes(word)) {
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        }
+        return word;
+      })
       .join('_');
   }
 
@@ -21,7 +31,23 @@
     ).join(' ');
   }
 
-  $: imageUrl = `https://raw.githubusercontent.com/misode/mcmeta/refs/heads/assets/assets/minecraft/textures/item/${name}.png`;
+  let imageUrl;
+  $: primaryUrl  = `https://raw.githubusercontent.com/misode/mcmeta/refs/heads/assets/assets/minecraft/textures/item/${name}.png`;
+  $: fallbackUrl   = `https://minecraft.wiki/images/Invicon_${getWikiTitle(name)}.png`;
+
+  onMount(async () => {
+    try {
+      const res = await fetch(primaryUrl);
+      if (res.ok) {
+        imageUrl = primaryUrl;
+      } else {
+        imageUrl = fallbackUrl;
+      }
+    } catch (e) {
+      imageUrl = fallbackUrl;
+    }
+  });
+
   $: cssClasses = `minecraft-item pixel-art ${size} ${inline ? 'inline' : ''}`;
   $: wikiUrl = `https://minecraft.wiki/w/${getWikiTitle(name)}`;
 </script>
