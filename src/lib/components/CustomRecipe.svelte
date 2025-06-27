@@ -3,7 +3,7 @@
   import { getRecipe } from '../data/recipes';
   
   export let name;
-  export let showTooltips = true;
+  export let showTooltips = false;
   export let size = "medium";
   
   $: recipe = getRecipe(name);

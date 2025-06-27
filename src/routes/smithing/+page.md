@@ -1,3 +1,5 @@
 # Smithing
 
-## [Part Patterns](/smithing/weapon-parts)
+## [Weapon Parts](/smithing/weapon-parts)
+
+## [Villager Weapon-smiths](/smithing/weaponsmiths)

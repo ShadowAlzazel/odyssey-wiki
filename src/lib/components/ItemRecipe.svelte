@@ -30,8 +30,8 @@
     <span 
       class="crafting-grid absolute z-10 grid {gridClass} gap-1"
       style="
-        left: 8px;
-        top: 12px;
+        left: 7px;
+        top: 11px;
         width: 108px;
         height: 108px;
       "
@@ -62,8 +62,11 @@
     
     <!-- Result Slot -->
     <span 
-      class="result-slot absolute z-10 inline-flex items-center justify-center p-1 min-h-[32px] min-w-[32px]"
-      style="left: 90px;"
+      class="result-slot absolute z-10 p-1 min-h-[32px] min-w-[32px]"
+      style="
+        left: 90px;
+        top: 2px;
+      "
     >
       {#if result}
         {#if result.type === 'custom'}
