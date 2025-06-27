@@ -30,21 +30,21 @@
     <span 
       class="crafting-grid absolute z-10 grid {gridClass} gap-1"
       style="
-        left: 7px;
-        top: 11px;
-        width: 108px;
-        height: 108px;
+        left: 8px;
+        top: 12px;
+        width: 106px;
+        height: 106px;
       "
     >
       {#each normalizedRecipe as item}
-        <span class="recipe-slot items-left min-h-[32px] min-w-[32px]">
+        <span class="recipe-slot items-center min-h-[32px] min-w-[32px]">
           {#if item}
             {#if item.type === 'custom'}
               <CustomItem 
                 name={item.name}
                 {size}
                 showTooltip={showTooltips}
-                linkToPage={false}
+                linkToPage={true}
                 inline={true}
                 onHoverShow={true}
               />

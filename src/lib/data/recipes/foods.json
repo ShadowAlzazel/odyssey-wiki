@@ -1,0 +1,213 @@
+{
+  "crystal_candy": {
+    "recipe": [
+      { "type": "minecraft", "name": "amethyst_shard" },
+      { "type": "minecraft", "name": "sweet_berries" }
+    ],
+    "result": { "type": "custom", "name": "crystal_candy", "count": 2 },
+    "type": "3x3",
+    "title": "Crystal Candy"
+  },
+  "french_toast": {
+    "recipe": [
+      { "type": "minecraft", "name": "bread" },
+      { "type": "minecraft", "name": "sugar" }
+    ],
+    "result": { "type": "custom", "name": "french_toast", "count": 1 },
+    "type": "3x3",
+    "title": "French Toast"
+  },
+  "chocolate_mochi": {
+    "recipe": [
+      null, { "type": "minecraft", "name": "cocoa_beans" }, null,
+      { "type": "minecraft", "name": "cocoa_beans" }, { "type": "minecraft", "name": "sugar" }, { "type": "minecraft", "name": "cocoa_beans" },
+      null, { "type": "minecraft", "name": "cocoa_beans" }, null
+    ],
+    "result": { "type": "custom", "name": "chocolate_mochi", "count": 4 },
+    "type": "3x3",
+    "title": "Chocolate Mochi"
+  },
+  "berry_tart": {
+    "recipe": [
+      null, { "type": "minecraft", "name": "sweet_berries" }, null,
+      { "type": "minecraft", "name": "sweet_berries" }, { "type": "minecraft", "name": "sugar" }, { "type": "minecraft", "name": "sweet_berries" },
+      null, { "type": "minecraft", "name": "sweet_berries" }, null
+    ],
+    "result": { "type": "custom", "name": "berry_tart", "count": 4 },
+    "type": "3x3",
+    "title": "Berry Tart"
+  },
+  "fish_n_chips": {
+    "recipe": [
+      { "type": "minecraft", "name": "baked_potato" },
+      { "type": "minecraft", "name": "cooked_cod" }
+    ],
+    "result": { "type": "custom", "name": "fish_n_chips", "count": 1 },
+    "type": "shapeless",
+    "title": "Fish N' Chips"
+  },
+  "fruit_bowl": {
+    "recipe": [
+      { "type": "minecraft", "name": "bowl" },
+      { "type": "minecraft", "name": "apple" },
+      { "type": "minecraft", "name": "melon_slice" },
+      { "type": "minecraft", "name": "glow_berries" },
+      { "type": "minecraft", "name": "sweet_berries" }
+    ],
+    "result": { "type": "custom", "name": "fruit_bowl", "count": 1 },
+    "type": "shapeless",
+    "title": "Fruit Bowl"
+  },
+  "spider_eye_boba": {
+    "recipe": [
+      null, { "type": "minecraft", "name": "rotten_flesh" }, null,
+      null, { "type": "minecraft", "name": "glass_bottle" }, null,
+      null, { "type": "minecraft", "name": "spider_eye" }, null
+    ],
+    "result": { "type": "custom", "name": "spider_eye_boba", "count": 1 },
+    "type": "3x3",
+    "title": "Spider Eye Boba"
+  },
+  "coffee": {
+    "recipe": [
+      { "type": "minecraft", "name": "sugar" }, { "type": "minecraft", "name": "cocoa_beans" }, { "type": "minecraft", "name": "cocoa_beans" },
+      null, { "type": "minecraft", "name": "glass_bottle" }, null,
+      null, { "type": "minecraft", "name": "brick" }, null
+    ],
+    "result": { "type": "custom", "name": "coffee", "count": 2 },
+    "type": "3x3",
+    "title": "Coffee"
+  },
+  "salmon_roll": {
+    "recipe": [
+      { "type": "minecraft", "name": "carrot" },
+      { "type": "minecraft", "name": "dried_kelp" },
+      { "type": "minecraft", "name": "salmon" }
+    ],
+    "result": { "type": "custom", "name": "salmon_roll", "count": 2 },
+    "type": "3x3",
+    "title": "Salmon Roll"
+  },
+  "salmon_nigiri": {
+    "recipe": [
+      { "type": "minecraft", "name": "wheat" },
+      { "type": "minecraft", "name": "salmon" }
+    ],
+    "result": { "type": "custom", "name": "salmon_nigiri", "count": 2 },
+    "type": "3x3",
+    "title": "Salmon Nigiri"
+  },
+  "shoyu_ramen": {
+    "recipe": [
+      { "type": "minecraft", "name": "cooked_chicken" },
+      { "type": "minecraft", "name": "wheat" },
+      { "type": "minecraft", "name": "egg" }
+    ],
+    "result": { "type": "custom", "name": "shoyu_ramen", "count": 1 },
+    "type": "3x3",
+    "title": "Shoyu Ramen"
+  },
+  "brisket": {
+    "recipe": [
+      { "type": "minecraft", "name": "beef" },
+      { "type": "minecraft", "name": "beef" },
+      { "type": "minecraft", "name": "beef" },
+      { "type": "minecraft", "name": "beef" }
+    ],
+    "result": { "type": "custom", "name": "brisket", "count": 4 },
+    "type": "3x3",
+    "title": "Brisket"
+  },
+  "earl_lily_boba_tea": {
+    "recipe": [
+      { "type": "minecraft", "name": "sugar" }, { "type": "minecraft", "name": "cocoa_beans" }, { "type": "minecraft", "name": "lily_of_the_valley" },
+      null, { "type": "minecraft", "name": "glass_bottle" }, null,
+      null, { "type": "minecraft", "name": "cocoa_beans" }, null
+    ],
+    "result": { "type": "custom", "name": "earl_lily_boba_tea", "count": 2 },
+    "type": "3x3",
+    "title": "Earl Lily Boba Tea"
+  },
+  "oolong_orchid_boba_tea": {
+    "recipe": [
+      { "type": "minecraft", "name": "sugar" }, { "type": "minecraft", "name": "cocoa_beans" }, { "type": "minecraft", "name": "blue_orchid" },
+      null, { "type": "minecraft", "name": "glass_bottle" }, null,
+      null, { "type": "minecraft", "name": "cocoa_beans" }, null
+    ],
+    "result": { "type": "custom", "name": "oolong_orchid_boba_tea", "count": 2 },
+    "type": "3x3",
+    "title": "Oolong Orchid Boba Tea"
+  },
+  "matcha_melon_boba_tea": {
+    "recipe": [
+      { "type": "minecraft", "name": "sugar" }, { "type": "minecraft", "name": "cocoa_beans" }, { "type": "minecraft", "name": "melon_slice" },
+      null, { "type": "minecraft", "name": "glass_bottle" }, null,
+      null, { "type": "minecraft", "name": "cocoa_beans" }, null
+    ],
+    "result": { "type": "custom", "name": "matcha_melon_boba_tea", "count": 2 },
+    "type": "3x3",
+    "title": "Matcha Melon Boba Tea"
+  },
+  "thai_tulip_boba_tea": {
+    "recipe": [
+      { "type": "minecraft", "name": "sugar" }, { "type": "minecraft", "name": "cocoa_beans" }, { "type": "minecraft", "name": "orange_tulip" },
+      null, { "type": "minecraft", "name": "glass_bottle" }, null,
+      null, { "type": "minecraft", "name": "cocoa_beans" }, null
+    ],
+    "result": { "type": "custom", "name": "thai_tulip_boba_tea", "count": 2 },
+    "type": "3x3",
+    "title": "Thai Tulip Boba Tea"
+  },
+  "allium_jade_boba_tea": {
+    "recipe": [
+      { "type": "minecraft", "name": "sugar" }, { "type": "minecraft", "name": "cocoa_beans" }, { "type": "minecraft", "name": "allium" },
+      null, { "type": "minecraft", "name": "glass_bottle" }, null,
+      null, { "type": "minecraft", "name": "cocoa_beans" }, null
+    ],
+    "result": { "type": "custom", "name": "allium_jade_boba_tea", "count": 2 },
+    "type": "3x3",
+    "title": "Allium Jade Boba Tea"
+  },
+  "cornflower_ceylon_boba_tea": {
+    "recipe": [
+      { "type": "minecraft", "name": "sugar" }, { "type": "minecraft", "name": "cocoa_beans" }, { "type": "minecraft", "name": "cornflower" },
+      null, { "type": "minecraft", "name": "glass_bottle" }, null,
+      null, { "type": "minecraft", "name": "cocoa_beans" }, null
+    ],
+    "result": { "type": "custom", "name": "cornflower_ceylon_boba_tea", "count": 2 },
+    "type": "3x3",
+    "title": "Cornflower Ceylon Boba Tea"
+  },
+  "dog_spinach": {
+    "recipe": [
+      null, { "type": "minecraft", "name": "kelp" }, null,
+      { "type": "minecraft", "name": "kelp" }, { "type": "minecraft", "name": "cooked_beef" }, { "type": "minecraft", "name": "kelp" },
+      null, { "type": "minecraft", "name": "kelp" }, null
+    ],
+    "result": { "type": "custom", "name": "dog_spinach", "count": 2 },
+    "type": "3x3",
+    "title": "Dog Spinach"
+  },
+  "dog_sizzle_crisp": {
+    "recipe": [
+      { "type": "minecraft", "name": "redstone" }, { "type": "minecraft", "name": "magma_cream" }, { "type": "minecraft", "name": "redstone" },
+      { "type": "minecraft", "name": "magma_cream" }, { "type": "minecraft", "name": "cooked_beef" }, { "type": "minecraft", "name": "magma_cream" },
+      { "type": "minecraft", "name": "redstone" }, { "type": "minecraft", "name": "magma_cream" }, { "type": "minecraft", "name": "redstone" }
+    ],
+    "result": { "type": "custom", "name": "dog_sizzle_crisp", "count": 2 },
+    "type": "3x3",
+    "title": "Dog Sizzle Crisp"
+  },
+  "dog_milk_bone": {
+    "recipe": [
+      { "type": "minecraft", "name": "milk_bucket" },
+      { "type": "minecraft", "name": "bone" },
+      { "type": "minecraft", "name": "cooked_beef" },
+      { "type": "minecraft", "name": "egg" },
+      { "type": "minecraft", "name": "honey_bottle" }
+    ],
+    "result": { "type": "custom", "name": "dog_milk_bone", "count": 1 },
+    "type": "shapeless",
+    "title": "Dog Milk Bone"
+  }
+}

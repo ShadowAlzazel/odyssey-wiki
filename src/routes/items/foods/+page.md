@@ -1,5 +1,7 @@
 <script>
   import CustomItem from '$lib/components/CustomItem.svelte';
+  import ItemRecipe from '$lib/components/ItemRecipe.svelte';
+  import CustomRecipe from '$lib/components/CustomRecipe.svelte';
 </script>
 
 ## Foods added by Odyssey
@@ -15,7 +17,9 @@ A warm soy-based noodle bowl. Great for adventurers on the go.
 * **Nutrition:** 9
 * **Saturation:** 12
 * **Consume Time:** 2s
+* **Recipe**:
 
+<CustomRecipe name="shoyu_ramen" />
 
 ---
 
@@ -26,6 +30,9 @@ A simple sushi roll, ideal for a quick snack.
 * **Nutrition:** 4
 * **Saturation:** 6
 * **Consume Time:** 1.2s
+* **Recipe**:
+
+<CustomRecipe name="salmon_roll" />
 
 ---
 
@@ -36,6 +43,9 @@ Slices of fresh salmon over rice. Light but satisfying.
 * **Nutrition:** 4
 * **Saturation:** 6
 * **Consume Time:** 1.2s
+* **Recipe**:
+
+<CustomRecipe name="salmon_nigiri" />
 
 ---
 
@@ -46,6 +56,9 @@ A fried favorite. Crispy, flaky, and filling.
 * **Nutrition:** 8
 * **Saturation:** 13
 * **Consume Time:** 1.6s
+* **Recipe**:
+
+<CustomRecipe name="fish_n_chips" />
 
 ---
 
@@ -56,6 +69,9 @@ Sweet and eggy breakfast comfort food.
 * **Nutrition:** 6
 * **Saturation:** 6
 * **Consume Time:** 1.6s
+* **Recipe**:
+
+<CustomRecipe name="french_toast" />
 
 ---
 
@@ -66,6 +82,9 @@ A mix of fresh fruit. Sweet and hydrating.
 * **Nutrition:** 9
 * **Saturation:** 12
 * **Consume Time:** 2s
+* **Recipe**:
+
+<CustomRecipe name="fruit_bowl" />
 
 ---
 
@@ -106,6 +125,9 @@ Tender and juicy. A reliable protein source.
 * **Nutrition:** 3
 * **Saturation:** 5
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="cooked_brisket" />
 
 ---
 
@@ -116,6 +138,9 @@ Sweet and flaky dessert with a berry burst.
 * **Nutrition:** 3
 * **Saturation:** 5.5
 * **Consume Time:** 1.6s
+* **Recipe**:
+
+<CustomRecipe name="berry_tart" />
 
 ---
 
@@ -126,6 +151,9 @@ Chewy rice cake with chocolate filling.
 * **Nutrition:** 3
 * **Saturation:** 5.5
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="chocolate_mochi" />
 
 ---
 
@@ -136,6 +164,9 @@ Crunchy and sweet. A fun little treat.
 * **Nutrition:** 2
 * **Saturation:** 5
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="crystal_candy" />
 
 ---
 
@@ -150,6 +181,9 @@ A quick caffeine boost. Slightly energizing.
 * **Nutrition:** 2
 * **Saturation:** 4
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="coffee" />
 
 ---
 
@@ -160,6 +194,9 @@ Floral and sweet with chewy pearls.
 * **Nutrition:** 2
 * **Saturation:** 5
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="oolong_orchid_boba_tea" />
 
 ---
 
@@ -170,6 +207,9 @@ Earthy matcha meets fresh melon.
 * **Nutrition:** 2
 * **Saturation:** 5
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="matcha_melon_boba_tea" />
 
 ---
 
@@ -180,6 +220,9 @@ Elegant floral tea with creamy sweetness.
 * **Nutrition:** 2
 * **Saturation:** 5
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="earl_lily_boba_tea" />
 
 ---
 
@@ -190,6 +233,9 @@ A rich black tea infused with floral notes.
 * **Nutrition:** 2
 * **Saturation:** 5
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="cornflower_ceylon_boba_tea" />
 
 ---
 
@@ -200,6 +246,9 @@ Fresh and green, with a mild herbal kick.
 * **Nutrition:** 2
 * **Saturation:** 5
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="allium_jade_boba_tea" />
 
 ---
 
@@ -210,6 +259,9 @@ Colorful, sweet tea with floral accents.
 * **Nutrition:** 2
 * **Saturation:** 5
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="thai_tulip_boba_tea" />
 
 ---
 
@@ -220,3 +272,16 @@ Creepy and chewy. Not for the faint of heart.
 * **Nutrition:** 1
 * **Saturation:** 3
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="spider_eye_boba" />
+
+---
+
+## Dog Treats
+
+### <CustomItem name="dog_milk_bone" size="large"/> Dog Milk Bone
+
+A treat to make your doggo stronger.
+
+<CustomRecipe name="dog_milk_bone" />

@@ -1,14 +1,4 @@
 {
-  "custom_sword": {
-    "recipe": [
-      null, { "type": "custom", "name": "iridium_ingot" }, null,
-      null, { "type": "custom", "name": "iridium_ingot" }, null,
-      null, { "type": "minecraft", "name": "stick" }, null
-    ],
-    "result": { "type": "minecraft", "name": "netherite_sword" },
-    "type": "3x3",
-    "title": "Custom Netherite Sword"
-  },
   "blank_tome": {
     "recipe": [
       null, { "type": "minecraft", "name": "prismarine_crystals" }, null,
@@ -18,5 +8,193 @@
     "result": { "type": "custom", "name": "blank_tome" },
     "type": "3x3",
     "title": "Blank Tome"
+  },
+   "soul_steel_upgrade_template": {
+    "recipe": [
+      { "type": "minecraft", "name": "soul_sand" }, { "type": "custom", "name": "ectoplasm" }, { "type": "minecraft", "name": "soul_sand" },
+      { "type": "minecraft", "name": "soul_sand" }, { "type": "custom", "name": "soul_quartz" }, { "type": "minecraft", "name": "soul_sand" },
+      { "type": "minecraft", "name": "soul_sand" }, { "type": "minecraft", "name": "soul_sand" }, { "type": "minecraft", "name": "soul_sand" }
+    ],
+    "result": { "type": "custom", "name": "soul_steel_upgrade_template", "count": 1 },
+    "type": "3x3",
+    "title": "Soul Steel Upgrade Template"
+  },
+  "titanium_upgrade_template": {
+    "recipe": [
+      { "type": "minecraft", "name": "tuff" }, { "type": "minecraft", "name": "flint" }, { "type": "minecraft", "name": "tuff" },
+      { "type": "minecraft", "name": "tuff" }, { "type": "minecraft", "name": "iron_ingot" }, { "type": "minecraft", "name": "tuff" },
+      { "type": "minecraft", "name": "tuff" }, { "type": "minecraft", "name": "tuff" }, { "type": "minecraft", "name": "tuff" }
+    ],
+    "result": { "type": "custom", "name": "titanium_upgrade_template", "count": 1 },
+    "type": "3x3",
+    "title": "Titanium Upgrade Template"
+  },
+  "iridium_upgrade_template": {
+    "recipe": [
+      { "type": "minecraft", "name": "obsidian" }, { "type": "minecraft", "name": "amethyst_shard" }, { "type": "minecraft", "name": "obsidian" },
+      { "type": "minecraft", "name": "obsidian" }, { "type": "minecraft", "name": "breeze_rod" }, { "type": "minecraft", "name": "obsidian" },
+      { "type": "minecraft", "name": "obsidian" }, { "type": "minecraft", "name": "obsidian" }, { "type": "minecraft", "name": "obsidian" }
+    ],
+    "result": { "type": "custom", "name": "iridium_upgrade_template", "count": 1 },
+    "type": "3x3",
+    "title": "Iridium Upgrade Template"
+  },
+  "mithril_upgrade_template": {
+    "recipe": [
+      { "type": "minecraft", "name": "cobbled_deepslate" }, { "type": "minecraft", "name": "diamond" }, { "type": "minecraft", "name": "cobbled_deepslate" },
+      { "type": "minecraft", "name": "cobbled_deepslate" }, { "type": "custom", "name": "silver_ingot" }, { "type": "minecraft", "name": "cobbled_deepslate" },
+      { "type": "minecraft", "name": "cobbled_deepslate" }, { "type": "minecraft", "name": "cobbled_deepslate" }, { "type": "minecraft", "name": "cobbled_deepslate" }
+    ],
+    "result": { "type": "custom", "name": "mithril_upgrade_template", "count": 1 },
+    "type": "3x3",
+    "title": "Mithril Upgrade Template"
+  },
+  "silver_ingot": {
+    "recipe": [
+      { "type": "custom", "name": "silver_nugget" }, { "type": "custom", "name": "silver_nugget" }, { "type": "custom", "name": "silver_nugget" },
+      { "type": "custom", "name": "silver_nugget" }, { "type": "custom", "name": "silver_nugget" }, { "type": "custom", "name": "silver_nugget" },
+      { "type": "custom", "name": "silver_nugget" }, { "type": "custom", "name": "silver_nugget" }, { "type": "custom", "name": "silver_nugget" }
+    ],
+    "result": { "type": "custom", "name": "silver_ingot", "count": 1 },
+    "type": "3x3",
+    "title": "Silver Ingot"
+  },
+  "silver_nugget": {
+    "recipe": [
+      { "type": "custom", "name": "silver_ingot" }
+    ],
+    "result": { "type": "custom", "name": "silver_nugget", "count": 9 },
+    "type": "3x3",
+    "title": "Silver Nugget"
+  },
+  "scroll": {
+    "recipe": [
+      { "type": "minecraft", "name": "paper" }, { "type": "minecraft", "name": "stick" }, null,
+      { "type": "minecraft", "name": "stick" }, { "type": "minecraft", "name": "paper" }, null,
+      null, null, null
+    ],
+    "result": { "type": "custom", "name": "scroll", "count": 2 },
+    "type": "3x3",
+    "title": "Scroll"
+  },
+  "clay_orb": {
+    "recipe": [
+      null, { "type": "minecraft", "name": "clay_ball" }, null,
+      { "type": "minecraft", "name": "clay_ball" }, { "type": "minecraft", "name": "flint" }, { "type": "minecraft", "name": "clay_ball" },
+      null, { "type": "minecraft", "name": "clay_ball" }, null
+    ],
+    "result": { "type": "custom", "name": "clay_orb", "count": 1 },
+    "type": "3x3",
+    "title": "Clay Orb"
+  },
+  "clay_totem": {
+    "recipe": [
+      null, { "type": "minecraft", "name": "lapis_lazuli" }, null,
+      { "type": "minecraft", "name": "clay_ball" }, { "type": "minecraft", "name": "clay_ball" }, { "type": "minecraft", "name": "clay_ball" },
+      null, { "type": "minecraft", "name": "clay_ball" }, null
+    ],
+    "result": { "type": "custom", "name": "clay_totem", "count": 1 },
+    "type": "3x3",
+    "title": "Clay Totem"
+  },
+  "clay_skull": {
+    "recipe": [
+      null, null, null,
+      { "type": "minecraft", "name": "lapis_lazuli" }, { "type": "minecraft", "name": "clay_ball" }, { "type": "minecraft", "name": "lapis_lazuli" },
+      { "type": "minecraft", "name": "clay_ball" }, { "type": "minecraft", "name": "clay_ball" }, { "type": "minecraft", "name": "clay_ball" }
+    ],
+    "result": { "type": "custom", "name": "clay_skull", "count": 1 },
+    "type": "3x3",
+    "title": "Clay Skull"
+  },
+  "clay_dowel": {
+    "recipe": [
+      null, null, { "type": "minecraft", "name": "clay_ball" },
+      null, { "type": "minecraft", "name": "lapis_lazuli" }, null,
+      { "type": "minecraft", "name": "clay_ball" }, null, null
+    ],
+    "result": { "type": "custom", "name": "clay_dowel", "count": 1 },
+    "type": "3x3",
+    "title": "Clay Dowel"
+  },
+  "clay_rods": {
+    "recipe": [
+      { "type": "minecraft", "name": "flint" }, null, { "type": "minecraft", "name": "flint" },
+      { "type": "minecraft", "name": "clay_ball" }, { "type": "minecraft", "name": "flint" }, { "type": "minecraft", "name": "clay_ball" },
+      null, { "type": "minecraft", "name": "clay_ball" }, null
+    ],
+    "result": { "type": "custom", "name": "clay_rods", "count": 1 },
+    "type": "3x3",
+    "title": "Clay Rods"
+  },
+  "clay_key": {
+    "recipe": [
+      { "type": "minecraft", "name": "lapis_lazuli" }, null, null,
+      { "type": "minecraft", "name": "clay_ball" }, null, null,
+      { "type": "minecraft", "name": "clay_ball" }, { "type": "minecraft", "name": "clay_ball" }, null
+    ],
+    "result": { "type": "custom", "name": "clay_key", "count": 1 },
+    "type": "3x3",
+    "title": "Clay Key"
+  },
+  "blade_part_upgrade_template": {
+    "recipe": [
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "lapis_lazuli" },
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "lapis_lazuli" }, { "type": "minecraft", "name": "gold_ingot" },
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" }
+    ],
+    "result": { "type": "custom", "name": "blade_part_upgrade_template", "count": 1 },
+    "type": "3x3",
+    "title": "Blade Part Upgrade Template"
+  },
+  "handle_part_upgrade_template": {
+    "recipe": [
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" },
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "lapis_lazuli" }, { "type": "minecraft", "name": "gold_ingot" },
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "lapis_lazuli" }, { "type": "minecraft", "name": "gold_ingot" }
+    ],
+    "result": { "type": "custom", "name": "handle_part_upgrade_template", "count": 1 },
+    "type": "3x3",
+    "title": "Handle Part Upgrade Template"
+  },
+  "pommel_part_upgrade_template": {
+    "recipe": [
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" },
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "lapis_lazuli" }, { "type": "minecraft", "name": "gold_ingot" },
+      { "type": "minecraft", "name": "lapis_lazuli" }, { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" }
+    ],
+    "result": { "type": "custom", "name": "pommel_part_upgrade_template", "count": 1 },
+    "type": "3x3",
+    "title": "Pommel Part Upgrade Template"
+  },
+  "hilt_part_upgrade_template": {
+    "recipe": [
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" },
+      { "type": "minecraft", "name": "lapis_lazuli" }, { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "lapis_lazuli" },
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "gold_ingot" }
+    ],
+    "result": { "type": "custom", "name": "hilt_part_upgrade_template", "count": 1 },
+    "type": "3x3",
+    "title": "Hilt Part Upgrade Template"
+  },
+  "crystal_alloy_ingot": {
+    "recipe": [
+      { "type": "minecraft", "name": "diamond" }, { "type": "minecraft", "name": "gold_ingot" }, null,
+      { "type": "minecraft", "name": "gold_ingot" }, { "type": "minecraft", "name": "amethyst_shard" }, null,
+      null, null, null
+    ],
+    "result": { "type": "custom", "name": "crystal_alloy_ingot", "count": 1 },
+    "type": "3x3",
+    "title": "Crystal Alloy Ingot"
+  },
+  "crystal_alloy_upgrade_template": {
+    "recipe": [
+      { "type": "minecraft", "name": "cobblestone" }, { "type": "minecraft", "name": "amethyst_shard" }, { "type": "minecraft", "name": "cobblestone" },
+      { "type": "minecraft", "name": "cobblestone" }, { "type": "minecraft", "name": "lapis_lazuli" }, { "type": "minecraft", "name": "cobblestone" },
+      { "type": "minecraft", "name": "cobblestone" }, { "type": "minecraft", "name": "cobblestone" }, { "type": "minecraft", "name": "cobblestone" }
+    ],
+    "result": { "type": "custom", "name": "crystal_alloy_upgrade_template", "count": 1 },
+    "type": "3x3",
+    "title": "Crystal Alloy Upgrade Template"
   }
 }

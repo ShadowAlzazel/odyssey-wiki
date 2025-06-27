@@ -2,10 +2,11 @@
   // Remove page store and getItem import - we get data from server now
   import CustomItem from '$lib/components/CustomItem.svelte';
   import ComponentDisplay from '$lib/components/ComponentDisplay.svelte';
+  import CustomRecipe from '$lib/components/CustomRecipe.svelte';
   
   // Receive data from server load function
   export let data;
-  $: ({ item, slug, itemName } = data);
+  $: ({ item, slug, itemName, hasRecipe } = data);
   
   function getDisplayName(item) {
     return item.data.display_name || item.data.item_name.split('_').map(word => 
@@ -53,7 +54,7 @@
 </svelte:head>
 
 <!-- Since we handle 404s in the server load function, we know item always exists here -->
-<div class="max-w-4xl mx-auto p-8">
+<div class="mx-auto p-8">
   
   <!-- Header -->
   <div class="mb-8 pb-4 border-b border-gray-200">
@@ -68,7 +69,15 @@
       </div>
     </div>
   </div>
-  
+
+  <!-- Recipe -->
+  {#if hasRecipe === true}
+    <div class="mb-8">
+      <h2 class="text-lg font-mono font-bold mb-3">Recipe</h2>
+      <CustomRecipe name={itemName}/>
+    </div>
+  {/if}
+
   <!-- Description -->
   {#if item.description}
     <div class="mb-8">
@@ -80,7 +89,7 @@
   <!-- Technical Overview -->
   <div class="mb-8">
     <h2 class="text-lg font-mono font-bold mb-4">Technical Overview</h2>
-    
+
     <!-- Basic Details Table -->
     <div class="bg-gray-50 p-4 rounded font-mono text-sm mb-6">
       <table class="w-full">

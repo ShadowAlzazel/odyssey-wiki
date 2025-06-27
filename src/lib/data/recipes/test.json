@@ -1,0 +1,12 @@
+{
+  "custom_sword": {
+    "recipe": [
+      null, { "type": "custom", "name": "iridium_ingot" }, null,
+      null, { "type": "custom", "name": "iridium_ingot" }, null,
+      null, { "type": "minecraft", "name": "stick" }, null
+    ],
+    "result": { "type": "minecraft", "name": "netherite_sword" },
+    "type": "3x3",
+    "title": "Custom Netherite Sword"
+  }
+}
