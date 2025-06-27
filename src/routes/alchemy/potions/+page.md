@@ -1,3 +1,9 @@
+<script>
+  import CustomItem from '$lib/components/CustomItem.svelte';
+  import ItemRecipe from '$lib/components/ItemRecipe.svelte';
+  import CustomRecipe from '$lib/components/CustomRecipe.svelte';
+</script>
+
 # Alchemy Potions
 
 This guide lists all custom potions and their cauldron recipes. Potions are divided into categories:
@@ -15,8 +21,8 @@ This guide lists all custom potions and their cauldron recipes. Potions are divi
 
 The **Crystalline Potion** is a core alchemical component used in many advanced potion recipes.
 
-- **Color:** ![#9354ff](https://via.placeholder.com/12/9354ff/000000?text=+) `#9354ff`
-- **Item Model:** `crystalline_potion`
+<CustomItem name="crystalline_potion" size="large"/>
+
 - **Created From:**
   - `Amethyst Shard`
   - `Awkward Potion`

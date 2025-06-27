@@ -1,3 +1,8 @@
+<script>
+  import CustomItem from '$lib/components/CustomItem.svelte';
+</script>
+
+
 # Introduction to Enchanting
 
 In **Odyssey**, the enchantment system has undergone a comprehensive rework to allow players significantly more flexibility and control over how they enhance their items. In traditional enchantment mechanics when unfavorable enchantments appeear, it often require players to grindstone their gear and start over.
@@ -64,6 +69,8 @@ Browse a full list of enchantments and their corresponding costs. This section i
 ## [Tomes](/enchanting/tomes)
 
 **Tomes** are special items—essentially enchanted books—that allow players to modify, fine-tune, or upgrade existing enchantments on their gear. These tools serve as an extension of the enchanting system, offering a smoother, more dynamic, and player-driven experience.
+
+If you want to remove an enchant from a good roll on a diamond sword, then the [Tome of Discharge <CustomItem name="tome_of_discharge" size="small" linkToPage="false"/>](/enchanting/tomes#List-of-Tomes) has got you covered.
 
 Whether you're min-maxing a powerful build or experimenting with unconventional loadouts, Tomes are an essential tool in your enchanting toolkit.
 
