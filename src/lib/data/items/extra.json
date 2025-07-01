@@ -1,0 +1,24 @@
+{
+  "dog_milk_bone": {
+    "data": {
+      "item_name": "dog_milk_bone",
+      "item_override": "dog_milk_bone",
+      "display_name": "Dog Milk Bone",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "dog_milk_bone"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "dog_milk_bone"
+        }
+      ],
+      "rarity": "uncommon"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "dog_milk_bone.json",
+    "hasCustomPage": false
+  }
+}
