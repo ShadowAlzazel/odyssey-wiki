@@ -2,9 +2,6 @@
 
 The page for all odyssey stuff
 
-### This site was created with the help of AI-tools. 
-
-
 
 ## Development 
 
@@ -21,3 +18,8 @@ Run `npm run build` to build dist
 Then run `serve dist` to deploy local dist
 
 For github deploy, run `npm run deploy`
+
+
+# Disclaimer 
+
+This site has some pages and code modified and altered with the help of AI tools like Claude. 
