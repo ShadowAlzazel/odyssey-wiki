@@ -80,7 +80,7 @@ Welcome to the comprehensive enchantments guide! This page documents all availab
 | Vigor | Armor | 5 | Damage increase while healthy | 1 |
 | [**ODYSSEY - MELEE**](#Odyssey-Melee-Enchantments) |
 | Agile | Melee | 5 | Increases attack speed | 2 |
-| Arcane Cell | Melee | 5 | Creates teleport zone | 1 |
+| Arcane Cell | Melee | 5 | Creates teleport zone | 4 |
 | Asphyxiate | Melee | 5 | Reduces target breath | 1 |
 | Backstabber | Melee | 5 | Bonus damage from behind | 1 |
 | Bane of the Illager | Melee | 5 | Bonus damage to illagers | 1 |

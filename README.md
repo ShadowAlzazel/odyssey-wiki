@@ -1,10 +1,10 @@
 # The official Odyssey Wiki repository page
 
-The page for all odyssey stuff
+The wiki page for all odyssey stuff
+ 
+Official Wiki Link:
 
-### This site was created with the help of AI-tools. 
-
-
+`https://odyssey-wiki.netlify.app/`
 
 ## Development 
 
@@ -21,3 +21,8 @@ Run `npm run build` to build dist
 Then run `serve dist` to deploy local dist
 
 For github deploy, run `npm run deploy`
+
+
+# Disclaimer 
+
+This site has some pages and code modified and altered with the help of AI tools like Claude. 

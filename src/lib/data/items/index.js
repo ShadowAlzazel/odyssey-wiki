@@ -10,6 +10,7 @@ import glyphsherds from './glyphsherds.json';
 import food from './food.json';
 import weapons from './weapons.json';
 import misc from './misc.json';
+import extra from './extra.json';
 
 // Combine all items into one object for easy lookup
 export const allItems = {
@@ -22,6 +23,7 @@ export const allItems = {
   ...food,
   ...weapons,
   ...misc,
+  ...extra,
 };
 
 // Export categories for organization
@@ -35,6 +37,7 @@ export const itemCategories = {
   food,
   weapons,
   misc,
+  extra,
 };
 
 // Helper function to get item data

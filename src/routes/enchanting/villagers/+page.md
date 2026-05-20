@@ -34,6 +34,11 @@ Instead of every librarian offering access to all enchantments, each librarian n
 * `pluck`
 * `untouchable`
 
+### Odyssey Desert Biomes
+* `lencois_maranhenses`
+
+*Desert librarians are very adabtable and benifit the willful.*
+
 ---
 
 ## Jungle Village Enchantments
@@ -50,6 +55,12 @@ Instead of every librarian offering access to all enchantments, each librarian n
 
 * `revitalize`
 * `chitin`
+
+### Odyssey Jungle Biomes
+* `pantanal`
+* `jurassic_overgrowth`
+* `amazon_rainforest`
+* `chocolate_hills`
 
 *Jungle librarians specialize in nature-based and insect-themed enchantments.*
 
@@ -70,6 +81,11 @@ Instead of every librarian offering access to all enchantments, each librarian n
 * `plunder`
 * `overcharge`
 
+### Odyssey Plains Biomes
+* `great_plains`
+* `zhanjiajie`
+* `makapuu_tidepools`
+
 *These enchantments tend to favor mobility and anti-mob combat.*
 
 ---
@@ -88,6 +104,9 @@ Instead of every librarian offering access to all enchantments, each librarian n
 
 * `rupture`
 * `heartened`
+
+### Odyssey Savanna Biomes
+* `bungle_bungles`
 
 *Savanna librarians lean into physical strength and wind-based effects.*
 
@@ -108,6 +127,9 @@ Instead of every librarian offering access to all enchantments, each librarian n
 * `freezing_aspect`
 * `vulnerocity`
 
+### Odyssey Snowy Biomes
+* `ubsunur_hollow`
+
 *Cold-themed enchantments thrive in snowy villages, offering both control and burst effects.*
 
 ---
@@ -122,10 +144,14 @@ Instead of every librarian offering access to all enchantments, each librarian n
 * `leap_frog`
 * `frog_fright`
 
-
 ### Special Books
 
-* The swamp has guaranteed mending as a special trade
+- The swamp has guaranteed mending as a special trade
+
+### Odyssey Swamp Biomes
+* `bayou`
+* `marsh`
+* `cypress_grove`
 
 *Swamp enchantments focus on survivability, regeneration, and evasive maneuvers.*
 
@@ -145,6 +171,9 @@ Instead of every librarian offering access to all enchantments, each librarian n
 
 * `bulwark`
 * `grasp`
+
+### Odyssey Taiga Biomes
+* `tsingy`
 
 *Taiga villagers prefer tracking, ranged combat, and vitality.*
 
