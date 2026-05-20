@@ -2,9 +2,8 @@
 
 The wiki page for all odyssey stuff
  
-Official Wiki Link:
+**Official Wiki Link**: https://odyssey-wiki.netlify.app/
 
-`https://odyssey-wiki.netlify.app/`
 
 ## Development 
 
