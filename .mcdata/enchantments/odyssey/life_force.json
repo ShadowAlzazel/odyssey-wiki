@@ -1,0 +1,22 @@
+{
+  "anvil_cost": 5,
+  "description": {
+    "translate": "enchantment.odyssey.life_force",
+    "fallback": "Life Force"
+  },
+  "effects": {},
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 6
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 4
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#odyssey:enchantable/melee",
+  "weight": 5
+}

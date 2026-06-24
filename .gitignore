@@ -16,6 +16,5 @@ dist
 .unused/
 node-jiti
 node_modules
-.mcdata
-_mcdata
-_mcdata/*
+
+.mcdata/loot_table

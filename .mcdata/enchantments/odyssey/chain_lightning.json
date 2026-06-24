@@ -1,0 +1,23 @@
+{
+  "anvil_cost": 6,
+  "description": {
+    "fallback": "Chain Lightning",
+    "translate": "enchantment.odyssey.chain_lightning"
+  },
+  "effects": {},
+  "max_cost": {
+    "base": 11,
+    "per_level_above_first": 8
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "primary_items": "#minecraft:enchantable/melee_weapon",
+  "supported_items": "#odyssey:enchantable/melee",
+  "weight": 2
+}
