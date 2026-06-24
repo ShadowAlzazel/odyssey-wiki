@@ -77,7 +77,7 @@ function deriveTag(slots = [], supported = '') {
   return 'Universal'
 }
 
-const round2 = (n) => Math.round(n * 100) / 100
+const roundUp = (n) => Math.ceil(n);
 
 function build(def, file) {
   const { namespace, slug } = identify(def, file)
@@ -96,7 +96,7 @@ function build(def, file) {
     hasDescription: Boolean(curated),
     maxLevel: Number(def.max_level ?? 1),
     anvilCost,
-    enchantability: round2(anvilCost / 2),
+    enchantability: roundUp(anvilCost / 2),
     weight: def.weight ?? null,
     slots,
     supportedItems,

@@ -80,7 +80,7 @@
     <section class="ench__group">
       <header class="ench__grouphead">
         <h2 id={section.id}>{section.label}</h2>
-        <p>{section.blurb}</p>
+        {#if section.blurb}<p>{section.blurb}</p>{/if}
       </header>
 
       <div class="ench__grid">
@@ -162,10 +162,29 @@
   .ench__count { margin: 0.75rem 0 0; font-size: 0.8rem; color: var(--muted); }
   .ench__empty { padding: 2rem 0; color: var(--muted); text-align: center; }
 
-  .ench__group { margin-top: 2.25rem; }
-  .ench__grouphead { border-bottom: 1px solid var(--hairline); margin-bottom: 1rem; }
-  .ench__grouphead h2 { margin: 0; font-size: 1.15rem; letter-spacing: 0.02em; }
-  .ench__grouphead p { margin: 0.15rem 0 0.6rem; font-size: 0.85rem; color: var(--muted); }
+  .ench__group { margin-top: 3rem; }
+  .ench__group:first-of-type { margin-top: 1.5rem; }
+
+  .ench__grouphead {
+    border-bottom: 2px solid var(--card-bd);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.6rem;
+  }
+  .ench__grouphead h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    /* subtle accent tick before the title */
+    padding-left: 0.6rem;
+    border-left: 4px solid var(--accent);
+  }
+  .ench__grouphead p {
+    margin: 0.4rem 0 0;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
 
   .ench__grid {
     display: grid;

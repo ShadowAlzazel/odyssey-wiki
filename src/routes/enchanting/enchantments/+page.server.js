@@ -1,4 +1,5 @@
 import { enchantments, groupList } from '$lib/server/enchantments.js'
+import { groups } from '$lib/server/enchantments.js'
 
 // Match the static-site setup used by your detail pages.
 export const prerender = true
@@ -10,5 +11,5 @@ export function load() {
       seen.set(e.group, { id: e.group, label: e.group, blurb: '' })
     }
   }
-  return { enchantments, groupList: [...seen.values()] }
+  return { enchantments, groupList: groups  }
 }

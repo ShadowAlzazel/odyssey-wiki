@@ -23,7 +23,6 @@ Use the search box or the category chips to filter.
 - [Odyssey Ranged Enchantments](#Odyssey-Ranged-Enchantments)
 - [Odyssey Shield & Parry Enchantments](#Odyssey-Shield-and-Parry-Enchantments)
 - [Odyssey Miscellaneous Enchantments](#Odyssey-Miscellaneous-Enchantments)
-- [Curses](#Curses)
 - [Enchantment Properties Reference](#Enchantment-Properties-Reference)
 
 > **Tags:** 
@@ -304,13 +303,15 @@ These convert a portion of final damage into a specific damage type. *(Cost 2, u
 - **Shade Aid**: Regenerate `level` durability per second during the night or when in darkness.
 - **Chitin**: Regenerate durability when the holder regenerates.
 
-### Visual & Special
-- **O Shiny**: The item glistens when held or worn.
+### Special
 - **Fealty**: When the wearer dies, this item is kept on respawn.
+
+### Visual 
+- **O Shiny**: The item glistens when held or worn.
 
 ---
 
-# Curses
+### Curses
 
 - **Encumbering Curse**: Increase weight by `level × 10`%.
 - **Parasitic Curse**: When the item takes damage, a `level × 25`% chance to damage the user instead.
@@ -318,8 +319,6 @@ These convert a portion of final damage into a specific damage type. *(Cost 2, u
 - **Midas Curse**: Converts all mob drop types into golden nuggets (or ingots).
 - **Frailty Curse**: Decrease wearer invulnerable time by `level` ticks.
 - **Obfuscation Curse** *(cost 2)*: Obfuscates what enchantments are on this item.
-- *(Vanilla)* **Curse of Vanishing**: Item disappears on death.
-- *(Vanilla)* **Curse of Binding**: Item cannot be removed from armor slots.
 
 ---
 
