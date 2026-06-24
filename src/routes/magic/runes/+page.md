@@ -1,6 +1,5 @@
 ---
 
-````md
 # 🧙 Magic Runes Documentation
 
 Welcome to the documentation for the **Rune-Based Magic System**. This system is functionally driven and centers around the manipulation of **casting** and **target** locations. Runes are categorized by their purpose:
@@ -15,9 +14,6 @@ Welcome to the documentation for the **Rune-Based Magic System**. This system is
 
 Domain runes manipulate the **location context**—they control the source, target, and flow of casting logic.
 
-```kotlin
-data object Origin : DomainRune()
-````
 
 | Rune     | Description                                                |
 | -------- | ---------------------------------------------------------- |
@@ -38,10 +34,6 @@ data object Origin : DomainRune()
 
 Modifier runes adjust the **effect properties**—speed, strength, precision, etc.
 
-```kotlin
-class Amplify(value: Double) : ModifierRune()
-```
-
 | Rune          | Description                                      | Value (Default) |
 | ------------- | ------------------------------------------------ | --------------- |
 | `Wide`        | Expands the casting radius.                      | 0.0             |
@@ -58,9 +50,6 @@ class Amplify(value: Double) : ModifierRune()
 
 Augment runes alter the **behavior** or introduce **secondary effects** to spells.
 
-```kotlin
-data object Repeat : AugmentRune()
-```
 
 | Rune            | Description                                                       |
 | --------------- | ----------------------------------------------------------------- |

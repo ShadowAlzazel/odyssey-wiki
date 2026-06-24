@@ -1,7 +1,7 @@
 {
   "name": "odyssey-wiki",
   "type": "module",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "private": true,
   "packageManager": "pnpm@9.15.0",
   "license": "MIT",
@@ -12,20 +12,25 @@
     "deploy": "gh-pages -d dist",
     "deploy:clean": "npm run build && gh-pages -d dist -f"
   },
+  "pnpm": {
+    "overrides": {
+      "@sveltejs/enhanced-img": "0.6.1"
+    }
+  },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^3.0.8",
+    "@sveltejs/adapter-static": "^3.0.10",
     "@sveltejs/kit": "^2.8.1",
     "@sveltejs/vite-plugin-svelte": "^4.0.1",
     "@sveltepress/theme-default": "^6.0.4",
     "@sveltepress/vite": "^1.2.2",
-    "@types/node": "^20.11.20",
+    "@types/node": "^20.19.4",
     "gh-pages": "^6.3.0",
-    "mdsvex": "^0.12.6",
+    "mdsvex": "^0.12.7",
     "svelte": "^5.0.0",
     "vite": "^5.1.4"
   },
   "dependencies": {
-    "glob": "^11.0.3",
+    "glob": "^11.1.0",
     "serve": "^14.2.4"
   }
 }
