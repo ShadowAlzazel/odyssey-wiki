@@ -25,11 +25,14 @@ export { groups }
 //  Relative to the project root (the folder that holds package.json — i.e.
 //  wherever you run `npm run dev` / `npm run build`).
 //  Change this to match your actual folder. Hidden folders are OK.
-//    e.g. '.mcdata/enchantments'  or  '.mcmeta/data/odyssey/enchantment'
-const DATA_DIR = '.mcdata/enchantments'
-// ──────────────────────────────────────────────────────────────────────────
-
+//    e.g. 'mc_data/enchantments'  or  './mc_data/data/odyssey/enchantment'
+const DATA_DIR = 'mc_data/enchantments'
 const ABS_DIR = join(process.cwd(), DATA_DIR)
+
+const modules = import.meta.glob('/mc_data/enchantments/**/*.json', {
+  eager: true,
+  import: 'default',
+})
 
 function walk(dir) {
   const out = []
@@ -45,14 +48,14 @@ function walk(dir) {
 const titleize = (slug) =>
   slug.split('_').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 
-function identify(def, file) {
+function identify(def, globKey) {
   const t = def?.description?.translate
   if (typeof t === 'string') {
     const parts = t.split('.') // enchantment.odyssey.heartened
     if (parts.length >= 3) return { namespace: parts[1], slug: parts.slice(2).join('_') }
   }
-  // Fallback: <DATA_DIR>/<namespace>/<slug>.json
-  const rel = relative(ABS_DIR, file).replace(/\.json$/, '').split(sep)
+  // Fallback: ./data/enchantments/<namespace>/<slug>.json
+  const rel = globKey.replace('./mc_data/enchantments/', '').replace(/\.json$/, '').split('/')
   return { slug: rel.at(-1), namespace: rel.length >= 2 ? rel.at(-2) : 'unknown' }
 }
 
@@ -79,8 +82,8 @@ function deriveTag(slots = [], supported = '') {
 
 const roundUp = (n) => Math.ceil(n);
 
-function build(def, file) {
-  const { namespace, slug } = identify(def, file)
+function build(def, globKey) {
+  const { namespace, slug } = identify(def, globKey)
   const curated = descriptions[slug]
   const supportedItems = def.supported_items ?? def.primary_items ?? ''
   const slots = def.slots ?? []
@@ -117,14 +120,20 @@ if (files.length === 0) {
 }
 
 const bySlug = {}
-for (const file of files) {
+for (const [globKey, def] of Object.entries(modules)) {
   try {
-    const e = build(JSON.parse(readFileSync(file, 'utf8')), file)
+    const e = build(def, globKey)
     bySlug[e.slug] = e
-    //console.log(`Found ${file}`)
   } catch (err) {
-    console.warn(`[enchantments] Skipping ${file}: ${err.message}`)
+    console.warn(`[enchantments] Skipping ${globKey}: ${err.message}`)
   }
+}
+
+if (Object.keys(bySlug).length === 0) {
+  console.warn(
+    `[enchantments] No .json definitions matched ./mc_data/enchantments/**/*.json. ` +
+      `Check the DATA_DIR glob in src/lib/server/enchantments.js.`,
+  )
 }
 
 const groupOrder = groups.map((g) => g.id)
