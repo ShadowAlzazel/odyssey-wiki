@@ -1,5 +1,6 @@
 <script>
   import EnchantmentList from '$lib/components/EnchantmentList.svelte'
+  let { data } = $props()
 </script>
 
 # Enchantments
@@ -37,7 +38,7 @@ Use the search box or the category chips to filter.
 
 # Enchantment List
 
-<EnchantmentList />
+<EnchantmentList enchantments={data.enchantments} groupList={data.groupList} />
 
 ---
 

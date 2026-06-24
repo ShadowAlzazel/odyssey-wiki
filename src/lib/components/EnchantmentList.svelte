@@ -1,19 +1,19 @@
 <script>
-  import { enchantments as allEnchants, groups } from '$lib/data/enchantments.js'
+  import { base } from '$app/paths'
 
-  // Props (all optional). Pass your own data/groups to reuse this elsewhere.
+  // Data is passed in from the page's load function (see +page.server.js),
+  // so this component never imports server code.
   let {
-    enchantments = allEnchants,
-    groupList = groups,
+    enchantments = [],
+    groupList = [],
   } = $props()
 
   let query = $state('')
-  let active = $state('all') // 'all' | group id
+  let active = $state('all')
 
   const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
   const roman = (n) => ROMAN[n] ?? String(n)
 
-  // Filter + sort once, reactively.
   const filtered = $derived(
     enchantments
       .filter((e) => active === 'all' || e.group === active)
@@ -67,7 +67,12 @@
     <p class="ench__count">{total} {total === 1 ? 'enchantment' : 'enchantments'}</p>
   </div>
 
-  {#if sections.length === 0}
+  {#if enchantments.length === 0}
+    <p class="ench__empty">
+      No definitions loaded yet. Add <code>.json</code> files to your data folder
+      and restart the dev server.
+    </p>
+  {:else if sections.length === 0}
     <p class="ench__empty">No enchantments match “{query}”. Try a different term.</p>
   {/if}
 
@@ -79,21 +84,19 @@
       </header>
 
       <div class="ench__grid">
-        {#each section.items as e (e.name)}
+        {#each section.items as e (e.slug)}
           <article class="card">
             <div class="card__top">
-              <h3 class="card__name">{e.name}</h3>
+              <h3 class="card__name">
+                <a href="{base}/enchanting/enchantment/{e.slug}">{e.name}</a>
+              </h3>
               <div class="card__badges">
                 <span class="badge badge--level" title="Maximum level">
-                  Max&nbsp;{roman(e.max)}
+                  Max&nbsp;{roman(e.maxLevel)}
                 </span>
-                {#if e.cost == null}
-                  <span class="badge badge--none" title="Not used by vanilla enchantments">—</span>
-                {:else}
-                  <span class="badge badge--cost" title="Enchantability cost">
-                    {e.cost}&nbsp;pt{e.cost === 1 ? '' : 's'}
-                  </span>
-                {/if}
+                <span class="badge badge--ench" title="Enchantability (anvil cost ÷ 2)">
+                  Cost&nbsp;{e.enchantability}
+                </span>
               </div>
             </div>
             <span class="card__tag">{e.tag}</span>
@@ -106,11 +109,10 @@
 </div>
 
 <style>
-  /* Theme hooks — fall back gracefully if SveltePress vars aren't present.   */
   .ench {
-    --accent: #8a63d2;          /* enchanting-table violet */
+    --accent: #8a63d2;
     --accent-soft: #b79cf0;
-    --xp: #6bbf3f;              /* experience-orb green     */
+    --xp: #6bbf3f;
     --card-bg: rgba(138, 99, 210, 0.05);
     --card-bd: rgba(138, 99, 210, 0.22);
     --chip-bg: rgba(138, 99, 210, 0.08);
@@ -125,7 +127,6 @@
     --chip-bg: rgba(138, 99, 210, 0.16);
   }
 
-  /* Toolbar ---------------------------------------------------------------- */
   .ench__toolbar { margin-bottom: 1.5rem; }
   .ench__search {
     width: 100%;
@@ -142,12 +143,7 @@
     border-color: var(--accent);
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent);
   }
-  .ench__filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    margin-top: 0.75rem;
-  }
+  .ench__filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
   .chip {
     padding: 0.3rem 0.7rem;
     font: inherit;
@@ -161,41 +157,16 @@
     transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
   }
   .chip:hover { border-color: var(--accent); }
-  .chip--on {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-  }
-  .chip:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-  .ench__count {
-    margin: 0.75rem 0 0;
-    font-size: 0.8rem;
-    color: var(--muted);
-  }
-  .ench__empty {
-    padding: 2rem 0;
-    color: var(--muted);
-    text-align: center;
-  }
+  .chip--on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ench__count { margin: 0.75rem 0 0; font-size: 0.8rem; color: var(--muted); }
+  .ench__empty { padding: 2rem 0; color: var(--muted); text-align: center; }
 
-  /* Group ------------------------------------------------------------------ */
   .ench__group { margin-top: 2.25rem; }
   .ench__grouphead { border-bottom: 1px solid var(--hairline); margin-bottom: 1rem; }
-  .ench__grouphead h2 {
-    margin: 0;
-    font-size: 1.15rem;
-    letter-spacing: 0.02em;
-  }
-  .ench__grouphead p {
-    margin: 0.15rem 0 0.6rem;
-    font-size: 0.85rem;
-    color: var(--muted);
-  }
+  .ench__grouphead h2 { margin: 0; font-size: 1.15rem; letter-spacing: 0.02em; }
+  .ench__grouphead p { margin: 0.15rem 0 0.6rem; font-size: 0.85rem; color: var(--muted); }
 
-  /* Cards ------------------------------------------------------------------ */
   .ench__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -206,25 +177,24 @@
     padding: 0.85rem 0.95rem 0.95rem;
     background: var(--card-bg);
     border: 1px solid var(--card-bd);
-    border-left: 3px solid var(--accent);   /* the one bold cue: enchant glint */
+    border-left: 3px solid var(--accent);
     border-radius: 8px;
   }
-  .card__top {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 0.5rem;
+  .card__top { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem; }
+  .card__name { margin: 0; font-size: 1rem; line-height: 1.3; }
+  .card__name a {
+    color: inherit;
+    text-decoration: none;
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-size: 0% 1.5px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.18s ease;
   }
-  .card__name {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.3;
-  }
-  .card__badges {
-    display: flex;
-    flex-shrink: 0;
-    gap: 0.35rem;
-  }
+  .card__name a:hover { background-size: 100% 1.5px; color: var(--accent-soft); }
+  .card__name a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .card__badges { display: flex; flex-shrink: 0; gap: 0.35rem; }
   .badge {
     font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
     font-size: 0.72rem;
@@ -238,12 +208,11 @@
     background: color-mix(in srgb, var(--accent) 16%, transparent);
     border-color: color-mix(in srgb, var(--accent) 35%, transparent);
   }
-  .badge--cost {
+  .badge--ench {
     color: var(--xp);
     background: color-mix(in srgb, var(--xp) 14%, transparent);
     border-color: color-mix(in srgb, var(--xp) 35%, transparent);
   }
-  .badge--none { color: var(--muted); }
 
   .card__tag {
     display: inline-block;
@@ -253,13 +222,9 @@
     letter-spacing: 0.06em;
     color: var(--muted);
   }
-  .card__desc {
-    margin: 0.35rem 0 0;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
+  .card__desc { margin: 0.35rem 0 0; font-size: 0.9rem; line-height: 1.5; }
 
   @media (prefers-reduced-motion: reduce) {
-    .chip { transition: none; }
+    .chip, .card__name a { transition: none; }
   }
 </style>

@@ -1,22 +1,16 @@
-// src/routes/enchantment/[slug]/+page.server.js
+import { error } from '@sveltejs/kit'
+import { enchantments, getBySlug } from '$lib/server/enchantments.js'
 
-import { allItems } from '$lib/data/items/index.js';
-import { getRecipe } from '$lib/data/recipes/index.js';
-import { error } from '@sveltejs/kit';
+// Static site: generate one page per enchantment at build time.
+export const prerender = true
 
-export async function entries() {
-  const itemNames = Object.keys(allItems);
-  
-  // Convert underscores to hyphens for clean URLs
-  const slugs = itemNames.map(name => name.replace(/_/g, '-'));
-  
-  return slugs.map(slug => ({ slug }));
+// Tell SvelteKit every slug to prerender (it can't discover dynamic params).
+export function entries() {
+  return enchantments.map((e) => ({ slug: e.slug }))
 }
 
-export async function load({ params }) {
-  const { slug } = params;
-  
-  return {
-    slug
-  };
+export function load({ params }) {
+  const enchantment = getBySlug(params.slug)
+  if (!enchantment) throw error(404, `Unknown enchantment: ${params.slug}`)
+  return { enchantment }
 }
