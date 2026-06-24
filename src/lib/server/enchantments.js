@@ -55,7 +55,7 @@ function identify(def, globKey) {
     if (parts.length >= 3) return { namespace: parts[1], slug: parts.slice(2).join('_') }
   }
   // Fallback: ./data/enchantments/<namespace>/<slug>.json
-  const rel = globKey.replace('./data/enchantments/', '').replace(/\.json$/, '').split('/')
+  const rel = globKey.replace('./mc_data/enchantments/', '').replace(/\.json$/, '').split('/')
   return { slug: rel.at(-1), namespace: rel.length >= 2 ? rel.at(-2) : 'unknown' }
 }
 
@@ -131,7 +131,7 @@ for (const [globKey, def] of Object.entries(modules)) {
 
 if (Object.keys(bySlug).length === 0) {
   console.warn(
-    `[enchantments] No .json definitions matched ./data/enchantments/**/*.json. ` +
+    `[enchantments] No .json definitions matched ./mc_data/enchantments/**/*.json. ` +
       `Check the DATA_DIR glob in src/lib/server/enchantments.js.`,
   )
 }
