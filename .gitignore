@@ -12,6 +12,9 @@ vite.config.ts.timestamp-*
 dist
 .vscode
 .history
+.unused
+.unused/
 node-jiti
 node_modules
-.mcdata
+
+.mcdata/loot_table

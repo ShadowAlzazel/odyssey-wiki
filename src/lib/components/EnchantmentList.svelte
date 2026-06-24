@@ -1,0 +1,249 @@
+<script>
+  import { base } from '$app/paths'
+
+  // Data is passed in from the page's load function (see +page.server.js),
+  // so this component never imports server code.
+  let {
+    enchantments = [],
+    groupList = [],
+  } = $props()
+
+  let query = $state('')
+  let active = $state('all')
+
+  const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
+  const roman = (n) => ROMAN[n] ?? String(n)
+
+  const filtered = $derived(
+    enchantments
+      .filter((e) => active === 'all' || e.group === active)
+      .filter((e) => {
+        if (!query.trim()) return true
+        const q = query.toLowerCase()
+        return (
+          e.name.toLowerCase().includes(q) ||
+          e.desc.toLowerCase().includes(q) ||
+          e.tag.toLowerCase().includes(q)
+        )
+      })
+      .sort((a, b) => a.name.localeCompare(b.name)),
+  )
+
+  // Group the filtered list, preserving the order defined in groupList.
+  const sections = $derived(
+    groupList
+      .map((g) => ({ ...g, items: filtered.filter((e) => e.group === g.id) }))
+      .filter((g) => g.items.length > 0),
+  )
+
+  const total = $derived(filtered.length)
+</script>
+
+<div class="ench">
+  <div class="ench__toolbar">
+    <input
+      class="ench__search"
+      type="search"
+      placeholder="Search enchantments…"
+      bind:value={query}
+      aria-label="Search enchantments"
+    />
+    <div class="ench__filters" role="group" aria-label="Filter by category">
+      <button
+        class="chip"
+        class:chip--on={active === 'all'}
+        aria-pressed={active === 'all'}
+        onclick={() => (active = 'all')}
+      >All</button>
+      {#each groupList as g}
+        <button
+          class="chip"
+          class:chip--on={active === g.id}
+          aria-pressed={active === g.id}
+          onclick={() => (active = g.id)}
+        >{g.label}</button>
+      {/each}
+    </div>
+    <p class="ench__count">{total} {total === 1 ? 'enchantment' : 'enchantments'}</p>
+  </div>
+
+  {#if enchantments.length === 0}
+    <p class="ench__empty">
+      No definitions loaded yet. Add <code>.json</code> files to your data folder
+      and restart the dev server.
+    </p>
+  {:else if sections.length === 0}
+    <p class="ench__empty">No enchantments match “{query}”. Try a different term.</p>
+  {/if}
+
+  {#each sections as section (section.id)}
+    <section class="ench__group">
+      <header class="ench__grouphead">
+        <h2 id={section.id}>{section.label}</h2>
+        {#if section.blurb}<p>{section.blurb}</p>{/if}
+      </header>
+
+      <div class="ench__grid">
+        {#each section.items as e (e.slug)}
+          <article class="card">
+            <div class="card__top">
+              <h3 class="card__name">
+                <a href="{base}/enchanting/enchantment/{e.slug}">{e.name}</a>
+              </h3>
+              <div class="card__badges">
+                <span class="badge badge--level" title="Maximum level">
+                  Max&nbsp;{roman(e.maxLevel)}
+                </span>
+                <span class="badge badge--ench" title="Enchantability (anvil cost ÷ 2)">
+                  Cost&nbsp;{e.enchantability}
+                </span>
+              </div>
+            </div>
+            <span class="card__tag">{e.tag}</span>
+            <p class="card__desc">{e.desc}</p>
+          </article>
+        {/each}
+      </div>
+    </section>
+  {/each}
+</div>
+
+<style>
+  .ench {
+    --accent: #8a63d2;
+    --accent-soft: #b79cf0;
+    --xp: #6bbf3f;
+    --card-bg: rgba(138, 99, 210, 0.05);
+    --card-bd: rgba(138, 99, 210, 0.22);
+    --chip-bg: rgba(138, 99, 210, 0.08);
+    --muted: color-mix(in srgb, currentColor 55%, transparent);
+    --hairline: color-mix(in srgb, currentColor 12%, transparent);
+    margin: 1.25rem 0 2rem;
+  }
+  :global(html.dark) .ench,
+  :global(.dark) .ench {
+    --card-bg: rgba(138, 99, 210, 0.12);
+    --card-bd: rgba(183, 156, 240, 0.3);
+    --chip-bg: rgba(138, 99, 210, 0.16);
+  }
+
+  .ench__toolbar { margin-bottom: 1.5rem; }
+  .ench__search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6rem 0.85rem;
+    font: inherit;
+    color: inherit;
+    background: var(--chip-bg);
+    border: 1px solid var(--card-bd);
+    border-radius: 8px;
+    outline: none;
+  }
+  .ench__search:focus-visible {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent);
+  }
+  .ench__filters { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
+  .chip {
+    padding: 0.3rem 0.7rem;
+    font: inherit;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: inherit;
+    background: var(--chip-bg);
+    border: 1px solid var(--card-bd);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+  }
+  .chip:hover { border-color: var(--accent); }
+  .chip--on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ench__count { margin: 0.75rem 0 0; font-size: 0.8rem; color: var(--muted); }
+  .ench__empty { padding: 2rem 0; color: var(--muted); text-align: center; }
+
+  .ench__group { margin-top: 3rem; }
+  .ench__group:first-of-type { margin-top: 1.5rem; }
+
+  .ench__grouphead {
+    border-bottom: 2px solid var(--card-bd);
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.6rem;
+  }
+  .ench__grouphead h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    /* subtle accent tick before the title */
+    padding-left: 0.6rem;
+    border-left: 4px solid var(--accent);
+  }
+  .ench__grouphead p {
+    margin: 0.4rem 0 0;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+
+  .ench__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+  }
+  .card {
+    position: relative;
+    padding: 0.85rem 0.95rem 0.95rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-bd);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+  }
+  .card__top { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem; }
+  .card__name { margin: 0; font-size: 1rem; line-height: 1.3; }
+  .card__name a {
+    color: inherit;
+    text-decoration: none;
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-size: 0% 1.5px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.18s ease;
+  }
+  .card__name a:hover { background-size: 100% 1.5px; color: var(--accent-soft); }
+  .card__name a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  .card__badges { display: flex; flex-shrink: 0; gap: 0.35rem; }
+  .badge {
+    font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    white-space: nowrap;
+    padding: 0.15rem 0.45rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+  }
+  .badge--level {
+    color: var(--accent-soft);
+    background: color-mix(in srgb, var(--accent) 16%, transparent);
+    border-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+  .badge--ench {
+    color: var(--xp);
+    background: color-mix(in srgb, var(--xp) 14%, transparent);
+    border-color: color-mix(in srgb, var(--xp) 35%, transparent);
+  }
+
+  .card__tag {
+    display: inline-block;
+    margin-top: 0.45rem;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+  }
+  .card__desc { margin: 0.35rem 0 0; font-size: 0.9rem; line-height: 1.5; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .chip, .card__name a { transition: none; }
+  }
+</style>

@@ -1,0 +1,22 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.odyssey.exploding"
+  },
+  "effects": {},
+  "max_cost": {
+    "base": 11,
+    "per_level_above_first": 8
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 8,
+    "per_level_above_first": 8
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "primary_items": "#minecraft:enchantable/melee_weapon",
+  "supported_items": "#odyssey:enchantable/melee",
+  "weight": 5
+}
