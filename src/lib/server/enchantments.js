@@ -1,49 +1,22 @@
-// ─────────────────────────────────────────────────────────────────────────
-//  Enchantment registry (server-only) — reads your definition JSON with fs
-// ─────────────────────────────────────────────────────────────────────────
-//  This lives in $lib/server, so SvelteKit guarantees it is NEVER bundled
-//  into the browser. It reads files at build time with Node's fs, which means:
-//    • hidden / dot folders work fine (Vite's import.meta.glob can't read them)
-//    • no server.fs.allow config needed
-//    • the data is baked into your prerendered pages
-//
-//  HOW TO ADD AN ENCHANTMENT:
-//  Drop its definition .json into the folder below (a namespace subfolder like
-//  odyssey/ or minecraft/ is recommended). Restart the dev server to pick up
-//  newly-added files. Max level + anvil cost are read from each file.
-//
-//  Enchantability = anvil_cost / 2.
-// ─────────────────────────────────────────────────────────────────────────
-
-import { readdirSync, readFileSync, statSync, existsSync } from 'node:fs'
-import { join, relative, sep } from 'node:path'
 import { descriptions, groups } from '$lib/data/enchantments.js'
 
 export { groups }
 
-// ── WHERE YOUR DEFINITION JSON LIVES ──────────────────────────────────────
-//  Relative to the project root (the folder that holds package.json — i.e.
-//  wherever you run `npm run dev` / `npm run build`).
-//  Change this to match your actual folder. Hidden folders are OK.
-//    e.g. 'mc_data/enchantments'  or  './mc_data/data/odyssey/enchantment'
-const DATA_DIR = 'mc_data/enchantments'
-const ABS_DIR = join(process.cwd(), DATA_DIR)
-
+// Drop enchantment definition JSON files here (project root, sibling of src/):
+//   mc_data/enchantments/<namespace>/<slug>.json
+//
+// import.meta.glob is resolved by Vite at BUILD time, so the parsed JSON
+// gets inlined directly into the server bundle. No runtime fs access is
+// involved — works the same in dev, `vite build`, and once deployed to
+// Netlify (or any other adapter), since nothing needs to be "copied" onto
+// a server filesystem after the build.
+//
+// The leading "/" makes this relative to the project root (the folder
+// with package.json), which is how we reach mc_data/ from outside src/.
 const modules = import.meta.glob('/mc_data/enchantments/**/*.json', {
   eager: true,
   import: 'default',
 })
-
-function walk(dir) {
-  const out = []
-  if (!existsSync(dir)) return out
-  for (const name of readdirSync(dir)) {
-    const full = join(dir, name)
-    if (statSync(full).isDirectory()) out.push(...walk(full))
-    else if (name.endsWith('.json')) out.push(full)
-  }
-  return out
-}
 
 const titleize = (slug) =>
   slug.split('_').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
@@ -54,8 +27,8 @@ function identify(def, globKey) {
     const parts = t.split('.') // enchantment.odyssey.heartened
     if (parts.length >= 3) return { namespace: parts[1], slug: parts.slice(2).join('_') }
   }
-  // Fallback: ./data/enchantments/<namespace>/<slug>.json
-  const rel = globKey.replace('./mc_data/enchantments/', '').replace(/\.json$/, '').split('/')
+  // Fallback: /mc_data/enchantments/<namespace>/<slug>.json
+  const rel = globKey.replace('/mc_data/enchantments/', '').replace(/\.json$/, '').split('/')
   return { slug: rel.at(-1), namespace: rel.length >= 2 ? rel.at(-2) : 'unknown' }
 }
 
@@ -80,7 +53,7 @@ function deriveTag(slots = [], supported = '') {
   return 'Universal'
 }
 
-const roundUp = (n) => Math.ceil(n);
+const roundUp = (n) => Math.ceil(n)
 
 function build(def, globKey) {
   const { namespace, slug } = identify(def, globKey)
@@ -112,13 +85,6 @@ function build(def, globKey) {
   }
 }
 
-// Build once when the module first loads.
-const files = walk(ABS_DIR)
-if (files.length === 0) {
-  console.warn(`[enchantments] No .json definitions found in ${ABS_DIR}. ` +
-    `Set DATA_DIR in src/lib/server/enchantments.js to your real folder.`)
-}
-
 const bySlug = {}
 for (const [globKey, def] of Object.entries(modules)) {
   try {
@@ -131,8 +97,8 @@ for (const [globKey, def] of Object.entries(modules)) {
 
 if (Object.keys(bySlug).length === 0) {
   console.warn(
-    `[enchantments] No .json definitions matched ./mc_data/enchantments/**/*.json. ` +
-      `Check the DATA_DIR glob in src/lib/server/enchantments.js.`,
+    `[enchantments] No .json definitions matched /mc_data/enchantments/**/*.json. ` +
+      `Check that the mc_data folder exists at your project root (sibling of src/) and contains .json files.`,
   )
 }
 
