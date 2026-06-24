@@ -16,20 +16,7 @@ export async function entries() {
 export async function load({ params }) {
   const { slug } = params;
   
-  // Convert hyphens back to underscores to match your JSON keys
-  const itemName = slug.replace(/-/g, '_');
-  const item = allItems[itemName];
-  const recipe = getRecipe[itemName];
-  const hasRecipe = recipe !== null;
-  
-  if (!item) {
-    throw error(404, 'Item not found');
-  }
-  
   return {
-    item,
-    slug,
-    itemName,
-    hasRecipe
+    slug
   };
 }
