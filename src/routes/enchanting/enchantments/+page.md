@@ -41,6 +41,17 @@ Use the search box or the category chips to filter.
 
 ---
 
+# Treasure Enchantments
+
+These enchantments are NOT availalable from the enchanting table.
+
+- **Dematerialize**
+- **Gravity Well**
+- **Styx Rose**
+- **Sculk Sensitive**
+- **Execution**
+- **Fealty**
+
 # Vanilla Enchantments
 
 ### Curses
