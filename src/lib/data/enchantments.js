@@ -113,6 +113,7 @@ export const descriptions = {
   budding: { name: 'Budding', group: 'melee', tag: 'Melee', desc: 'Applies Budding (level) for 12 seconds.' },
   buzzy_bees: { name: 'Buzzy Bees', group: 'melee', tag: 'Melee', desc: 'Summons an angered bee to attack your most recent target.' },
   cleave: { name: 'Cleave', group: 'melee', tag: 'Melee', desc: 'Deals level damage to the target’s armor; shield disables last level seconds longer.' },
+  dematerialize: { name: 'Dematerialize', group: 'melee', tag: 'Melee', desc: 'Converts attack into Void damage ticking every 0.5s for 10s. Deals level x 2% of original damage. Re-hitting refreshes the duration and folds leftover damage.' },
   committed: { name: 'Committed', group: 'melee', tag: 'Melee', desc: 'Deals 1 + level bonus damage to enemies below 40% health.' },
   conflagrate: { name: 'Conflagrate', group: 'melee', tag: 'Melee', desc: 'After a 1.5 second delay, the target takes level × 20% of the original hit as fire damage.' },
   cull_the_weak: { name: 'Cull the Weak', group: 'melee', tag: 'Melee', desc: 'Deals level bonus damage to slowed, weakened or fatigued enemies (stacks).' },

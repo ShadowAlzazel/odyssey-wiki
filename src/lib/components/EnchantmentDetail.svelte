@@ -32,15 +32,11 @@
     <div class="stat stat--hero">
       <dt>Enchantability</dt>
       <dd>{e.enchantability}</dd>
-      <small>anvil cost ÷ 2</small>
+      <small>Cost per level: X</small>
     </div>
     <div class="stat">
       <dt>Max level</dt>
       <dd>{roman(e.maxLevel)}</dd>
-    </div>
-    <div class="stat">
-      <dt>Anvil cost</dt>
-      <dd>{e.anvilCost}</dd>
     </div>
     <div class="stat">
       <dt>Weight</dt>
