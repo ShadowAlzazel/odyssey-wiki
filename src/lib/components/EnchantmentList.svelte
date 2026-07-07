@@ -94,7 +94,7 @@
                 <span class="badge badge--level" title="Maximum level">
                   Max&nbsp;{roman(e.maxLevel)}
                 </span>
-                <span class="badge badge--ench" title="Enchantability (anvil cost ÷ 2)">
+                <span class="badge badge--ench" title="Enchantability (cost per level)">
                   Cost&nbsp;{e.enchantability}
                 </span>
               </div>

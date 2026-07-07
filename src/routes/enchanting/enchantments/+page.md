@@ -7,7 +7,9 @@
 
 Welcome to the comprehensive enchantments guide! This page documents every available enchantment, including vanilla Minecraft enchantments and custom Odyssey enchantments.
 
-All descriptions on this page are generated directly from the in-game tooltip source, so they always reflect the current behavior. In every formula, `level` refers to the enchantment level, and `×` means multiplication (e.g. `level × 5` at level 3 equals 15).
+All descriptions on this page are generated directly from the in-game tooltip source, so they always reflect the current behavior.
+In every formula, `level` refers to the enchantment level, and `×` means multiplication (e.g. `level × 5` at level 3 equals 15).
+The green number is the `Enchanatbility Cost`, which is the cost per level `x`
 
 Every enchantment in the pack. Descriptions are pulled straight from the
 in-game tooltips, so this list always matches what you see while playing.
