@@ -17,6 +17,7 @@ export const groups = [
   { id: 'armor', label: 'Odyssey · Armor', blurb: 'Worn enchantments — defense, mobility and utility.' },
   { id: 'melee', label: 'Odyssey · Melee', blurb: 'Close-combat weapon enchantments.' },
   { id: 'ranged', label: 'Odyssey · Ranged', blurb: 'Bow and crossbow projectile enchantments.' },
+  { id: 'other', label: 'Odyssey · Other', blurb: 'For other item types, like fishing rods and shields.' },
   { id: 'misc', label: 'Odyssey · Miscellaneous', blurb: 'Durability, cosmetics and special-case curses.' },
 ]
 
@@ -192,30 +193,30 @@ export const descriptions = {
   // ──────────────────────────────────────────────────────────────────────
   // ── shield & blocking ──
   // ──────────────────────────────────────────────────────────────────────
-  mirror_force: { name: 'Mirror Force', group: 'shield', tag: 'Shield', desc: '- Reflect enemy projectiles at [level x 40]% the original speed.' },
-  fortification: { name: 'Fortification', group: 'shield', tag: 'Shield', desc: '- Increase armor by [level x 1] when holding the shield.' },
-  carapace: { name: 'Carapace', group: 'shield', tag: 'Shield', desc: '- Increase health by [level x 10]% hearts when holding the shield.' },
-  guarding_strike: { name: 'Guarding Strike', group: 'shield', tag: 'Shield', desc: '- After a shield block, your next attack deals [level x 20]% more damage.' },
-  blowback: { name: 'Blowback', group: 'shield', tag: 'Blocking', desc: '- Enemies that attack the wielder while blocking, are knocked back. This effect is doubled when the item is a shield.' },
-  frostbite: { name: 'Frostbite', group: 'shield', tag: 'Blocking', desc: '- Parrying/Blocking applies Freezing for [level + 2] seconds.' },
+  mirror_force: { name: 'Mirror Force', group: 'other', tag: 'Shield', desc: '- Reflect enemy projectiles at [level x 40]% the original speed.' },
+  fortification: { name: 'Fortification', group: 'other', tag: 'Shield', desc: '- Increase armor by [level x 1] when holding the shield.' },
+  carapace: { name: 'Carapace', group: 'other', tag: 'Shield', desc: '- Increase health by [level x 10]% hearts when holding the shield.' },
+  guarding_strike: { name: 'Guarding Strike', group: 'other', tag: 'Shield', desc: '- After a shield block, your next attack deals [level x 20]% more damage.' },
+  blowback: { name: 'Blowback', group: 'other', tag: 'Blocking', desc: '- Enemies that attack the wielder while blocking, are knocked back. This effect is doubled when the item is a shield.' },
+  frostbite: { name: 'Frostbite', group: 'other', tag: 'Blocking', desc: '- Parrying/Blocking applies Freezing for [level + 2] seconds.' },
  
   // ──────────────────────────────────────────────────────────────────────
   // ── mining ──
   // ──────────────────────────────────────────────────────────────────────
-  expedite: { name: 'Expedite', group: 'mining', tag: 'Mining', desc: '- Increase base mining speed by [level x 10]%.' },
-  grasp: { name: 'Grasp', group: 'mining', tag: 'Mining', desc: '- Gain [1 + (level x 0.5)] block interaction range.' },
-  lodesight: { name: 'Lodesight', group: 'mining', tag: 'Mining', desc: '- Mining a block reveals [level x 4] similar blocks within an 8 block radius. Each detected block drains durability by 2.' },
-  metabolic: { name: 'Metabolic', group: 'mining', tag: 'Mining', desc: '- Have a [level x 10]% chance to regain food levels when breaking a block.' },
-  pluck: { name: 'Pluck', group: 'mining', tag: 'Mining', desc: '- Items that are mined are directly added to the players inventory.' },
+  expedite: { name: 'Expedite', group: 'other', tag: 'Mining', desc: '- Increase base mining speed by [level x 10]%.' },
+  grasp: { name: 'Grasp', group: 'other', tag: 'Mining', desc: '- Gain [1 + (level x 0.5)] block interaction range.' },
+  lodesight: { name: 'Lodesight', group: 'other', tag: 'Mining', desc: '- Mining a block reveals [level x 4] similar blocks within an 8 block radius. Each detected block drains durability by 2.' },
+  metabolic: { name: 'Metabolic', group: 'other', tag: 'Mining', desc: '- Have a [level x 10]% chance to regain food levels when breaking a block.' },
+  pluck: { name: 'Pluck', group: 'other', tag: 'Mining', desc: '- Items that are mined are directly added to the players inventory.' },
  
   // ──────────────────────────────────────────────────────────────────────
   // ── fishing ──
   // ──────────────────────────────────────────────────────────────────────
-  bomb_ob: { name: 'Bomb-ob', group: 'fishing', tag: 'Fishing Rod', desc: '- Cause an explosion when the bob hits a target.' },
-  wisdom_of_the_deep: { name: 'Wisdom of the Deep', group: 'fishing', tag: 'Fishing Rod', desc: '- Increase fishing experience gain by [level x 100]%.' },
-  scourer: { name: 'Scourer', group: 'fishing', tag: 'Fishing Rod', desc: '- Converts bad loot into gems.' },
-  yank: { name: 'Yank', group: 'fishing', tag: 'Fishing Rod', desc: '- Increase pulling power fishing rod by [level x 50]%.' },
-  lengthy_line: { name: 'Lengthy Line', group: 'fishing', tag: 'Fishing Rod', desc: '- Increase cast line velocity by [level x 50]%.' },
+  bomb_ob: { name: 'Bomb-ob', group: 'other', tag: 'Fishing Rod', desc: '- Cause an explosion when the bob hits a target.' },
+  wisdom_of_the_deep: { name: 'Wisdom of the Deep', group: 'other', tag: 'Fishing Rod', desc: '- Increase fishing experience gain by [level x 100]%.' },
+  scourer: { name: 'Scourer', group: 'other', tag: 'Fishing Rod', desc: '- Converts bad loot into gems.' },
+  yank: { name: 'Yank', group: 'other', tag: 'Fishing Rod', desc: '- Increase pulling power fishing rod by [level x 50]%.' },
+  lengthy_line: { name: 'Lengthy Line', group: 'other', tag: 'Fishing Rod', desc: '- Increase cast line velocity by [level x 50]%.' },
  
   // ──────────────────────────────────────────────────────────────────────
   // ── miscellaneous ──
@@ -232,5 +233,5 @@ export const descriptions = {
   midas_curse: { name: 'Midas Curse', group: 'misc', tag: 'Curse', desc: '- Converts all mob drop types into golden nuggets (or ingots).' },
   frailty_curse: { name: 'Frailty Curse', group: 'misc', tag: 'Curse', desc: '- Decrease wearer invulnerable time by [level] ticks.' },
   obfuscation_curse: { name: 'Obfuscation Curse', group: 'misc', tag: 'Curse', desc: '- This curse obfuscates what enchantments are on this item' },
-  
+
 }
