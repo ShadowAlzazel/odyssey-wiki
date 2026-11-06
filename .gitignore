@@ -17,5 +17,5 @@ dist
 node-jiti
 node_modules
 
-.mcdata/loot_table
+.mcdata/
 mc_data/loot_table

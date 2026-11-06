@@ -1,4 +1,30 @@
 {
+  "wooden_buckler": {
+    "data": {
+      "item_name": "wooden_buckler",
+      "item_override": "shield",
+      "display_name": "Wooden Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "wooden_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "wooden_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 94
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "wooden_buckler.json",
+    "hasCustomPage": false
+  },
   "warping_wand": {
     "data": {
       "item_name": "warping_wand",
@@ -41,6 +67,28 @@
     "description": null,
     "category": "misc",
     "source_file": "void_linked_kunai.json",
+    "hasCustomPage": false
+  },
+  "tropical_fish": {
+    "data": {
+      "item_name": "tropical_fish",
+      "item_override": "tropical_fish",
+      "display_name": "Tropical Fish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tropical_fish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tropical_fish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "tropical_fish.json",
     "hasCustomPage": false
   },
   "totem_of_vexing": {
@@ -152,7 +200,7 @@
             },
             {
               "attribute": "armor_toughness",
-              "amount": 2,
+              "amount": 1,
               "slot": "head",
               "keyId": "item.helmet.armor_toughness",
               "operation": "add_value"
@@ -218,6 +266,44 @@
     "source_file": "titanium_chestplate.json",
     "hasCustomPage": false
   },
+  "titanium_buckler": {
+    "data": {
+      "item_name": "titanium_buckler",
+      "item_override": "shield",
+      "display_name": "Titanium Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "titanium_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "titanium_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 456
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "titanium_buckler.json",
+    "hasCustomPage": false
+  },
   "titanium_boots": {
     "data": {
       "item_name": "titanium_boots",
@@ -254,7 +340,7 @@
             },
             {
               "attribute": "armor_toughness",
-              "amount": 2,
+              "amount": 1,
               "slot": "feet",
               "keyId": "item.boots.armor_toughness",
               "operation": "add_value"
@@ -289,6 +375,50 @@
     "description": null,
     "category": "misc",
     "source_file": "tinkered_bow.json",
+    "hasCustomPage": false
+  },
+  "striped_perch": {
+    "data": {
+      "item_name": "striped_perch",
+      "item_override": "cod",
+      "display_name": "Striped Perch",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "striped_perch"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "striped_perch"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "striped_perch.json",
+    "hasCustomPage": false
+  },
+  "spoonhead_sculpin": {
+    "data": {
+      "item_name": "spoonhead_sculpin",
+      "item_override": "cod",
+      "display_name": "Spoonhead Sculpin",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "spoonhead_sculpin"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "spoonhead_sculpin"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "spoonhead_sculpin.json",
     "hasCustomPage": false
   },
   "soul_steel_leggings": {
@@ -442,6 +572,44 @@
     "description": null,
     "category": "misc",
     "source_file": "soul_steel_chestplate.json",
+    "hasCustomPage": false
+  },
+  "soul_steel_buckler": {
+    "data": {
+      "item_name": "soul_steel_buckler",
+      "item_override": "shield",
+      "display_name": "Soul Steel Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "soul_steel_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "soul_steel_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 384
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "soul_steel_buckler.json",
     "hasCustomPage": false
   },
   "soul_steel_boots": {
@@ -692,6 +860,44 @@
     "source_file": "silver_chestplate.json",
     "hasCustomPage": false
   },
+  "silver_buckler": {
+    "data": {
+      "item_name": "silver_buckler",
+      "item_override": "shield",
+      "display_name": "Silver Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "silver_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "silver_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 216
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "silver_buckler.json",
+    "hasCustomPage": false
+  },
   "silver_boots": {
     "data": {
       "item_name": "silver_boots",
@@ -743,6 +949,28 @@
     "source_file": "silver_boots.json",
     "hasCustomPage": false
   },
+  "shad": {
+    "data": {
+      "item_name": "shad",
+      "item_override": "cod",
+      "display_name": "Shad",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "shad"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "shad"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "shad.json",
+    "hasCustomPage": false
+  },
   "sculk_pointer": {
     "data": {
       "item_name": "sculk_pointer",
@@ -765,26 +993,166 @@
     "source_file": "sculk_pointer.json",
     "hasCustomPage": false
   },
-  "sculk_heart": {
+  "rainbow_wrasse": {
     "data": {
-      "item_name": "sculk_heart",
-      "item_override": "arrow",
-      "display_name": "Sculk Heart",
+      "item_name": "rainbow_wrasse",
+      "item_override": "cod",
+      "display_name": "Rainbow Wrasse",
       "components": [
         {
           "type": "ItemNameComponent",
-          "item_name": "sculk_heart"
+          "item_name": "rainbow_wrasse"
         },
         {
           "type": "ItemModelComponent",
-          "item_model": "sculk_heart"
+          "item_model": "rainbow_wrasse"
         }
       ],
       "rarity": "common"
     },
     "description": null,
     "category": "misc",
-    "source_file": "sculk_heart.json",
+    "source_file": "rainbow_wrasse.json",
+    "hasCustomPage": false
+  },
+  "pufferfish": {
+    "data": {
+      "item_name": "pufferfish",
+      "item_override": "pufferfish",
+      "display_name": "Pufferfish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "pufferfish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "pufferfish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "pufferfish.json",
+    "hasCustomPage": false
+  },
+  "prismatic_name_tag": {
+    "data": {
+      "item_name": "prismatic_name_tag",
+      "item_override": "name_tag",
+      "display_name": "Prismatic Name Tag",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "prismatic_name_tag"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "prismatic_name_tag"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "prismatic_name_tag.json",
+    "hasCustomPage": false
+  },
+  "piranha": {
+    "data": {
+      "item_name": "piranha",
+      "item_override": "cod",
+      "display_name": "Piranha",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "piranha"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "piranha"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "piranha.json",
+    "hasCustomPage": false
+  },
+  "pale_fish": {
+    "data": {
+      "item_name": "pale_fish",
+      "item_override": "cod",
+      "display_name": "Pale Fish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "pale_fish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "pale_fish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "pale_fish.json",
+    "hasCustomPage": false
+  },
+  "netherite_buckler": {
+    "data": {
+      "item_name": "netherite_buckler",
+      "item_override": "shield",
+      "display_name": "Netherite Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "netherite_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "netherite_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 593
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor_toughness",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "knockback_resistance",
+              "amount": 0.1,
+              "slot": "hand",
+              "keyId": "item.buckler_knockback_resistance",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "netherite_buckler.json",
     "hasCustomPage": false
   },
   "mithril_leggings": {
@@ -867,7 +1235,7 @@
           "modifiers": [
             {
               "attribute": "armor",
-              "amount": 4,
+              "amount": 3,
               "slot": "head",
               "keyId": "item.helmet.armor",
               "operation": "add_value"
@@ -940,6 +1308,51 @@
     "source_file": "mithril_chestplate.json",
     "hasCustomPage": false
   },
+  "mithril_buckler": {
+    "data": {
+      "item_name": "mithril_buckler",
+      "item_override": "shield",
+      "display_name": "Mithril Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "mithril_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "mithril_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 552
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 2,
+              "slot": "hand",
+              "keyId": "item.buckler_armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "mithril_buckler.json",
+    "hasCustomPage": false
+  },
   "mithril_boots": {
     "data": {
       "item_name": "mithril_boots",
@@ -991,26 +1404,86 @@
     "source_file": "mithril_boots.json",
     "hasCustomPage": false
   },
-  "irradiated_fruit": {
+  "mediterranean_killifish": {
     "data": {
-      "item_name": "irradiated_fruit",
-      "item_override": "arrow",
-      "display_name": "Irradiated Fruit",
+      "item_name": "mediterranean_killifish",
+      "item_override": "cod",
+      "display_name": "Mediterranean Killifish",
       "components": [
         {
           "type": "ItemNameComponent",
-          "item_name": "irradiated_fruit"
+          "item_name": "mediterranean_killifish"
         },
         {
           "type": "ItemModelComponent",
-          "item_model": "irradiated_fruit"
+          "item_model": "mediterranean_killifish"
         }
       ],
       "rarity": "common"
     },
     "description": null,
     "category": "misc",
-    "source_file": "irradiated_fruit.json",
+    "source_file": "mediterranean_killifish.json",
+    "hasCustomPage": false
+  },
+  "lamprey": {
+    "data": {
+      "item_name": "lamprey",
+      "item_override": "cod",
+      "display_name": "Lamprey",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "lamprey"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "lamprey"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "lamprey.json",
+    "hasCustomPage": false
+  },
+  "iron_buckler": {
+    "data": {
+      "item_name": "iron_buckler",
+      "item_override": "shield",
+      "display_name": "Iron Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "iron_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "iron_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 240
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "iron_buckler.json",
     "hasCustomPage": false
   },
   "iridium_leggings": {
@@ -1166,6 +1639,51 @@
     "source_file": "iridium_chestplate.json",
     "hasCustomPage": false
   },
+  "iridium_buckler": {
+    "data": {
+      "item_name": "iridium_buckler",
+      "item_override": "shield",
+      "display_name": "Iridium Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "iridium_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "iridium_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 888
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 2,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "iridium_buckler.json",
+    "hasCustomPage": false
+  },
   "iridium_boots": {
     "data": {
       "item_name": "iridium_boots",
@@ -1217,6 +1735,198 @@
     "source_file": "iridium_boots.json",
     "hasCustomPage": false
   },
+  "humpback_whitefish": {
+    "data": {
+      "item_name": "humpback_whitefish",
+      "item_override": "cod",
+      "display_name": "Humpback Whitefish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "humpback_whitefish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "humpback_whitefish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "humpback_whitefish.json",
+    "hasCustomPage": false
+  },
+  "herring": {
+    "data": {
+      "item_name": "herring",
+      "item_override": "cod",
+      "display_name": "Herring",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "herring"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "herring"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "herring.json",
+    "hasCustomPage": false
+  },
+  "gurnard": {
+    "data": {
+      "item_name": "gurnard",
+      "item_override": "cod",
+      "display_name": "Gurnard",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "gurnard"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "gurnard"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "gurnard.json",
+    "hasCustomPage": false
+  },
+  "guppy": {
+    "data": {
+      "item_name": "guppy",
+      "item_override": "cod",
+      "display_name": "Guppy",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "guppy"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "guppy"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "guppy.json",
+    "hasCustomPage": false
+  },
+  "golden_buckler": {
+    "data": {
+      "item_name": "golden_buckler",
+      "item_override": "shield",
+      "display_name": "Golden Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "golden_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "golden_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 113
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "golden_buckler.json",
+    "hasCustomPage": false
+  },
+  "freshwater_pufferfish": {
+    "data": {
+      "item_name": "freshwater_pufferfish",
+      "item_override": "pufferfish",
+      "display_name": "Freshwater Pufferfish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "freshwater_pufferfish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "freshwater_pufferfish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "freshwater_pufferfish.json",
+    "hasCustomPage": false
+  },
+  "flying_fish": {
+    "data": {
+      "item_name": "flying_fish",
+      "item_override": "cod",
+      "display_name": "Flying Fish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "flying_fish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "flying_fish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "flying_fish.json",
+    "hasCustomPage": false
+  },
+  "fish_bones": {
+    "data": {
+      "item_name": "fish_bones",
+      "item_override": "bone",
+      "display_name": "Fish Bones",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "fish_bones"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "fish_bones"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "fish_bones.json",
+    "hasCustomPage": false
+  },
   "explosive_arrow": {
     "data": {
       "item_name": "explosive_arrow",
@@ -1237,6 +1947,95 @@
     "description": null,
     "category": "misc",
     "source_file": "explosive_arrow.json",
+    "hasCustomPage": false
+  },
+  "echo_fish": {
+    "data": {
+      "item_name": "echo_fish",
+      "item_override": "cod",
+      "display_name": "Echo Fish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "echo_fish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "echo_fish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "echo_fish.json",
+    "hasCustomPage": false
+  },
+  "diamond_buckler": {
+    "data": {
+      "item_name": "diamond_buckler",
+      "item_override": "shield",
+      "display_name": "Diamond Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "diamond_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "diamond_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 528
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            },
+            {
+              "attribute": "armor_toughness",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor_toughness",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "diamond_buckler.json",
+    "hasCustomPage": false
+  },
+  "crystalline_compost": {
+    "data": {
+      "item_name": "crystalline_compost",
+      "item_override": "sugar",
+      "display_name": "Crystalline Compost",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crystalline_compost"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crystalline_compost"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "crystalline_compost.json",
     "hasCustomPage": false
   },
   "crystal_alloy_leggings": {
@@ -1326,7 +2125,7 @@
             },
             {
               "attribute": "armor_toughness",
-              "amount": 2,
+              "amount": 1,
               "slot": "head",
               "keyId": "item.helmet.armor_toughness",
               "operation": "add_value"
@@ -1392,6 +2191,44 @@
     "source_file": "crystal_alloy_chestplate.json",
     "hasCustomPage": false
   },
+  "crystal_alloy_buckler": {
+    "data": {
+      "item_name": "crystal_alloy_buckler",
+      "item_override": "shield",
+      "display_name": "Crystal Alloy Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crystal_alloy_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crystal_alloy_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 432
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "crystal_alloy_buckler.json",
+    "hasCustomPage": false
+  },
   "crystal_alloy_boots": {
     "data": {
       "item_name": "crystal_alloy_boots",
@@ -1428,7 +2265,7 @@
             },
             {
               "attribute": "armor_toughness",
-              "amount": 2,
+              "amount": 1,
               "slot": "feet",
               "keyId": "item.boots.armor_toughness",
               "operation": "add_value"
@@ -1443,147 +2280,54 @@
     "source_file": "crystal_alloy_boots.json",
     "hasCustomPage": false
   },
-  "copper_leggings": {
+  "crappie": {
     "data": {
-      "item_name": "copper_leggings",
-      "item_override": "iron_leggings",
-      "display_name": "Copper Leggings",
+      "item_name": "crappie",
+      "item_override": "cod",
+      "display_name": "Crappie",
       "components": [
         {
           "type": "ItemNameComponent",
-          "item_name": "copper_leggings"
+          "item_name": "crappie"
         },
         {
           "type": "ItemModelComponent",
-          "item_model": "copper_leggings"
-        },
-        {
-          "type": "MaxDamageComponent",
-          "max_damage": 157
-        },
-        {
-          "type": "EquippableComponent",
-          "asset_id": "copper",
-          "slot": "legs",
-          "equip_sound": "item.armor.equip_chain"
-        },
-        {
-          "type": "AttributesComponent",
-          "modifiers": [
-            {
-              "attribute": "armor",
-              "amount": 3,
-              "slot": "legs",
-              "keyId": "item.leggings.armor",
-              "operation": "add_value"
-            },
-            {
-              "attribute": "armor_toughness",
-              "amount": 1,
-              "slot": "legs",
-              "keyId": "item.leggings.armor_toughness",
-              "operation": "add_value"
-            }
-          ]
+          "item_model": "crappie"
         }
       ],
       "rarity": "common"
     },
     "description": null,
     "category": "misc",
-    "source_file": "copper_leggings.json",
+    "source_file": "crappie.json",
     "hasCustomPage": false
   },
-  "copper_helmet": {
+  "copper_buckler": {
     "data": {
-      "item_name": "copper_helmet",
-      "item_override": "iron_helmet",
-      "display_name": "Copper Helmet",
+      "item_name": "copper_buckler",
+      "item_override": "shield",
+      "display_name": "Copper Buckler",
       "components": [
         {
           "type": "ItemNameComponent",
-          "item_name": "copper_helmet"
+          "item_name": "copper_buckler"
         },
         {
           "type": "ItemModelComponent",
-          "item_model": "copper_helmet"
-        },
-        {
-          "type": "MaxDamageComponent",
-          "max_damage": 115
-        },
-        {
-          "type": "EquippableComponent",
-          "asset_id": "copper",
-          "slot": "head",
-          "equip_sound": "item.armor.equip_chain"
-        },
-        {
-          "type": "AttributesComponent",
-          "modifiers": [
-            {
-              "attribute": "armor",
-              "amount": 2,
-              "slot": "head",
-              "keyId": "item.helmet.armor",
-              "operation": "add_value"
-            },
-            {
-              "attribute": "armor_toughness",
-              "amount": 1,
-              "slot": "head",
-              "keyId": "item.helmet.armor_toughness",
-              "operation": "add_value"
-            }
-          ]
-        }
-      ],
-      "rarity": "common"
-    },
-    "description": null,
-    "category": "misc",
-    "source_file": "copper_helmet.json",
-    "hasCustomPage": false
-  },
-  "copper_chestplate": {
-    "data": {
-      "item_name": "copper_chestplate",
-      "item_override": "iron_chestplate",
-      "display_name": "Copper Chestplate",
-      "components": [
-        {
-          "type": "ItemNameComponent",
-          "item_name": "copper_chestplate"
-        },
-        {
-          "type": "ItemModelComponent",
-          "item_model": "copper_chestplate"
+          "item_model": "copper_buckler"
         },
         {
           "type": "MaxDamageComponent",
           "max_damage": 168
         },
         {
-          "type": "EquippableComponent",
-          "asset_id": "copper",
-          "slot": "chest",
-          "equip_sound": "item.armor.equip_chain"
-        },
-        {
           "type": "AttributesComponent",
           "modifiers": [
             {
               "attribute": "armor",
-              "amount": 4,
-              "slot": "chest",
-              "keyId": "item.chestplate.armor",
-              "operation": "add_value"
-            },
-            {
-              "attribute": "armor_toughness",
               "amount": 1,
-              "slot": "chest",
-              "keyId": "item.chestplate.armor_toughness",
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
               "operation": "add_value"
             }
           ]
@@ -1593,58 +2337,161 @@
     },
     "description": null,
     "category": "misc",
-    "source_file": "copper_chestplate.json",
+    "source_file": "copper_buckler.json",
     "hasCustomPage": false
   },
-  "copper_boots": {
+  "cod": {
     "data": {
-      "item_name": "copper_boots",
-      "item_override": "iron_boots",
-      "display_name": "Copper Boots",
+      "item_name": "cod",
+      "item_override": "cod",
+      "display_name": "Cod",
       "components": [
         {
           "type": "ItemNameComponent",
-          "item_name": "copper_boots"
+          "item_name": "cod"
         },
         {
           "type": "ItemModelComponent",
-          "item_model": "copper_boots"
-        },
-        {
-          "type": "MaxDamageComponent",
-          "max_damage": 136
-        },
-        {
-          "type": "EquippableComponent",
-          "asset_id": "copper",
-          "slot": "feet",
-          "equip_sound": "item.armor.equip_chain"
-        },
-        {
-          "type": "AttributesComponent",
-          "modifiers": [
-            {
-              "attribute": "armor",
-              "amount": 1,
-              "slot": "feet",
-              "keyId": "item.boots.armor",
-              "operation": "add_value"
-            },
-            {
-              "attribute": "armor_toughness",
-              "amount": 1,
-              "slot": "feet",
-              "keyId": "item.boots.armor_toughness",
-              "operation": "add_value"
-            }
-          ]
+          "item_model": "cod"
         }
       ],
       "rarity": "common"
     },
     "description": null,
     "category": "misc",
-    "source_file": "copper_boots.json",
+    "source_file": "cod.json",
+    "hasCustomPage": false
+  },
+  "cinnabar_shard": {
+    "data": {
+      "item_name": "cinnabar_shard",
+      "item_override": "gunpowder",
+      "display_name": "Cinnabar Shard",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "cinnabar_shard"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "cinnabar_shard"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "cinnabar_shard.json",
+    "hasCustomPage": false
+  },
+  "bujurqui": {
+    "data": {
+      "item_name": "bujurqui",
+      "item_override": "cod",
+      "display_name": "Bujurqui",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "bujurqui"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "bujurqui"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "bujurqui.json",
+    "hasCustomPage": false
+  },
+  "bluegill": {
+    "data": {
+      "item_name": "bluegill",
+      "item_override": "cod",
+      "display_name": "Bluegill",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "bluegill"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "bluegill"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "bluegill.json",
+    "hasCustomPage": false
+  },
+  "blind_minnow": {
+    "data": {
+      "item_name": "blind_minnow",
+      "item_override": "cod",
+      "display_name": "Blind Minnow",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "blind_minnow"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "blind_minnow"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "blind_minnow.json",
+    "hasCustomPage": false
+  },
+  "blind_cave_fish": {
+    "data": {
+      "item_name": "blind_cave_fish",
+      "item_override": "cod",
+      "display_name": "Blind Cave Fish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "blind_cave_fish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "blind_cave_fish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "blind_cave_fish.json",
+    "hasCustomPage": false
+  },
+  "axolotl": {
+    "data": {
+      "item_name": "axolotl",
+      "item_override": "chicken_spawn_egg",
+      "display_name": "Axolotl",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "axolotl"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "axolotl"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "axolotl.json",
     "hasCustomPage": false
   },
   "arcane_wand": {
@@ -1856,7 +2703,7 @@
             },
             {
               "attribute": "armor_toughness",
-              "amount": 2,
+              "amount": 1,
               "slot": "head",
               "keyId": "item.helmet.armor_toughness",
               "operation": "add_value"
@@ -1922,6 +2769,44 @@
     "source_file": "anodized_titanium_chestplate.json",
     "hasCustomPage": false
   },
+  "anodized_titanium_buckler": {
+    "data": {
+      "item_name": "anodized_titanium_buckler",
+      "item_override": "shield",
+      "display_name": "Anodized Titanium Buckler",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "anodized_titanium_buckler"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "anodized_titanium_buckler"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 456
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "armor",
+              "amount": 1,
+              "slot": "hand",
+              "keyId": "item.buckler_armor",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "anodized_titanium_buckler.json",
+    "hasCustomPage": false
+  },
   "anodized_titanium_boots": {
     "data": {
       "item_name": "anodized_titanium_boots",
@@ -1958,7 +2843,7 @@
             },
             {
               "attribute": "armor_toughness",
-              "amount": 2,
+              "amount": 1,
               "slot": "feet",
               "keyId": "item.boots.armor_toughness",
               "operation": "add_value"
@@ -1971,6 +2856,50 @@
     "description": null,
     "category": "misc",
     "source_file": "anodized_titanium_boots.json",
+    "hasCustomPage": false
+  },
+  "anchovy": {
+    "data": {
+      "item_name": "anchovy",
+      "item_override": "cod",
+      "display_name": "Anchovy",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "anchovy"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "anchovy"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "anchovy.json",
+    "hasCustomPage": false
+  },
+  "alaska_blackfish": {
+    "data": {
+      "item_name": "alaska_blackfish",
+      "item_override": "cod",
+      "display_name": "Alaska Blackfish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "alaska_blackfish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "alaska_blackfish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "misc",
+    "source_file": "alaska_blackfish.json",
     "hasCustomPage": false
   }
 }

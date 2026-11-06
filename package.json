@@ -6,8 +6,10 @@
   "packageManager": "pnpm@9.15.0",
   "license": "MIT",
   "scripts": {
+    "sync": "node scripts/sync-datapack.js && npm run build:items",
+    "sync:check": "node scripts/sync-datapack.js --dry-run",
     "build:items": "node mc-build-parser.js",
-    "dev": "npm run build:items && vite dev",
+    "dev": "node scripts/sync-datapack.js --optional --no-clone && npm run build:items && vite dev",
     "build": "vite build",
     "deploy": "gh-pages -d dist",
     "deploy:clean": "npm run build && gh-pages -d dist -f"

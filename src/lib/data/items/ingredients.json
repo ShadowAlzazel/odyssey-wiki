@@ -1,4 +1,26 @@
 {
+  "warden_entrails": {
+    "data": {
+      "item_name": "warden_entrails",
+      "item_override": "rotten_flesh",
+      "display_name": "Warden Entrails",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "warden_entrails"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "warden_entrails"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "ingredients",
+    "source_file": "warden_entrails.json",
+    "hasCustomPage": false
+  },
   "titanium_ingot": {
     "data": {
       "item_name": "titanium_ingot",
@@ -129,6 +151,28 @@
     "description": null,
     "category": "ingredients",
     "source_file": "shadow_trial_key.json",
+    "hasCustomPage": false
+  },
+  "sculk_heart": {
+    "data": {
+      "item_name": "sculk_heart",
+      "item_override": "rotten_flesh",
+      "display_name": "Sculk Heart",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "sculk_heart"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "sculk_heart"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "ingredients",
+    "source_file": "sculk_heart.json",
     "hasCustomPage": false
   },
   "ruby": {
@@ -263,6 +307,28 @@
     "source_file": "jade.json",
     "hasCustomPage": false
   },
+  "iridium_nugget": {
+    "data": {
+      "item_name": "iridium_nugget",
+      "item_override": "iron_nugget",
+      "display_name": "Iridium Nugget",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "iridium_nugget"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "iridium_nugget"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "ingredients",
+    "source_file": "iridium_nugget.json",
+    "hasCustomPage": false
+  },
   "iridium_ingot": {
     "data": {
       "item_name": "iridium_ingot",
@@ -371,6 +437,40 @@
     "description": null,
     "category": "ingredients",
     "source_file": "coagulated_blood.json",
+    "hasCustomPage": false
+  },
+  "builders_gauntlet": {
+    "data": {
+      "item_name": "builders_gauntlet",
+      "item_override": "iron_ingot",
+      "display_name": "Builders Gauntlet",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "builders_gauntlet"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "builders_gauntlet"
+        },
+        {
+          "type": "AttributesComponent",
+          "modifiers": [
+            {
+              "attribute": "block_interaction_range",
+              "amount": 5,
+              "slot": "hand",
+              "keyId": "item.builders_gauntlet_range",
+              "operation": "add_value"
+            }
+          ]
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "ingredients",
+    "source_file": "builders_gauntlet.json",
     "hasCustomPage": false
   },
   "blank_tome": {

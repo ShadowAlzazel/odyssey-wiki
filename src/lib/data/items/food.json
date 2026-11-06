@@ -1,4 +1,70 @@
 {
+  "wolffish": {
+    "data": {
+      "item_name": "wolffish",
+      "item_override": "salmon",
+      "display_name": "Wolffish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "wolffish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "wolffish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "wolffish.json",
+    "hasCustomPage": false
+  },
+  "walleye": {
+    "data": {
+      "item_name": "walleye",
+      "item_override": "salmon",
+      "display_name": "Walleye",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "walleye"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "walleye"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "walleye.json",
+    "hasCustomPage": false
+  },
+  "tunisian_barb": {
+    "data": {
+      "item_name": "tunisian_barb",
+      "item_override": "salmon",
+      "display_name": "Tunisian Barb",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tunisian_barb"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tunisian_barb"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "tunisian_barb.json",
+    "hasCustomPage": false
+  },
   "tonkotsu_ramen": {
     "data": {
       "item_name": "tonkotsu_ramen",
@@ -28,6 +94,35 @@
     "source_file": "tonkotsu_ramen.json",
     "hasCustomPage": false
   },
+  "tonkatsu": {
+    "data": {
+      "item_name": "tonkatsu",
+      "item_override": "cooked_porkchop",
+      "display_name": "Tonkatsu",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "tonkatsu"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "tonkatsu"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 10,
+          "saturation": 12,
+          "can_always_eat": false,
+          "consume_seconds": 2
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "tonkatsu.json",
+    "hasCustomPage": false
+  },
   "thai_tulip_boba_tea": {
     "data": {
       "item_name": "thai_tulip_boba_tea",
@@ -55,6 +150,79 @@
     "description": null,
     "category": "food",
     "source_file": "thai_tulip_boba_tea.json",
+    "hasCustomPage": false
+  },
+  "swordfish": {
+    "data": {
+      "item_name": "swordfish",
+      "item_override": "salmon",
+      "display_name": "Swordfish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "swordfish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "swordfish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "swordfish.json",
+    "hasCustomPage": false
+  },
+  "sturgeon": {
+    "data": {
+      "item_name": "sturgeon",
+      "item_override": "salmon",
+      "display_name": "Sturgeon",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "sturgeon"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "sturgeon"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "sturgeon.json",
+    "hasCustomPage": false
+  },
+  "steak_and_eggs": {
+    "data": {
+      "item_name": "steak_and_eggs",
+      "item_override": "cooked_beef",
+      "display_name": "Steak and Eggs",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "steak_and_eggs"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "steak_and_eggs"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 14,
+          "saturation": 14,
+          "can_always_eat": false,
+          "consume_seconds": 2
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "steak_and_eggs.json",
     "hasCustomPage": false
   },
   "spider_eye_boba": {
@@ -114,6 +282,50 @@
     "description": null,
     "category": "food",
     "source_file": "spell_scroll.json",
+    "hasCustomPage": false
+  },
+  "skate": {
+    "data": {
+      "item_name": "skate",
+      "item_override": "salmon",
+      "display_name": "Skate",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "skate"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "skate"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "skate.json",
+    "hasCustomPage": false
+  },
+  "siberian_sturgeon": {
+    "data": {
+      "item_name": "siberian_sturgeon",
+      "item_override": "salmon",
+      "display_name": "Siberian Sturgeon",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "siberian_sturgeon"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "siberian_sturgeon"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "siberian_sturgeon.json",
     "hasCustomPage": false
   },
   "shoyu_ramen": {
@@ -229,6 +441,72 @@
     "source_file": "salmon_nigiri.json",
     "hasCustomPage": false
   },
+  "salmon": {
+    "data": {
+      "item_name": "salmon",
+      "item_override": "salmon",
+      "display_name": "Salmon",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "salmon"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "salmon"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "salmon.json",
+    "hasCustomPage": false
+  },
+  "painted_moray": {
+    "data": {
+      "item_name": "painted_moray",
+      "item_override": "salmon",
+      "display_name": "Painted Moray",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "painted_moray"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "painted_moray"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "painted_moray.json",
+    "hasCustomPage": false
+  },
+  "opah": {
+    "data": {
+      "item_name": "opah",
+      "item_override": "salmon",
+      "display_name": "Opah",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "opah"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "opah"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "opah.json",
+    "hasCustomPage": false
+  },
   "oolong_orchid_boba_tea": {
     "data": {
       "item_name": "oolong_orchid_boba_tea",
@@ -256,6 +534,94 @@
     "description": null,
     "category": "food",
     "source_file": "oolong_orchid_boba_tea.json",
+    "hasCustomPage": false
+  },
+  "oarfish": {
+    "data": {
+      "item_name": "oarfish",
+      "item_override": "salmon",
+      "display_name": "Oarfish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "oarfish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "oarfish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "oarfish.json",
+    "hasCustomPage": false
+  },
+  "northern_pike": {
+    "data": {
+      "item_name": "northern_pike",
+      "item_override": "salmon",
+      "display_name": "Northern Pike",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "northern_pike"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "northern_pike"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "northern_pike.json",
+    "hasCustomPage": false
+  },
+  "muskellunge": {
+    "data": {
+      "item_name": "muskellunge",
+      "item_override": "salmon",
+      "display_name": "Muskellunge",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "muskellunge"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "muskellunge"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "muskellunge.json",
+    "hasCustomPage": false
+  },
+  "monkfish": {
+    "data": {
+      "item_name": "monkfish",
+      "item_override": "salmon",
+      "display_name": "Monkfish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "monkfish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "monkfish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "monkfish.json",
     "hasCustomPage": false
   },
   "matcha_melon_boba_tea": {
@@ -287,6 +653,57 @@
     "source_file": "matcha_melon_boba_tea.json",
     "hasCustomPage": false
   },
+  "mahi_mahi": {
+    "data": {
+      "item_name": "mahi_mahi",
+      "item_override": "salmon",
+      "display_name": "Mahi Mahi",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "mahi_mahi"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "mahi_mahi"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "mahi_mahi.json",
+    "hasCustomPage": false
+  },
+  "irradiated_fruit": {
+    "data": {
+      "item_name": "irradiated_fruit",
+      "item_override": "apple",
+      "display_name": "Irradiated Fruit",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "irradiated_fruit"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "irradiated_fruit"
+        },
+        {
+          "type": "FoodComponent",
+          "nutrition": 4,
+          "saturation": 4,
+          "can_always_eat": true,
+          "consume_seconds": 2
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "irradiated_fruit.json",
+    "hasCustomPage": false
+  },
   "green_apple": {
     "data": {
       "item_name": "green_apple",
@@ -314,6 +731,28 @@
     "description": null,
     "category": "food",
     "source_file": "green_apple.json",
+    "hasCustomPage": false
+  },
+  "gar": {
+    "data": {
+      "item_name": "gar",
+      "item_override": "salmon",
+      "display_name": "Gar",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "gar"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "gar"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "gar.json",
     "hasCustomPage": false
   },
   "fruit_bowl": {
@@ -362,9 +801,9 @@
         {
           "type": "FoodComponent",
           "nutrition": 6,
-          "saturation": 6,
+          "saturation": 7,
           "can_always_eat": false,
-          "consume_seconds": 1.6
+          "consume_seconds": 1.2
         }
       ],
       "rarity": "common"
@@ -372,6 +811,28 @@
     "description": null,
     "category": "food",
     "source_file": "french_toast.json",
+    "hasCustomPage": false
+  },
+  "flounder": {
+    "data": {
+      "item_name": "flounder",
+      "item_override": "salmon",
+      "display_name": "Flounder",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "flounder"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "flounder"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "flounder.json",
     "hasCustomPage": false
   },
   "fish_n_chips": {
@@ -401,6 +862,28 @@
     "description": null,
     "category": "food",
     "source_file": "fish_n_chips.json",
+    "hasCustomPage": false
+  },
+  "european_eel": {
+    "data": {
+      "item_name": "european_eel",
+      "item_override": "salmon",
+      "display_name": "European Eel",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "european_eel"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "european_eel"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "european_eel.json",
     "hasCustomPage": false
   },
   "earl_lily_boba_tea": {
@@ -577,6 +1060,50 @@
     "source_file": "chocolate_mochi.json",
     "hasCustomPage": false
   },
+  "catfish": {
+    "data": {
+      "item_name": "catfish",
+      "item_override": "salmon",
+      "display_name": "Catfish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "catfish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "catfish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "catfish.json",
+    "hasCustomPage": false
+  },
+  "carp": {
+    "data": {
+      "item_name": "carp",
+      "item_override": "salmon",
+      "display_name": "Carp",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "carp"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "carp"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "carp.json",
+    "hasCustomPage": false
+  },
   "brisket": {
     "data": {
       "item_name": "brisket",
@@ -604,6 +1131,28 @@
     "description": null,
     "category": "food",
     "source_file": "brisket.json",
+    "hasCustomPage": false
+  },
+  "black_seabass": {
+    "data": {
+      "item_name": "black_seabass",
+      "item_override": "salmon",
+      "display_name": "Black Seabass",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "black_seabass"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "black_seabass"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "black_seabass.json",
     "hasCustomPage": false
   },
   "berry_tart": {
@@ -635,6 +1184,28 @@
     "source_file": "berry_tart.json",
     "hasCustomPage": false
   },
+  "bass": {
+    "data": {
+      "item_name": "bass",
+      "item_override": "salmon",
+      "display_name": "Bass",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "bass"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "bass"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "bass.json",
+    "hasCustomPage": false
+  },
   "bacon": {
     "data": {
       "item_name": "bacon",
@@ -662,6 +1233,50 @@
     "description": null,
     "category": "food",
     "source_file": "bacon.json",
+    "hasCustomPage": false
+  },
+  "armoured_catfish": {
+    "data": {
+      "item_name": "armoured_catfish",
+      "item_override": "salmon",
+      "display_name": "Armoured Catfish",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "armoured_catfish"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "armoured_catfish"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "armoured_catfish.json",
+    "hasCustomPage": false
+  },
+  "arapaima": {
+    "data": {
+      "item_name": "arapaima",
+      "item_override": "salmon",
+      "display_name": "Arapaima",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "arapaima"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "arapaima"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "food",
+    "source_file": "arapaima.json",
     "hasCustomPage": false
   },
   "allium_jade_boba_tea": {

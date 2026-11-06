@@ -87,6 +87,28 @@
     "source_file": "titanium_upgrade_template.json",
     "hasCustomPage": false
   },
+  "sulfur_powder": {
+    "data": {
+      "item_name": "sulfur_powder",
+      "item_override": "paper",
+      "display_name": "Sulfur Powder",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "sulfur_powder"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "sulfur_powder"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "smithing",
+    "source_file": "sulfur_powder.json",
+    "hasCustomPage": false
+  },
   "spine_weapon_trim_smithing_template": {
     "data": {
       "item_name": "spine_weapon_trim_smithing_template",
@@ -173,6 +195,28 @@
     "description": null,
     "category": "smithing",
     "source_file": "pommel_part_upgrade_template.json",
+    "hasCustomPage": false
+  },
+  "ominous_eye": {
+    "data": {
+      "item_name": "ominous_eye",
+      "item_override": "paper",
+      "display_name": "Ominous Eye",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "ominous_eye"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "ominous_eye"
+        }
+      ],
+      "rarity": "common"
+    },
+    "description": null,
+    "category": "smithing",
+    "source_file": "ominous_eye.json",
     "hasCustomPage": false
   },
   "mithril_upgrade_template": {
@@ -415,6 +459,32 @@
     "description": null,
     "category": "smithing",
     "source_file": "crystal_alloy_upgrade_template.json",
+    "hasCustomPage": false
+  },
+  "crystal_alloy_trimmers": {
+    "data": {
+      "item_name": "crystal_alloy_trimmers",
+      "item_override": "shears",
+      "display_name": "Crystal Alloy Trimmers",
+      "components": [
+        {
+          "type": "ItemNameComponent",
+          "item_name": "crystal_alloy_trimmers"
+        },
+        {
+          "type": "ItemModelComponent",
+          "item_model": "crystal_alloy_trimmers"
+        },
+        {
+          "type": "MaxDamageComponent",
+          "max_damage": 909
+        }
+      ],
+      "rarity": "rare"
+    },
+    "description": null,
+    "category": "smithing",
+    "source_file": "crystal_alloy_trimmers.json",
     "hasCustomPage": false
   },
   "cross_weapon_trim_smithing_template": {

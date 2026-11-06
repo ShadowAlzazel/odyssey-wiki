@@ -7,9 +7,22 @@ The wiki page for all odyssey stuff
 
 ## Development 
 
-### Get the Odyssey Datapack data 
+### Sync data from the Odyssey Datapack
 
-Go to loot tables and copy into local 
+Enchantment definitions and item data come from the datapack. Don't copy them by hand, run:
+
+```
+npm run sync
+```
+
+This copies `data/odyssey/enchantment` and `data/minecraft/enchantment` into `mc_data/enchantments/`,
+copies `data/odyssey/loot_table/item` into `.mcdata/loot_table/`, then regenerates `src/lib/data/items/*.json`.
+Commit the changes it makes so Netlify builds with the new data.
+
+- Looks for the datapack at `../OdysseyDataPack` (clone it next to this repo). Use `--datapack <path>` or
+  `ODYSSEY_DATAPACK=<path>` to point elsewhere. If neither is found, it shallow-clones the datapack from GitHub into `.mcdata/datapack-repo`.
+- `npm run sync:check` shows what would change without writing anything.
+- `npm run dev` syncs automatically when the sibling datapack checkout exists (and skips quietly when it doesn't).
 
 ### Running
 
