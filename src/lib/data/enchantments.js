@@ -2,7 +2,8 @@
 //  Enchantment descriptions — the curated, human-written layer
 // ─────────────────────────────────────────────────────────────────────────
 //  Mechanical data (max level, anvil cost, weight, slots, costs, effects)
-//  is read from your definition JSON files in ./definitions — see registry.js.
+//  is read from the definition JSON files in mc_data/enchantments/ — see
+//  src/lib/server/enchantments.js. Run `npm run sync` to refresh them.
 //  This file only holds what the JSON doesn't: the readable name, the prose
 //  description, and how it's grouped/tagged in the wiki.
 //

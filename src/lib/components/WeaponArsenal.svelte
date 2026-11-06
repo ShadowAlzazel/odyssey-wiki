@@ -283,7 +283,6 @@
     -webkit-font-smoothing:antialiased;
   }
   .arsenal *{box-sizing:border-box}
-  .arsenal :is(h1,p){margin:0}
 
   /* masthead */
   .top{padding:34px 0 22px; border-bottom:1px solid var(--line-soft)}
@@ -293,16 +292,6 @@
     transition:color .5s ease; display:flex; align-items:center; gap:14px;
   }
   .eyebrow::after{content:""; flex:1; height:1px; background:linear-gradient(90deg,var(--metal-dim),transparent); opacity:.6}
-  h1{
-    font-family:"Oswald",sans-serif; font-weight:700; letter-spacing:.01em;
-    font-size:clamp(34px,6vw,64px); line-height:.92; margin:.2em 0 .14em;
-    text-transform:uppercase; color:var(--ink); border:0; padding:0;
-  }
-  .lede{color:var(--ink-dim); max-width:56ch; font-size:15px}
-  .lede code{
-    font-family:"JetBrains Mono",ui-monospace,monospace; font-size:13px; color:var(--ember-soft);
-    background:#ffffff0a; padding:1px 6px; border-radius:5px; border:1px solid var(--line)
-  }
 
   /* forge / material bar */
   .forge{
@@ -325,11 +314,6 @@
   }
   .ingot:hover{transform:translateY(-2px); border-color:var(--tint)}
   .ingot:focus-visible{outline:2px solid var(--ember); outline-offset:2px}
-  .ingot .swatch{
-    width:26px; height:26px; border-radius:6px; margin-bottom:7px;
-    background:linear-gradient(135deg,var(--tint),#0006);
-    box-shadow:inset 0 0 0 1px #ffffff30, 0 0 10px -2px var(--tint)
-  }
   .ingot .m-name{font-family:"Oswald",sans-serif; font-weight:600; font-size:14px; letter-spacing:.03em; line-height:1.05}
   .ingot .m-mult{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11.5px; color:var(--ink-dim); margin-top:2px}
   .ingot[aria-pressed="true"]{border-color:var(--tint); background:linear-gradient(180deg,color-mix(in srgb,var(--tint) 14%,transparent),var(--panel2))}

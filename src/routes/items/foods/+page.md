@@ -105,6 +105,7 @@ Savory and crisp. A perfect breakfast side.
 * **Nutrition:** 3
 * **Saturation:** 8
 * **Consume Time:** 1.2s
+* **Recipe**: Cook a Cooked Porkchop on a Campfire (10s)
 
 ---
 
@@ -115,6 +116,9 @@ Raw cut of beef. Best when cooked.
 * **Nutrition:** 1
 * **Saturation:** 2
 * **Consume Time:** 0.8s
+* **Recipe**:
+
+<CustomRecipe name="brisket" />
 
 ---
 
@@ -125,9 +129,7 @@ Tender and juicy. A reliable protein source.
 * **Nutrition:** 3
 * **Saturation:** 5
 * **Consume Time:** 0.8s
-* **Recipe**:
-
-<CustomRecipe name="cooked_brisket" />
+* **Recipe**: Cook Brisket on a Campfire (10s)
 
 ---
 

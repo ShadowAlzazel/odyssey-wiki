@@ -1,4 +1,4 @@
-// src/routes/items/[slug]/+page.server.js
+// src/routes/item/[slug]/+page.server.js
 
 import { allItems } from '$lib/data/items/index.js';
 import { getRecipe } from '$lib/data/recipes/index.js';
@@ -19,7 +19,7 @@ export async function load({ params }) {
   // Convert hyphens back to underscores to match your JSON keys
   const itemName = slug.replace(/-/g, '_');
   const item = allItems[itemName];
-  const recipe = getRecipe[itemName];
+  const recipe = getRecipe(itemName);
   const hasRecipe = recipe !== null;
   
   if (!item) {

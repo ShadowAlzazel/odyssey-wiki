@@ -12,6 +12,8 @@ const config = {
     adapter: adapter({
       pages: 'dist',
       assets: 'dist',
+      // Netlify serves dist/404.html for any URL that has no prerendered page
+      fallback: '404.html',
     }),
     paths: { 
 	  relative: false, 

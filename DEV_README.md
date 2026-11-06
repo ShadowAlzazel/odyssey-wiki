@@ -1,86 +1,81 @@
-# Enchantments wiki — data-driven setup (fs version)
+# Developer notes
 
-Mechanical data is read from your **definition JSON** with Node's `fs` at build
-time. Prose descriptions live in **`src/lib/data/enchantments.js`**. They're
-merged by *slug* in a server-only registry.
+How the wiki is put together, where the data comes from, and how it ships.
 
-## Why this instead of `import.meta.glob`
+## Stack
 
-Vite's `import.meta.glob` **can't read dot-prefixed (hidden) folders** — it
-doesn't expose fast-glob's `dot` option — and it's also blocked by
-`server.fs.allow` for anything outside `src`. Reading with `fs` in a
-`$lib/server` module sidesteps both: hidden folders work, no Vite config
-needed, and the data is baked into the prerendered pages.
+- **SvelteKit 2 + Svelte 5**, with **SveltePress** (`@sveltepress/vite`) for the docs
+  theme, navbar and sidebar.
+- **`@sveltejs/adapter-static`** prerenders every page to HTML in `dist/`
+  (`src/routes/+layout.js` sets `prerender = true`). There is no server at runtime.
+- Pages are Markdown (`+page.md`) and can use Svelte components directly.
 
-## Where files go
+## Layout
 
 ```
-<project root>/
-├─ .mcdata/enchantments/            ← YOUR DEFINITION .json FILES (hidden is fine)
-│  └─ odyssey/heartened.json
-│  └─ odyssey/aerosion_aspect.json
-└─ src/
-   ├─ lib/
-   │  ├─ data/enchantments.js       ← descriptions + grouping (you write these)
-   │  ├─ server/enchantments.js     ← reads + merges (set DATA_DIR here)
-   │  └─ components/
-   │     ├─ EnchantmentList.svelte
-   │     └─ EnchantmentDetail.svelte
-   └─ routes/enchanting/
-      ├─ +page.server.js            ← loads the full list  →  /enchanting
-      ├─ +page.md
-      └─ enchantment/[slug]/
-         ├─ +page.server.js         ← loads one + prerenders every slug
-         └─ +page.md
+config/                  navbar.js, sidebar.js, theme.js  (navigation is edited by hand)
+mc_data/enchantments/    enchantment definition JSON, synced from the datapack (committed)
+.mcdata/                 local only (gitignored): item loot tables + cached datapack clone
+scripts/sync-datapack.js copies data from OdysseyDataPack into the wiki
+mc-build-parser.js       turns .mcdata/loot_table/*.json into src/lib/data/items/*.json
+static/                  images and GUI textures, served from the site root (/images/...)
+src/
+├─ lib/
+│  ├─ components/        CustomItem, CustomRecipe, ItemRecipe, EnchantmentList, ...
+│  ├─ data/
+│  │  ├─ enchantments.js descriptions + grouping for enchantments (hand-written)
+│  │  ├─ items/*.json    item data (generated, except extra.json / old-template.json)
+│  │  └─ recipes/*.json  crafting recipes (hand-written)
+│  └─ server/enchantments.js  merges definitions + descriptions
+└─ routes/               the pages; URL = folder path
 ```
 
-## Set your folder
+## Data from the datapack
 
-Open `src/lib/server/enchantments.js` and set **one line** to wherever your
-enchantment JSONs actually are, relative to the project root:
+Run `npm run sync` after changing the datapack. It:
+
+1. Mirrors `data/odyssey/enchantment` → `mc_data/enchantments/odyssey/`.
+2. Copies `data/minecraft/enchantment` overrides → `mc_data/enchantments/minecraft/`
+   (the vanilla base files that the datapack doesn't override stay as they are).
+3. Mirrors `data/odyssey/loot_table/item` → `.mcdata/loot_table/`.
+4. Runs `mc-build-parser.js` to regenerate `src/lib/data/items/*.json`.
+
+Then commit the changes: Netlify builds from the committed data.
+See the README for where the script looks for the datapack.
+
+## Enchantments
+
+`src/lib/server/enchantments.js` loads every `mc_data/enchantments/**/*.json` with
+`import.meta.glob`, so the data is inlined at build time. Each definition is merged
+with its entry in `src/lib/data/enchantments.js`, matched by **slug**: the last part of
+`description.translate` (`enchantment.odyssey.heartened` → `heartened`), falling back
+to the filename.
+
+- **Enchantability = `anvil_cost` ÷ 2**. Max level from `max_level`; cost-by-level from
+  `min_cost` / `max_cost`.
+- An enchantment with no description entry still shows, using its `fallback` name and a
+  placeholder description.
+- Pages: `/enchanting/enchantments` (list) and `/enchanting/enchantment/<slug>` (detail).
+
+To describe a new enchantment, add an entry keyed by slug:
 
 ```js
-const DATA_DIR = '.mcdata/enchantments'        // your enchantments
-// const DATA_DIR = '.mcmeta/data/odyssey/enchantment'   // or point at the datapack folder directly
+heartened: { name: 'Heartened', group: 'armor', tag: 'Armor',
+             desc: 'Increases maximum health by 10% per level.' },
 ```
 
-That's the only thing tying the wiki to your files. The path is resolved from
-`process.cwd()` (the folder you run `npm run dev` / `build` from).
+## Items and recipes
 
-## Delete the old registry
+Item pages are generated at `/item/<item-name-with-hyphens>` from `src/lib/data/items`.
+Recipes live in `src/lib/data/recipes/*.json` and are keyed by item name. Use
+`<CustomItem name="..."/>` and `<CustomRecipe name="..."/>` in Markdown pages. Campfire,
+furnace and smoker recipes have no component yet, so describe them in text.
 
-Remove the previous `import.meta.glob` registry (e.g.
-`src/lib/data/enchantments/registry.js` or `src/lib/data/registry.js`) and the
-`src/lib/data/definitions/` sample folder — they're replaced by
-`src/lib/server/enchantments.js`. Also drop the empty `_mcdata` folder.
+## Deploying
 
-## Adding an enchantment
+Netlify builds `main` with `npm run build` and publishes `dist/` (see `netlify.toml`).
+Unknown URLs get `dist/404.html`, which the static adapter generates.
+Workflow: feature branch → `dev` → `main`.
 
-1. Copy its definition `.json` into your `DATA_DIR` (namespace subfolders like
-   `odyssey/` are recommended; the namespace is read from the `translate` key
-   anyway).
-2. **Restart the dev server** — the folder is read once at startup.
-3. Optional: add a prose line to `enchantments.js`, keyed by slug:
-   ```js
-   heartened: { name: 'Heartened', group: 'armor', tag: 'Armor',
-                desc: 'Increases maximum health by 10% per level.' },
-   ```
-
-**Slug** = the last part of `description.translate`
-(`enchantment.odyssey.heartened` → `heartened`), falling back to the filename.
-
-## Rules it encodes
-
-- **Enchantability = `anvil_cost` ÷ 2** (e.g. anvil 6 → 3, anvil 4 → 2).
-- **Max level** from `max_level`. **Cost-by-level** from `min_cost`/`max_cost`.
-- Vanilla and Odyssey both use this system — no "—" placeholder anymore.
-
-## Notes
-
-- New files need a dev-server restart (the directory is scanned at module load,
-  which is also the most reliable behaviour for the production build).
-- If a slug has no entry in `enchantments.js`, it still shows up using the
-  definition's `fallback` name and a placeholder description, so nothing breaks
-  while you fill them in.
-- If your real definition ids differ from my generated slugs, just rename the
-  key in `enchantments.js` to match.
+The `gh-pages` branch and `npm run deploy` are an old GitHub Pages setup and aren't used
+by the live site.

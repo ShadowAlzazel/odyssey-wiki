@@ -30,9 +30,12 @@ Run `npm run dev` for dev
 
 Run `npm run build` to build dist
 
-Then run `serve dist` to deploy local dist
+Then run `serve dist` to preview the built site locally
 
-For github deploy, run `npm run deploy`
+### Deploying
+
+Netlify builds and deploys `main` automatically (`netlify.toml`). Work on a feature branch, merge into `dev`, then `dev` into `main`.
+See `DEV_README.md` for how the project is laid out.
 
 
 # Disclaimer 
