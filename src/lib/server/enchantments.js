@@ -1,4 +1,5 @@
 import { descriptions, groups } from '$lib/data/enchantments.js'
+import { datapack, wiki } from '$lib/github.js'
 
 export { groups }
 
@@ -82,6 +83,14 @@ function build(def, globKey) {
     translate: def?.description?.translate ?? null,
     fallback: def?.description?.fallback ?? null,
     raw: def,
+    // Odyssey definitions link to the datapack. Vanilla ones link to the wiki's synced copy:
+    // the datapack only overrides a few vanilla enchantments, so most have no datapack file.
+    sources: [
+      namespace === 'odyssey'
+        ? { label: 'Definition', ...datapack(globKey.replace('/mc_data/enchantments/odyssey/', 'odyssey/enchantment/')) }
+        : { label: 'Definition', ...wiki(globKey.replace(/^\//, '')) },
+      { label: 'Description', ...wiki('src/lib/data/enchantments.js') },
+    ],
   }
 }
 

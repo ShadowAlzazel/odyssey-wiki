@@ -16,6 +16,9 @@
 //    dimensions  ['overworld'] / ['edge'] / both, to override the biome-based guess
 //    loot        extra loot table paths to show, e.g. ['loot/library_tome'], for
 //                tables whose folder name doesn't match the structure
+//    source      plugin files behind any special behaviour, shown in the page's Source
+//                footer: [{ label: 'Teleport logic', path: 'common/listeners/StructureListeners.kt' }]
+//                (path is relative to src/main/java/me/shadowalzazel/mcodyssey)
 // ─────────────────────────────────────────────────────────────────────────
 
 export const structures = {
@@ -30,6 +33,7 @@ export const structures = {
       'Obelisks connect the Overworld and the Edge. Step into the end gateway inside one to travel to the other dimension.',
       'You arrive at the nearest obelisk on the other side (searched up to 32 chunks away from the same coordinates).',
     ],
+    source: [{ label: 'Teleport logic', path: 'common/listeners/StructureListeners.kt' }],
   },
   runic_ruins: {},
   shadow_chambers: {},

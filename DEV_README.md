@@ -116,6 +116,15 @@ Recipes live in `src/lib/data/recipes/*.json` and are keyed by item name. Use
 `<CustomItem name="..."/>` and `<CustomRecipe name="..."/>` in Markdown pages. Campfire,
 furnace and smoker recipes have no component yet, so describe them in text.
 
+## External links
+
+- **Minecraft Wiki:** `src/lib/mcwiki.js` turns vanilla ids into minecraft.wiki links (`wikiUrl`)
+  and holds links to game concepts (`WIKI`).
+- **GitHub sources:** `src/lib/github.js` builds links into the four repos (`datapack()`,
+  `plugin()`, `resourcePack()`, `wiki()`), always on `main`. `<SourceLinks sources={...} />` renders
+  the "Source" footer. It's on biome, structure, loot table and enchantment pages, and on the weapons
+  page. Plugin files for a structure's special behaviour go in `source` in `structures.js`.
+
 ## Deploying
 
 Netlify builds `main` with `npm run build` and publishes `dist/` (see `netlify.toml`).

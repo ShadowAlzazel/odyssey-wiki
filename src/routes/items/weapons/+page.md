@@ -5,6 +5,17 @@ description: Odyssey's custom weapons — every blade, every alloy, forged and c
 
 <script>
   import WeaponArsenal from '$lib/components/WeaponArsenal.svelte';
+  import SourceLinks from '$lib/components/SourceLinks.svelte';
+  import { plugin, wiki } from '$lib/github.js';
+
+  const sources = [
+    { label: 'Weapon types and stats', ...plugin('common/items/ToolType.kt') },
+    { label: 'Materials', ...plugin('common/items/ToolMaterial.kt') },
+    { label: 'Damage and speed maths', ...plugin('common/items/ToolMaker.kt') },
+    { label: 'Weapon traits', ...plugin('util/constants/WeaponMaps.kt') },
+    { label: 'Attribute modifiers', ...plugin('util/AttributeManager.kt') },
+    { label: 'Arsenal data', ...wiki('src/lib/components/WeaponArsenal.svelte') },
+  ];
 </script>
 
 # Weapons
@@ -70,4 +81,4 @@ damage type and keep their vanilla behaviour, including the axe's ability to
 - Vanilla iron, diamond and netherite use their standard durability values; Odyssey materials use
   the custom durability defined in the material enum.
 
-  
+<SourceLinks {sources} />

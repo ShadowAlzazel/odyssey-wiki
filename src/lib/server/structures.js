@@ -10,6 +10,7 @@ import { structures as curated } from '$lib/data/structures.js'
 import { releasedStructures, allStructures, describeBiomes } from './worldgen.js'
 import { getBiome } from './biomes.js'
 import { lootForStructure, itemsFrom, LOOT_GROUPS } from './loot.js'
+import { datapack, biomeTag, plugin, wiki } from '$lib/github.js'
 
 const DIMENSION_LABEL = { overworld: 'Overworld', edge: 'The Edge' }
 const STEP_LABEL = {
@@ -86,6 +87,13 @@ function build(s) {
       wiki: /^(Any |Wherever )/.test(name) ? null : `https://minecraft.wiki/w/${name.replace(/ /g, '_')}`,
     })),
     loot,
+    sources: [
+      ...s.files.map((f) => ({ label: s.files.length > 1 ? 'Structure variant' : 'Structure', ...datapack(`odyssey/worldgen/structure/${f}.json`) })),
+      s.placement && { label: 'Placement', ...datapack(`odyssey/worldgen/structure_set/${s.placement.set}.json`) },
+      ...s.biomeRefs.filter((r) => r.startsWith('#odyssey:')).map((r) => ({ label: 'Biome tag', ...biomeTag(r) })),
+      ...(c.source ?? []).map((src) => ({ label: src.label ?? 'Plugin', ...plugin(src.path) })),
+      { label: 'Description', ...wiki('src/lib/data/structures.js') },
+    ].filter(Boolean),
   }
 }
 

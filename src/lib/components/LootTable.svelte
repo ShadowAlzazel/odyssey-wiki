@@ -1,5 +1,6 @@
 <script>
   import { base } from '$app/paths'
+  import SourceLinks from '$lib/components/SourceLinks.svelte'
   import { WIKI } from '$lib/mcwiki.js'
 
   let { table: t } = $props()
@@ -91,6 +92,7 @@
     <summary>Raw JSON</summary>
     <pre><code>{t.raw}</code></pre>
   </details>
+  <SourceLinks sources={[{ label: 'Loot table', ...t.source }]} />
 </article>
 
 <style>

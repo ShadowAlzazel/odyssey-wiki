@@ -13,6 +13,7 @@
 import { allItems } from '$lib/data/items/index.js'
 import { titleize, relId } from './worldgen.js'
 import { wikiUrl, WIKI } from '$lib/mcwiki.js'
+import { datapack } from '$lib/github.js'
 
 const files = import.meta.glob('/mc_data/loot_tables/**/*.json', { eager: true, import: 'default' })
 
@@ -230,6 +231,7 @@ for (const [key, table] of Object.entries(files)) {
     tableNotes: functionNotes(table.functions).notes,
     pools: (table.pools ?? []).map(buildPool),
     raw: JSON.stringify(table, null, 2),
+    source: datapack(`odyssey/loot_table/${path}.json`),
     usedBy: [],
   }
 }

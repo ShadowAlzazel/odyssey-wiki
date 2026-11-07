@@ -140,6 +140,7 @@ for (const s of Object.values(bySlug)) {
     dimensions: curated.dimensions ?? [...dims].sort(),
     // Released = something places it. No structure set means it never generates.
     status: curated.status ?? (s.placement ? 'released' : 'upcoming'),
+    files: s.variants.map((v) => v.id.replace('odyssey:', '')),
     variants: s.variants.filter((v) => v.name).sort((a, b) => a.name.localeCompare(b.name)),
     steps: [...s.steps],
   })

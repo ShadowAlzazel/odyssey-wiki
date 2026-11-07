@@ -1,5 +1,6 @@
 <script>
   import { base } from '$app/paths'
+  import SourceLinks from '$lib/components/SourceLinks.svelte'
   import { WIKI } from '$lib/mcwiki.js'
 
   let { biome: b } = $props()
@@ -126,6 +127,7 @@
       </ul>
     </section>
   {/if}
+  <SourceLinks sources={b.sources} />
 </article>
 
 <style>

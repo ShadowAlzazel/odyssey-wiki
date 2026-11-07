@@ -11,6 +11,7 @@
 
 import { biomes as curatedBiomes, dimensions as dimensionInfo } from '$lib/data/biomes.js'
 import { wikiUrl } from '$lib/mcwiki.js'
+import { datapack, biomeTag, wiki } from '$lib/github.js'
 import { titleize, relId, resolveBiomes as resolve, overworldBiomes as overworld, edgeBiomes as edge, releasedStructures } from './worldgen.js'
 
 export { titleize }
@@ -168,6 +169,12 @@ function build(key, def) {
     features: customFeatures(def.features),
     structures: [...(structuresByBiome[id] ?? [])].sort((a, b) => a.name.localeCompare(b.name)),
     advancements: advancementsByBiome[id] ?? [],
+    sources: [
+      { label: 'Biome', ...datapack(`odyssey/worldgen/biome/${path}.json`) },
+      dimension && { label: 'Dimension tag', ...biomeTag(`odyssey:is_${dimension}`) },
+      dimension === 'edge' && { label: 'Edge biome placement', ...datapack('odyssey/dimension/edge.json') },
+      { label: 'Description', ...wiki('src/lib/data/biomes.js') },
+    ].filter(Boolean),
   }
 }
 

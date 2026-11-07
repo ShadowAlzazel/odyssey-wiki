@@ -1,5 +1,6 @@
 <script>
   import { base } from '$app/paths'
+  import SourceLinks from '$lib/components/SourceLinks.svelte'
 
   let { enchantment: e } = $props()
 
@@ -109,6 +110,7 @@
     <summary>Raw definition</summary>
     <pre class="code">{rawJson}</pre>
   </details>
+  <SourceLinks sources={e.sources} />
 </article>
 
 <style>
