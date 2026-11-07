@@ -16,7 +16,7 @@
 {#each visible as g (g.id)}
   <section class="group">
     <h2 id={g.id}>{g.label} <small>{g.items.length}</small></h2>
-    <p class="blurb">{g.blurb}</p>
+    <p class="blurb">{g.blurb}{#if g.wiki} <a class="mc" href={g.wiki} target="_blank" rel="noopener">Minecraft Wiki ↗</a>{/if}</p>
     <ul class="paths">
       {#each g.items as t (t.path)}
         <li><a href="{base}/loot/{t.path}"><code>{t.path}</code></a> <span>{t.pools} pool{t.pools === 1 ? '' : 's'}</span></li>
@@ -32,6 +32,7 @@
   }
   .group h2 small { font-size: 0.8rem; font-weight: 400; opacity: 0.6; }
   .blurb { margin: 0 0 0.6rem; opacity: 0.65; font-size: 0.9rem; }
+  .mc { color: inherit; font-size: 0.8rem; }
   .paths { list-style: none; padding: 0; margin: 0 0 1.5rem; columns: 2 18rem; column-gap: 1.5rem; }
   .paths li { margin: 0 0 0.25rem; break-inside: avoid; font-size: 0.85rem; }
   .paths a { color: #c08a2e; text-decoration: none; }

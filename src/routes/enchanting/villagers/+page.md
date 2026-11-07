@@ -4,7 +4,7 @@ Since the librarian villager trading system has been completely rebalanced to en
 
 ## Overview
 
-Instead of every librarian offering access to all enchantments, each librarian now has a **specialized inventory** of enchanted books based on their **biome of origin**.
+Instead of every [librarian](https://minecraft.wiki/w/Librarian) offering access to all enchantments, each librarian now has a **specialized inventory** of enchanted books based on their **biome of origin**.
 
 ### Key Changes
 

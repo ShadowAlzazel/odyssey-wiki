@@ -10,6 +10,7 @@
 // ─────────────────────────────────────────────────────────────────────────
 
 import { biomes as curatedBiomes, dimensions as dimensionInfo } from '$lib/data/biomes.js'
+import { wikiUrl } from '$lib/mcwiki.js'
 import { titleize, relId, resolveBiomes as resolve, overworldBiomes as overworld, edgeBiomes as edge, releasedStructures } from './worldgen.js'
 
 export { titleize }
@@ -102,6 +103,7 @@ function spawns(spawners = {}) {
           id: m.type,
           name: titleize(m.type),
           icon: m.type.startsWith('minecraft:') ? m.type.replace('minecraft:', '') + '_spawn_egg' : null,
+          wiki: wikiUrl(m.type),
           weight: m.weight ?? 0,
           chance: Math.round(((m.weight ?? 0) / total) * 100),
           group: m.minCount === m.maxCount ? `${m.minCount}` : `${m.minCount}–${m.maxCount}`,

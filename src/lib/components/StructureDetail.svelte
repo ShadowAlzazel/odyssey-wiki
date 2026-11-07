@@ -1,5 +1,6 @@
 <script>
   import { base } from '$app/paths'
+  import { WIKI } from '$lib/mcwiki.js'
 
   let { structure: s } = $props()
 
@@ -37,7 +38,7 @@
     {#if s.rarity?.spacing}<div class="stat"><dt>Spacing</dt><dd>{s.rarity.spacing} chunks</dd></div>{/if}
     {#if s.variants.length}<div class="stat"><dt>Variants</dt><dd>{s.variants.length}</dd></div>{/if}
   </dl>
-  {#if s.rarity}<p class="hint">{s.rarity.detail}</p>{/if}
+  {#if s.rarity}<p class="hint">{s.rarity.detail} <a class="mc" href={WIKI.structureSet} target="_blank" rel="noopener">How structure placement works ↗</a></p>{/if}
 
   {#if s.tips.length}
     <section class="block">
@@ -61,7 +62,10 @@
       </ul>
     {/if}
     {#if s.vanillaBiomes.length}
-      <p class="hint">{s.biomes.length ? 'Also in' : 'In'}: {s.vanillaBiomes.join(', ')}</p>
+      <p class="hint">
+        {s.biomes.length ? 'Also in' : 'In'}:
+        {#each s.vanillaBiomes as v, i}{#if v.wiki}<a class="mc" href={v.wiki} target="_blank" rel="noopener">{v.name}</a>{:else}{v.name}{/if}{i < s.vanillaBiomes.length - 1 ? ', ' : ''}{/each}
+      </p>
     {/if}
   </section>
 
@@ -71,7 +75,7 @@
       <p class="hint">Everything you can find here, Odyssey items first. Open a loot table for exact chances.</p>
       {#each s.loot as group}
         <div class="loot-box">
-          <h3>{group.label}</h3>
+          <h3>{group.label}{#if group.wiki} <a class="mc small" href={group.wiki} target="_blank" rel="noopener">Minecraft Wiki ↗</a>{/if}</h3>
           <p class="tables">
             Loot tables:
             {#each group.tables as t, i}<a href="{base}/loot/{t.path}">{t.name}</a>{i < group.tables.length - 1 ? ', ' : ''}{/each}
@@ -80,7 +84,7 @@
             {#each group.items as it}
               <li title={it.id}>
                 <img class="pixel-art" src={src(it.icon)} alt="" width="16" height="16" loading="lazy" onerror={(e) => onIconError(e, it.fallbackIcon)} />
-                {#if it.href}<a href="{base}{it.href}">{it.name}</a>{:else}<span class:custom={it.custom}>{it.name}</span>{/if}
+                {#if it.href}<a href="{base}{it.href}">{it.name}</a>{:else if it.wiki}<a class="mc" href={it.wiki} target="_blank" rel="noopener">{it.name}</a>{:else}<span class:custom={it.custom}>{it.name}</span>{/if}
               </li>
             {/each}
           </ul>
@@ -130,4 +134,6 @@
   .items li { display: flex; align-items: center; gap: 0.4rem; font-size: 0.84rem; margin: 0; }
   .items a { color: inherit; text-decoration: underline; text-decoration-color: var(--hairline); }
   .custom { font-weight: 500; }
+  .mc { color: inherit; text-decoration: underline dotted; text-underline-offset: 2px; }
+  .mc.small { font-size: 0.72rem; font-weight: 400; color: var(--muted); margin-left: 0.3rem; }
 </style>

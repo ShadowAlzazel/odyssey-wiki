@@ -6,7 +6,7 @@
 
 # Alchemy Potions
 
-This guide lists all custom potions and their cauldron recipes. Potions are divided into categories:
+This guide lists all custom potions and their [cauldron](https://minecraft.wiki/w/Cauldron) recipes. Potions are divided into categories:
 
 - [Singular Potions](#Singular-Potions)
 - [Powerful Potions](#Powerful-Potions)
@@ -25,7 +25,7 @@ The **Crystalline Potion** is a core alchemical component used in many advanced 
 
 - **Created From:**
   - `Amethyst Shard`
-  - `Awkward Potion`
+  - [Awkward Potion](https://minecraft.wiki/w/Potion#Awkward_Potion)
   - 🔥 `Fire Fuels`
 
 ---

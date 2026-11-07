@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import CustomItem from '$lib/components/CustomItem.svelte';
 
   /* ============================================================
@@ -53,7 +54,7 @@
   ].map(w => ({ id: w[0], name: w[1], base: w[2], speed: w[3], range: w[4], cat: w[5] }));
 
   const ARCH = {
-    pierce: new Set(["rapier","dagger","kunai","halberd","poleaxe","pike"]),
+    pierce: new Set(["rapier","dagger","kunai","spear","halberd","poleaxe","pike"]),
     slash:  new Set(["katana","longsword","claymore","cutlass","saber","sickle","chakram","zweihander","kriegsmesser","glaive","longaxe","double_axe","battlesaw","scythe","shuriken"]),
     blunt:  new Set(["warhammer"]),
   };
@@ -83,9 +84,14 @@
   /* ---------- helpers ---------- */
   const fmt    = n => Number.isInteger(n) ? String(n) : n.toFixed(1);
   const archOf = id => ARCH.pierce.has(id) ? "pierce" : ARCH.slash.has(id) ? "slash" : ARCH.blunt.has(id) ? "blunt" : null;
+  // Mirrors ToolMaker.kt: the item adds (material + weapon) attack damage on top of the player's
+  // base 1, and Iridium / Titanium change attack speed.
+  const SPEED_MULT = { iridium: 0.9, titanium: 1.1, anodized_titanium: 1.1 };
   const compute = w => {
-    const final = w.base + mat.mult;
-    return { final, dps: final * w.speed, reach: 3.0 + w.range, arch: archOf(w.id) };
+    const final = w.base + mat.mult;          // the "+X Attack Damage" on the tooltip
+    const hit = 1 + final;                    // damage per full-strength hit
+    const speed = w.speed * (SPEED_MULT[mat.id] ?? 1);
+    return { final, hit, speed, dps: hit * speed, reach: 3.0 + w.range, arch: archOf(w.id) };
   };
   const hasProp = (id, p) =>
     p === "parry"  ? CAN_PARRY.has(id) :
@@ -102,7 +108,7 @@
   const SORTERS = {
     final: (a, b) => compute(b).final - compute(a).final,
     dps:   (a, b) => compute(b).dps - compute(a).dps,
-    speed: (a, b) => b.speed - a.speed,
+    speed: (a, b) => compute(b).speed - compute(a).speed,
     reach: (a, b) => compute(b).reach - compute(a).reach,
     name:  (a, b) => a.name.localeCompare(b.name),
   };
@@ -141,7 +147,7 @@
     <div class="forge-head">
       <span class="forge-label">Forge with</span>
       <span class="forge-read">
-        <b>{mat.name}</b> — ×{fmt(mat.mult)} damage · {mat.dur} durability · {mat.source}
+        <b>{mat.name}</b> — {[`+${fmt(mat.mult)} damage`, SPEED_MULT[mat.id] ? `×${SPEED_MULT[mat.id]} speed` : null, `${mat.dur} durability`, mat.source].filter(Boolean).join(' · ')}
       </span>
     </div>
     <div class="ingots" role="group" aria-label="Choose forging material">
@@ -152,7 +158,7 @@
           aria-pressed={m.id === mat.id}
           onclick={() => (mat = m)}
         >
-          <img src="../images/{m.img}.png" class="pixel-art large inline" alt="Copper Ingot">
+          <img src="{base}/images/{m.img}.png" class="pixel-art large inline" alt="">
           <div class="m-name">{m.name}</div>
           <div class="m-mult">+{fmt(m.mult)} · {m.dur} dur</div>
         </button>
@@ -230,12 +236,12 @@
             </div>
 
             <div class="dmg">
-              <div class="val">{fmt(c.final)}</div>
-              <div class="meta">Final Damage<br /><b>{fmt(w.base)} + {fmt(mat.mult)}</b></div>
+              <div class="val">+{fmt(c.final)}</div>
+              <div class="meta">Attack damage<br /><b>{fmt(w.base)} + {fmt(mat.mult)}</b> · {fmt(c.hit)} per hit</div>
             </div>
 
             <div class="stats">
-              <div class="stat"><div class="k">Atk Speed</div><div class="v">{fmt(w.speed)}</div></div>
+              <div class="stat"><div class="k">Atk Speed</div><div class="v">{fmt(Math.round(c.speed * 100) / 100)}</div></div>
               <div class="stat"><div class="k">DPS</div><div class="v">{c.dps.toFixed(1)}</div></div>
               <div class="stat"><div class="k">Reach</div><div class="v">{c.reach.toFixed(1)}<small> / {w.range > 0 ? "+" + fmt(w.range) : fmt(w.range)}</small></div></div>
             </div>
@@ -260,7 +266,7 @@
   {/key}
 
   <footer>
-    <span class="fmono">ODYSSEY // ARSENAL</span> — Reach = 3.0 + range bonus · DPS = final damage × attack speed · shield-break in seconds (ticks ÷ 20).
+    <span class="fmono">ODYSSEY // ARSENAL</span> — Damage per hit = 1 + weapon + material · Reach = 3.0 + range bonus · DPS = damage per hit × attack speed · shield-break in seconds (ticks ÷ 20).
   </footer>
 </div>
 

@@ -1,5 +1,6 @@
 <script>
   import { base } from '$app/paths'
+  import { WIKI } from '$lib/mcwiki.js'
 
   let { table: t } = $props()
 
@@ -28,7 +29,8 @@
     <ul>
       <li>Each <strong>pool</strong> is rolled separately. A roll picks one entry, weighted by <strong>weight</strong>.</li>
       <li><strong>Per roll</strong> is the chance one roll picks that entry. <strong>Per pool</strong> is the chance it's picked at least once across the pool's rolls (ignoring bonus rolls and conditions).</li>
-      <li>Entries that point at another table link to it. Custom items link to their item page.</li>
+      <li>Entries that point at another table link to it. Custom items link to their item page; vanilla items link to the Minecraft Wiki.</li>
+      <li>For how loot tables work in general, see <a href={WIKI.lootTable} target="_blank" rel="noopener">Loot table on the Minecraft Wiki ↗</a>.</li>
     </ul>
   </details>
 
@@ -56,6 +58,8 @@
                   {/if}
                   {#if e.href}
                     <a href="{base}{e.href}">{e.name}</a>
+                  {:else if e.wiki}
+                    <a class="mc" href={e.wiki} target="_blank" rel="noopener">{e.name}</a>
                   {:else}
                     <span>{e.name}</span>
                   {/if}
@@ -123,6 +127,7 @@
   .entry { display: flex; align-items: center; gap: 0.45rem; min-width: 12rem; }
   .entry a { color: var(--accent); text-decoration: none; }
   .entry a:hover { text-decoration: underline; }
+  .entry a.mc { color: inherit; text-decoration: underline dotted; text-underline-offset: 2px; }
   .glyph { width: 16px; text-align: center; color: var(--muted); }
   .pill { font-size: 0.68rem; padding: 0 0.4rem; border-radius: 999px; border: 1px solid var(--hairline); color: var(--muted); }
   .notes { font-size: 0.8rem; color: var(--muted); min-width: 10rem; }

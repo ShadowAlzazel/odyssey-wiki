@@ -39,6 +39,7 @@ function rarity(placement) {
 
 const KIND_ORDER = LOOT_GROUPS.map((g) => g.id)
 const KIND_LABEL = Object.fromEntries(LOOT_GROUPS.map((g) => [g.id, g.label]))
+const KIND_WIKI = Object.fromEntries(LOOT_GROUPS.map((g) => [g.id, g.wiki]))
 
 function build(s) {
   const c = curated[s.slug] ?? {}
@@ -59,9 +60,10 @@ function build(s) {
     return {
       kind,
       label: KIND_LABEL[kind],
+      wiki: KIND_WIKI[kind],
       tables: list.map((t) => ({ path: t.path, name: t.path.split('/').slice(2).join(' / ') || t.path.split('/').at(-1) })),
       items: [...items.values()]
-        .map(({ id, name, icon, fallbackIcon, href, custom }) => ({ id, name, icon, fallbackIcon, href, custom }))
+        .map(({ id, name, icon, fallbackIcon, href, wiki, custom }) => ({ id, name, icon, fallbackIcon, href, wiki, custom }))
         // Odyssey items first: they're what players come looking for.
         .sort((a, b) => Number(b.custom) - Number(a.custom) || a.name.localeCompare(b.name)),
     }
@@ -78,7 +80,11 @@ function build(s) {
     rarity: rarity(s.placement),
     variants: s.variants.map((v) => v.name),
     biomes,
-    vanillaBiomes: [...vanilla].sort(),
+    vanillaBiomes: [...vanilla].sort().map((name) => ({
+      name,
+      // Single vanilla biomes ("Plains") get a link; categories ("Any forest") don't.
+      wiki: /^(Any |Wherever )/.test(name) ? null : `https://minecraft.wiki/w/${name.replace(/ /g, '_')}`,
+    })),
     loot,
   }
 }

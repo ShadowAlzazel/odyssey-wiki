@@ -16,19 +16,31 @@ material and compare the whole arsenal at once, so you don't have to hunt throug
 
 ## How stats work
 
-Final damage is the weapon's base damage scaled by the material it's forged from:
+Every weapon adds **its own base damage plus its material's damage** to your
+[attack damage](https://minecraft.wiki/w/Attribute#Attack_damage). That's the `+X` on the tooltip.
+Like any Minecraft weapon, a full-strength hit also includes your own base damage of 1:
 
 ```
-final damage = base damage × material multiplier
+tooltip attack damage = weapon base damage + material damage
+damage per hit        = 1 + weapon base damage + material damage
 ```
 
-- **All weapons and tools** follow standard Minecraft crafting patterns — just swap the base
-  material (iron, diamond, and so on) for any available alloy.
-- **Higher-tier materials** raise both damage and durability.
-- **Reach** is the base `3.0` block range plus the weapon's range bonus.
-- **DPS** is final damage × attack speed — a fast, weak blade can out-damage a slow, heavy one.
-- Some weapons carry special traits (parry, dual-wield, throwable, shield-break, and more),
-  shown as tags on each card.
+For example, a Diamond Katana is `3 + 4 = +7` attack damage and hits for 8, before
+[critical hits](https://minecraft.wiki/w/Damage#Critical_hit), enchantments and effects.
+
+- **Crafting:** all weapons and tools follow standard Minecraft
+  [crafting](https://minecraft.wiki/w/Crafting) patterns. Swap the base material (iron, diamond and
+  so on) for any available alloy.
+- **Higher-tier materials** raise both damage and [durability](https://minecraft.wiki/w/Durability).
+- **Attack speed** is set by the weapon type and controls the
+  [attack cooldown](https://minecraft.wiki/w/Damage#Attack_cooldown). Iridium weapons swing 10%
+  slower and Titanium (and Anodized Titanium) weapons 10% faster.
+- **Reach** is the base `3.0` block
+  [entity interaction range](https://minecraft.wiki/w/Attribute#Entity_interaction_range) plus the
+  weapon's range bonus.
+- **DPS** is damage per hit × attack speed: a fast, weak blade can out-damage a slow, heavy one.
+- Some weapons carry special traits (parry, dual-wield, throwable, shield-break and more), shown as
+  tags on each card.
 
 ## Arsenal
 
@@ -40,9 +52,14 @@ class, damage type or trait, and sort by whichever stat matters for your build.
 
 Weapons fall into one of three damage archetypes, which matters for armor and later mechanics:
 
-- **Piercing** — thrusting weapons: rapier, dagger, kunai, spear, halberd, poleaxe, pike.
-- **Slashing** — bladed sweeps: most swords and axes, plus the scythe, glaive and shuriken.
-- **Blunt** — armor-crushing impact: the warhammer.
+- **Piercing** (thrusting): rapier, dagger, kunai, [spear](https://minecraft.wiki/w/Spear), halberd, poleaxe, pike.
+- **Slashing** (bladed sweeps): katana, longsword, claymore, cutlass, saber, sickle, chakram,
+  zweihänder, kriegsmesser, glaive, longaxe, double axe, battlesaw, scythe and shuriken.
+- **Blunt** (armor-crushing impact): the warhammer.
+
+The plain [sword](https://minecraft.wiki/w/Sword) and [axe](https://minecraft.wiki/w/Axe) have no
+damage type and keep their vanilla behaviour, including the axe's ability to
+[disable shields](https://minecraft.wiki/w/Shield#Disabling).
 
 <WeaponArsenal />
 

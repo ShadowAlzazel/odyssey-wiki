@@ -36,7 +36,7 @@ For example:
 
 ### Anvil Mechanics
 
-The **Anvil** system has also been significantly revised to reduce frustration and improve usability.
+The [**Anvil**](https://minecraft.wiki/w/Anvil) system has also been significantly revised to reduce frustration and improve usability.
 
 * **Repairing an item** now costs:
   `number of enchantments on the item + 1` experience levels
@@ -52,7 +52,7 @@ This change eliminates one of the most aggravating mechanics in vanilla gameplay
 
 ### Chisled Bookshelves
 
-Chiseled bookshelves have had their utility expanding with enchanting.
+[Chiseled bookshelves](https://minecraft.wiki/w/Chiseled_Bookshelf) have had their utility expanding with enchanting.
 
 ### Strategies
 
@@ -78,7 +78,7 @@ Whether you're min-maxing a powerful build or experimenting with unconventional 
 
 ## [Villager Trading](/enchanting/villagers)
 
-Odyssey uses the new villager trade rebalance to add more enchantments to each villagers pool. 
+Odyssey uses the new [villager trade rebalance](https://minecraft.wiki/w/Villager_Trade_Rebalance) to add more enchantments to each villagers pool. 
 Some more powerful enchantments can be unlocked when getting a villager to max level
 
 ---

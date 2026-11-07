@@ -8,7 +8,7 @@ description: Technical reference for every Odyssey loot table, with pools, weigh
   let { data } = $props()
 </script>
 
-A technical reference for Odyssey's loot tables, generated from the datapack. Each page shows every
+A technical reference for Odyssey's [loot tables](https://minecraft.wiki/w/Loot_table), generated from the datapack. Each page shows every
 pool with its rolls, every entry with its weight and real chance, counts, enchantments and
 conditions, the tables it rolls into and the tables that use it, plus the raw JSON.
 

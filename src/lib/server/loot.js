@@ -12,19 +12,20 @@
 
 import { allItems } from '$lib/data/items/index.js'
 import { titleize, relId } from './worldgen.js'
+import { wikiUrl, WIKI } from '$lib/mcwiki.js'
 
 const files = import.meta.glob('/mc_data/loot_tables/**/*.json', { eager: true, import: 'default' })
 
 export const LOOT_GROUPS = [
-  { id: 'chest', label: 'Chests', blurb: 'Chest loot in structures.' },
-  { id: 'vault', label: 'Vaults', blurb: 'Rewards from vaults, opened with trial keys.' },
-  { id: 'pots', label: 'Decorated pots', blurb: 'Loot from breaking pots in structures.' },
-  { id: 'archaeology', label: 'Archaeology', blurb: 'Suspicious sand and gravel, brushed in structures.' },
-  { id: 'spawner', label: 'Trial spawners', blurb: 'Items dropped by trial spawners in structures.' },
-  { id: 'structure_spawns', label: 'Structure mob drops', blurb: 'Extra drops from mobs that spawn inside a structure.' },
-  { id: 'entities', label: 'Mobs', blurb: 'Drops from Odyssey mobs.' },
-  { id: 'gameplay', label: 'Gameplay', blurb: 'Fishing and other gameplay loot.' },
-  { id: 'loot', label: 'Shared pools', blurb: 'Reusable pools, like “a random gem”, that other tables roll into.' },
+  { id: 'chest', label: 'Chests', blurb: 'Chest loot in structures.', wiki: WIKI.chest },
+  { id: 'vault', label: 'Vaults', blurb: 'Rewards from vaults, opened with trial keys.', wiki: WIKI.vault },
+  { id: 'pots', label: 'Decorated pots', blurb: 'Loot from breaking pots in structures.', wiki: WIKI.decoratedPot },
+  { id: 'archaeology', label: 'Archaeology', blurb: 'Suspicious sand and gravel, brushed in structures.', wiki: WIKI.archaeology },
+  { id: 'spawner', label: 'Trial spawners', blurb: 'Items dropped by trial spawners in structures.', wiki: WIKI.trialSpawner },
+  { id: 'structure_spawns', label: 'Structure mob drops', blurb: 'Extra drops from mobs that spawn inside a structure.', wiki: null },
+  { id: 'entities', label: 'Mobs', blurb: 'Drops from Odyssey mobs.', wiki: null },
+  { id: 'gameplay', label: 'Gameplay', blurb: 'Fishing and other gameplay loot.', wiki: WIKI.fishing },
+  { id: 'loot', label: 'Shared pools', blurb: 'Reusable pools, like “a random gem”, that other tables roll into.', wiki: null },
 ]
 
 // ── number providers ─────────────────────────────────────────────────────
@@ -91,6 +92,7 @@ function vanillaItem(id) {
       .map((w, i) => (i > 0 && ['of', 'the', 'on', 'a'].includes(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)))
       .join('_')}.png`,
     href: null,
+    wiki: wikiUrl(id),
     custom: false,
   }
 }

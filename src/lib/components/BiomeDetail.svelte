@@ -1,5 +1,6 @@
 <script>
   import { base } from '$app/paths'
+  import { WIKI } from '$lib/mcwiki.js'
 
   let { biome: b } = $props()
 
@@ -40,7 +41,7 @@
   </header>
 
   <dl class="stats">
-    <div class="stat"><dt>Temperature</dt><dd>{b.climate.temperature}</dd><small>{b.climate.rawTemperature}</small></div>
+    <div class="stat"><dt><a class="mc" href={WIKI.biomeTemperature} target="_blank" rel="noopener" title="Biome temperature on the Minecraft Wiki">Temperature</a></dt><dd>{b.climate.temperature}</dd><small>{b.climate.rawTemperature}</small></div>
     <div class="stat"><dt>Humidity</dt><dd>{b.climate.humidity}</dd><small>{b.climate.rawDownfall}</small></div>
     <div class="stat"><dt>Weather</dt><dd>{b.climate.precipitation === 'None' ? 'No rain' : b.climate.precipitation}</dd></div>
     {#if b.categories.length}
@@ -83,7 +84,7 @@
   {#if b.spawns.length}
     <section class="block">
       <h2>Mob spawns</h2>
-      <p class="hint">Natural spawns. Chance is the share of spawn attempts in that group; Odyssey's custom mobs spawn separately.</p>
+      <p class="hint">Natural spawns. Chance is the share of spawn attempts in that group; Odyssey's custom mobs spawn separately. See <a class="mc" href={WIKI.mobSpawning} target="_blank" rel="noopener">mob spawning ↗</a> for how spawning works.</p>
       {#each b.spawns as g}
         <h3>{g.label}</h3>
         <table class="spawns">
@@ -93,7 +94,7 @@
               <tr>
                 <td class="mob">
                   {#if m.icon}<img class="pixel-art" src={eggUrl(m.icon)} alt="" width="16" height="16" loading="lazy" onerror={(e) => (e.currentTarget.style.visibility = 'hidden')} />{/if}
-                  {m.name}
+                  {#if m.wiki}<a class="mc" href={m.wiki} target="_blank" rel="noopener">{m.name}</a>{:else}{m.name}{/if}
                 </td>
                 <td>{m.chance}%</td>
                 <td>{m.group}</td>
@@ -117,6 +118,7 @@
   {#if b.advancements.length}
     <section class="block">
       <h2>Advancements</h2>
+      <p class="hint">Visiting this biome counts toward these <a class="mc" href={WIKI.advancement} target="_blank" rel="noopener">advancements ↗</a>.</p>
       <ul class="advs">
         {#each b.advancements as a}
           <li><strong>{a.title}</strong>{#if a.description}{' — '}{a.description}{/if}</li>
@@ -174,4 +176,5 @@
   .spawns td:not(.mob) { font-variant-numeric: tabular-nums; width: 6.5rem; }
   .mob { display: flex; align-items: center; gap: 0.45rem; }
   .advs { padding-left: 1.1rem; margin: 0; }
+  .mc { color: inherit; text-decoration: underline dotted; text-underline-offset: 2px; }
 </style>

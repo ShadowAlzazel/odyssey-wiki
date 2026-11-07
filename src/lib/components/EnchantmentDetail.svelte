@@ -3,6 +3,9 @@
 
   let { enchantment: e } = $props()
 
+  // Vanilla enchantments whose Minecraft Wiki page isn't named after their id.
+  const WIKI_TITLES = { binding_curse: 'Curse_of_Binding', vanishing_curse: 'Curse_of_Vanishing' }
+
   const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
   const roman = (n) => ROMAN[n] ?? String(n)
 
@@ -25,6 +28,12 @@
     <p class="detail__desc">{e.desc}</p>
     {#if !e.hasDescription}
       <p class="detail__note">Description not yet written — showing the definition's fallback.</p>
+    {/if}
+    {#if e.namespace === 'minecraft'}
+      <p class="detail__note">
+        A vanilla enchantment.
+        <a class="detail__wiki" href="https://minecraft.wiki/w/{WIKI_TITLES[e.slug] ?? e.name.replace(/ /g, '_')}" target="_blank" rel="noopener">{e.name} on the Minecraft Wiki ↗</a>
+      </p>
     {/if}
   </header>
 
@@ -138,6 +147,7 @@
   .detail__head h1 { margin: 0.2rem 0 0.5rem; }
   .detail__desc { margin: 0; font-size: 1.05rem; line-height: 1.55; }
   .detail__note { margin: 0.6rem 0 0; font-size: 0.8rem; color: var(--muted); font-style: italic; }
+  .detail__wiki { color: var(--accent-soft); font-style: normal; }
 
   .stats {
     display: grid;

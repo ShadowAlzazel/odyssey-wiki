@@ -8,7 +8,7 @@ description: Every biome Odyssey adds to the Overworld and the Edge, with climat
   let { data } = $props()
 </script>
 
-Odyssey adds new biomes to the Overworld and to its own dimension, the Edge. Many of the Overworld
+Odyssey adds new [biomes](https://minecraft.wiki/w/Biome) to the Overworld and to its own dimension, the Edge. Many of the Overworld
 biomes are modelled on real places, from the sandstone pillars of Zhangjiajie to the dunes of
 Lençóis Maranhenses.
 

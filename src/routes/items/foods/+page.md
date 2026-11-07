@@ -6,7 +6,8 @@
 
 ## Foods added by Odyssey
 
-Odyssey adds some cool foods for players to make and travel with.
+Odyssey adds some cool foods for players to make and travel with. Nutrition and saturation work the same as
+vanilla [food](https://minecraft.wiki/w/Food): see [hunger](https://minecraft.wiki/w/Hunger) for how they're used.
 
 ---
 
