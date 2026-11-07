@@ -106,7 +106,12 @@ export const sidebar =
             title:
               "Worlds in Odyssey",
             to: "/world",
-          }
+          },
+          {
+            title:
+              "Biomes",
+            to: "/world/biomes",
+          },
         ],
       }
     ],

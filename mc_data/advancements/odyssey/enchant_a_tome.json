@@ -1,0 +1,29 @@
+{
+  "parent": "odyssey:odyssey/apply_odyssey_enchant",
+  "display": {
+    "frame": "task",
+    "hidden": false,
+    "announce_to_chat": true,
+    "show_toast": true,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:book",
+      "components": {
+        "minecraft:item_model": "odyssey:blank_tome",
+        "minecraft:item_name": "blank_tome"
+      }
+    },
+    "title": {
+      "translate": "Home to Tome"
+    },
+    "description": {
+      "translate": "Enchant a Prismatic Book in the enchanting table to get a tome."
+    }
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

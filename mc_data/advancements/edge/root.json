@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "entered_edge": {
+      "conditions": {
+        "to": "odyssey:edge"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "odyssey:gui/advancements/backgrounds/tuff",
+    "description": {
+      "translate": "advancements.edge.root.description",
+      "fallback": "Arrived at a new frontier, a new edge..."
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:tuff"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.edge.root.title",
+      "fallback": "The Edge"
+    }
+  },
+  "requirements": [
+    ["entered_edge"]
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "odyssey:smithing/sword/sword_root",
+  "criteria": {
+    "craft_cutlass": {
+      "conditions": {
+        "ingredients": [
+        ],
+        "recipe_id": "odyssey:diamond_cutlass"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancments.odyssey.smithing.sword.craft_cutlass.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:diamond_sword",
+      "components": {
+        "minecraft:item_model": "odyssey:diamond_cutlass",
+        "minecraft:item_name": "diamond_cutlass"
+      }
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancments.odyssey.smithing.sword.craft_cutlass.title"
+    }
+  },
+  "requirements": [
+    [
+      "craft_cutlass"
+    ]
+  ]
+}

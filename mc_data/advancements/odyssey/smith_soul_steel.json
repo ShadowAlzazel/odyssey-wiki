@@ -1,0 +1,29 @@
+{
+  "parent": "odyssey:odyssey/convert_soul_steel",
+  "display": {
+    "frame": "goal",
+    "hidden": false,
+    "announce_to_chat": true,
+    "show_toast": true,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:paper",
+      "components": {
+        "minecraft:item_model": "odyssey:soul_steel_upgrade_template",
+        "minecraft:item_name": "soul_steel_upgrade_template"
+      }
+    },
+    "title": {
+      "translate": "Soulbound Smith"
+    },
+    "description": {
+      "translate": "Create a Soul Steel tool using a Soul Steel Ingot and an Upgrade Template."
+    }
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

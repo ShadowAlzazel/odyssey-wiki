@@ -1,0 +1,35 @@
+{
+  "parent": "odyssey:smithing/sword/sword_root",
+  "criteria": {
+    "craft_saber": {
+      "conditions": {
+        "ingredients": [],
+        "recipe_id": "odyssey:diamond_saber"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancments.odyssey.smithing.sword.craft_saber.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:diamond_sword",
+      "components": {
+        "minecraft:item_model": "odyssey:diamond_saber",
+        "minecraft:item_name": "diamond_saber"
+      }
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancments.odyssey.smithing.sword.craft_saber.title"
+    }
+  },
+  "requirements": [
+    ["craft_saber"]
+  ]
+}

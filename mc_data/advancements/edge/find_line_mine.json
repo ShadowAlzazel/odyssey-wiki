@@ -1,0 +1,47 @@
+{
+  "parent": "odyssey:edge/find_biome",
+  "criteria": {
+    "find_line_mine": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "odyssey:line_mine"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.edge.find_line_mine.description",
+      "fallback": "Locate an underground maze-like mine."
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:pale_oak_planks",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.edge.find_line_mine.title",
+      "fallback": "Mining Lines"
+    }
+  },
+  "requirements": [
+    [
+      "find_line_mine"
+    ]
+  ]
+}

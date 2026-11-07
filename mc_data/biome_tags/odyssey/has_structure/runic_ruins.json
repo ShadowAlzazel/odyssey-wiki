@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "odyssey:redwood_forest",
+    "odyssey:aspen_forest",
+    "odyssey:pantanal",
+    "odyssey:tsingy",
+    "odyssey:grand_teton",
+    "#odyssey:is_edge",
+    "#minecraft:is_forest",
+    "#minecraft:is_hill",
+    "#minecraft:is_jungle",
+    "#minecraft:is_mountain"
+  ]
+}

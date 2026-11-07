@@ -14,7 +14,10 @@ How the wiki is put together, where the data comes from, and how it ships.
 
 ```
 config/                  navbar.js, sidebar.js, theme.js  (navigation is edited by hand)
-mc_data/enchantments/    enchantment definition JSON, synced from the datapack (committed)
+mc_data/                 datapack JSON synced by `npm run sync` (committed):
+  enchantments/          enchantment definitions
+  biomes/, biome_tags/   biome definitions and the odyssey + minecraft biome tags
+  structures/, dimensions/, advancements/
 .mcdata/                 local only (gitignored): item loot tables + cached datapack clone
 scripts/sync-datapack.js copies data from OdysseyDataPack into the wiki
 mc-build-parser.js       turns .mcdata/loot_table/*.json into src/lib/data/items/*.json
@@ -63,6 +66,21 @@ To describe a new enchantment, add an entry keyed by slug:
 heartened: { name: 'Heartened', group: 'armor', tag: 'Armor',
              desc: 'Increases maximum health by 10% per level.' },
 ```
+
+## Biomes
+
+`src/lib/server/biomes.js` builds every biome from `mc_data/` and merges it with
+`src/lib/data/biomes.js` (names, descriptions, the real place it's based on, screenshots).
+
+- **Dimension** comes from the `odyssey:is_overworld` / `odyssey:is_edge` tags; biomes in
+  `cave/` are cave biomes.
+- **A biome in neither tag counts as unreleased and gets no page.** The build logs which ones
+  are hidden. Set `status: 'released'` in `biomes.js` to publish one anyway, or
+  `status: 'upcoming'` to hide one that is tagged.
+- Structures per biome come from each structure's `biomes` tag, resolved through the tag files.
+- Screenshots go in `static/images/biomes/` and are set with `image: '/images/biomes/<slug>.png'`.
+  Without one, the card uses the biome's own sky and grass colours.
+- Pages: `/world/biomes` (list) and `/world/biome/<slug>`.
 
 ## Items and recipes
 

@@ -6,6 +6,8 @@
  *   data/odyssey/enchantment/**.json    -> mc_data/enchantments/odyssey/   (mirrored: stale files removed)
  *   data/minecraft/enchantment/**.json  -> mc_data/enchantments/minecraft/ (overrides only: vanilla base files kept)
  *   data/odyssey/loot_table/item/**.json -> .mcdata/loot_table/            (mirrored; input for mc-build-parser.js)
+ *   data/odyssey/worldgen/biome, worldgen/structure, dimension, advancement
+ *   and the odyssey + minecraft biome tags        -> mc_data/...          (mirrored; see SYNC_TARGETS)
  *
  * Datapack location, first match wins:
  *   1. --datapack <path>            CLI flag
@@ -46,6 +48,12 @@ const SYNC_TARGETS = [
   { label: 'Odyssey enchantments', from: 'data/odyssey/enchantment', to: 'mc_data/enchantments/odyssey', mirror: true },
   { label: 'Vanilla enchantment overrides', from: 'data/minecraft/enchantment', to: 'mc_data/enchantments/minecraft', mirror: false },
   { label: 'Item loot tables', from: 'data/odyssey/loot_table/item', to: '.mcdata/loot_table', mirror: true },
+  { label: 'Biomes', from: 'data/odyssey/worldgen/biome', to: 'mc_data/biomes', mirror: true },
+  { label: 'Odyssey biome tags', from: 'data/odyssey/tags/worldgen/biome', to: 'mc_data/biome_tags/odyssey', mirror: true },
+  { label: 'Vanilla biome tag additions', from: 'data/minecraft/tags/worldgen/biome', to: 'mc_data/biome_tags/minecraft', mirror: true },
+  { label: 'Structures', from: 'data/odyssey/worldgen/structure', to: 'mc_data/structures', mirror: true },
+  { label: 'Dimensions', from: 'data/odyssey/dimension', to: 'mc_data/dimensions', mirror: true },
+  { label: 'Advancements', from: 'data/odyssey/advancement', to: 'mc_data/advancements', mirror: true },
 ]
 
 /** Accept either the repo root or the pack folder; return the folder that contains data/. */

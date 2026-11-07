@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#odyssey:is_odyssey",
+    "#minecraft:is_forest",
+    "#minecraft:is_hill",
+    "#minecraft:is_jungle",
+    "#minecraft:is_mountain",
+    "#minecraft:is_savanna",
+    "#minecraft:is_taiga"
+  ]
+}

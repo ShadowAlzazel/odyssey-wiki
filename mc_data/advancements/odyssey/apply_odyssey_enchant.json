@@ -1,0 +1,49 @@
+{
+  "parent": "odyssey:odyssey/root",
+  "criteria": {
+    "any_enchantment": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:enchantable/durability",
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "#odyssey:is_odyssey"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "frame": "task",
+    "hidden": false,
+    "announce_to_chat": true,
+    "show_toast": true,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:enchanted_book",
+      "components": {
+        "minecraft:item_model": "odyssey:arcane_book",
+        "minecraft:item_name": "arcane_book"
+      }
+    },
+    "title": {
+      "translate": "advancements.odyssey.apply_odyssey_enchant.title",
+      "fallback": "To Enchant or not to Enchant"
+    },
+    "description": {
+      "translate": "advancements.odyssey.apply_odyssey_enchant.description",
+      "fallback": "Apply an Odyssey enchantment to anything."
+    }
+  },
+  "requirements": [
+    [
+      "any_enchantment"
+    ]
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#odyssey:is_edge",
+    "#odyssey:is_overworld"
+  ]
+}

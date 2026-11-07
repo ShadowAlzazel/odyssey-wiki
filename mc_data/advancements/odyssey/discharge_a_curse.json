@@ -1,0 +1,29 @@
+{
+  "parent": "odyssey:odyssey/enchant_a_tome",
+  "display": {
+    "frame": "task",
+    "hidden": false,
+    "announce_to_chat": true,
+    "show_toast": true,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:enchanted_book",
+      "components": {
+        "minecraft:item_model": "odyssey:tome_of_discharge",
+        "minecraft:item_name": "tome_of_discharge"
+      }
+    },
+    "title": {
+      "translate": "Curses *** begone."
+    },
+    "description": {
+      "translate": "Use a Tome of Discharge to remove a cursed enchantment."
+    }
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}

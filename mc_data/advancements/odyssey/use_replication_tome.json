@@ -1,0 +1,29 @@
+{
+  "parent": "odyssey:odyssey/use_imitation_tome",
+  "display": {
+    "frame": "challenge",
+    "hidden": true,
+    "announce_to_chat": true,
+    "show_toast": true,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:enchanted_book",
+      "components": {
+        "minecraft:item_model": "odyssey:tome_of_replication",
+        "minecraft:item_name": "tome_of_replication"
+      }
+    },
+    "title": {
+      "translate": "Full House!"
+    },
+    "description": {
+      "translate": "Use a Replication Tome to copy 5 or more max level enchantments."
+    }
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible",
+      "conditions": {}
+    }
+  }
+}
