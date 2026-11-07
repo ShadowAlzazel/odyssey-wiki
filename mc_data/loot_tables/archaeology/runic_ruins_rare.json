@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:archaeology",
+  "random_sequence": "odyssey:archaeology/runic_ruins_rare",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:loot/unknown_glyphsherd",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:loot/unknown_glyphsherd",
+          "weight": 1
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

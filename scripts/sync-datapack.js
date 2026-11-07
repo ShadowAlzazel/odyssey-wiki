@@ -7,6 +7,7 @@
  *   data/minecraft/enchantment/**.json  -> mc_data/enchantments/minecraft/ (overrides only: vanilla base files kept)
  *   data/odyssey/loot_table/item/**.json -> .mcdata/loot_table/            (mirrored; input for mc-build-parser.js)
  *   data/odyssey/worldgen/biome, worldgen/structure, dimension, advancement
+ *   worldgen/structure_set, loot_table (minus item/)
  *   and the odyssey + minecraft biome tags        -> mc_data/...          (mirrored; see SYNC_TARGETS)
  *
  * Datapack location, first match wins:
@@ -54,6 +55,9 @@ const SYNC_TARGETS = [
   { label: 'Structures', from: 'data/odyssey/worldgen/structure', to: 'mc_data/structures', mirror: true },
   { label: 'Dimensions', from: 'data/odyssey/dimension', to: 'mc_data/dimensions', mirror: true },
   { label: 'Advancements', from: 'data/odyssey/advancement', to: 'mc_data/advancements', mirror: true },
+  { label: 'Structure sets', from: 'data/odyssey/worldgen/structure_set', to: 'mc_data/structure_sets', mirror: true },
+  // Item loot tables already go to .mcdata/loot_table for the item parser
+  { label: 'Loot tables', from: 'data/odyssey/loot_table', to: 'mc_data/loot_tables', mirror: true, exclude: ['item'] },
 ]
 
 /** Accept either the repo root or the pack folder; return the folder that contains data/. */
@@ -101,12 +105,13 @@ function findDatapack() {
 }
 
 /** All .json files under dir, as paths relative to dir. */
-function listJson(dir) {
+function listJson(dir, exclude = []) {
   if (!fs.existsSync(dir)) return []
   return fs
     .readdirSync(dir, { recursive: true, withFileTypes: true })
     .filter((e) => e.isFile() && e.name.endsWith('.json'))
     .map((e) => path.relative(dir, path.join(e.parentPath ?? e.path, e.name)))
+    .filter((rel) => !exclude.includes(rel.split(path.sep)[0]))
     .sort()
 }
 
@@ -120,7 +125,7 @@ function removeEmptyDirs(dir) {
   }
 }
 
-function syncTarget(packDir, { label, from, to, mirror }) {
+function syncTarget(packDir, { label, from, to, mirror, exclude = [] }) {
   const src = path.join(packDir, from)
   const dest = path.join(ROOT, to)
   if (!fs.existsSync(src)) {
@@ -128,7 +133,7 @@ function syncTarget(packDir, { label, from, to, mirror }) {
     return
   }
 
-  const srcFiles = listJson(src)
+  const srcFiles = listJson(src, exclude)
   const destFiles = new Set(listJson(dest))
   const added = []
   const updated = []

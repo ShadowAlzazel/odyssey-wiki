@@ -3,68 +3,21 @@
 // ─────────────────────────────────────────────────────────────────────────
 //  Data comes from mc_data/ (run `npm run sync` to refresh it):
 //    mc_data/biomes/**.json                 biome definitions
-//    mc_data/biome_tags/{odyssey,minecraft} biome tags (dimension + structure membership)
-//    mc_data/structures/**.json             structures (to list what spawns in each biome)
+//    mc_data/biome_tags, mc_data/structures  via worldgen.js (dimensions, structures)
 //    mc_data/dimensions/edge.json           the Edge's biome source
 //    mc_data/advancements/**.json           biome-exploring advancements
 //  Prose, names and overrides live in src/lib/data/biomes.js.
 // ─────────────────────────────────────────────────────────────────────────
 
-import { biomes as curatedBiomes, dimensions as dimensionInfo, titleOverrides } from '$lib/data/biomes.js'
+import { biomes as curatedBiomes, dimensions as dimensionInfo } from '$lib/data/biomes.js'
+import { titleize, relId, resolveBiomes as resolve, overworldBiomes as overworld, edgeBiomes as edge, releasedStructures } from './worldgen.js'
+
+export { titleize }
 
 const biomeFiles = import.meta.glob('/mc_data/biomes/**/*.json', { eager: true, import: 'default' })
-const tagFiles = import.meta.glob('/mc_data/biome_tags/**/*.json', { eager: true, import: 'default' })
-const structureFiles = import.meta.glob('/mc_data/structures/**/*.json', { eager: true, import: 'default' })
 const advancementFiles = import.meta.glob('/mc_data/advancements/**/*.json', { eager: true, import: 'default' })
 
-// ── helpers ──────────────────────────────────────────────────────────────
-
-const SMALL_WORDS = new Set(['of', 'the', 'and', 'in', 'on', 'n'])
-export const titleize = (id) => {
-  const key = id.replace(/^[a-z_]+:/, '')
-  if (titleOverrides[key]) return titleOverrides[key]
-  return key
-    .split(/[_/]/)
-    .filter(Boolean)
-    .map((w, i) => (i > 0 && SMALL_WORDS.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)))
-    .join(' ')
-}
-
 const hex = (n) => (typeof n === 'number' ? '#' + n.toString(16).padStart(6, '0') : null)
-
-// "/mc_data/biomes/cave/darklight_caves.json" -> "cave/darklight_caves"
-const relId = (key, prefix) => key.replace(prefix, '').replace(/\.json$/, '')
-
-// ── tags ─────────────────────────────────────────────────────────────────
-
-// "odyssey:has_structure/obelisk" -> raw values
-const rawTags = {}
-for (const [key, tag] of Object.entries(tagFiles)) {
-  const [namespace, ...rest] = relId(key, '/mc_data/biome_tags/').split('/')
-  rawTags[`${namespace}:${rest.join('/')}`] = (tag.values ?? []).map((v) => (typeof v === 'string' ? v : v.id))
-}
-
-// Resolve a tag (or a list of ids / tag refs) to the set of biome ids it contains.
-// Vanilla tags the datapack doesn't touch resolve to nothing: they only hold vanilla biomes.
-function resolve(ref, seen = new Set()) {
-  const out = new Set()
-  const refs = Array.isArray(ref) ? ref : [ref]
-  for (const r of refs) {
-    if (typeof r !== 'string') continue
-    if (!r.startsWith('#')) {
-      out.add(r)
-      continue
-    }
-    const id = r.slice(1)
-    if (seen.has(id)) continue
-    seen.add(id)
-    for (const v of rawTags[id] ?? []) for (const b of resolve(v, seen)) out.add(b)
-  }
-  return out
-}
-
-const overworld = resolve('#odyssey:is_overworld')
-const edge = resolve('#odyssey:is_edge')
 
 // Vanilla categories an Odyssey biome was added to, e.g. "is_forest" -> Forest
 const CATEGORY_TAGS = {
@@ -79,17 +32,11 @@ const CATEGORY_TAGS = {
   'minecraft:swamps': 'Swamp',
 }
 
-// ── structures that can spawn in each biome ──────────────────────────────
+// ── released structures that can spawn in each biome ─────────────────────
 
 const structuresByBiome = {}
-const structureNames = new Map()
-for (const [key, def] of Object.entries(structureFiles)) {
-  // runic_ruins/solara_ruins.json and runic_ruins.json both belong to "runic_ruins"
-  const slug = relId(key, '/mc_data/structures/').split('/')[0]
-  if (!structureNames.has(slug)) structureNames.set(slug, titleize(slug))
-  for (const b of resolve(def.biomes ?? [])) {
-    ;(structuresByBiome[b] ??= new Set()).add(slug)
-  }
+for (const st of releasedStructures) {
+  for (const b of st.biomes) (structuresByBiome[b] ??= []).push({ slug: st.slug, name: st.name })
 }
 
 // ── advancements that require visiting a biome ───────────────────────────
@@ -217,7 +164,7 @@ function build(key, def) {
     music: (effects.music ?? []).map((m) => soundLabel(m.data?.sound)).filter(Boolean),
     spawns: spawns(def.spawners),
     features: customFeatures(def.features),
-    structures: [...(structuresByBiome[id] ?? [])].map((s) => ({ slug: s, name: structureNames.get(s) })).sort((a, b) => a.name.localeCompare(b.name)),
+    structures: [...(structuresByBiome[id] ?? [])].sort((a, b) => a.name.localeCompare(b.name)),
     advancements: advancementsByBiome[id] ?? [],
   }
 }

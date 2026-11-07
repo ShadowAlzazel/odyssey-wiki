@@ -64,7 +64,7 @@
       <p class="hint">Odyssey structures that can generate here.</p>
       <ul class="tags">
         {#each b.structures as s}
-          <li><a href="{base}/world/structures">{s.name}</a></li>
+          <li><a href="{base}/world/structure/{s.slug}">{s.name}</a></li>
         {/each}
       </ul>
     </section>

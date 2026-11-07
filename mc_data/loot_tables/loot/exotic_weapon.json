@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:chest",
+  "random_sequence": "odyssey:loot/exotic_weapon",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:item/knight_breaker",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:item/shogun_lightning",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:item/abzu_blade",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:item/excalibur",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:item/frost_fang",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:item/elucidator",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

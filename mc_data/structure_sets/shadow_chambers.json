@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 37373737,
+    "separation": 21,
+    "spacing": 32
+  },
+  "structures": [
+    {
+      "structure": "odyssey:shadow_chambers",
+      "weight": 1
+    }
+  ]
+}

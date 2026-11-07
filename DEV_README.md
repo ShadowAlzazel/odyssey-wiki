@@ -17,7 +17,8 @@ config/                  navbar.js, sidebar.js, theme.js  (navigation is edited 
 mc_data/                 datapack JSON synced by `npm run sync` (committed):
   enchantments/          enchantment definitions
   biomes/, biome_tags/   biome definitions and the odyssey + minecraft biome tags
-  structures/, dimensions/, advancements/
+  structures/, structure_sets/, dimensions/, advancements/
+  loot_tables/           every loot table except item/ (those are in .mcdata/)
 .mcdata/                 local only (gitignored): item loot tables + cached datapack clone
 scripts/sync-datapack.js copies data from OdysseyDataPack into the wiki
 mc-build-parser.js       turns .mcdata/loot_table/*.json into src/lib/data/items/*.json
@@ -81,6 +82,32 @@ heartened: { name: 'Heartened', group: 'armor', tag: 'Armor',
 - Screenshots go in `static/images/biomes/` and are set with `image: '/images/biomes/<slug>.png'`.
   Without one, the card uses the biome's own sky and grass colours.
 - Pages: `/world/biomes` (list) and `/world/biome/<slug>`.
+
+## Structures
+
+`src/lib/server/worldgen.js` holds what biomes and structures share: biome tag resolution
+and the structure registry. `src/lib/server/structures.js` adds rarity, biomes and loot, and
+merges `src/lib/data/structures.js` (names, descriptions, tips, screenshots).
+
+- **A structure is released when a structure set places it.** One without a structure set never
+  generates, so it gets no page (currently Runic Ruins). `status` in `structures.js` overrides this.
+- Variants (`derelict_base/solara.json`, `derelict_base/soraciela.json`) are one structure.
+- Rarity comes from the structure set's spacing: ≤20 chunks Common, ≤35 Uncommon, ≤50 Rare,
+  otherwise Very rare.
+- Loot is matched by folder name: `chest/<slug>/…`, `vault/<slug>/…`, `pots/`, `archaeology/`,
+  `spawner/`, `structure_spawns/`. Add other tables with `loot: ['path/to/table']`.
+- Pages: `/world/structures` and `/world/structure/<slug>`.
+
+## Loot tables
+
+`src/lib/server/loot.js` reads `mc_data/loot_tables` for the technical pages at `/loot` and
+`/loot/<datapack path>` (e.g. `/loot/vault/hypercubic_chamber/rare`). Entries pointing at
+`odyssey:item/<name>` are shown as that item; other `odyssey:` tables link to their own page.
+
+- **Per roll** = weight ÷ total weight of the pool. **Per pool** = chance of at least one pick
+  across the pool's rolls (uniform roll counts averaged; bonus rolls and conditions ignored).
+- The route is `src/routes/loot/[a]/[b]/[[c]]/[[d]]/[[e]]` rather than `[...path]`: SveltePress
+  only applies its page layout to route folders without dots in their names.
 
 ## Items and recipes
 

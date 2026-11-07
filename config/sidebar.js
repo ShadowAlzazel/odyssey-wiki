@@ -112,6 +112,23 @@ export const sidebar =
               "Biomes",
             to: "/world/biomes",
           },
+          {
+            title:
+              "Structures",
+            to: "/world/structures",
+          },
+        ],
+      },
+      {
+        title:
+          "Technical",
+        collapsible: true,
+        items: [
+          {
+            title:
+              "Loot Tables",
+            to: "/loot",
+          },
         ],
       }
     ],

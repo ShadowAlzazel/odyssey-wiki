@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:chest",
+  "random_sequence": "odyssey:spawner/sunken_library/rare",
+  "pools": [
+    {
+      "bonus_rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:loot/random_part_pattern",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:loot/random_tome",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "odyssey:loot/library_tome",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 5.0,
+              "options": "#odyssey:on_random_loot"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:item_model": "odyssey:arcane_book",
+                "minecraft:item_name": "arcane_book"
+              },
+              "conditions": []
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "Arcane Book",
+                "bold": false,
+                "italic": false
+              }
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 5
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
