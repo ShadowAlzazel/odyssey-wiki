@@ -8,6 +8,7 @@
   export let linkToPage = true;
 
   import { onMount } from "svelte";
+  import { itemIconUrl, blockIconUrl } from "$lib/mcwiki.js";
 
   // "diamond_sword" -> "Diamond_Sword"
   // "lily_of_the_valley" -> "Lily_of_the_Valley"
@@ -32,8 +33,8 @@
   }
 
   let imageUrl;
-  $: primaryUrl  = `https://raw.githubusercontent.com/misode/mcmeta/refs/heads/assets/assets/minecraft/textures/item/${name}.png`;
-  $: fallbackUrl   = `https://minecraft.wiki/images/Invicon_${getWikiTitle(name)}.png`;
+  $: primaryUrl  = itemIconUrl(name);
+  $: fallbackUrl   = blockIconUrl(name);
 
   onMount(async () => {
     try {

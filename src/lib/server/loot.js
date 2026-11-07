@@ -12,7 +12,7 @@
 
 import { allItems } from '$lib/data/items/index.js'
 import { titleize, relId } from './worldgen.js'
-import { wikiUrl, WIKI } from '$lib/mcwiki.js'
+import { wikiUrl, itemIconUrl, blockIconUrl, WIKI } from '$lib/mcwiki.js'
 import { datapack } from '$lib/github.js'
 
 const files = import.meta.glob('/mc_data/loot_tables/**/*.json', { eager: true, import: 'default' })
@@ -86,12 +86,9 @@ function vanillaItem(id) {
     kind: 'item',
     id,
     name: titleize(name),
-    icon: `https://raw.githubusercontent.com/misode/mcmeta/refs/heads/assets/assets/minecraft/textures/item/${name}.png`,
-    // Blocks have no item texture; minecraft.wiki has an inventory icon for everything.
-    fallbackIcon: `https://minecraft.wiki/images/Invicon_${name
-      .split('_')
-      .map((w, i) => (i > 0 && ['of', 'the', 'on', 'a'].includes(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)))
-      .join('_')}.png`,
+    icon: itemIconUrl(id),
+    // Blocks have no item texture; fall back to the block texture.
+    fallbackIcon: blockIconUrl(id),
     href: null,
     wiki: wikiUrl(id),
     custom: false,

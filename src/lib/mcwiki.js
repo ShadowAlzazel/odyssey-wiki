@@ -21,6 +21,25 @@ export function wikiUrl(id) {
   return `https://minecraft.wiki/w/${wikiTitle(s)}`
 }
 
+// Vanilla icons come from misode's mcmeta mirror of the game's textures. (minecraft.wiki blocks
+// other sites from embedding its images, so it's only used for links, never for icons.)
+const TEXTURES = 'https://raw.githubusercontent.com/misode/mcmeta/refs/heads/assets/assets/minecraft/textures'
+
+// Items whose icon isn't textures/item/<name>.png or textures/block/<name>.png.
+const ICON_ALIASES = {
+  enchanted_golden_apple: 'item/golden_apple',
+  crossbow: 'item/crossbow_standby',
+}
+
+/** Flat item texture for a vanilla item id. */
+export const itemIconUrl = (id) => {
+  const name = String(id).replace(/^minecraft:/, '')
+  return `${TEXTURES}/${ICON_ALIASES[name] ?? `item/${name}`}.png`
+}
+
+/** Fallback when there's no item texture (blocks): the block's own texture. */
+export const blockIconUrl = (id) => `${TEXTURES}/block/${String(id).replace(/^minecraft:/, '')}.png`
+
 /** Pages for game concepts the Odyssey wiki refers to. */
 export const WIKI = {
   biome: 'https://minecraft.wiki/w/Biome',

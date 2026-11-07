@@ -28,7 +28,7 @@ material and compare the whole arsenal at once, so you don't have to hunt throug
 ## How stats work
 
 Every weapon adds **its own base damage plus its material's damage** to your
-[attack damage](https://minecraft.wiki/w/Attribute#Attack_damage). That's the `+X` on the tooltip.
+[attack damage](https://minecraft.wiki/w/Attribute#Attack_Damage). That's the `+X` on the tooltip.
 Like any Minecraft weapon, a full-strength hit also includes your own base damage of 1:
 
 ```
@@ -47,7 +47,7 @@ For example, a Diamond Katana is `3 + 4 = +7` attack damage and hits for 8, befo
   [attack cooldown](https://minecraft.wiki/w/Damage#Attack_cooldown). Iridium weapons swing 10%
   slower and Titanium (and Anodized Titanium) weapons 10% faster.
 - **Reach** is the base `3.0` block
-  [entity interaction range](https://minecraft.wiki/w/Attribute#Entity_interaction_range) plus the
+  [entity interaction range](https://minecraft.wiki/w/Attribute#Entity_Interaction_Range) plus the
   weapon's range bonus.
 - **DPS** is damage per hit × attack speed: a fast, weak blade can out-damage a slow, heavy one.
 - Some weapons carry special traits (parry, dual-wield, throwable, shield-break and more), shown as

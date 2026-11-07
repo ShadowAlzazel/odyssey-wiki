@@ -25,7 +25,7 @@ The **Crystalline Potion** is a core alchemical component used in many advanced 
 
 - **Created From:**
   - `Amethyst Shard`
-  - [Awkward Potion](https://minecraft.wiki/w/Potion#Awkward_Potion)
+  - [Awkward Potion](https://minecraft.wiki/w/Awkward_Potion)
   - 🔥 `Fire Fuels`
 
 ---
