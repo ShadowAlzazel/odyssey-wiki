@@ -8,6 +8,9 @@
  *   data/odyssey/loot_table/item/**.json -> .mcdata/loot_table/            (mirrored; input for mc-build-parser.js)
  *   data/odyssey/worldgen/biome, worldgen/structure, dimension, advancement
  *   worldgen/structure_set, loot_table (minus item/)
+ *   plugin Kotlin source (ToolType, ToolMaterial, WeaponMaps...) -> mc_data/weapons.json
+ *     (see extract-weapons.js; plugin found via --plugin, ODYSSEY_PLUGIN, ../MinecraftOdyssey
+ *     or a shallow clone in .mcdata/plugin-repo)
  *   and the odyssey + minecraft biome tags        -> mc_data/...          (mirrored; see SYNC_TARGETS)
  *
  * Datapack location, first match wins:
@@ -28,11 +31,16 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { execFileSync } from 'node:child_process'
+import { extractWeapons } from './extract-weapons.js'
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
 const REPO_URL = process.env.ODYSSEY_DATAPACK_REPO || 'https://github.com/ShadowAlzazel/OdysseyDataPack.git'
 const REPO_BRANCH = process.env.ODYSSEY_DATAPACK_BRANCH || 'main'
 const CLONE_DIR = path.join(ROOT, '.mcdata', 'datapack-repo')
+const PLUGIN_URL = process.env.ODYSSEY_PLUGIN_REPO || 'https://github.com/ShadowAlzazel/MinecraftOdyssey.git'
+const PLUGIN_BRANCH = process.env.ODYSSEY_PLUGIN_BRANCH || 'main'
+const PLUGIN_CLONE_DIR = path.join(ROOT, '.mcdata', 'plugin-repo')
+const WEAPONS_OUT = path.join(ROOT, 'mc_data', 'weapons.json')
 
 const args = process.argv.slice(2)
 const flag = (name) => args.includes(name)
@@ -72,18 +80,54 @@ function resolvePackDir(dir) {
   return null
 }
 
-function cloneOrUpdate() {
+/** Shallow-clone a repo into dir, or update the cached clone. */
+function cloneOrUpdate(url = REPO_URL, branch = REPO_BRANCH, dir = CLONE_DIR) {
   const git = (...a) => execFileSync('git', a, { stdio: ['ignore', 'ignore', 'inherit'] })
-  if (fs.existsSync(path.join(CLONE_DIR, '.git'))) {
-    console.log(`Updating cached datapack clone (${REPO_BRANCH})...`)
-    git('-C', CLONE_DIR, 'fetch', '--depth', '1', 'origin', REPO_BRANCH)
-    git('-C', CLONE_DIR, 'reset', '--hard', 'FETCH_HEAD')
+  if (fs.existsSync(path.join(dir, '.git'))) {
+    console.log(`Updating cached clone of ${url} (${branch})...`)
+    git('-C', dir, 'fetch', '--depth', '1', 'origin', branch)
+    git('-C', dir, 'reset', '--hard', 'FETCH_HEAD')
   } else {
-    console.log(`Cloning ${REPO_URL} (${REPO_BRANCH})...`)
-    fs.mkdirSync(path.dirname(CLONE_DIR), { recursive: true })
-    git('clone', '--depth', '1', '--branch', REPO_BRANCH, REPO_URL, CLONE_DIR)
+    console.log(`Cloning ${url} (${branch})...`)
+    fs.mkdirSync(path.dirname(dir), { recursive: true })
+    git('clone', '--depth', '1', '--branch', branch, url, dir)
   }
-  return resolvePackDir(CLONE_DIR)
+  return dir === CLONE_DIR ? resolvePackDir(dir) : dir
+}
+
+const isPlugin = (dir) => dir && fs.existsSync(path.join(dir, 'src/main/java/me/shadowalzazel/mcodyssey'))
+
+/** Plugin location: --plugin, ODYSSEY_PLUGIN, ../MinecraftOdyssey, or a cached shallow clone. */
+function findPlugin() {
+  const explicit = option('--plugin') || process.env.ODYSSEY_PLUGIN
+  if (explicit) {
+    const dir = path.resolve(ROOT, explicit)
+    if (!isPlugin(dir)) throw new Error(`No Odyssey plugin source found at "${explicit}"`)
+    return dir
+  }
+  const sibling = path.resolve(ROOT, '../MinecraftOdyssey')
+  if (isPlugin(sibling)) return sibling
+  if (NO_CLONE) return null
+  try {
+    return cloneOrUpdate(PLUGIN_URL, PLUGIN_BRANCH, PLUGIN_CLONE_DIR)
+  } catch (e) {
+    console.warn(`Could not clone the plugin: ${e.message}`)
+    return null
+  }
+}
+
+/** Weapon stats and traits come from the plugin's Kotlin source, not the datapack. */
+function syncWeapons() {
+  const pluginDir = findPlugin()
+  if (!pluginDir) {
+    console.warn('  ! Weapons: no plugin source found, keeping the committed mc_data/weapons.json')
+    return
+  }
+  const json = JSON.stringify(extractWeapons(pluginDir), null, 2) + '\n'
+  const before = fs.existsSync(WEAPONS_OUT) ? fs.readFileSync(WEAPONS_OUT, 'utf8') : null
+  const status = before === null ? 'added' : before === json ? 'unchanged' : 'updated'
+  if (!DRY_RUN && status !== 'unchanged') fs.writeFileSync(WEAPONS_OUT, json)
+  console.log(`  Weapons: from ${path.relative(ROOT, pluginDir)} -> mc_data/weapons.json (${status})`)
 }
 
 function findDatapack() {
@@ -191,3 +235,4 @@ if (!packDir) {
 
 console.log(`Syncing from ${path.relative(ROOT, packDir) || '.'}${DRY_RUN ? ' (dry run)' : ''}`)
 for (const target of SYNC_TARGETS) syncTarget(packDir, target)
+syncWeapons()

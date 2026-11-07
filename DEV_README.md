@@ -109,6 +109,25 @@ merges `src/lib/data/structures.js` (names, descriptions, tips, screenshots).
 - The route is `src/routes/loot/[a]/[b]/[[c]]/[[d]]/[[e]]` rather than `[...path]`: SveltePress
   only applies its page layout to route folders without dots in their names.
 
+## Weapons
+
+Weapon stats come from the **plugin source**, not the datapack. `npm run sync` runs
+`scripts/extract-weapons.js` on `ToolType.kt`, `ToolMaterial.kt`, `ToolMaker.kt`, `WeaponMaps.kt` and
+`WeaponListeners.kt` and writes `mc_data/weapons.json`. The plugin is found via `--plugin <path>`,
+`ODYSSEY_PLUGIN`, `../MinecraftOdyssey`, or a shallow clone in `.mcdata/plugin-repo`.
+
+- The extractor is pattern matching, not a Kotlin parser. Commented-out enum entries and map
+  entries are skipped, so disabled weapons stay off the wiki. If the files change shape and a
+  pattern stops matching, it throws instead of writing partial data.
+- `src/lib/server/weapons.js` builds the weapons, materials and **traits**. Each trait's text
+  explains what the plugin code does; its numbers come from `weapons.json`. Only maps the plugin
+  actually uses are shown (not `REQUIRES_TWO_HANDS`, `CAN_DISMOUNT`, `CLEAVE_MAP`, `MIN_RANGE_MAP`).
+- `src/lib/data/weapons.js` holds categories, material colours and icons, vanilla durabilities
+  and per-weapon descriptions (`desc`).
+- Damage per hit = weapon base + material: `WeaponListeners.kt` removes the player's base 1 from
+  Odyssey weapon hits. Iridium ×0.9 and Titanium ×1.1 attack speed come from `ToolMaker.kt`.
+- Pages: `/items/weapons` (arsenal), `/items/weapon/<type>`, `/items/weapons/traits`.
+
 ## Items and recipes
 
 Item pages are generated at `/item/<item-name-with-hyphens>` from `src/lib/data/items`.

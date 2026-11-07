@@ -21,6 +21,8 @@ Commit the changes it makes so Netlify builds with the new data.
 
 - Looks for the datapack at `../OdysseyDataPack` (clone it next to this repo). Use `--datapack <path>` or
   `ODYSSEY_DATAPACK=<path>` to point elsewhere. If neither is found, it shallow-clones the datapack from GitHub into `.mcdata/datapack-repo`.
+- Weapon stats come from the plugin's source code. The script looks for it at `../MinecraftOdyssey`
+  (or `--plugin <path>` / `ODYSSEY_PLUGIN=<path>`), and clones it from GitHub otherwise.
 - `npm run sync:check` shows what would change without writing anything.
 - `npm run dev` syncs automatically when the sibling datapack checkout exists (and skips quietly when it doesn't).
 

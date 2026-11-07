@@ -46,6 +46,11 @@ export const sidebar =
           },
           {
             title:
+              "Weapon Traits",
+            to: "/items/weapons/traits",
+          },
+          {
+            title:
               "Materials",
             to: "/items/materials",
           },

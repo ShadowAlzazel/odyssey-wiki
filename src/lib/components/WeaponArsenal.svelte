@@ -1,104 +1,33 @@
 <script>
   import { base } from '$app/paths';
-  import CustomItem from '$lib/components/CustomItem.svelte';
 
-  /* ============================================================
-     DATA — mirrors your source enums.
-     Add a row here and it appears everywhere: cards, filters, sort.
-     ============================================================ */
-  const MATERIALS = [
-    // id, name, mult, durability, source, tint, img
-    ["iron","Iron",3.0,250,"Overworld","#c9ccd1","iron_ingot"],
-    ["silver","Silver",3.0,337,"Overworld","#ebecf9","silver_ingot"],
-    ["soul_steel","Soul Steel",4.0,666,"Nether","#585f7b","soul_steel_ingot"],
-    ["titanium","Titanium",4.0,1002,"Overworld","#d9d9bd","titanium_ingot"],
-    ["anodized_titanium","Anodized Titanium",4.0,1002,"Overworld","#2744cb","anodized_titanium_ingot"],
-    ["crystal_alloy","Crystal Alloy",4.0,1123,"The Edge","#7fc7e8","crystal_alloy_ingot"],
-    ["diamond","Diamond",4.0,1561,"Overworld","#5fd6d0","diamond"],
-    ["netherite","Netherite",5.0,2031,"Nether","#8a7d88","netherite_ingot"],
-    ["iridium","Iridium",5.0,3108,"Overworld","#dd7ce4","iridium_ingot"],
-    ["mithril","Mithril",6.0,1789,"The Edge","#9fe6cf","mithril_ingot"],
-  ].map(m => ({ id: m[0], name: m[1], mult: m[2], dur: m[3], source: m[4], tint: m[5], img: m[6] }));
+  /* Data comes from the plugin source via mc_data/weapons.json (see src/lib/server/weapons.js). */
+  let { materials = [], weapons = [], categories = [], traitFilters = [] } = $props();
 
-  const CAT_COLOR = {
-    Sword:"#8fa8bd", Polearm:"#c9603f", Axe:"#e0a03d",
-    Blunt:"#b06a4f", Special:"#7fc7e8", Vanilla:"#6a7079"
-  };
-
-  const WEAPONS = [
-    // id, name, base, speed, range, category
-    ["sword","Sword",3.0,1.6,0,"Vanilla"],
-    ["axe","Axe",5.0,1.0,0,"Vanilla"],
-    ["cutlass","Cutlass",2.5,2.1,0,"Sword"],
-    ["katana","Katana",3.0,1.7,0.2,"Sword"],
-    ["longsword","Longsword",4.0,1.5,0.3,"Sword"],
-    ["rapier","Rapier",1.5,3.5,0,"Sword"],
-    ["saber","Saber",3.0,1.8,0,"Sword"],
-    ["chakram","Chakram",1.5,2.5,-0.3,"Sword"],
-    ["dagger","Dagger",1.0,3.0,-0.3,"Sword"],
-    ["kunai","Kunai",1.0,2.5,0,"Sword"],
-    ["sickle","Sickle",1.5,2.7,-0.2,"Sword"],
-    ["claymore","Claymore",6.5,1.1,0.5,"Sword"],
-    ["kriegsmesser","Kriegsmesser",6.0,1.3,0.5,"Sword"],
-    ["zweihander","Zweihander",7.0,0.8,1.0,"Sword"],
-    ["halberd","Halberd",4.0,0.8,2.0,"Polearm"],
-    ["pike","Pike",6.0,0.6,3.0,"Polearm"],
-    ["poleaxe","Poleaxe",4.0,1.1,1.0,"Polearm"],
-    ["glaive","Glaive",4.0,1.2,1.0,"Polearm"],
-    ["scythe","Scythe",3.0,1.1,1.0,"Polearm"],
-    ["double_axe","Double Axe",5.0,1.0,0,"Axe"],
-    ["longaxe","Longaxe",6.0,0.9,0.5,"Axe"],
-    ["battlesaw","Battlesaw",4.0,1.0,1.0,"Axe"],
-    ["warhammer","Warhammer",4.0,1.4,0,"Blunt"],
-    ["shuriken","Shuriken",0.5,1.0,0,"Special"],
-  ].map(w => ({ id: w[0], name: w[1], base: w[2], speed: w[3], range: w[4], cat: w[5] }));
-
-  const ARCH = {
-    pierce: new Set(["rapier","dagger","kunai","spear","halberd","poleaxe","pike"]),
-    slash:  new Set(["katana","longsword","claymore","cutlass","saber","sickle","chakram","zweihander","kriegsmesser","glaive","longaxe","double_axe","battlesaw","scythe","shuriken"]),
-    blunt:  new Set(["warhammer"]),
-  };
-  const CAN_PARRY  = new Set(["katana","claymore","longsword","rapier","saber","sickle","dagger","kriegsmesser","zweihander","poleaxe"]);
-  const DUAL_WIELD = new Set(["dagger","cutlass","chakram","double_axe"]);
-  const THROWABLE  = new Set(["kunai","chakram","shuriken"]);
-  const KINETIC    = new Set(["pike"]);
-  const DISABLE_SH = { longaxe:100, double_axe:100, poleaxe:80, glaive:80, halberd:60, warhammer:60, sickle:40 }; // ticks
-  const MIN_CHARGE = { halberd:0.5, longaxe:0.5, pike:0.5, claymore:0.3, kriegsmesser:0.3, zweihander:0.3 };
-  const HITBOX     = { katana:0.35, claymore:0.4, longsword:0.35, double_axe:0.35, sickle:0.45, scythe:0.7, battlesaw:0.45, kriegsmesser:0.4, zweihander:0.45, pike:0.35 };
-  const CRIT       = { katana:0.1, longaxe:0.25 };
-
-  const ARCH_LABEL = { pierce:"Piercing", slash:"Slashing", blunt:"Blunt" };
-  const CATS  = ["all", ...new Set(WEAPONS.map(w => w.cat))];
-  const ARCHS = [["all","All"],["pierce","Piercing"],["slash","Slashing"],["blunt","Blunt"]];
-  const PROPS = [["parry","Can parry"],["dual","Dual-wield"],["throw","Throwable"],["charge","Kinetic charge"],["shield","Shield-break"]];
-  const SORTS = [["final","Final damage"],["dps","DPS"],["speed","Attack speed"],["reach","Reach"],["name","Name (A–Z)"]];
+  const CAT = Object.fromEntries(categories.map(c => [c.id, c]));
+  const CATS = ["all", ...categories.map(c => c.id).filter(id => weapons.some(w => w.category === id))];
+  const ARCHS = [["all","All"],["piercing","Piercing"],["slashing","Slashing"],["blunt","Blunt"]];
+  const SORTS = [["damage","Damage"],["dps","DPS"],["speed","Attack speed"],["reach","Reach"],["name","Name (A–Z)"]];
 
   /* ---------- state ---------- */
-  let mat   = $state(MATERIALS[0]);
+  let mat   = $state(materials.find(m => m.id === "iron") ?? materials[0]);
   let q     = $state("");
-  let sort  = $state("final");
+  let sort  = $state("damage");
   let cat   = $state("all");
   let arch  = $state("all");
-  let props = $state([]);              // active trait keys
+  let props = $state([]);              // active trait ids
 
   /* ---------- helpers ---------- */
-  const fmt    = n => Number.isInteger(n) ? String(n) : n.toFixed(1);
-  const archOf = id => ARCH.pierce.has(id) ? "pierce" : ARCH.slash.has(id) ? "slash" : ARCH.blunt.has(id) ? "blunt" : null;
-  // Mirrors ToolMaker.kt: the item adds (material + weapon) attack damage on top of the player's
-  // base 1, and Iridium / Titanium change attack speed.
-  const SPEED_MULT = { iridium: 0.9, titanium: 1.1, anodized_titanium: 1.1 };
+  const fmt = n => Number.isInteger(n) ? String(n) : String(Math.round(n * 100) / 100);
+  const iconSrc = m => m.icon.url ?? `${base}${m.icon.path}`;
+  // Mirrors ToolMaker.kt + WeaponListeners.kt: damage = weapon base + material (the plugin removes
+  // the player's base 1 from Odyssey weapon hits), and some materials change attack speed.
   const compute = w => {
-    const final = w.base + mat.mult;          // the "+X Attack Damage" on the tooltip
-    const hit = 1 + final;                    // damage per full-strength hit
-    const speed = w.speed * (SPEED_MULT[mat.id] ?? 1);
-    return { final, hit, speed, dps: hit * speed, reach: 3.0 + w.range, arch: archOf(w.id) };
+    const damage = w.baseDamage + mat.damage;
+    const speed = w.baseSpeed * (mat.speedMultiplier ?? 1);
+    return { damage, speed, dps: damage * speed, reach: 3.0 + w.bonusRange };
   };
-  const hasProp = (id, p) =>
-    p === "parry"  ? CAN_PARRY.has(id) :
-    p === "dual"   ? DUAL_WIELD.has(id) :
-    p === "throw"  ? THROWABLE.has(id) :
-    p === "charge" ? KINETIC.has(id) :
-    p === "shield" ? id in DISABLE_SH : false;
+  const has = (w, traitId) => w.traits.some(t => t.id === traitId);
 
   function toggleProp(p) {
     props = props.includes(p) ? props.filter(x => x !== p) : [...props, p];
@@ -106,25 +35,28 @@
   function reset() { q = ""; cat = "all"; arch = "all"; props = []; }
 
   const SORTERS = {
-    final: (a, b) => compute(b).final - compute(a).final,
-    dps:   (a, b) => compute(b).dps - compute(a).dps,
-    speed: (a, b) => compute(b).speed - compute(a).speed,
-    reach: (a, b) => compute(b).reach - compute(a).reach,
-    name:  (a, b) => a.name.localeCompare(b.name),
+    damage: (a, b) => compute(b).damage - compute(a).damage,
+    dps:    (a, b) => compute(b).dps - compute(a).dps,
+    speed:  (a, b) => compute(b).speed - compute(a).speed,
+    reach:  (a, b) => compute(b).reach - compute(a).reach,
+    name:   (a, b) => a.name.localeCompare(b.name),
   };
 
   const list = $derived.by(() => {
     const ql = q.trim().toLowerCase();
-    return WEAPONS
+    return weapons
       .filter(w => {
-        if (cat !== "all" && w.cat !== cat) return false;
-        if (arch !== "all" && archOf(w.id) !== arch) return false;
-        for (const p of props) if (!hasProp(w.id, p)) return false;
-        if (ql && !(w.name.toLowerCase().includes(ql) || w.cat.toLowerCase().includes(ql))) return false;
+        if (cat !== "all" && w.category !== cat) return false;
+        if (arch !== "all" && w.damageType?.id !== arch) return false;
+        for (const p of props) if (!has(w, p)) return false;
+        if (ql && !(w.name.toLowerCase().includes(ql) || w.className.toLowerCase().includes(ql))) return false;
         return true;
       })
       .sort(SORTERS[sort]);
   });
+
+  // Damage-type traits are shown as the coloured tag, not as badges.
+  const BADGE_SKIP = new Set(["piercing", "slashing", "blunt"]);
 </script>
 
 <svelte:head>
@@ -147,20 +79,20 @@
     <div class="forge-head">
       <span class="forge-label">Forge with</span>
       <span class="forge-read">
-        <b>{mat.name}</b> — {[`+${fmt(mat.mult)} damage`, SPEED_MULT[mat.id] ? `×${SPEED_MULT[mat.id]} speed` : null, `${mat.dur} durability`, mat.source].filter(Boolean).join(' · ')}
+        <b>{mat.name}</b> — {[`+${fmt(mat.damage)} damage`, mat.speedMultiplier !== 1 ? `×${mat.speedMultiplier} speed` : null, mat.durability ? `${mat.durability} durability` : null, mat.origin].filter(Boolean).join(' · ')}
       </span>
     </div>
     <div class="ingots" role="group" aria-label="Choose forging material">
-      {#each MATERIALS as m}
+      {#each materials as m}
         <button
           class="ingot"
           style="--tint:{m.tint}"
           aria-pressed={m.id === mat.id}
           onclick={() => (mat = m)}
         >
-          <img src="{base}/images/{m.img}.png" class="pixel-art large inline" alt="">
+          <img src={iconSrc(m)} class="pixel-art large inline" alt="">
           <div class="m-name">{m.name}</div>
-          <div class="m-mult">+{fmt(m.mult)} · {m.dur} dur</div>
+          <div class="m-mult">+{fmt(m.damage)}{m.durability ? ` · ${m.durability} dur` : ''}</div>
         </button>
       {/each}
     </div>
@@ -185,7 +117,7 @@
       <div class="chipgroup">
         <span class="gl">Class</span>
         {#each CATS as c}
-          <button class="chip" aria-pressed={cat === c} onclick={() => (cat = c)}>{c === "all" ? "All" : c}</button>
+          <button class="chip" aria-pressed={cat === c} onclick={() => (cat = c)}>{c === "all" ? "All" : CAT[c]?.label ?? c}</button>
         {/each}
       </div>
       <div class="chipgroup">
@@ -193,8 +125,8 @@
         {#each ARCHS as [val, label]}
           <button
             class="chip"
-            class:p-pierce={val === "pierce"}
-            class:p-slash={val === "slash"}
+            class:p-pierce={val === "piercing"}
+            class:p-slash={val === "slashing"}
             class:p-blunt={val === "blunt"}
             aria-pressed={arch === val}
             onclick={() => (arch = val)}
@@ -205,13 +137,13 @@
 
     <div class="chipgroup">
       <span class="gl">Traits</span>
-      {#each PROPS as [key, label]}
-        <button class="chip prop" aria-pressed={props.includes(key)} onclick={() => toggleProp(key)}>{label}</button>
+      {#each traitFilters as t}
+        <button class="chip prop" aria-pressed={props.includes(t.id)} onclick={() => toggleProp(t.id)}>{t.label}</button>
       {/each}
     </div>
 
     <div class="countline">
-      <span>{list.length} of {WEAPONS.length} weapons · forged in {mat.name}</span>
+      <span>{list.length} of {weapons.length} weapons · forged in {mat.name}</span>
       <button class="reset" onclick={reset}>Clear filters</button>
     </div>
   </div>
@@ -224,40 +156,34 @@
       {:else}
         {#each list as w (w.id)}
           {@const c = compute(w)}
-          <article class="card" style="--catc:{CAT_COLOR[w.cat] || '#555'}">
+          <article class="card" style="--catc:{CAT[w.category]?.color || '#555'}">
             <div class="c-head">
               <div>
-                <div class="c-name">{w.name}</div>
-                <div class="c-cat">{w.cat}</div>
+                <a class="c-name" href="{base}/items/weapon/{w.id}">{w.name}</a>
+                <div class="c-cat">{w.className}</div>
               </div>
-              {#if c.arch}
-                <span class="arch" class:pierce={c.arch === "pierce"} class:slash={c.arch === "slash"} class:blunt={c.arch === "blunt"}>{ARCH_LABEL[c.arch]}</span>
+              {#if w.damageType}
+                <span class="arch" class:pierce={w.damageType.id === "piercing"} class:slash={w.damageType.id === "slashing"} class:blunt={w.damageType.id === "blunt"}>{w.damageType.label}</span>
               {/if}
             </div>
 
             <div class="dmg">
-              <div class="val">+{fmt(c.final)}</div>
-              <div class="meta">Attack damage<br /><b>{fmt(w.base)} + {fmt(mat.mult)}</b> · {fmt(c.hit)} per hit</div>
+              <div class="val">{fmt(c.damage)}</div>
+              <div class="meta">Damage per hit<br /><b>{fmt(w.baseDamage)} + {fmt(mat.damage)}</b></div>
             </div>
 
             <div class="stats">
               <div class="stat"><div class="k">Atk Speed</div><div class="v">{fmt(Math.round(c.speed * 100) / 100)}</div></div>
               <div class="stat"><div class="k">DPS</div><div class="v">{c.dps.toFixed(1)}</div></div>
-              <div class="stat"><div class="k">Reach</div><div class="v">{c.reach.toFixed(1)}<small> / {w.range > 0 ? "+" + fmt(w.range) : fmt(w.range)}</small></div></div>
+              <div class="stat"><div class="k">Reach</div><div class="v">{c.reach.toFixed(1)}{#if w.bonusRange}<small> / {w.bonusRange > 0 ? "+" + fmt(w.bonusRange) : fmt(w.bonusRange)}</small>{/if}</div></div>
             </div>
 
             <div class="badges">
-              {#if CAN_PARRY.has(w.id)}<span class="badge">⚔ Parry</span>{/if}
-              {#if DUAL_WIELD.has(w.id)}<span class="badge">⧉ Dual-wield</span>{/if}
-              {#if THROWABLE.has(w.id)}<span class="badge">➹ Throwable</span>{/if}
-              {#if KINETIC.has(w.id)}<span class="badge hot">↯ Kinetic charge</span>{/if}
-              {#if w.id in DISABLE_SH}<span class="badge hot">⛨ Shield-break <span class="d">{(DISABLE_SH[w.id] / 20).toFixed(1)}s</span></span>{/if}
-              {#if w.id in MIN_CHARGE}<span class="badge">◔ Min charge <span class="d">{MIN_CHARGE[w.id]}</span></span>{/if}
-              {#if w.id in HITBOX}<span class="badge">◎ Hitbox <span class="d">+{fmt(HITBOX[w.id]-0.3)}</span></span>{/if}
-              {#if w.id in CRIT}<span class="badge">✦ Crit <span class="d">+{Math.round(CRIT[w.id] * 100)}%</span></span>{/if}
-              {#if !CAN_PARRY.has(w.id) && !DUAL_WIELD.has(w.id) && !THROWABLE.has(w.id) && !KINETIC.has(w.id) && !(w.id in DISABLE_SH) && !(w.id in MIN_CHARGE) && !(w.id in HITBOX) && !(w.id in CRIT)}
+              {#each w.traits.filter(t => !BADGE_SKIP.has(t.id) && t.id !== "reach") as t}
+                <a class="badge" class:hot={t.id === "charge" || t.id === "shield_break"} href="{base}/items/weapons/traits#{t.id}">{t.icon} {t.label}{#if t.value} <span class="d">{t.value}</span>{/if}</a>
+              {:else}
                 <span class="badge muted">No special traits</span>
-              {/if}
+              {/each}
             </div>
           </article>
         {/each}
@@ -266,7 +192,7 @@
   {/key}
 
   <footer>
-    <span class="fmono">ODYSSEY // ARSENAL</span> — Damage per hit = 1 + weapon + material · Reach = 3.0 + range bonus · DPS = damage per hit × attack speed · shield-break in seconds (ticks ÷ 20).
+    <span class="fmono">ODYSSEY // ARSENAL</span> — Damage per hit = weapon + material · Reach = 3.0 + range bonus · DPS = damage × attack speed · Click a weapon or trait for details.
   </footer>
 </div>
 
@@ -400,6 +326,10 @@
   .badges{display:flex; flex-wrap:wrap; gap:6px; margin-top:auto}
   .badge{font-size:10.5px; font-weight:600; letter-spacing:.02em; padding:3px 8px; border-radius:6px; background:#ffffff08; border:1px solid var(--line); color:var(--ink-dim); display:inline-flex; align-items:center; gap:5px; font-family:"Inter",sans-serif}
   .badge.muted{opacity:.5}
+  a.badge{text-decoration:none}
+  a.badge:hover{color:var(--ink); border-color:var(--metal)}
+  a.c-name{display:block; color:var(--ink); text-decoration:none}
+  a.c-name:hover{color:var(--metal)}
   .badge.hot{color:var(--ember); border-color:#ff7a3444; background:#ff7a3410}
   .badge .d{font-family:"JetBrains Mono",ui-monospace,monospace; color:var(--ink-faint); font-weight:500}
   .badge.hot .d{color:var(--ember-soft)}

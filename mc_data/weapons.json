@@ -1,0 +1,711 @@
+{
+  "types": [
+    {
+      "enum": "SWORD",
+      "id": "sword",
+      "name": "Sword",
+      "baseDamage": 3,
+      "baseSpeed": 1.6,
+      "vanillaBase": "sword",
+      "bonusRange": null,
+      "section": "Vanilla",
+      "vanilla": true
+    },
+    {
+      "enum": "PICKAXE",
+      "id": "pickaxe",
+      "name": "Pickaxe",
+      "baseDamage": 1,
+      "baseSpeed": 1.2,
+      "vanillaBase": "pickaxe",
+      "bonusRange": null,
+      "section": "Vanilla",
+      "vanilla": true
+    },
+    {
+      "enum": "AXE",
+      "id": "axe",
+      "name": "Axe",
+      "baseDamage": 5,
+      "baseSpeed": 1,
+      "vanillaBase": "axe",
+      "bonusRange": null,
+      "section": "Vanilla",
+      "vanilla": true
+    },
+    {
+      "enum": "SHOVEL",
+      "id": "shovel",
+      "name": "Shovel",
+      "baseDamage": 1.5,
+      "baseSpeed": 1,
+      "vanillaBase": "shovel",
+      "bonusRange": null,
+      "section": "Vanilla",
+      "vanilla": true
+    },
+    {
+      "enum": "HOE",
+      "id": "hoe",
+      "name": "Hoe",
+      "baseDamage": 0,
+      "baseSpeed": 1.6,
+      "vanillaBase": "hoe",
+      "bonusRange": null,
+      "section": "Vanilla",
+      "vanilla": true
+    },
+    {
+      "enum": "SPEAR",
+      "id": "spear",
+      "name": "Spear",
+      "baseDamage": 0,
+      "baseSpeed": 1,
+      "vanillaBase": "spear",
+      "bonusRange": null,
+      "section": "Vanilla",
+      "vanilla": true
+    },
+    {
+      "enum": "CUTLASS",
+      "id": "cutlass",
+      "name": "Cutlass",
+      "baseDamage": 2.5,
+      "baseSpeed": 2.1,
+      "vanillaBase": "sword",
+      "bonusRange": null,
+      "section": "Sword type weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "KATANA",
+      "id": "katana",
+      "name": "Katana",
+      "baseDamage": 3,
+      "baseSpeed": 1.7,
+      "vanillaBase": "sword",
+      "bonusRange": 0.2,
+      "section": "Sword type weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "LONGSWORD",
+      "id": "longsword",
+      "name": "Longsword",
+      "baseDamage": 4,
+      "baseSpeed": 1.5,
+      "vanillaBase": "sword",
+      "bonusRange": 0.3,
+      "section": "Sword type weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "RAPIER",
+      "id": "rapier",
+      "name": "Rapier",
+      "baseDamage": 1.5,
+      "baseSpeed": 3.5,
+      "vanillaBase": "sword",
+      "bonusRange": null,
+      "section": "Sword type weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "SABER",
+      "id": "saber",
+      "name": "Saber",
+      "baseDamage": 3,
+      "baseSpeed": 1.8,
+      "vanillaBase": "sword",
+      "bonusRange": null,
+      "section": "Sword type weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "CHAKRAM",
+      "id": "chakram",
+      "name": "Chakram",
+      "baseDamage": 1.5,
+      "baseSpeed": 2.5,
+      "vanillaBase": "sword",
+      "bonusRange": -0.3,
+      "section": "Small Sword Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "DAGGER",
+      "id": "dagger",
+      "name": "Dagger",
+      "baseDamage": 1,
+      "baseSpeed": 3,
+      "vanillaBase": "sword",
+      "bonusRange": -0.3,
+      "section": "Small Sword Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "KUNAI",
+      "id": "kunai",
+      "name": "Kunai",
+      "baseDamage": 1,
+      "baseSpeed": 2.5,
+      "vanillaBase": "sword",
+      "bonusRange": null,
+      "section": "Small Sword Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "SICKLE",
+      "id": "sickle",
+      "name": "Sickle",
+      "baseDamage": 1.5,
+      "baseSpeed": 2.7,
+      "vanillaBase": "sword",
+      "bonusRange": -0.2,
+      "section": "Small Sword Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "CLAYMORE",
+      "id": "claymore",
+      "name": "Claymore",
+      "baseDamage": 6.5,
+      "baseSpeed": 1.1,
+      "vanillaBase": "sword",
+      "bonusRange": 0.5,
+      "section": "Heavy Sword Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "KRIEGSMESSER",
+      "id": "kriegsmesser",
+      "name": "Kriegsmesser",
+      "baseDamage": 6,
+      "baseSpeed": 1.3,
+      "vanillaBase": "sword",
+      "bonusRange": 0.5,
+      "section": "Heavy Sword Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "ZWEIHANDER",
+      "id": "zweihander",
+      "name": "Zweihander",
+      "baseDamage": 7,
+      "baseSpeed": 0.8,
+      "vanillaBase": "sword",
+      "bonusRange": 1,
+      "section": "Heavy Sword Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "HALBERD",
+      "id": "halberd",
+      "name": "Halberd",
+      "baseDamage": 4,
+      "baseSpeed": 0.8,
+      "vanillaBase": "spear",
+      "bonusRange": 2,
+      "section": "Polearms Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "PIKE",
+      "id": "pike",
+      "name": "Pike",
+      "baseDamage": 6,
+      "baseSpeed": 0.6,
+      "vanillaBase": "spear",
+      "bonusRange": 3,
+      "section": "Polearms Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "POLEAXE",
+      "id": "poleaxe",
+      "name": "Poleaxe",
+      "baseDamage": 4,
+      "baseSpeed": 1.1,
+      "vanillaBase": "axe",
+      "bonusRange": 1,
+      "section": "Polearms Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "GLAIVE",
+      "id": "glaive",
+      "name": "Glaive",
+      "baseDamage": 4,
+      "baseSpeed": 1.2,
+      "vanillaBase": "axe",
+      "bonusRange": 1,
+      "section": "Polearms Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "DOUBLE_AXE",
+      "id": "double_axe",
+      "name": "Double Axe",
+      "baseDamage": 5,
+      "baseSpeed": 1,
+      "vanillaBase": "axe",
+      "bonusRange": 0,
+      "section": "Axe type Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "LONGAXE",
+      "id": "longaxe",
+      "name": "Longaxe",
+      "baseDamage": 6,
+      "baseSpeed": 0.9,
+      "vanillaBase": "axe",
+      "bonusRange": 0.5,
+      "section": "Axe type Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "WARHAMMER",
+      "id": "warhammer",
+      "name": "Warhammer",
+      "baseDamage": 4,
+      "baseSpeed": 1.4,
+      "vanillaBase": "pickaxe",
+      "bonusRange": null,
+      "section": "Blunt Type Weapons",
+      "vanilla": false
+    },
+    {
+      "enum": "SCYTHE",
+      "id": "scythe",
+      "name": "Scythe",
+      "baseDamage": 3,
+      "baseSpeed": 1.1,
+      "vanillaBase": "hoe",
+      "bonusRange": 1,
+      "section": "Misc",
+      "vanilla": false
+    },
+    {
+      "enum": "BATTLESAW",
+      "id": "battlesaw",
+      "name": "Battlesaw",
+      "baseDamage": 4,
+      "baseSpeed": 1,
+      "vanillaBase": "axe",
+      "bonusRange": 1,
+      "section": "Misc",
+      "vanilla": false
+    },
+    {
+      "enum": "SHURIKEN",
+      "id": "shuriken",
+      "name": "Shuriken",
+      "baseDamage": 0.5,
+      "baseSpeed": 1,
+      "vanillaBase": "iron_nugget",
+      "bonusRange": null,
+      "section": "Others",
+      "vanilla": false
+    }
+  ],
+  "disabledTypes": [
+    "ARM_BLADE",
+    "JAVELIN",
+    "LANCE",
+    "SCISSORS"
+  ],
+  "materials": [
+    {
+      "enum": "WOODEN",
+      "id": "wooden",
+      "name": "Wooden",
+      "attackDamage": 1,
+      "vanillaBase": "wooden",
+      "maxDurability": null,
+      "origin": null,
+      "group": "Minecraft",
+      "speedMultiplier": 1
+    },
+    {
+      "enum": "GOLDEN",
+      "id": "golden",
+      "name": "Golden",
+      "attackDamage": 1.5,
+      "vanillaBase": "golden",
+      "maxDurability": null,
+      "origin": null,
+      "group": "Minecraft",
+      "speedMultiplier": 1
+    },
+    {
+      "enum": "COPPER",
+      "id": "copper",
+      "name": "Copper",
+      "attackDamage": 2.5,
+      "vanillaBase": "copper",
+      "maxDurability": null,
+      "origin": null,
+      "group": "Minecraft",
+      "speedMultiplier": 1
+    },
+    {
+      "enum": "STONE",
+      "id": "stone",
+      "name": "Stone",
+      "attackDamage": 2,
+      "vanillaBase": "stone",
+      "maxDurability": null,
+      "origin": null,
+      "group": "Minecraft",
+      "speedMultiplier": 1
+    },
+    {
+      "enum": "IRON",
+      "id": "iron",
+      "name": "Iron",
+      "attackDamage": 3,
+      "vanillaBase": "iron",
+      "maxDurability": null,
+      "origin": null,
+      "group": "Minecraft",
+      "speedMultiplier": 1
+    },
+    {
+      "enum": "DIAMOND",
+      "id": "diamond",
+      "name": "Diamond",
+      "attackDamage": 4,
+      "vanillaBase": "diamond",
+      "maxDurability": null,
+      "origin": null,
+      "group": "Minecraft",
+      "speedMultiplier": 1
+    },
+    {
+      "enum": "NETHERITE",
+      "id": "netherite",
+      "name": "Netherite",
+      "attackDamage": 5,
+      "vanillaBase": "netherite",
+      "maxDurability": null,
+      "origin": null,
+      "group": "Minecraft",
+      "speedMultiplier": 1
+    },
+    {
+      "enum": "SILVER",
+      "id": "silver",
+      "name": "Silver",
+      "attackDamage": 3,
+      "vanillaBase": "iron",
+      "maxDurability": 337,
+      "origin": "OVERWORLD",
+      "group": "Odyssey",
+      "speedMultiplier": 1
+    },
+    {
+      "enum": "SOUL_STEEL",
+      "id": "soul_steel",
+      "name": "Soul Steel",
+      "attackDamage": 4,
+      "vanillaBase": "iron",
+      "maxDurability": 666,
+      "origin": "NETHER",
+      "group": "Odyssey",
+      "speedMultiplier": 1
+    },
+    {
+      "enum": "TITANIUM",
+      "id": "titanium",
+      "name": "Titanium",
+      "attackDamage": 4,
+      "vanillaBase": "iron",
+      "maxDurability": 1002,
+      "origin": "OVERWORLD",
+      "group": "Odyssey",
+      "speedMultiplier": 1.1
+    },
+    {
+      "enum": "ANODIZED_TITANIUM",
+      "id": "anodized_titanium",
+      "name": "Anodized Titanium",
+      "attackDamage": 4,
+      "vanillaBase": "iron",
+      "maxDurability": 1002,
+      "origin": "OVERWORLD",
+      "group": "Odyssey",
+      "speedMultiplier": 1.1
+    },
+    {
+      "enum": "IRIDIUM",
+      "id": "iridium",
+      "name": "Iridium",
+      "attackDamage": 5,
+      "vanillaBase": "diamond",
+      "maxDurability": 3108,
+      "origin": "OVERWORLD",
+      "group": "Odyssey",
+      "speedMultiplier": 0.9
+    },
+    {
+      "enum": "MITHRIL",
+      "id": "mithril",
+      "name": "Mithril",
+      "attackDamage": 6,
+      "vanillaBase": "diamond",
+      "maxDurability": 1789,
+      "origin": "EDGE",
+      "group": "Odyssey",
+      "speedMultiplier": 1
+    },
+    {
+      "enum": "CRYSTAL_ALLOY",
+      "id": "crystal_alloy",
+      "name": "Crystal Alloy",
+      "attackDamage": 4,
+      "vanillaBase": "iron",
+      "maxDurability": 1123,
+      "origin": "EDGE",
+      "group": "Odyssey",
+      "speedMultiplier": 1
+    }
+  ],
+  "maps": {
+    "PIERCING_WEAPONS": [
+      "rapier",
+      "dagger",
+      "kunai",
+      "spear",
+      "halberd",
+      "lance",
+      "poleaxe",
+      "pike"
+    ],
+    "SLASHING_WEAPONS": [
+      "katana",
+      "longsword",
+      "claymore",
+      "cutlass",
+      "saber",
+      "sickle",
+      "chakram",
+      "zweihander",
+      "kriegsmesser",
+      "glaive",
+      "longaxe",
+      "double_axe",
+      "battle_saw",
+      "arm_blade",
+      "scythe",
+      "shuriken"
+    ],
+    "BLUNT_WEAPONS": [
+      "warhammer"
+    ],
+    "CAN_PARRY": [
+      "katana",
+      "claymore",
+      "longsword",
+      "rapier",
+      "saber",
+      "sickle",
+      "dagger",
+      "kriegsmesser",
+      "zweihander",
+      "poleaxe"
+    ],
+    "DUAL_WIELDABLE": [
+      "dagger",
+      "cutlass",
+      "chakram",
+      "double_axe"
+    ],
+    "THROWABLE": [
+      "kunai",
+      "chakram",
+      "shuriken"
+    ],
+    "CAN_KINETIC_CHARGE": [
+      "pike",
+      "lance"
+    ],
+    "DISABLE_SHIELDS": {
+      "longaxe": 100,
+      "double_axe": 100,
+      "poleaxe": 80,
+      "glaive": 80,
+      "halberd": 60,
+      "warhammer": 60,
+      "sickle": 40
+    },
+    "MINIMUM_CHARGE": {
+      "halberd": 0.5,
+      "longaxe": 0.5,
+      "pike": 0.5,
+      "claymore": 0.3,
+      "kriegsmesser": 0.3,
+      "zweihander": 0.3
+    },
+    "HITBOX_ASSIST": {
+      "katana": 0.35,
+      "claymore": 0.4,
+      "longsword": 0.35,
+      "double_axe": 0.35,
+      "sickle": 0.45,
+      "scythe": 0.7,
+      "battlesaw": 0.45,
+      "kriegsmesser": 0.4,
+      "zweihander": 0.45,
+      "pike": 0.35
+    },
+    "BONUS_CRIT_DAMAGE": {
+      "katana": 0.1,
+      "longaxe": 0.25
+    },
+    "STAB_ANIMATION": {
+      "rapier": 8,
+      "dagger": 8,
+      "kunai": 8,
+      "spear": 12,
+      "halberd": 18,
+      "lance": 18,
+      "pike": 18,
+      "poleaxe": 14,
+      "claymore": 16
+    },
+    "WHACK_ANIMATION": {
+      "katana": 11,
+      "longsword": 13,
+      "cutlass": 10,
+      "saber": 10,
+      "sickle": 8,
+      "chakram": 8,
+      "zweihander": 16,
+      "kriegsmesser": 14,
+      "glaive": 12,
+      "longaxe": 14
+    },
+    "REACH_MAP": {
+      "claymore": 4.2,
+      "longaxe": 3.7,
+      "longsword": 3.4,
+      "cutlass": 2.8,
+      "dagger": 2.7,
+      "sickle": 2.7,
+      "chakram": 2.7,
+      "spear": 6,
+      "halberd": 7.9,
+      "lance": 8.2,
+      "poleaxe": 6.2
+    },
+    "MIN_RANGE_MAP": {
+      "lance": 1
+    },
+    "REQUIRES_TWO_HANDS": [
+      "zweihander",
+      "claymore",
+      "halberd"
+    ],
+    "CAN_DISMOUNT": [
+      "pike",
+      "halberd",
+      "zweihander"
+    ],
+    "LACERATE_DAMAGE_MAP": {
+      "saber": 1
+    },
+    "PIERCE_TRUE_DAMAGE_MAP": {
+      "dagger": 1,
+      "spear": 1,
+      "warhammer": 1,
+      "poleaxe": 2,
+      "halberd": 3,
+      "pike": 3
+    },
+    "BLUNT_DAMAGE_MAP": {
+      "warhammer": 4,
+      "poleaxe": 1
+    },
+    "CLEAVE_MAP": {
+      "chakram": 1,
+      "longaxe": 3,
+      "halberd": 1,
+      "poleaxe": 2
+    },
+    "SWEEP_MAP": {
+      "katana": 2,
+      "claymore": 3,
+      "kriegsmesser": 3,
+      "zweihander": 4,
+      "saber": 2,
+      "longsword": 2,
+      "scythe": 5,
+      "chakram": 3,
+      "sickle": 2,
+      "dagger": 1,
+      "cutlass": 1
+    },
+    "ARCANE_RANGES": {
+      "arcane_wand": 32,
+      "arcane_blade": 8,
+      "arcane_scepter": 48,
+      "warping_wand": 8
+    }
+  },
+  "combat": {
+    "defaultCritBonus": 0.5,
+    "critBonus": {
+      "katana": 0.6,
+      "longaxe": 0.75
+    },
+    "sweeps": {
+      "chakram": {
+        "degrees": 175,
+        "multiplier": 1,
+        "radius": 1.5
+      },
+      "scythe": {
+        "degrees": 120,
+        "multiplier": 1,
+        "radius": 3
+      }
+    },
+    "throwables": {
+      "kunai": {
+        "speed": 1.6,
+        "cooldownTicks": 30,
+        "gravity": true,
+        "dualThrowable": false,
+        "consumes": "durability",
+        "returns": false
+      },
+      "shuriken": {
+        "speed": 2.6,
+        "cooldownTicks": 4,
+        "gravity": true,
+        "dualThrowable": false,
+        "consumes": "item",
+        "returns": false
+      },
+      "chakram": {
+        "speed": 2.1,
+        "cooldownTicks": 60,
+        "gravity": false,
+        "dualThrowable": true,
+        "consumes": "durability",
+        "returns": true
+      }
+    },
+    "removesPlayerBaseDamage": true,
+    "baseRange": 3,
+    "hitboxDefault": 0.3,
+    "parryReduction": 0.5,
+    "pikeChargeMultiplier": 1.5,
+    "speedMultipliers": {
+      "iridium": 0.9,
+      "titanium": 1.1,
+      "anodized_titanium": 1.1
+    }
+  }
+}
